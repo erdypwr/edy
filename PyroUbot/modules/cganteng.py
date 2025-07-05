@@ -16,7 +16,7 @@ async def cekkhodam(client, message):
     try:
         nama = message.text.split(" ", 1)[1] if len(message.text.split()) > 1 else None
         if not nama:
-            await message.edit("ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ")
+            await message.edit("ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴄᴜᴋɪ")
             return
 
         def pick_random(options):
@@ -26,7 +26,7 @@ async def cekkhodam(client, message):
  <b>𖤐 ʜᴀsɪʟ ᴄᴇᴋ ɢᴀɴᴛᴇɴɢ:</b>
 ╭───────────────────────
 ├ •ɴᴀᴍᴀ : {nama}
-├ •ɢᴀɴᴛᴇɴɢ : {pick_random(['ᴋᴀʏᴀ ᴋᴛʟ', 'ᴅɪᴋɪᴛ', 'ʙᴀɴʏᴀᴋ', 'sᴇᴛᴇɴɢᴀʜ', 'sᴇᴘᴇʀᴀᴘᴀᴛ', 'sᴇ ᴛᴇᴛᴇ'])}
+├ •ɢᴀɴᴛᴇɴɢ : {pick_random(['ᴋᴀʏᴀ ᴋᴛʟ', 'ᴅɪᴋɪᴛ', 'ʙᴀɴʏᴀᴋ', 'sᴇᴛᴇɴɢᴀʜ', 'sᴇᴘᴇʀᴀᴘᴀᴛ', 'sᴇ ᴛᴇᴛᴇ', 'sᴇ ɪᴛɪʟ'])}
 ├ •ɴɢᴇʀɪ ʙᴇᴛ ᴊɪʀ
 ╰────────────────────────
   **ɴᴇxᴛ ᴄᴇᴋ ɢᴀɴᴛᴇɴɢ sɪᴀᴘᴀ ʟᴀɢɪ.**       

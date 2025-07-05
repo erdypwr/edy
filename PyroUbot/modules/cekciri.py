@@ -9,7 +9,7 @@ async def cekkhodam(client, message):
     try:
         nama = message.text.split(" ", 1)[1] if len(message.text.split()) > 1 else None
         if not nama:
-            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴀɴᴊᴇɴɢ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
+            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴄᴜᴋɪ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
             return
 
         def pick_random(options):
@@ -34,7 +34,7 @@ async def cekkhodam(client, message):
     try:
         nama = message.text.split(" ", 1)[1] if len(message.text.split()) > 1 else None
         if not nama:
-            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴀɴᴊᴇɴɢ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
+            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴄᴜᴋɪ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
             return
 
         def pick_random(options):
@@ -59,7 +59,7 @@ async def cekkhodam(client, message):
     try:
         nama = message.text.split(" ", 1)[1] if len(message.text.split()) > 1 else None
         if not nama:
-            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴀɴᴊᴇɴɢ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
+            await message.edit("<blockquote><b>ɴᴀᴍᴀɴʏᴀ ᴍᴀɴᴀ ᴄᴜᴋɪ<emoji id=6325790754543241229>🪨</emoji></b></blockquote>")
             return
 
         def pick_random(options):
