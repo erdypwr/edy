@@ -126,8 +126,8 @@ async def _(client, callback_query):
     if "Already up to date." in str(out):
         return await callback_query.answer("ꜱudah terupdate", True)
     else:
-        await callback_query.answer("ꜱedang memproꜱeꜱ update.....", True)
-    os.execl(sys.executable, sys.executable, "-m", "ᴋɪɴɢᴢᴜʙᴏᴛ-ᴘʀᴇᴍ")
+        await callback_query.answer("Sedang Memproꜱeꜱ Update Cess.....", True)
+    os.execl(sys.executable, sys.executable, "-m", "ErrCessBot")
 
 
 @PY.UBOT("help")

@@ -8,13 +8,13 @@ __HELP__ =  """
 
 <blockquote><b>ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}bratvideo [text]</code>
-Untuk Membuat Gambar Text video Seperti Tren Tiktok</b></blockquote>
+Untuk Membuat Gambar Text video Seperti Tren Tiktok Cess</b></blockquote>
 
 """
 
 async def BratVideo(text):
     if not text:
-        return "<blockquote><b>textnya mana?</b></blockquote>"
+        return "<blockquote><b>Textnya Mana Cess?</b></blockquote>"
     if len(text) > 250:
         return " "
 
@@ -33,7 +33,7 @@ async def BratVideo(text):
             )
 
             if res.status_code != 200:
-                raise Exception("<blockquote><b>Gagal mengambil frame dari API</b></blockquote>")
+                raise Exception("<blockquote><b>Gagal Mengambil Frame Dari API Cess</b></blockquote>")
 
             frame_path = os.path.join(temp_dir, f"frame{i}.mp4")
             with open(frame_path, "wb") as f:
@@ -77,7 +77,7 @@ async def brat_handler(client, message):
     processing_msg = await message.reply_text("<blockquote><b>proses...</b></blockquote>")
     video_path = await BratVideo(text)
 
-    if isinstance(video_path, str) and video_path.startswith("<blockquote><b>Terjadi kesalahan</b></blockquote>"):
+    if isinstance(video_path, str) and video_path.startswith("<blockquote><b>Terjadi Kesalahan Cess</b></blockquote>"):
         await processing_msg.delete()
         await message.reply_text(video_path)
     else:

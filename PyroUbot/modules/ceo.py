@@ -12,7 +12,7 @@ async def promotte(client: Client, message: Message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     user_id = await extract_user(message)
-    anu = await eor(message, f"{prs}processing...")
+    anu = await eor(message, f"{prs}Prosess Cess...")
     if not user_id:
         return await anu.edit(f"{ggl}pengguna tidak ditemukan.")
     (await client.get_chat_member(message.chat.id, client.me.id)).privileges
@@ -43,7 +43,7 @@ async def promotte(client: Client, message: Message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     user_id = await extract_user(message)
-    anu = await eor(message, f"{prs}processing...")
+    anu = await eor(message, f"{prs}Prosess Cess...")
     if not user_id:
         return await anu.edit(f"{ggl}pengguna tidak ditemukan.")
     (await client.get_chat_member(message.chat.id, client.me.id)).privileges

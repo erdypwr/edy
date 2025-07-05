@@ -22,13 +22,13 @@ async def capcut_download(client, message):
         return
     
     url = message.command[1]
-    processing_msg = await message.reply_text("🔄 Memproses permintaan, harap tunggu...")
+    processing_msg = await message.reply_text("🔄 Memproses Permintaan, Harap Tunggu Cess...")
     
     response = requests.get(f"https://api.botcahx.eu.org/api/download/capcut?url={url}&apikey=045705b1")
     data = response.json()
     
     if not data.get("status"):
-        await processing_msg.edit_text("❌ Gagal mengambil data. Pastikan URL valid.")
+        await processing_msg.edit_text("❌ Gagal Mengambil Data. Pastikan URL Valid Cess")
         return
     
     video_url = data["result"]["video"]

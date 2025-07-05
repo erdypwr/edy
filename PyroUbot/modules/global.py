@@ -34,7 +34,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     Tm = await message.reply(_msg)
     if not user_id:
@@ -72,7 +72,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     Tm = await message.reply(_msg)
     if not user_id:
@@ -112,7 +112,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     Tm = await message.reply(_msg)
     if not user_id:
@@ -149,7 +149,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
     Tm = await message.reply(_msg)
     if not user_id:
         return await Tm.edit(f"{ggl}user tidak ditemukan")

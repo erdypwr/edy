@@ -45,7 +45,7 @@ async def _(client, message):
     yubot = await EMO.UBOT(client)
     await client.unblock_user("SpamBot")
     bot_info = await client.resolve_peer("SpamBot")
-    msg = await message.reply(f"{prs}processing . . .")
+    msg = await message.reply(f"{prs}Prosess Cess . . .")
     response = await client.invoke(
         StartBot(
             bot=bot_info,

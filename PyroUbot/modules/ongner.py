@@ -63,7 +63,7 @@ __HELP__ = """
 
 <blockquote><b>perintah : <code>{0}cping</code> - <code>{0}caddbl</code> - <code>{0}climit</code> - <code>calive</code></blockquote></b>
 
-<blockquote><b>perintah : <code>{0}boysz gantenk ga</code> - <code>{0}tes on</code></blockquote></b>
+<blockquote><b>perintah : <code>{0}erdy gantenk ga</code> - <code>{0}tes on</code></blockquote></b>
 
 <blockquote><b>- <code>{0}p</code>\n- <code>{0}ok</code>\n- <code>{0}sip</code>\n- <code>{0}love</code>\n- <code>{0}haha</code>\n- <code>{0}kuda</code></blockquote></b>
 """

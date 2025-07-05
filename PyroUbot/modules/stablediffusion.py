@@ -48,4 +48,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal membuat gambar. Coba lagi nanti.")
+        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")

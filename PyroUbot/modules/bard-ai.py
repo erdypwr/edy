@@ -25,7 +25,7 @@ async def chat_gpt(client, message):
                 "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .bard query"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>proccesing....")
+            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>Prosess Cess....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.betabotz.eu.org/api/search/bard-ai?text={a}&apikey=Btz-bxwol')
 

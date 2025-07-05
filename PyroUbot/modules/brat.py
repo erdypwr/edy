@@ -37,7 +37,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("Sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = get_brat_image(request_text)
     if image_content:
@@ -49,7 +50,7 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal membuat gambar. Coba lagi nanti.")
+        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
 
 
 @PY.BOT("brat")
@@ -60,7 +61,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("Sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = get_brat_image(request_text)
     if image_content:
@@ -72,4 +74,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal membuat gambar. Coba lagi nanti.")
+        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")

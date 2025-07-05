@@ -26,7 +26,7 @@ __HELP__ = """
 @PY.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
-    msg = await message.reply("memproses...")
+    msg = await message.reply("Prosess Cess...")
     if not user_id:
         return await msg.edit(f"<b>{message.text} ᴜsᴇʀ_ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ - ʙᴜʟᴀɴ</b>")
 
@@ -90,7 +90,7 @@ async def _(client, message):
 @PY.BOT("unprem")
 @PY.SELLER
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -151,7 +151,7 @@ async def _(client, message):
 @PY.BOT("seles")
 @PY.ADMIN
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -190,7 +190,7 @@ async def _(client, message):
 @PY.BOT("unseles")
 @PY.ADMIN
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -229,7 +229,7 @@ async def _(client, message):
 @PY.BOT("getseles")
 @PY.ADMIN
 async def _(client, message):
-    Sh = await message.reply("sedang memproses...")
+    Sh = await message.reply("Prosess Cess...")
     seles_users = await get_list_from_vars(client.me.id, "SELER_USERS")
 
     if not seles_users:
@@ -259,7 +259,7 @@ async def _(client, message):
 @PY.BOT("time")
 @PY.SELLER
 async def _(client, message):
-    Tm = await message.reply("processing . . .")
+    Tm = await message.reply("Prosess Cess . . .")
     bajingan = message.command
     if len(bajingan) != 3:
         return await Tm.edit(f"woi bang ! \n🗿mohon gunakan /set_time user_id hari")
@@ -327,7 +327,7 @@ expired : {exp}
 @PY.BOT("addadmin")
 @PY.OWNER
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -366,7 +366,7 @@ keterangan: admin
 @PY.BOT("unadmin")
 @PY.OWNER
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -405,7 +405,7 @@ keterangan: unadmin
 @PY.BOT("getadmin")
 @PY.OWNER
 async def _(client, message):
-    Sh = await message.reply("sedang memproses...")
+    Sh = await message.reply("Prosess Cess...")
     admin_users = await get_list_from_vars(client.me.id, "ADMIN_USERS")
 
     if not admin_users:
@@ -435,7 +435,7 @@ async def _(client, message):
 @PY.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
-    msg = await message.reply("memproses...")
+    msg = await message.reply("Prosess Cess...")
     if not user_id:
         return await msg.edit(f"{message.text} user_id/username")
 
@@ -493,7 +493,7 @@ async def _(client, message):
 @PY.BOT("rmultra")
 @PY.SELLER
 async def _(client, message):
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(

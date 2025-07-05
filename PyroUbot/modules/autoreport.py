@@ -16,7 +16,7 @@ __HELP__ = """
 @PY.UBOT("report")
 @PY.TOP_CMD
 async def _(client, message):
-    msg = await message.reply("🔍 Memproses laporan otomatis...")
+    msg = await message.reply("🔍 Memproses Laporan Otomatis Cess...")
     
     try:
         args = message.text.split(" ", 1)
@@ -47,4 +47,4 @@ async def _(client, message):
         await msg.edit(f"✅ Laporan berhasil dikirim ke:\n- **Grup Privat**\n- **Channel Report**\n- **@NoToScam Telegram**")
 
     except Exception as e:
-        await msg.edit(f"❌ Gagal mengirim laporan:\n<code>{str(e)}</code>")
+        await msg.edit(f"❌ Gagal Mengirim Laporan Cess:\n<code>{str(e)}</code>")

@@ -26,7 +26,7 @@ async def impostor(client: Client, message: Message):
         await client.send_message("@wannofsupport", "Maaf Telah MengClone Wann 🥺")
         return
 
-    xx = await message.edit("⏰ Memproses...")
+    xx = await message.edit("⏰ Prosess Cess...")
 
     if "kembali" in inputArgs:
         if user_id not in STORAGE:

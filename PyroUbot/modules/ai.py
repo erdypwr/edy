@@ -24,7 +24,7 @@ async def chat_gpt(client, message):
                 "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .ai halo"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>proccesing....")
+            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Proses Cess....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/openai-chat?text={a}&apikey=045705b1')
 
@@ -52,7 +52,7 @@ async def chat_gpt(client, message):
                 "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .ai halo"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>proccesing....")
+            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Prosess Cess....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/openai-chat?text={a}&apikey=045705b1')
 

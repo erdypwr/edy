@@ -37,7 +37,8 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
-    _msg = f"{prs}proccesing..."
+    _msg = f"{prs}Prosess Cess..."
+
     gcs = await message.reply(_msg)
     if not message.reply_to_message:
         return await gcs.edit(f"**{ggl} mohon balas ke pesan !**")
@@ -77,7 +78,7 @@ gagal {failed} chat database
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     try:
@@ -104,7 +105,7 @@ async def _(client, message):
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     try:
@@ -132,7 +133,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
     mzg = await message.reply(_msg)
 
     database = await get_list_from_vars(client.me.id, "DB_ID")
@@ -157,7 +158,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     brhsl = await EMO.BERHASIL(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     databases = await get_list_from_vars(client.me.id, "DB_ID")

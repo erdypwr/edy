@@ -174,7 +174,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = horor(request_text)
     if image_content:
@@ -196,7 +197,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = robott(request_text)
     if image_content:
@@ -219,7 +221,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = robotttg(request_text)
     if image_content:
@@ -241,7 +244,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = robottt(request_text)
     if image_content:
@@ -264,7 +268,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = fb(request_text)
     if image_content:
@@ -286,7 +291,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = fbs(request_text)
     if image_content:
@@ -309,7 +315,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = tweet(request_text)
     if image_content:
@@ -331,7 +338,8 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("sedang memproses, mohon tunggu...")
+    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+
 
     image_content = tweets(request_text)
     if image_content:

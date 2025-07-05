@@ -53,7 +53,7 @@ async def process_image_command(client, message, api_url, command_name):
         await message.reply_photo(photo=temp_file)
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal membuat gambar. Coba lagi nanti.")
+        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
 
 # Handler untuk setiap perintah
 @PY.UBOT("letters")

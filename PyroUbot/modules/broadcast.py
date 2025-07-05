@@ -45,7 +45,7 @@ async def limit_cmd(client, message):
     yubot = await EMO.UBOT(client)
     await client.unblock_user("SpamBot")
     bot_info = await client.resolve_peer("SpamBot")
-    msg = await message.reply(f"{prs}processing . . .")
+    msg = await message.reply(f"{prs}Prosess Cess . . .")
     response = await client.invoke(
         StartBot(
             bot=bot_info,
@@ -175,7 +175,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
     
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
     gcs = await message.reply(_msg)
 
     command, text = extract_type_and_msg(message)
@@ -260,7 +260,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
     ktrn = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     try:
@@ -294,7 +294,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
     ktrn = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     try:
@@ -328,7 +328,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
     mzg = await message.reply(_msg)
 
     blacklist = await get_list_from_vars(client.me.id, "BL_ID")
@@ -353,7 +353,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     brhsl = await EMO.BERHASIL(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
 
     msg = await message.reply(_msg)
     blacklists = await get_list_from_vars(client.me.id, "BL_ID")

@@ -113,7 +113,7 @@ async def _(client, message):
 @PY.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
-    _msg = f"{prs}proceꜱꜱing..."
+    _msg = f"{prs}Prosess Cess..."
     Tm = await message.reply(_msg)
   
     try:

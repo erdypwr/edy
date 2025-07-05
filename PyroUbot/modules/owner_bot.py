@@ -15,7 +15,7 @@ async def _(client, message):
     if user.id not in seller_id:
         return
     user_id, get_bulan = await extract_user_and_reason(message)
-    msg = await message.reply("memproses...")
+    msg = await message.reply("Prosess Cess...")
     if not user_id:
         return await msg.edit(f"<b>{message.text} ᴜsᴇʀ_ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ - ʙᴜʟᴀɴ</b>")
 
@@ -253,7 +253,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    Tm = await message.reply("processing . . .")
+    Tm = await message.reply("Prosess Cess . . .")
     bajingan = message.command
     if len(bajingan) != 3:
         return await Tm.edit(f"gunakan /set_time user_id hari")
@@ -323,7 +323,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -364,7 +364,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    msg = await message.reply("sedang memproses...")
+    msg = await message.reply("Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -405,7 +405,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    Sh = await message.reply("sedang memproses...")
+    Sh = await message.reply("Prosess Cess...")
     admin_users = await get_list_from_vars(bot.me.id, "ADMIN_USERS")
 
     if not admin_users:
@@ -439,7 +439,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return await message.reply_text(f"{ggl}mau ngapain kamu ?")
-    msg = await message.reply(f"{prs}sedang memproses...")
+    msg = await message.reply(f"{prs}Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -470,7 +470,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return await message.reply_text(f"{ggl}mau ngapain kamu ?")
-    msg = await message.reply(f"{prs}sedang memproses...")
+    msg = await message.reply(f"{prs}Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(

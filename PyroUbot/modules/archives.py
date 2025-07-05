@@ -19,7 +19,7 @@ async def archive_user(client, message):
     ggl = await EMO.GAGAL(client)
     if len(message.command) <2:
         return await message.reply(f"{ggl}mohon gunakan arch all, users, group")
-    anjai = await message.reply(f"{prs}proccesing...")
+    anjai = await message.reply(f"{prs}Prosess Cess...")
     anjir = message.command[1]
     xx = await get_data_id(client, anjir)
     for anu in xx:
@@ -35,7 +35,7 @@ async def unarchive_user(client, message):
     ggl = await EMO.GAGAL(client)
     if len(message.command) <2:
         return await message.reply(f"{ggl}mohon gunakan arch all, users, group")
-    anjai = await message.reply(f"{prs}proccesing...")
+    anjai = await message.reply(f"{prs}Prosess Cess...")
     anjir = message.command[1]
     xx = await get_data_id(client, anjir)
     for anu in xx:
