@@ -7,7 +7,7 @@ from pyrogram.types import Message
 
 __MODULE__ = "ᴇɴᴄʀʏᴘᴛ ʜᴀʀᴅ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Encrypt JS</b>
+<blockquote><b>Bantuan Untuk Encrypt JS Cess</b>
 
 Perintah:
 <code>{0}enc</code> → Balas file .js untuk dienkripsi.
@@ -23,19 +23,19 @@ if not shutil.which("uglifyjs"):
 @PY.TOP_CMD
 async def encrypt_js(client: Client, message: Message):
     if not message.reply_to_message or not message.reply_to_message.document:
-        return await message.reply("😠 Silakan balas file .js untuk dienkripsi.")
+        return await message.reply("😠 Silakan Balas File .js Untuk Dienkripsi.")
 
     file_info = message.reply_to_message.document
     file_name = file_info.file_name
 
     if not file_name.endswith('.js'):
-        return await message.reply("❌ File harus berekstensi .js!")
+        return await message.reply("❌ File Harus Berekstensi .js!")
 
     # Mengunduh file dari Telegram
     msg = await message.reply("⚡ Mengunduh file...")
     file_path = await client.download_media(message.reply_to_message.document)
 
-    await msg.edit("⚡ Memproses encrypt hard code...")
+    await msg.edit("⚡ Memproses Encrypt Hard Code Cess...")
 
     # Buat nama file hasil enkripsi
     encrypted_file_path = f"./encrypted_{file_name}"
@@ -46,11 +46,11 @@ async def encrypt_js(client: Client, message: Message):
 
         await message.reply_document(
             encrypted_file_path,
-            caption="✅ **File berhasil dienkripsi!**\n🔒 @kingprem_bot"
+            caption="✅ **File Berhasil Dienkripsi!**\n🔒 @errcessbot"
         )
 
     except subprocess.CalledProcessError:
-        await msg.edit("❌ Gagal mengenkripsi file!")
+        await msg.edit("❌ Gagal Mengenkripsi File!")
 
     # Hapus file sementara
     os.remove(file_path)

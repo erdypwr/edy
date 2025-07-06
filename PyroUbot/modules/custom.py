@@ -2,12 +2,12 @@ from PyroUbot import *
 from pyrogram.enums import ParseMode
 __MODULE__ = "ᴄᴜꜱᴛᴏᴍ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Custom
+<blockquote>Bantuan Untuk Custom Cess
 
 perintah : <code>{0}lihatemoji</code>
 
 perintah : <code>{0}text</code>
-   untuk merubah text pada tampilan tertentu
+   Untuk Merubah Text Pada Tampilan Tertentu Cess
 
 query:
   <code>{0}pong<code> | default : ± pong
@@ -31,10 +31,10 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     try:
-        msg = await message.reply(f"{prs}memproses...", quote=True)
+        msg = await message.reply(f"{prs}Prosess Cess...", quote=True)
 
         if len(message.command) < 3:
-            return await msg.edit(f"{ggl}tolong masukkan query dan valuenya")
+            return await msg.edit(f"{ggl}Tolong Masukkan Query dan Valuenya Cess")
 
         query_mapping = {
             "pong": "STRING_PONG",
@@ -53,10 +53,10 @@ async def _(client, message):
             query_var = query_mapping[mapping.lower()]
             await set_vars(client.me.id, query_var, value)
             await msg.edit(
-                f"{brhsl}text berhasil di setting ke: {value}"
+                f"{brhsl}Text Berhasil Di Setting Ke: {value}"
             )
         else:
-            await msg.edit(f"{ggl}mapping tidak ditemukan")
+            await msg.edit(f"{ggl}Mapping Tidak Ditemukan Cess, Gunakan: {', '.join(query_mapping.keys())}")
 
     except Exception as error:
         await msg.edit(str(error))
@@ -65,7 +65,7 @@ async def _(client, message):
 async def extract_emoji(client, message):
     try:
         if not message.reply_to_message:
-            return await message.reply_text("Please reply to a message to extract custom emoji IDs.")
+            return await message.reply_text("Harap Membalas Pesan Untuk Mengekstrak ID emoji Khusus Cess.")
         
         custom_emoji_ids = [entity.custom_emoji_id for entity in message.reply_to_message.entities]
         emojis = extract_emojis_from_entities(message.reply_to_message)

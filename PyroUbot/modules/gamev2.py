@@ -2,7 +2,7 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴀᴍᴇ ᴠ2"
 __HELP__ = """
-<blockquote>Bantuan Untuk gamev2
+<blockquote>Bantuan Untuk gamev2 Cess
 
 perintah : <code>{0}gamev2</code>
    untuk memunculkan game random 2

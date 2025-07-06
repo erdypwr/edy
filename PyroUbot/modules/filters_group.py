@@ -2,7 +2,7 @@ from PyroUbot import *
 
 __MODULE__ = "ғɪʟᴛᴇʀ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ғɪʟᴛᴇʀs 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ғɪʟᴛᴇʀs ᴄᴇꜱꜱ 』</b>
 
 <b>ɴᴏᴛᴇs: ᴛʜɪs ɪs ᴏɴʟʏ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ</b>
 
@@ -40,7 +40,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs ᴄᴇꜱꜱ...</b>")
     arg = get_arg(message)
 
     if not arg or arg.lower() not in ["off", "on"]:
@@ -58,7 +58,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs ᴄᴇꜱꜱ...</b>")
     type, reply = extract_type_and_msg(message)
 
     if not type and message.reply_to_message:
@@ -69,11 +69,11 @@ async def _(client, message):
         try:
             msg = await reply.copy(int(logs))
             await set_vars(client.me.id, type, msg.id, "FILTERS")
-            await txt.edit(f"<b>{sks}ғɪʟᴛᴇʀs {type} ʙᴇʀʜᴀsɪʟ ᴅɪ sɪᴍᴘᴀɴ</b>")
+            await txt.edit(f"<b>{sks}ғɪʟᴛᴇʀs {type} ʙᴇʀʜᴀsɪʟ ᴅɪ sɪᴍᴘᴀɴ ᴄᴇꜱꜱ</b>")
         except Exception as error:
             await txt.edit(error)
     else:
-        return await txt.edit(f"<b>{ggl}ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ғɪʟᴛᴇʀs ʙᴀʀᴜ</b>")
+        return await txt.edit(f"<b>{ggl}ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ғɪʟᴛᴇʀs ʙᴀʀᴜ ᴄᴇꜱꜱ</b>")
 
 
 @PY.UBOT("delfilter")
@@ -83,7 +83,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"<b>{prs}ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ..</b>")
+    txt = await message.reply(f"<b>{prs}ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ ᴄᴇꜱꜱ..</b>")
     arg = get_arg(message)
 
     if not arg:
@@ -93,11 +93,11 @@ async def _(client, message):
     all = await all_vars(client.me.id, "FILTERS")
 
     if arg not in all:
-        return await txt.edit(f"<b>{ggl}ғɪʟᴛᴇʀ {arg} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ</b>")
+        return await txt.edit(f"<b>{ggl}ғɪʟᴛᴇʀ {arg} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇꜱꜱ</b>")
 
     await remove_vars(client.me.id, arg, "FILTERS")
     await client.delete_messages(logs, all[arg])
-    return await txt.edit(f"<b>ғɪʟᴛᴇʀ {arg} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs{sks}</b>")
+    return await txt.edit(f"<b>ғɪʟᴛᴇʀ {arg} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs ᴄᴇꜱꜱ{sks}</b>")
 
 
 @PY.UBOT("filters")
@@ -111,6 +111,6 @@ async def _(client, message):
             msg += f"├<emoji id=5316946234278169031>⏩</emoji> {x}\n"
         msg += f" ⤿ ᴛᴏᴛᴀʟ ғɪʟᴛᴇʀs: {len(vars)}"
     else:
-        msg = "<emoji id=6114014038960638990>❌</emoji> ᴛɪᴅᴀᴋ ᴀᴅᴀ ғɪʟᴛᴇʀs ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ"
+        msg = "<emoji id=6114014038960638990>❌</emoji> ᴛɪᴅᴀᴋ ᴀᴅᴀ ғɪʟᴛᴇʀs ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴄᴇꜱꜱ"
 
     return await message.reply(msg, quote=True)

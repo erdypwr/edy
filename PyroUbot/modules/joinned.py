@@ -8,22 +8,22 @@ from PyroUbot import *
 
 __MODULE__ = "ᴊᴏɪɴʟᴇᴀᴠᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Joinleave
+<blockquote>Bantuan Untuk Joinleave Cess</blockquote>
 
 perintah : <code>{0}kickme</code>
-    keluar dari group telegram
+    Keluar Dari Group Telegram
 
 perintah : <code>{0}join</code>
-    join ke group melalui tautan atau username group
+    Join Ke Group Melalui Tautan Atau Username Group
 
 perintah : <code>{0}leaveallgc</code>
-    keluar semua dari group telegram kecuali admin/owner
+    Keluar Semua Dari Group Telegram Kecuali Admin/Owner
 
 perintah : <code>{0}leaveallmute</code>
-    keluar dari grup yang membatasi anda
+    Keluar Dari Grup Yang Membatasi Anda
 
 perintah : <code>{0}leaveallch</code>
-    kekuar semua dari channel kecuali admin/owner</blockquote>
+    Keluar Semua Dari Channel Kecuali Admin/Owner</blockquote>
 """
 
 
@@ -35,11 +35,11 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
-    xxnx = await message.reply(f"{prs}memproꜱeꜱ...")
+    xxnx = await message.reply(f"{prs}Prosess Cess...")
     if message.chat.id in BLACKLIST_CHAT:
-        return await xxnx.edit(f"{ggl}perintah ini dilarang digunakan di group ini")
+        return await xxnx.edit(f"{ggl}Perintah Ini Dilarang Digunakan Di Group Ini Cess!")
     try:
-        await xxnx.edit_text(f"{client.me.first_name} telah meninggalkan grup ini, bye!!{sks}")
+        await xxnx.edit_text(f"{client.me.first_name} Telah Meninggalkan Grup Ini, Bye Cuki!!{sks}")
         await client.leave_chat(Man)
     except Exception as ex:
         await xxnx.edit_text(f"{ggl}ERROR: \n\n{str(ex)}")
@@ -53,9 +53,9 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
-    xxnx = await message.reply(f"{prs}memproꜱeꜱ...")
+    xxnx = await message.reply(f"{prs}Prosess Cess...")
     try:
-        await xxnx.edit(f"{sks}berhaꜱil bergabung ke chat id: {Man}")
+        await xxnx.edit(f"{sks}Berhasil Bergabung Ke Chat ID Cess: {Man}")
         await client.join_chat(Man)
     except Exception as ex:
         await xxnx.edit(f"{ggl}ERROR: \n\n{str(ex)}")
@@ -67,7 +67,7 @@ async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
-    Man = await message.reply(f"{prs}global leave dari obrolan group...")
+    Man = await message.reply(f"{prs}Global Leave Dari Obrolan Group Cess...")
     er = 0
     done = 0
     async for dialog in client.get_dialogs():
@@ -81,7 +81,7 @@ async def _(client, message):
             except BaseException:
                 er += 1
     await Man.edit(
-        f"{sks}berhaꜱil keluar dari {done} group\n{ggl}gagal keluar dari {er} group"
+        f"{sks}Berhasil Keluar Dari {done} Group\n{ggl}Gagal Keluar Dari {er} Group Cess"
     )
 
 
@@ -91,7 +91,7 @@ async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
-    Man = await message.reply(f"{prs}global leave dari channel...")
+    Man = await message.reply(f"{prs}Global Leave Dari Channel Cess...")
     er = 0
     done = 0
     async for dialog in client.get_dialogs():
@@ -105,7 +105,7 @@ async def _(client, message):
             except BaseException:
                 er += 1
     await Man.edit(
-        f"{sks}berhaꜱil keluar dari {done} channel\n{ggl}gagal keluar dari {er} channel"
+        f"{sks}Berhasil Keluar Dari {done} Channel\n{ggl}Gagal Keluar Dari {er} Channel Cess"
     )
 
 @PY.UBOT("leaveallmute")
@@ -115,7 +115,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     done = 0
-    Haku = await message.reply_text(f"{prs}proccesing...")
+    Haku = await message.reply_text(f"{prs}Prosess Cess...")
     async for dialog in client.get_dialogs():
         if dialog.chat.type in (ChatType.SUPERGROUP, ChatType.GROUP):
             chat_id = dialog.chat.id
@@ -127,5 +127,5 @@ async def _(client, message):
             except Exception:
                 pass
     await Haku.edit(f"""
-{sks}berhasil keluar dari : {done} grup yang telah membatasi kamu
+{sks}Berhasil Keluar Dari : {done} Grup Yang Telah Membatasi Elu Cess!
 """)

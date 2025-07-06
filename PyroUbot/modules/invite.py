@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "ɪɴᴠɪᴛᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Invite
+<blockquote>Bantuan Untuk Invite Cess</blockquote>
 
 perintah : <code>{0}invite</code> [username]
-    mengundang anggota ke group</blockquote>
+    Mengundang Anggota Ke Group</blockquote>
 """
 
 
@@ -20,13 +20,13 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    mg = await message.reply(f"{prs}menambahkan pengguna!")
+    mg = await message.reply(f"{prs}Menambahkan Pengguna Cess!")
     if len(message.command) < 2:
         return await mg.delete()
     user_s_to_add = message.text.split(" ", 1)[1]
     if not user_s_to_add:
         await mg.edit(
-            f"{ktrng}beri saya pengguna untuk ditambahkan!\nperiksa menu bantuan untuk info lebih lanjut!"
+            f"{ktrng}Berikan User Untuk Ditambahkan!\nPeriksa Menu Bantuan Untuk Info Lebih Lanjut Cess!"
         )
         return
     user_list = user_s_to_add.split(" ")
@@ -34,7 +34,7 @@ async def _(client, message):
         await client.add_chat_members(message.chat.id, user_list, forward_limit=100)
     except Exception as e:
         return await mg.edit(f"{e}")
-    await mg.edit(f"{brhsl}berhasil ditambahkan {len(user_list)} ke grup ini")
+    await mg.edit(f"{brhsl}Berhasil Ditambahkan {len(user_list)} Ke Grup Ini Cess!")
 
 
 

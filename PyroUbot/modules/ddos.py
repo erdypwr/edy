@@ -10,14 +10,14 @@ time_limit = 300  # Batas waktu maksimum (dalam detik)
 
 __MODULE__ = "ᴅᴅᴏs"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk ddos</b>
+<blockquote><b>Bantuan Untuk DDOS Cess</b>
 
 • <b>Perintah</b> : <code>{0}ddosfloods</code> <b>[Target] [Time]</b>
 • <b>Perintah</b> : <code>{0}ddoshttp</code> <b>[Target] [Time]</b>
 • <b>Perintah</b> : <code>{0}ddostls</code> <b>[Target] [Time]</b>
 • <b>Perintah</b> : <code>{0}ddosbypass</code> <b>[Target] [Time]</b>
 • <b>Perintah</b> : <code>{0}ddosttr</code> <b>[Target] [Time]</b>
-• <b>Penjelasan : Gunakan perintah <code>{0}ddos untuk menyerang website
+• <b>Penjelasan : Gunakan Perintah <code>{0}DDOS Untuk Menyerang Website</code></b>
 
 Total Methods: 5
 Time Limit: 300
@@ -39,19 +39,19 @@ async def ddos_command(client, message):
     # Ambil argumen dari pesan
     args = message.text.split(maxsplit=2)
     if len(args) < 3:
-        await message.reply_text("<blockquote><b>Gunakan format: ddosfloods [target] [time]</b></blockquote>")
+        await message.reply_text("<blockquote><b>Gunakan Format: ddosfloods [target] [time] Cess</b></blockquote>")
         return
 
     target = args[1]
     try:
         time = int(args[2])
     except ValueError:
-        await message.reply_text("Waktu harus berupa angka!")
+        await message.reply_text("Waktu Harus Berupa Angka Cess!")
         return
 
     # Validasi waktu
     if time > time_limit or time <= 0:
-        await message.reply_text(f"Waktu tidak valid atau melebihi batas {time_limit} detik.")
+        await message.reply_text(f"Waktu Tidak Valid Atau Melebihi Batas {time_limit} Detik Cess.")
         return
 
     # Jalankan proses serangan
@@ -68,7 +68,7 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Glenzy-Attack🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Glenzy-Attack🔥🔥</b></blockquote>",
+        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
         )
@@ -81,19 +81,19 @@ async def ddos_command(client, message):
     # Ambil argumen dari pesan
     args = message.text.split(maxsplit=2)
     if len(args) < 3:
-        await message.reply_text("<blockquote><b>Gunakan format: ddoshttp [target] [time]</b></blockquote>")
+        await message.reply_text("<blockquote><b>Gunakan Format: ddoshttp [target] [time] Cess</b></blockquote>")
         return
 
     target = args[1]
     try:
         time = int(args[2])
     except ValueError:
-        await message.reply_text("Waktu harus berupa angka!")
+        await message.reply_text("Waktu Harus Berupa Angka Cess!")
         return
 
     # Validasi waktu
     if time > time_limit or time <= 0:
-        await message.reply_text(f"Waktu tidak valid atau melebihi batas {time_limit} detik.")
+        await message.reply_text(f"Waktu Tidak Valid Atau Melebihi Batas {time_limit} Detik Cess.")
         return
 
     # Jalankan proses serangan
@@ -110,7 +110,7 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Glenzy-Attack🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Glenzy-Attack🔥🔥</b></blockquote>",
+        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
         )
@@ -123,19 +123,19 @@ async def ddos_command(client, message):
     # Ambil argumen dari pesan
     args = message.text.split(maxsplit=2)
     if len(args) < 3:
-        await message.reply_text("<blockquote><b>Gunakan format: ddostls [target] [time]</b></blockquote>")
+        await message.reply_text("<blockquote><b>Gunakan Format: ddostls [target] [time] Cess</b></blockquote>")
         return
 
     target = args[1]
     try:
         time = int(args[2])
     except ValueError:
-        await message.reply_text("Waktu harus berupa angka!")
+        await message.reply_text("Waktu Harus Berupa Angka Cess!")
         return
 
     # Validasi waktu
     if time > time_limit or time <= 0:
-        await message.reply_text(f"Waktu tidak valid atau melebihi batas {time_limit} detik.")
+        await message.reply_text(f"Waktu Tidak Valid Atau Melebihi Batas {time_limit} Detik Cess.")
         return
 
     # Jalankan proses serangan
@@ -152,7 +152,7 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Glenzy-Attack🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Glenzy-Attack🔥🔥</b></blockquote>",
+        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
         )
@@ -165,19 +165,19 @@ async def ddos_command(client, message):
     # Ambil argumen dari pesan
     args = message.text.split(maxsplit=2)
     if len(args) < 3:
-        await message.reply_text("<blockquote><b>Gunakan format: ddosbypass [target] [time]</b></blockquote>")
+        await message.reply_text("<blockquote><b>Gunakan Format: ddosbypass [target] [time] Cess</b></blockquote>")
         return
 
     target = args[1]
     try:
         time = int(args[2])
     except ValueError:
-        await message.reply_text("Waktu harus berupa angka!")
+        await message.reply_text("Waktu Harus Berupa Angka Cess!")
         return
 
     # Validasi waktu
     if time > time_limit or time <= 0:
-        await message.reply_text(f"Waktu tidak valid atau melebihi batas {time_limit} detik.")
+        await message.reply_text(f"Waktu Tidak Valid Atau Melebihi Batas {time_limit} Detik Cess.")
         return
 
     # Jalankan proses serangan
@@ -194,7 +194,7 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Glenzy-Attack🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Glenzy-Attack🔥🔥</b></blockquote>",
+        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
         )
@@ -207,19 +207,19 @@ async def ddos_command(client, message):
     # Ambil argumen dari pesan
     args = message.text.split(maxsplit=2)
     if len(args) < 3:
-        await message.reply_text("<blockquote><b>Gunakan format: ddosttr [target] [time]</b></blockquote>")
+        await message.reply_text("<blockquote><b>Gunakan Format: ddosttr [target] [time] Cess</b></blockquote>")
         return
 
     target = args[1]
     try:
         time = int(args[2])
     except ValueError:
-        await message.reply_text("Waktu harus berupa angka!")
+        await message.reply_text("Waktu Harus Berupa Angka Cess!")
         return
 
     # Validasi waktu
     if time > time_limit or time <= 0:
-        await message.reply_text(f"Waktu tidak valid atau melebihi batas {time_limit} detik.")
+        await message.reply_text(f"Waktu Tidak Valid Atau Melebihi Batas {time_limit} Detik Cess.")
         return
 
     # Jalankan proses serangan
@@ -236,7 +236,7 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Glenzy-Attack🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Glenzy-Attack🔥🔥</b></blockquote>",
+        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
         )
@@ -251,6 +251,6 @@ async def stop_attack(client, message):
         for process in processes[chat_id]:
             process.terminate()
         processes[chat_id] = []
-        await message.reply_text("Attack berhasil dihentikan!")
+        await message.reply_text("Attack Berhasil Dihentikan Cess!")
     else:
-        await message.reply_text("Tidak ada proses yang berjalan untuk dihentikan.")
+        await message.reply_text("Tidak Ada Proses Yang Berjalan Untuk Dihentikan Cess.")

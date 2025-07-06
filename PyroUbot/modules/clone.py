@@ -5,12 +5,12 @@ from PyroUbot import *
 
 __MODULE__ = "𝙲𝙻𝙾𝙽𝙴"
 __HELP__ = """
-📚 Folder Untuk Clone
+📚 Folder Untuk Clone Cess
 
 🚦 Perintah : {0}clone @username
-🦠 Penjelasan : Untuk MenClone Seseorang User.
-🚦 Perintah : {0}clone kembali 
-🦠 Penjelasan : Untuk Mengembalikan Kamu Ke Identitas Sebelumnya.
+🦠 Penjelasan : Untuk MenClone Seseorang User Cess.
+🚦 Perintah : {0}clone kembali
+🦠 Penjelasan : Untuk Mengembalikan Kamu Ke Identitas Sebelumnya Cess.
 """
 
 STORAGE = {}
@@ -30,7 +30,7 @@ async def impostor(client: Client, message: Message):
 
     if "kembali" in inputArgs:
         if user_id not in STORAGE:
-            return await xx.edit("📑 Anda harus meng-clone seseorang dulu sebelum mengembalikan identitas!")
+            return await xx.edit("📑 Anda Harus Meng-Clone Seseorang Dulu Sebelum Mengembalikan Identitas Cess!")
 
         await message.edit("⏰ Mengembalikan Identitas Asli...")
         await update_profile(client, STORAGE[user_id], restore=True)
@@ -41,12 +41,12 @@ async def impostor(client: Client, message: Message):
         try:
             user = await client.get_users(inputArgs)
         except:
-            return await xx.edit("❌ Nama pengguna/ID tidak valid.")
+            return await xx.edit("❌ Nama Pengguna/ID Tidak Valid Cess")
         userObj = await client.get_chat(user.id)
     elif message.reply_to_message:
         reply_user = message.reply_to_message.from_user
         if not reply_user:
-            return await xx.edit("❌ Tidak dapat menyamar sebagai admin anonim 🥺")
+            return await xx.edit("❌ Tidak Dapat Menyamar Sebagai Admin Anonim Cess 🥺")
         userObj = await client.get_chat(reply_user.id)
     else:
         return await xx.edit("❌ Gunakan .clone @username atau reply pesan pengguna.")
@@ -56,9 +56,9 @@ async def impostor(client: Client, message: Message):
         my_photos = [p async for p in client.get_chat_photos("me")]
         STORAGE[user_id] = {"profile": my_profile, "photos": my_photos}
 
-    await xx.edit("Mencuri Identitas Si Goblok...")
+    await xx.edit("Mencuri Identitas Si Cuki...")
     await update_profile(client, userObj)
-    await xx.edit("Aowkaowkw Gw Jadi Lu Ni, Lu Clone Gw Ya🥴")
+    await xx.edit("Aowkaowkw Gw Jadi Lu Ni, Cuki🥴")
 
 
 async def update_profile(client: Client, userObj, restore=False):

@@ -3,7 +3,7 @@ from PyroUbot import *
 import requests
 
 __MODULE__ = "ᴇᴘʜᴏᴛᴏ"
-__HELP__ = """**「 BANTUAN UNTUK MODULE EPHOTO 」**
+__HELP__ = """**「 BANTUAN UNTUK MODULE EPFOTO CESS 」**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .television (ᴛᴇxᴛ)**
 𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴛᴇʟᴇᴠɪsɪᴏɴ**
@@ -79,7 +79,7 @@ def robottt(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .hororrr peno")
+        await message.reply_text("Contoh : .hororrr peno")
         return
 
     request_text = args[1]
@@ -107,13 +107,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
-                                  
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
+
 @PY.UBOT("coverpubg")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .coverpubg peno")
+        await message.reply_text("Contoh : .coverpubg peno")
         return
 
     request_text = args[1]
@@ -141,13 +141,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
-                                  
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
+
 @PY.UBOT("blackpink")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .blackpink peno")
+        await message.reply_text("Contoh : .blackpink peno")
         return
 
     request_text = args[1]
@@ -175,12 +175,12 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 @PY.UBOT("blackpink2")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .blackpink peno")
+        await message.reply_text("Contoh : .blackpink peno")
         return
 
     request_text = args[1]
@@ -208,12 +208,12 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 @PY.UBOT("television")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .television peno")
+        await message.reply_text("Contoh : .television peno")
         return
 
     request_text = args[1]
@@ -241,13 +241,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 
 @PY.UBOT("glasse")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .gllaases peno")
+        await message.reply_text("Contoh : .glasse peno")
         return
 
     request_text = args[1]
@@ -275,5 +275,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
-                                                                                                                              
+        await message.reply_text("Apikey Sedang Bermasalah Cess")

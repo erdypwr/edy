@@ -28,7 +28,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs ᴄᴇꜱꜱ...</b>")
     arg = get_arg(message)
 
     if not arg or arg.lower() not in ["off", "on"]:
@@ -46,22 +46,22 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs ᴄᴇꜱꜱ...</b>")
     type, reply = extract_type_and_msg(message)
 
     if not type and message.reply_to_message:
-        return await txt.edit(f"{ggl}<b>ʜᴀʀᴀᴘ ʙᴀʟᴀs ᴘᴇsᴀɴ ᴅᴀɴ ᴋᴀsɪʜ ɴᴀᴍᴀ</b>")
+        return await txt.edit(f"{ggl}<b>ʜᴀʀᴀᴘ ʙᴀʟᴀs ᴘᴇsᴀɴ ᴅᴀɴ ᴋᴀsɪʜ ɴᴀᴍᴀ ᴄᴇꜱꜱ</b>")
 
     logs = client.me.id
     if bool(logs):
         try:
             msg = await reply.copy(int(logs))
             await set_vars(client.me.id, type, msg.id, "PVT_FILTERS")
-            await txt.edit(f"<b>{sks}ғɪʟᴛᴇʀs {type} ʙᴇʀʜᴀsɪʟ ᴅɪ sɪᴍᴘᴀɴ</b>")
+            await txt.edit(f"<b>{sks}ғɪʟᴛᴇʀs {type} ʙᴇʀʜᴀsɪʟ ᴅɪ sɪᴍᴘᴀɴ ᴄᴇꜱꜱ</b>")
         except Exception as error:
             await txt.edit(error)
     else:
-        return await txt.edit(f"<b>{ggl}ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ғɪʟᴛᴇʀs ʙᴀʀᴜ</b>")
+        return await txt.edit(f"<b>{ggl}ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ғɪʟᴛᴇʀs ʙᴀʀᴜ ᴄᴇꜱꜱ</b>")
 
 
 @PY.UBOT("pdelfilter")
@@ -71,21 +71,21 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"<b>{prs}ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ..</b>")
+    txt = await message.reply(f"<b>{prs}ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ ᴄᴇꜱꜱ..</b>")
     arg = get_arg(message)
 
     if not arg:
-        return await txt.edit(f"{ggl}<code>{message.text.split()[0]}</code> <b>ɴᴀᴍᴀ ғɪʟᴛᴇʀ</b>")
+        return await txt.edit(f"{ggl}<code>{message.text.split()[0]}</code> <b>ɴᴀᴍᴀ ғɪʟᴛᴇʀ ᴄᴇꜱꜱ</b>")
 
     logs = client.me.id
     all = await all_vars(client.me.id, "PVT_FILTERS")
 
     if arg not in all:
-        return await txt.edit(f"<b>{ggl}ғɪʟᴛᴇʀ {arg} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ</b>")
+        return await txt.edit(f"<b>{ggl}ғɪʟᴛᴇʀ {arg} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇꜱꜱ</b>")
 
     await remove_vars(client.me.id, arg, "PVT_FILTERS")
     await client.delete_messages(logs, all[arg])
-    return await txt.edit(f"<b>ғɪʟᴛᴇʀ {arg} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs{sks}</b>")
+    return await txt.edit(f"<b>ғɪʟᴛᴇʀ {arg} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs ᴄᴇꜱꜱ{sks}</b>")
 
 @PY.UBOT("pfilters")
 @PY.TOP_CMD
@@ -93,11 +93,11 @@ async def _(client, message):
 async def _(client, message):
     vars = await all_vars(client.me.id, "PVT_FILTERS")
     if vars:
-        msg = "<emoji id=5411165185253592513>📝</emoji> ᴅᴀғᴛᴀʀ ғɪʟᴛᴇʀs\n"
+        msg = "<emoji id=5411165185253592513>📝</emoji> ᴅᴀғᴛᴀʀ ғɪʟᴛᴇʀs ᴄᴇꜱꜱ\n"
         for x in vars.keys():
             msg += f"├<emoji id=5316946234278169031>⏩</emoji> {x}\n"
         msg += f" ⤿ ᴛᴏᴛᴀʟ ғɪʟᴛᴇʀs: {len(vars)}"
     else:
-        msg = "<emoji id=6114014038960638990>❌</emoji> ᴛɪᴅᴀᴋ ᴀᴅᴀ ғɪʟᴛᴇʀs ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ"
+        msg = "<emoji id=6114014038960638990>❌</emoji> ᴛɪᴅᴀᴋ ᴀᴅᴀ ғɪʟᴛᴇʀs ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴄᴇꜱꜱ"
 
     return await message.reply(msg, quote=True)

@@ -2,7 +2,7 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴀᴍᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Game
+<blockquote>Bantuan Untuk Game Cess
 
 perintah : <code>{0}catur</code>
    untuk memunculkan game catur

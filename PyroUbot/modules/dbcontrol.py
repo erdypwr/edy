@@ -9,17 +9,17 @@ from PyroUbot import *
 
 __MODULE__ = "ᴅʙ ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk DB Control</blockquote></b>
+<blockquote><b>Bantuan Untuk DB Control Cess</blockquote></b>
 
-<blockquote><b>perintah : <code>{0}time</code>
+<blockquote><b>Perintah : <code>{0}time</code>
     Untuk Menambah - Mengurangi Masa Aktif User</blockquote></b>
 
-<blockquote><b>perintah : <code>{0}cek</code>
+<blockquote><b>Perintah : <code>{0}cek</code>
     Untuk Melihat Masa Aktif User</blockquote></b>
 
-<blockquote><b>perintah : <code>{0}addadmin</code> - <code>{0}unadmin</code> - <code>{0}getadmin</code></blockquote></b>
+<blockquote><b>Perintah : <code>{0}addadmin</code> - <code>{0}unadmin</code> - <code>{0}getadmin</code></blockquote></b>
 
-<blockquote><b>perintah : <code>{0}seles</code> - <code>{0}unseles</code> - <code>{0}getseles</code></blockquote></b>
+<blockquote><b>Perintah : <code>{0}seles</code> - <code>{0}unseles</code> - <code>{0}getseles</code></blockquote></b>
 """
 
 @PY.BOT("prem")
@@ -57,7 +57,7 @@ async def _(client, message):
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: {user.id}</b>
 <b>ᴇxᴘɪʀᴇᴅ: {get_bulan} ʙᴜʟᴀɴ</b>
-<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{client.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ</blockquote></b>
+<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{client.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ Cess</blockquote></b>
 
 <blockquote>ᴄᴀʀᴀ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ :
 - sɪʟᴀʜᴋᴀɴ /start ᴅᴜʟᴜ ʙᴏᴛ @ubotjella_bot
@@ -73,11 +73,11 @@ async def _(client, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "🔱 seller",
+                            "🔱 Seller",
                             callback_data=f"profil {message.from_user.id}",
                         ),
                         InlineKeyboardButton(
-                            "customer ⚜️", callback_data=f"profil {user_id}"
+                            "Customer ⚜️", callback_data=f"profil {user_id}"
                         ),
                     ],
                 ]
@@ -143,7 +143,7 @@ async def _(client, message):
             continue
         text += f"<blockquote><b>{userlist}\n</blockquote></b>"
     if not text:
-        await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴅɪᴛᴇᴍᴜᴋᴀɴ")
+        await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴅɪ ᴛᴇᴍᴜᴋᴀɴ ᴄᴇꜱꜱ")
     else:
         await message.reply_text(text)
 
@@ -170,7 +170,7 @@ async def _(client, message):
  ɪɴғᴏʀᴍᴀᴛɪᴏɴ :
  <blockquote><b>name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
  <b>id: {user.id}</b>
- <b>keterangan: sudah seller</b></blockquote>
+ <b>keterangan: Sudah Seller Cess</b></blockquote>
 """
         )
 
@@ -180,7 +180,7 @@ async def _(client, message):
  ɪɴғᴏʀᴍᴀᴛɪᴏɴ :
  <blockquote><b>name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
  <b>id: {user.id}</b>
- <b>keterangan: seller</b></blockquote>
+ <b>keterangan: Seller</b></blockquote>
 """
         )
     except Exception as error:
@@ -206,20 +206,20 @@ async def _(client, message):
 
     if user.id not in seles_users:
         return await msg.edit(f"""
- ɪɴғᴏʀᴍᴀᴛɪᴏɴ :
+ ɪɴғᴏʀᴍᴀᴛɪᴏɴ Cess :
  <blockquote><b>name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
  </b>id: {user.id}</b>
- </b>keterangan: tidak dalam daftar</b></blockquote>
+ </b>keterangan: Tidak Dalam Daftar</b></blockquote>
 """
         )
 
     try:
         await remove_from_vars(client.me.id, "SELER_USERS", user.id)
         return await msg.edit(f"""
- ɪɴғᴏʀᴍᴀᴛɪᴏɴ :
+ ɪɴғᴏʀᴍᴀᴛɪᴏɴ Cess :
  <blockquote><b>name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
  </b>id: {user.id}</b>
- </b>keterangan: unseller</b></blockquote>
+ </b>keterangan: Unseller</b></blockquote>
 """
         )
     except Exception as error:
@@ -233,7 +233,7 @@ async def _(client, message):
     seles_users = await get_list_from_vars(client.me.id, "SELER_USERS")
 
     if not seles_users:
-        return await Sh.edit("daftar seller kosong")
+        return await Sh.edit("Daftar Seller Kosong Cess")
 
     seles_list = []
     for user_id in seles_users:
@@ -247,13 +247,13 @@ async def _(client, message):
 
     if seles_list:
         response = (
-            "📋 ᴅᴀғᴛᴀʀ sᴇʟʟᴇʀ:\n\n"
+            "📋 ᴅᴀғᴛᴀʀ sᴇʟʟᴇʀ ᴄᴇꜱꜱ:\n\n"
             + "\n".join(seles_list)
-            + f"\n\n<blockquote.⚜️ total seller: {len(seles_list)}</blockquote>"
+            + f"\n\n<blockquote.⚜️ Total Seller Cess: {len(seles_list)}</blockquote>"
         )
         return await Sh.edit(response)
     else:
-        return await Sh.edit("tidak dapat mengambil daftar seller")
+        return await Sh.edit("Tidak Dapat Mengambil Daftar Seller Cess")
 
 
 @PY.BOT("time")
@@ -262,7 +262,7 @@ async def _(client, message):
     Tm = await message.reply("Prosess Cess . . .")
     bajingan = message.command
     if len(bajingan) != 3:
-        return await Tm.edit(f"woi bang ! \n🗿mohon gunakan /set_time user_id hari")
+        return await Tm.edit(f"Woi Cuki ! \n🗿Mohon Gunakan /set_time user_id hari")
     user_id = int(bajingan[1])
     get_day = int(bajingan[2])
     print(user_id , get_day)
@@ -288,23 +288,23 @@ async def _(client, message):
 @PY.BOT("cek")
 @PY.SELLER
 async def _(client, message):
-    Sh = await message.reply("processing . . .")
+    Sh = await message.reply("Prosess Cess . . .")
     user_id = await extract_user(message)
     if not user_id:
-        return await Sh.edit("pengguna tidak temukan")
+        return await Sh.edit("Pengguna Tidak Ditemukan Cess\n\nGunakan Perintah: /cek [user_id/username]")
     try:
         get_exp = await get_expired_date(user_id)
         sh = await client.get_users(user_id)
     except Exception as error:
-        return await Sh.ediit(error)
+        return await Sh.edit(error)
     if get_exp is None:
         await Sh.edit(f"""
-INFORMATION
+INFORMATION Cess
 name : {sh.mention}
 plan : none
 id : {user_id}
 prefix : .
-expired : nonaktif
+expired : Nonaktif
 """)
     else:
         SH = await ubot.get_prefix(user_id)
@@ -314,7 +314,7 @@ expired : nonaktif
         else:
             status = "Premium"
         await Sh.edit(f"""
-INFORMATION
+INFORMATION Cess
 name : {sh.mention}
 plan : {status}
 id : {user_id}
@@ -343,20 +343,20 @@ async def _(client, message):
 
     if user.id in admin_users:
         return await msg.edit(f"""
-💬 INFORMATION
+💬 INFORMATION Cess
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: sudah dalam daftar
+keterangan: Sudah Dalam Daftar Admin
 """
         )
 
     try:
         await add_to_vars(client.me.id, "ADMIN_USERS", user.id)
         return await msg.edit(f"""
-💬 INFORMATION
+💬 INFORMATION Cess
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: admin
+keterangan: Admin
 """
         )
     except Exception as error:
@@ -382,20 +382,20 @@ async def _(client, message):
 
     if user.id not in admin_users:
         return await msg.edit(f"""
-💬 INFORMATION
+💬 INFORMATION Cess
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: tidak daam daftar
+keterangan: Tidak Dalam Daftar
 """
         )
 
     try:
         await remove_from_vars(client.me.id, "ADMIN_USERS", user.id)
         return await msg.edit(f"""
-💬 INFORMATION
+💬 INFORMATION Cess
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: unadmin
+keterangan: Unadmin
 """
         )
     except Exception as error:
@@ -409,7 +409,7 @@ async def _(client, message):
     admin_users = await get_list_from_vars(client.me.id, "ADMIN_USERS")
 
     if not admin_users:
-        return await Sh.edit("<s>daftar admin kosong</s>")
+        return await Sh.edit("<s>Daftar Admin Kosong Cess</s>")
 
     admin_list = []
     for user_id in admin_users:
@@ -423,13 +423,13 @@ async def _(client, message):
 
     if admin_list:
         response = (
-            "📋 daftar admin:\n\n"
+            "📋 Daftar Admin Cess:\n\n"
             + "\n".join(admin_list)
-            + f"\n\n⚜️ total admin: {len(admin_list)}"
+            + f"\n\n⚜️ Total Admin: {len(admin_list)}"
         )
         return await Sh.edit(response)
     else:
-        return await Sh.edit("tidak dapat mengambil daftar admin")
+        return await Sh.edit("Tidak Dapat Mengambil Daftar Admin Cess")
 
 @PY.BOT("superultra")
 @PY.SELLER
@@ -466,7 +466,7 @@ async def _(client, message):
 <b>name:</b> [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 <b>id:</b> <code>{user.id}</code>
 <b>expired:</b> <code>{get_bulan}</code> <b>bulan</b>
-<b>ꜱilahkan buka</b> @{client.me.mention} <b>untuk membuat uꜱerbot</b>
+<b>ꜱilahkan buka</b> @{client.me.mention} <b>untuk membuat userbot cess</b>
 <b>status : </b><code>[SuperUltra]</code>
 """
         )
@@ -477,11 +477,11 @@ async def _(client, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "🔱 seller",
+                            "🔱 Seller",
                             callback_data=f"profil {message.from_user.id}",
                         ),
                         InlineKeyboardButton(
-                            "customer ⚜️", callback_data=f"profil {user_id}"
+                            "Customer ⚜️", callback_data=f"profil {user_id}"
                         ),
                     ],
                 ]
@@ -511,7 +511,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <b>name:</b> [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 <b>id:</b> <code>{user.id}</code>
-<b>keterangan: tidak dalam daftar</b>
+<b>keterangan: Tidak Dalam Daftar</b>
 """
         )
     try:
@@ -520,7 +520,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <b>name:</b> [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 <b>id:</b> <code>{user.id}</code>
-<b>keterangan: none superultra</b>
+<b>keterangan: None Superultra</b>
 """
         )
     except Exception as error:
@@ -546,7 +546,7 @@ async def _(client, message):
     if prem_users:
         prem_list_text = "\n".join(prem_users)
         return await message.reply(
-            f"📋 daftar superultra:\n\n{prem_list_text}\n\n⚜️ total superultra: {total_prem_users}"
+            f"📋 Daftar Superultra:\n\n{prem_list_text}\n\n⚜️ Total Superultra: {total_prem_users}"
         )
     else:
-        return await message.reply("tidak ada pengguna superultra saat ini")
+        return await message.reply("Tidak Ada Pengguna Superultra Saat Ini Cess")

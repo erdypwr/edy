@@ -2,7 +2,7 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Control
+<blockquote>Bantuan Untuk Control Cess
 
 perintah : <code>{0}prefix</code>
    untuk merubah prefix/handler perintah
@@ -38,7 +38,7 @@ async def _(client, message):
     group_type = message.command[1]
     split = message.command[2:]
     group_name = " ".join(split)
-    xd = await message.reply("memproꜱeꜱ...")
+    xd = await message.reply("Prosess Cess...")
     desc = "Welcome To My " + ("Group" if group_type == "gc" else "Channel")
     if group_type == "group":
         _id = await client.create_supergroup(group_name, desc)
@@ -62,7 +62,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    Tm = await message.reply(f"{prs}memproses...", quote=True)
+    Tm = await message.reply(f"{prs}Prosess Cess...", quote=True)
     if len(message.command) < 2:
         return await Tm.edit(f"{ggl}{message.text} [simbol]")
     else:
@@ -143,15 +143,15 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     try:
-        msg = await message.reply(f"{prs}memproses...", quote=True)
+        msg = await message.reply(f"{prs}Prosess Cess...", quote=True)
 
         if not client.me.is_premium:
             return await msg.edit(
-                f"{ggl}beli prem dulu anjg"
+                f"{ggl}Beli Prem Dulu Anjing, Baru Bisa Setting Emoji Premium"
             )
 
         if len(message.command) < 3:
-            return await msg.edit(f"{ggl}tolong masukkan query dan valeu nya")
+            return await msg.edit(f"{ggl}Tolong Masukkan Query Dan Value Nya Cess\n\n")
 
         query_mapping = {
           "pong": "EMOJI_PING",
@@ -182,12 +182,12 @@ async def _(client, message):
             if emoji_id:
                 await set_vars(client.me.id, query_var, emoji_id)
                 await msg.edit(
-                    f"{brhsl}emoJi berhasil di setting ke: <emoji id={emoji_id}>{value}</emoji>"
+                    f"{brhsl}EmoJi Berhasil Di Setting Ke: <emoji id={emoji_id}>{value}</emoji>"
                 )
             else:
-                await msg.edit(f"{ggl}tidak dapat menemukan emoji premium")
+                await msg.edit(f"{ggl}Tidak Dapat Menemukan Emoji Premium Cess")
         else:
-            await msg.edit(f"{ggl}mapping tidak ditemukan")
+            await msg.edit(f"{ggl}Mapping Tidak Ditemukan Cess, Gunakan: {', '.join(query_mapping.keys())}")
 
     except Exception as error:
         await msg.edit(str(error))

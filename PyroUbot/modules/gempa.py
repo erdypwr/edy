@@ -6,7 +6,7 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴇᴍᴘᴀ"
 __HELP__ = """
-<blockquote><b>『 ɢᴇᴍᴘᴀ 』</b>
+<blockquote><b>『 ɢᴇᴍᴘᴀ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}gempa</code> 
    <i>penjelasan:</b> cek info sekitar gempa bmkg</i></blockquote>
@@ -17,8 +17,8 @@ async def stalkig(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    
-    jalan = await message.reply(f"{prs} Processing...")
+
+    jalan = await message.reply(f"{prs} Prosess Cess...")
     chat_id = message.chat.id
     url = f"https://api.botcahx.eu.org/api/search/gempa?apikey=025a6ef0"
     
@@ -54,10 +54,10 @@ async def stalkig(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
-    
+        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")

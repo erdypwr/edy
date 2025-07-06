@@ -3,7 +3,7 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴏᴏɢʟᴇ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Google
+<blockquote><b>Bantuan Untuk Google Cess</b>
 
 perintah : <code>{0}google [query]</code>
     search google</b></blockquote>
@@ -11,7 +11,7 @@ perintah : <code>{0}google [query]</code>
 
 @PY.UBOT("gg|google|googlesearch")
 async def google_search(client, message):
-    webevent = await message.reply("ᴍᴇɴᴇʟᴜsᴜʀɪ ɢᴏᴏɢʟᴇ...")
+    webevent = await message.reply("ᴍᴇɴᴇʟᴜsᴜʀɪ ɢᴏᴏɢʟᴇ ᴄᴇꜱꜱ...")
     match = get_arg(message)
     if not match:
         return await webevent.edit(f"{message.text} ǫᴜᴇʀʏ")
@@ -31,7 +31,7 @@ async def google_search(client, message):
                         desc = result.get("description")
                         msg += f"<b>- {title}</b>\n[𝗟𝗶𝗻𝗸 𝗦𝗼𝘂𝗿𝗰𝗲]({link})\n<blockquote><b>{desc}</b></blockquote>"
                     except Exception as e:
-                        print(f"Error processing result: {e}")
+                        print(f"Hasil Pemrosesan Kesalahan Cess: {e}")
                 
                 return await webevent.edit(
                     "\n\nʀᴇsᴜʟᴛs:\n"

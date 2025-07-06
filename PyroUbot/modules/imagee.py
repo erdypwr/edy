@@ -11,13 +11,13 @@ from PyroUbot import *
 
 __MODULE__ = "ɪᴍᴀɢᴇ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk image
+<blockquote><b>Bantuan Untuk image Cess</b>
 
 perintah : <code>{0}mirror</code>
-    Untuk mirror gambar
+    Untuk Mirror gambar Cess
    
 perintah : <code>{0}negative</code>
-    Untuk negative gambar</b></blockquote>
+    Untuk Negative gambar Cess</b></blockquote>
 """
 
 @PY.UBOT("negative")
@@ -60,9 +60,9 @@ async def negative_cmd(client, message):
 @PY.UBOT("mirror")
 async def miror_cmd(client, message):
     ureply = message.reply_to_message
-    kentu = await message.reply("<i>ᴍᴇᴍᴘʀᴏsᴇs</i>")
+    kentu = await message.reply("<i>ᴍᴇᴍᴘʀᴏsᴇs ᴄᴇꜱꜱ</i>")
     if not ureply:
-        return await kentu.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ")
+        return await kentu.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ ᴄᴇꜱꜱ")
     xnxx = await client.download_media(ureply, "./downloads/")
     if xnxx.endswith(".tgs"):
         cmd = ["lottie_convert.py", xnxx, "yin.png"]

@@ -9,22 +9,22 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴏɴᴠᴇʀᴛ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Clnvert
+<blockquote>Bantuan Untuk Convert Cess
 
 perintah : <code>{0}toanime</code>
-    untuk merubah photo/sticker/gif menjadi gambar anime
-  
+    Untuk Merubah Photo/Sticker/Gif Menjadi Gambar Anime Cess
+
 perintah : <code>{0}toimg</code>
-    untuk merubah sticker/gif menjadi photo
-  
+    Untuk Merubah Sticker/Gif Menjadi Photo Cess
+
 perintah : <code>{0}tosticker</code>
-    untuk merubah foto menjadi sticker
-  
+    Untuk Merubah Foto Menjadi Sticker Cess
+
 perintah : <code>{0}togif</code>
-    untuk merubah sticker menjadi gif
-  
+    Untuk Merubah Sticker Menjadi Gif Cess
+
 perintah : <code>{0}toaudio</code>
-    untuk merubah video menjadi audio mp3</blockquote>
+    Untuk Merubah Video Menjadi Audio MP3 Cess</blockquote>
 """
 
 
@@ -36,7 +36,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    Tm = await message.reply(f"{prs}tunggu sebentar...")
+    Tm = await message.reply(f"{prs}Tunggu Sebentar Cess...")
     if message.reply_to_message:
         if len(message.command) < 2:
             if message.reply_to_message.photo:
@@ -50,7 +50,7 @@ async def _(client, message):
                 get_photo = await dl_pic(client, message.reply_to_message)
             else:
                 return await Tm.edit(
-                    f"{ggl}mohon balas ke photo/striker/git"
+                    f"{ggl}Mohon Balas Ke Foto/Sticker/Gif Cess...\n\nAtau Gunakan Perintah: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
                 )
         else:
             if message.command[1] in ["foto", "profil", "photo"]:
@@ -65,7 +65,7 @@ async def _(client, message):
     else:
         if len(message.command) < 2:
             return await Tm.edit(
-                f"{ggl}balas ke foto dan saya akan merubah foto anda menjadi anime"
+                f"{ggl}Balas Ke Foto Dan Gua Akan Merubah Foto Anda Menjadi Anime Cess...\n\nAtau Gunakan Perintah: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
             )
         else:
             try:
@@ -88,7 +88,7 @@ async def _(client, message):
     ):
         anime_photo.append(
             InputMediaPhoto(
-                anime.photo.file_id, caption=f"{brhsl}powered by: {bot.me.mention}"
+                anime.photo.file_id, caption=f"{brhsl}Powered By: {bot.me.mention}"
             )
         )
     if anime_photo:
@@ -102,7 +102,7 @@ async def _(client, message):
     else:
         await client.send_message(
             message.chat.id,
-            f"{ggl}gagal merubah {file} menjadi gambar anime",
+            f"{ggl}Gagal Merubah {file} Menjadi Gambar Anime Cess...\n\nPastikan Anda Sudah Mengaktifkan Bot @Image_To_AnimeBot Dan Tidak Ada Masalah Dengan Bot Tersebut.",
             reply_to_message_id=message.id,
         )
         return await client.invoke(DeleteHistory(peer=info, max_id=0, revoke=True))
@@ -139,7 +139,7 @@ async def _(client, message):
 async def _(client, message):
     try:
         if not message.reply_to_message or not message.reply_to_message.photo:
-            return await message.reply_text("reply ke foto untuk mengubah ke sticker")
+            return await message.reply_text("Reply Ke Foto Untuk Mengubah Ke Sticker Cess...")
         sticker = await client.download_media(
             message.reply_to_message.photo.file_id,
             f"sticker_{message.from_user.id}.webp",
@@ -155,10 +155,10 @@ async def _(client, message):
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
-    TM = await message.reply(f"{prs}proceꜱꜱing...")
+    TM = await message.reply(f"{prs}Proses Cess...")
     if not message.reply_to_message.sticker:
-        return await TM.edit(f"{ggl}balas ke stiker...")
-    await TM.edit(f"{prs}downloading sticker. . .")
+        return await TM.edit(f"{ggl}Balas Ke Stiker Cess...")
+    await TM.edit(f"{prs}Downloading Stiker Cess. . .")
     file = await client.download_media(
         message.reply_to_message,
         f"Gift_{message.from_user.id}.mp4",
@@ -181,21 +181,21 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
     replied = message.reply_to_message
-    Tm = await message.reply(f"{prs}tunggu sebentar")
+    Tm = await message.reply(f"{prs}Tunggu Sebentar Cess...")
     if not replied:
-        return await Tm.edit(f"{ggl}mohon balas ke video")
+        return await Tm.edit(f"{ggl}Mohon Balas Ke Video Cess...")
     if replied.media == MessageMediaType.VIDEO:
-        await Tm.edit(f"{prs}downloading video . . ..")
+        await Tm.edit(f"{prs}Downloading Video Cess...")
         file = await client.download_media(
             message=replied,
             file_name=f"toaudio_{replied.id}",
         )
         out_file = f"{file}.mp3"
         try:
-            await Tm.edit(f"{ktrng}mencoba ekstrak audio. ..")
+            await Tm.edit(f"{ktrng}Mencoba Ekstrak Audio Cess. ..")
             cmd = f"ffmpeg -i {file} -q:a 0 -map a {out_file}"
             await run_cmd(cmd)
-            await Tm.edit(f"{brhsl}uploading audio . . .")
+            await Tm.edit(f"{brhsl}Uploading Audio Cess. . .")
             await client.send_voice(
                 message.chat.id,
                 voice=out_file,
@@ -206,7 +206,7 @@ async def _(client, message):
         except Exception as error:
             await Tm.edit(error)
     else:
-        return await Tm.edit(f"{ggl}mohon balas ke video")
+        return await Tm.edit(f"{ggl}Mohon Balas Ke Video Cess...")
 
 
 @PY.UBOT("colong")
@@ -217,12 +217,12 @@ async def _(client, message):
     ktrng = await EMO.BL_KETERANGAN(client)
     dia = message.reply_to_message
     if not dia:
-        return await message.reply(f"{ggl}mohon balas ke media")
+        return await message.reply(f"{ggl}Mohon Balas Ke Media Cess...")
     anjing = dia.caption or ""
-    Tm = await message.reply(f"{prs}processing...")
+    Tm = await message.reply(f"{prs}Prosess Cess...")
     if dia.photo:
         if message.reply_to_message.photo.file_size > 10000000:
-            return await Tm.edit(f"{ktrng}file di atas 10mb tidak di izinkan")
+            return await Tm.edit(f"{ktrng}File Di Atas 10MB Tidak Di Izinkan Cess")
         anu = await client.download_media(dia)
         await client.send_photo(client.me.id, anu, anjing)
         os.remove(anu)
@@ -230,7 +230,7 @@ async def _(client, message):
         return await Tm.delete()
     if dia.video:
         if message.reply_to_message.video.file_size > 10000000:
-            return await Tm.edit(f"{ktrng}file di atas 10mb tidak di izinkan")
+            return await Tm.edit(f"{ktrng}File Di Atas 10MB Tidak Di Izinkan Cess")
         anu = await client.download_media(dia)
         await client.send_video(client.me.id, anu, anjing)
         os.remove(anu)
@@ -238,7 +238,7 @@ async def _(client, message):
         return await Tm.delete()
     if dia.audio:
         if message.reply_to_message.audio.file_size > 10000000:
-            return await Tm.edit(f"{ktrng}file di atas 10mb tidak di izinkan")
+            return await Tm.edit(f"{ktrng}File Di Atas 10MB Tidak Di Izinkan Cess")
         anu = await client.download_media(dia)
         await client.send_audio(client.me.id, anu, anjing)
         os.remove(anu)
@@ -246,7 +246,7 @@ async def _(client, message):
         return await Tm.delete()
     if dia.voice:
         if message.reply_to_message.voice.file_size > 10000000:
-            return await Tm.edit(f"{ktrng}file di atas 10mb tidak di izinkan")
+            return await Tm.edit(f"{ktrng}File Di Atas 10MB Tidak Di Izinkan Cess")
         anu = await client.download_media(dia)
         await client.send_voice(client.me.id, anu, anjing)
         os.remove(anu)
@@ -254,11 +254,11 @@ async def _(client, message):
         return await Tm.delete()
     if dia.document:
         if message.reply_to_message.document.file_size > 10000000:
-            return await Tm.edit(f"{ktrng}file di atas 10mb tidak di izinkan")
+            return await Tm.edit(f"{ktrng}File Di Atas 10MB Tidak Di Izinkan Cess")
         anu = await client.download_media(dia)
         await client.send_document(client.me.id, anu, anjing)
         os.remove(anu)
         await message.delete()
         return await Tm.delete()
     else:
-        return await Tm.reply(f"{ggl}sepertinya terjadi kesalahan")
+        return await Tm.reply(f"{ggl}Sepertinya Terjadi Kesalahan Cess...\n\n{ktrng}Mohon Balas Ke Media Yang Valid Cess...")

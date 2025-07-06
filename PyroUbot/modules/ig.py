@@ -10,10 +10,10 @@ from PyroUbot import *
 
 __MODULE__ = "ɪɴsᴛᴀɢʀᴀᴍ"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk Instagram</b>
+ <blockquote><b>Bantuan Untuk Instagram Cess</b>
 
 • <b>Perintah</b> : <code>{0}ig</code> <b>[link]</b>
-• <b>Penjelasan : Downloader Vid Insta</b></blockquote>
+• <b>Penjelasan : Downloader Vid Instagram</b></blockquote>
 
 """
 
@@ -185,7 +185,7 @@ async def instacrot(client: Client, message):
             tracemsg = traceback.format_exc()
             await message.reply_text(tracemsg)
             await message.reply_text(
-                "<blockquote>400: Sorry, Unable To Find It  try another or report it  to @vckys or support chat @Priaindiareal🤖</blockquote>"
+                "<blockquote>400: Maaf, Tidak Dapat Menemukannya Coba Yang Lain Atau Laporkan Ke @ydhiak🤖</blockquote>"
             )
         finally:
             await m.delete()

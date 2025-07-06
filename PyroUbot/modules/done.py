@@ -5,7 +5,7 @@ from PyroUbot import *
 
 __MODULE__ = "ᴅᴏɴᴇ"
 __HELP__ = """
-<blockquote> <b>Bantuan Untuk Done</b>
+<blockquote> <b>Bantuan Untuk Done Cess</b>
 
 • <b>Perintah</b> : <code>{0}done</code> <b>[name item],[harga] [pembayaran]</b>
 • <b>Penjelasan : konfirmasi pembayaran.</b></blockquote>
@@ -15,7 +15,7 @@ __HELP__ = """
 
 @PY.UBOT("done")
 async def done_command(client, message):
-    izzy_ganteng = await message.reply("<blockquote>memproses...</blockquote>")
+    izzy_ganteng = await message.reply("<blockquote>Prosess Cess...</blockquote>")
     await asyncio.sleep(5)
     try:
         args = message.text.split(" ", 1)

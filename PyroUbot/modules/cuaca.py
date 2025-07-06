@@ -9,7 +9,7 @@ __HELP__ = """
 <blockquote><b>『 cuaca 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}cuaca</code> 
-   <i>penjelasan:</b> cek info cuaca di kota kota besar.</i></blockquote>
+   <i>Penjelasan Cess:</b> Cek Info Cuaca Di Kota Kota Besar Cess.</i></blockquote>
 """
 
 @PY.UBOT("cuaca")
@@ -17,8 +17,8 @@ async def cuaca(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    
-    jalan = await message.reply(f"{prs} Processing...")
+
+    jalan = await message.reply(f"{prs} Proses Cess...")
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
     url = f"https://api.betabotz.eu.org/api/tools/cuaca?query={a}&apikey=Btz-bxwol"
@@ -38,7 +38,7 @@ async def cuaca(client, message):
             windSpeed = hasil['windSpeed']
             photoUrl = f"https://telegra.ph//file/9354c197366cde09650fd.jpg"
             caption = f"""
-<blockquote>╭─ •  「 <b>Info Cuaca Terkini</b> 」
+<blockquote>╭─ •  「 <b>Info Cuaca Terkini Cess</b> 」
 │  ◦ <b>location: <code>{location}</code></b>
 │  ◦ <b>country: <code>{country}</code></b>
 │  ◦ <b>weather: <code>{weather}</code></b>
@@ -54,10 +54,10 @@ async def cuaca(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
-    
+            await jalan.edit(f"{ggl} Tidak Ada Kunci 'Hasil' Yang Ditemukan Dalam Respons Cess.")
+
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
-    
+        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")

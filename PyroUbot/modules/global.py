@@ -10,19 +10,19 @@ from PyroUbot import *
 
 __MODULE__ = "ɢʟᴏʙᴀʟ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Global
+<blockquote>Bantuan Untuk Global Cess
 
 perintah : <code>{0}gban</code>
-    banned user dari semua group chat 
+    Banned User Dari Semua Group Chat Cess 
 
 perintah : <code>{0}ungban</code>
-    unbanned user dari semua group chat
+    Unbanned User Dari Semua Group Chat Cess
 
 perintah : <code>{0}gmute</code>
-    untuk mengemute user dari semua gc yg kmu admin 
+    Untuk Mengemute User Dari Semua GC Yang Lu Admin Cess
 
 perintah : <code>{0}ungmute</code>
-    untuk meng ungmute user dari semua gc yg kmu admin</blockquote> 
+    Untuk Mengungmute User Dari Semua GC Yang Lu Admin Cess</blockquote> 
 """
 
       
@@ -38,18 +38,18 @@ async def _(client, message):
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}user tidak ditemukan")
+        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "global {}\n\nberhasil: {} chat\ngagal: {} chat\nuser: <a href='tg://user?id={}'>{} {}</a>"
+    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
     global_id = await get_data_id(client, "global")
     for dialog in global_id:
         if user.id == OWNER_ID:
-            return await Tm.edit(f"{ggl}anda tidak bisa gban dia karena dia pembuat saya")
+            return await Tm.edit(f"{ggl}Anda Tidak Bisa Gban Dia Karena Dia Pembuat Gua Cess")
         try:
             await client.ban_chat_member(dialog, user.id)
             done += 1
@@ -76,14 +76,14 @@ async def _(client, message):
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}user tidak ditemukan")
+        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "global {}\n\nberhasil: {} chat\ngagal: {} chat\nuser: <a href='tg://user?id={}'>{} {}</a>"
+    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
     global_id = await get_data_id(client, "global")
     for dialog in global_id:
         try:
@@ -116,18 +116,18 @@ async def _(client, message):
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}user tidak ditemukan")
+        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "global {}\n\nberhasil: {} chat\ngagal: {} chat\nuser: <a href='tg://user?id={}'>{} {}</a>"
+    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
     global_id = await get_data_id(client, "group")
     for dialog in global_id:
         if user.id == OWNER_ID:
-            return await Tm.edit(f"{ggl}anda tidak bisa gmute dia karena dia pembuat saya")
+            return await Tm.edit(f"{ggl}Anda Tidak Bisa Gmute Dia Karena Dia Pembuat Gua Cess")
         try:
             await client.restrict_chat_member(dialog, user.id, ChatPermissions(can_send_messages=False))
             done += 1
@@ -152,14 +152,14 @@ async def _(client, message):
     _msg = f"{prs}Prosess Cess..."
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}user tidak ditemukan")
+        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "global {}\n\nberhasil: {} chat\ngagal: {} chat\nuser: <a href='tg://user?id={}'>{} {}</a>"
+    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
     global_id = await get_data_id(client, "global")
     for dialog in global_id:
         try:

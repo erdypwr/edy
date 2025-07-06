@@ -10,10 +10,10 @@ from PyroUbot import *
 
 __MODULE__ = "ɪɴsᴛᴀɢʀᴀᴍ"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk Instagram</b>
+ <blockquote><b>Bantuan Untuk Instagram Cess</b>
 
 • <b>Perintah</b> : <code>{0}ig</code> <b>[link]</b>
-• <b>Penjelasan : Downloader Vid Insta</b></blockquote>
+• <b>Penjelasan : Downloader Vid Instagram</b></blockquote>
 
 """
 
@@ -71,12 +71,12 @@ class TikTokDownloaderAPI:
         req_post = ses.post(post_url, data=data, allow_redirects=True)
         if (
             req_post.status_code == 302
-            or "This video is currently not available" in req_post.text
-            or "Video is private or removed!" in req_post.text
+            or "Video Ini Saat Ini Tidak Tersedia Cess" in req_post.text
+            or "Video Ini Bersifat Pribadi Atau Dihapus Cess!" in req_post.text
         ):
-            print("- video private or remove")
-            return "private/remove"
-        elif "Submitted Url is Invalid, Try Again" in req_post.text:
+            print("- Video Pribadi Atau Dihapus Cess")
+            return "Pribadi/Hapus"
+        elif "Url Yang Dikirim Tidak Valid, Coba Lagi Cess" in req_post.text:
             print("- url is invalid")
             return "url-invalid"
         get_all_blank = bs4.BeautifulSoup(req_post.text, "html.parser").findAll(
@@ -185,7 +185,7 @@ async def instacrot(client: Client, message):
             tracemsg = traceback.format_exc()
             await message.reply_text(tracemsg)
             await message.reply_text(
-                "<blockquote>400: Sorry, Unable To Find It  try another or report it  to @Glenzy_bot or support chat @Glenzy_bot 🤖</blockquote>"
+                "<blockquote>400: Maaf, Tidak Dapat Menemukannya Coba Yang Lain Atau Laporkan Ke @ydhiak🤖</blockquote>"
             )
         finally:
             await m.delete()
