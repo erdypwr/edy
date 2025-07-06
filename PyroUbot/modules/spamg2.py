@@ -3,6 +3,7 @@ import asyncio
 from pyrogram.errors import FloodWait
 
 from PyroUbot import *
+import monggo
 
 spam_taksdb = {}
 
@@ -10,22 +11,22 @@ kontol = False
 
 __MODULE__ = "𝚂𝙿𝙰𝙼 𝟸"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk Spam 2<b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴀᴍ 2 』<b>
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sdspm</code> [Waktu] [Balas ke pesan]
-• Penjelasan : Memulai spam ke database.
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sdspm</code> [ᴡᴀᴋᴛᴜ] [ʙᴀʟᴀs ᴋᴇ ᴘᴇsᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇᴍᴜʟᴀɪ sᴘᴀᴍ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ.
 
 • ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stdspm</code>
-• Penjelasan : Menghentikan proses spam didatabase.
+• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘʀᴏsᴇs sᴘᴀᴍ ᴅɪᴅᴀᴛᴀʙᴀsᴇ.
 
 • ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listspm</code> 
-• Penjelasan : Melihat daftar grup didalam database.
+• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇʟɪʜᴀᴛ ᴅᴀғᴛᴀʀ ɢʀᴜᴘ ᴅɪᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀsᴇ.
 
 • ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addspm</code> 
-• Penjelasan : Menambahkan grup ke dalam database spam.
+• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴜᴘ ᴋᴇ ᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀsᴇ sᴘᴀᴍ.
 
 • ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delspm</code> 
-• Penjelasan : Menghapus grup dari database spam.</b></blockquote><b>
+• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴɢʜᴀᴘᴜs ɢʀᴜᴘ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ sᴘᴀᴍ.</b></blockquote><b>
 """
 
 

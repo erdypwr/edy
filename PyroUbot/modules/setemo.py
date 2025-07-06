@@ -4,10 +4,10 @@ from pyrogram.enums import MessageEntityType
 
 __MODULE__ = "ꜱᴇᴛᴇᴍᴏ"
 __HELP__ = f"""
-<b>『 bantuan untuk setemo ᴄᴇꜱꜱ 』</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴇᴛᴇᴍᴏ ᴄᴇꜱꜱ 』</b>
 
-  <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>.setemo</code> [reply to user - text]
-  <b>• penjelasan:</b> untuk mengganti emoji status
+    <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>.sᴇᴛᴇᴍᴏ</code> [ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ - ᴛᴇxᴛ]
+    <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴀɴᴛɪ ᴇᴍᴏᴊɪ sᴛᴀᴛᴜs
 
 """
 

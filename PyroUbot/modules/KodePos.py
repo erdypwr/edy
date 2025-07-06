@@ -36,7 +36,7 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
+                    await message.reply_text("Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
             except KeyError:
                 await message.reply_text("Error Mengakses Respons Cess.")
     except Exception as e:

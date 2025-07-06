@@ -4,23 +4,22 @@ from PyroUbot import *
 
 __MODULE__ = "salam"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk salam Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴀʟᴀᴍ ᴄᴇss 』</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}p</code>
-• <b>Penjelasan : Assalamu'alaikum.</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴘ</code>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴀssᴀʟᴀᴍᴜ'ᴀʟᴀɪᴋᴜᴍ.</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}pe</code>
-• <b>Penjelasan : Assalamualaikum Warahmatullahi Wabarakatuh.</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴘᴇ</code>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴀssᴀʟᴀᴍᴜ'ᴀʟᴀɪᴋᴜᴍ ᴡᴀʀᴀʜᴍᴀᴛᴜʟʟᴀʜɪ ᴡᴀʙᴀʀᴀᴋᴀᴛᴜʜ.</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}l</code>
-• <b>Penjelasan : Wa'alaikumsalam.</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ʟ</code>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴡᴀ'ᴀʟᴀɪᴋᴜᴍsᴀʟᴀᴍ.</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}wl</code>
-• <b>Penjelasan : Wa'alaikumsalam Warahmatullahi Wabarakatuh.</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴡʟ</code>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴡᴀ'ᴀʟᴀɪᴋᴜᴍsᴀʟᴀᴍ ᴡᴀʀᴀʜᴍᴀᴛᴜʟʟᴀʜɪ ᴡᴀʙᴀʀᴀᴋᴀᴛᴜʜ.</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}as</code>
-• <b>Penjelasan : Coba Aja Cess.</b></blockquote>
-
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴀs</code>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴄᴏʙᴀ ᴀᴊᴀ ᴄᴇss.</b></blockquote>
 """
 
 

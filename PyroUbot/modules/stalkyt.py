@@ -53,7 +53,7 @@ async def stalkyt(client, message):
             await jalan.edit(f"{ggl} Failed to retrieve data. Status code: {response.status_code}")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
+        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")

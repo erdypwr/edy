@@ -1,7 +1,7 @@
 import requests
 from pyrogram import *
 from PyroUbot import *
-from pyrogram.types import *
+from pyrogram.types import InputMediaPhoto
 import wget
 import os
 import glob
@@ -11,7 +11,7 @@ __HELP__ = """
 <blockquote><b>『 ᴄᴏᴜᴘʟᴇ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}couple</code> <b>ᴊᴜᴍʟᴀʜ/ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ</b> 
-   <i>penjelasan:</b> untuk mencari photo couple secara random</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> untuk mencari photo couple secara random</i></blockquote>
 """
 
 @PY.UBOT("couple")
@@ -46,4 +46,4 @@ async def pinterest(client, message):
         os.remove(male_image_filename)
         os.remove(female_image_filename)
     else:
-        await message.reply(f"Request failed with status code {response.status_code}")
+        await message.reply(f"Permintaan Gagal Dengan Kode Status Cuki! {response.status_code}")

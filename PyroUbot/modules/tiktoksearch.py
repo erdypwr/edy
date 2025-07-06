@@ -7,7 +7,7 @@ __HELP__ = """
 <blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛɪᴋᴛᴏᴋ sᴇᴀʀᴄʜ</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ttsearch</code> 
-   <i>penjelasan:</b> untuk mencari vt yang di perintahkan.</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> untuk mencari vt yang di perintahkan.</i></blockquote>
 """
 
 API_KEY = "045705b1"

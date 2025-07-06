@@ -9,7 +9,7 @@ __HELP__ = """
 <blockquote><b>『 ɢᴇᴍᴘᴀ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}gempa</code> 
-   <i>penjelasan:</b> cek info sekitar gempa bmkg</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> cek info sekitar gempa bmkg</i></blockquote>
 """
 
 @PY.UBOT("gempa")
@@ -54,7 +54,7 @@ async def stalkig(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
     
     except requests.exceptions.RequestException as e:
         await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")

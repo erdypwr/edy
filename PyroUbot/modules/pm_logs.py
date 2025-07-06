@@ -3,8 +3,9 @@ import wget
 from gc import get_objects
 from pyrogram.errors.exceptions.not_acceptable_406 import UserRestricted
 from pykeyboard import InlineKeyboard
+
 from pyrogram.types import (InlineKeyboardButton, InlineQueryResultArticle,
-                            InlineQueryResultPhoto, InputTextMessageContent)
+                            InlineQueryResultPhoto, InlineQueryResultVideo, InputTextMessageContent)
 
 from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -26,27 +27,28 @@ jangan spam ya atau anda akan di blokir secara otomatis
 
 __MODULE__ = "ᴘᴍᴘᴇʀᴍɪᴛ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Pmpermit
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘᴍᴘᴇʀᴍɪᴛ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}pmpermit</code> query > on or off
-    Mengaktifkan Atau Menonaktifkan PM Permit
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}pmpermit</code> ǫᴜᴇʀʏ > ᴏɴ ᴏʀ ᴏғғ
+    ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴ ᴀᴛᴀᴜ ᴍᴇɴᴏɴᴀᴋᴛɪғᴋᴀɴ ᴘᴍ ᴘᴇʀᴍɪᴛ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ok</code>
-    Mengizinkan Seseorang Untuk PM Elu
+    ᴍᴇɴɢɪᴢɪɴᴋᴀɴ sᴇsᴇᴏʀᴀɴɢ ᴜɴᴛᴜᴋ ᴘᴍ ᴇʟᴜ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}no</code>
-    Menolak Seseorang Untuk PM Elu
+    ᴍᴇɴᴏʟᴀᴋ sᴇsᴇᴏʀᴀɴɢ ᴜɴᴛᴜᴋ ᴘᴍ ᴇʟᴜ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setpm</code>
-query: |pic |text |limit
-    Mengatur Configuration Pada pm_permit
+ǫᴜᴇʀʏ: |ᴘɪᴄ |ᴛᴇxᴛ |ʟɪᴍɪᴛ
+    ᴍᴇɴɢᴀᴛᴜʀ ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ ᴘᴀᴅᴀ ᴘᴍ_ᴘᴇʀᴍɪᴛ
 
-Contoh Menggunakan Button  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1558'>tutorial</a>
+ᴄᴏɴᴛᴏʜ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴜᴛᴛᴏɴ  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1558'>ᴛᴜᴛᴏʀɪᴀʟ</a>
 
-Contoh Menggunakan Gambar Yang Benar  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1559'>tutorial</a>
+ᴄᴏɴᴛᴏʜ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ɢᴀᴍʙᴀʀ ʏᴀɴɢ ʙᴇɴᴀʀ  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1559'>ᴛᴜᴛᴏʀɪᴀʟ</a>
 
-Contoh Menggunakan Warning
-    Command : setpm limit 5</blockquote>
+ᴄᴏɴᴛᴏʜ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴡᴀʀɴɪɴɢ
+    ᴄᴏᴍᴍᴀɴᴅ : setpm limit 5
+</blockquote>
 """
 
 

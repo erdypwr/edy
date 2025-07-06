@@ -49,7 +49,7 @@ async def downloader_tiktok(client, message, perintah, tujuan):
                 else:
                     print("Failed to fetch download URLs.")
             else:
-                print(f"Request failed with status code {res.status}")
+                print(f"Permintaan Gagal Dengan Kode Status Cuki! {res.status}")
 
 @PY.UBOT("tt")
 async def _(client, message):

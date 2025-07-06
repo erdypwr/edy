@@ -2,10 +2,10 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛᴀꜰꜰ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Staff
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ꜱᴛᴀꜰꜰ ᴄᴇꜱꜱ 』</blockquote>
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}staff</code>
-    untuk mendapatkan informaꜱi ꜱeluruh ꜱtaff grup</blockquote>
+    ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴꜰᴏʀᴍᴀꜱɪ ꜱᴇʟᴜʀᴜʜ ꜱᴛᴀꜰꜰ ɢʀᴜᴘ</blockquote>
 """
 import os
 from PyroUbot import *
@@ -98,7 +98,7 @@ Staff Grup
                 + "\n".join(co_founder)
                 + """
 
-<emoji id=5800942688660360834>👮</emoji> admin:
+<emoji id=5800942688660360834>👮</emoji> Admin:
 """
             )
             + "\n".join(admin)

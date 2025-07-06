@@ -11,9 +11,9 @@ __HELP__ = """
 <blockquote><b>『 sᴜᴅᴏ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}addsudo [@username/replay pesan]</code> 
-   <i>penjelasan:</b>untuk akses user lain agar bisa menjalankan fitur userbot mu</i>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b>untuk akses user lain agar bisa menjalankan fitur userbot mu</i>
    <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}delsudo [@username/replay pesan]</code> 
-   <i>penjelasan:</b>untuk delete akses username
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b>untuk delete akses username
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}listsudo</code>
   penjelasan:untuk melihat list yang sudah di addsudo</i></blockquote>
 """

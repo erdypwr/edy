@@ -4,33 +4,33 @@ import requests
 
 __MODULE__ = "ᴘʟᴀʏʙᴜᴛᴛᴏɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ᴄᴇꜱꜱ ⦫</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ᴄᴇꜱꜱ 』</b>
 <blockquote><b>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}ytgold</code>
-⊷ Untuk Membuat Gold Playbutton Youtube
+ᚗ <code>{0}ʏᴛɢᴏʟᴅ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴏʟᴅ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ʏᴏᴜᴛᴜʙᴇ  
 
-ᚗ <code>{0}ytsilver</code>
-⊷ Untuk Membuat Silver Playbutton Youtube
+ᚗ <code>{0}ʏᴛsɪʟᴠᴇʀ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ sɪʟᴠᴇʀ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ʏᴏᴜᴛᴜʙᴇ  
 
-ᚗ <code>{0}iggold</code>
-⊷ Untuk Membuat Gold Playbutton Instagram
+ᚗ <code>{0}ɪɢɢᴏʟᴅ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴏʟᴅ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ɪɴsᴛᴀɢʀᴀᴍ  
 
-ᚗ <code>{0}igsilver</code>
-⊷ Untuk Membuat Silver Playbutton Instagram
+ᚗ <code>{0}ɪɢsɪʟᴠᴇʀ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ sɪʟᴠᴇʀ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ɪɴsᴛᴀɢʀᴀᴍ  
 
-ᚗ <code>{0}fbgold</code>
-⊷ Untuk Membuat Gold Playbutton Facebook
+ᚗ <code>{0}ғʙɢᴏʟᴅ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴏʟᴅ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ꜰᴀᴄᴇʙᴏᴏᴋ  
 
-ᚗ <code>{0}fbsilver</code>
-⊷ Untuk Membuat Silver Playbutton Facebook
+ᚗ <code>{0}ғʙsɪʟᴠᴇʀ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ sɪʟᴠᴇʀ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ꜰᴀᴄᴇʙᴏᴏᴋ  
 
-ᚗ <code>{0}twgold</code>
-⊷ Untuk Membuat Gold Playbutton Twitter
+ᚗ <code>{0}ᴛᴡɢᴏʟᴅ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴏʟᴅ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ᴛᴡɪᴛᴛᴇʀ  
 
-ᚗ <code>{0}twsilver</code>
-⊷ Untuk Membuat Silver Playbutton Twitter
-⊷ untuk membuat silver playbutton youtube
+ᚗ <code>{0}ᴛᴡsɪʟᴠᴇʀ</code>  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ sɪʟᴠᴇʀ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ᴛᴡɪᴛᴛᴇʀ  
+⊷ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ sɪʟᴠᴇʀ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ʏᴏᴜᴛᴜʙᴇ
 
 """
 

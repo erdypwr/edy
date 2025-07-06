@@ -10,7 +10,7 @@ __HELP__ = """
 <blockquote><b>『 Bantuan Untuk Pinterest Cess 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}pinsearch</code> 
-   <i>penjelasan:</b> mendowload media dari pencarian.</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> mendowload media dari pencarian.</i></blockquote>
 """
 
 @PY.UBOT("pinsearch")
@@ -46,7 +46,7 @@ async def pin(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
     
     except requests.exceptions.RequestException as e:
         await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")

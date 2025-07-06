@@ -1,12 +1,13 @@
 __MODULE__ = "ʀᴇᴀᴄᴛɪᴏɴ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Reaction Cess
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʀᴇᴀᴄᴛɪᴏɴ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}react</code> [username]
-    Memberikan Reaction Emoji
+    ᴍᴇᴍʙᴇʀɪᴋᴀɴ ʀᴇᴀᴄᴛɪᴏɴ ᴇᴍᴏᴊɪ
    
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stopreact</code>
-    Membatalkan Proses Reaction</blockquote>
+    ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏꜱᴇꜱ ʀᴇᴀᴄᴛɪᴏɴ
+</blockquote>
 """
 
 from PyroUbot import *

@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛᴀʟᴋꜰꜰ"
 __HELP__ = """
-<blockquote><b>『 ꜱᴛᴀʟᴋꜰꜰ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀʟᴋꜰꜰ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}stalkff</code> 
-   <i>penjelasan:</b> search akun ff menggunakan id</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> ꜱᴇᴀʀᴄʜ ᴀᴋᴜɴ ꜰꜰ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ɪᴅ</i></blockquote>
 """
 
 @PY.UBOT("stalkff")
@@ -17,11 +17,11 @@ async def stalkff(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    
-    jalan = await message.reply(f"{prs} Processing...")
-    
+
+    jalan = await message.reply(f"{prs} Proses Cess...")
+
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `stalkff` id akun.")
+        return await jalan.edit(f"{ggl} Silakan Gunakan Perintah `stalkff` ID Akun.")
     
     id = message.command[1]
     chat_id = message.chat.id
@@ -47,10 +47,10 @@ async def stalkff(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
+        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")

@@ -9,7 +9,7 @@ __HELP__ = """
 <blockquote><b>『 ꜱᴛᴀʟᴋᴛᴛ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}stalktt</code> 
-   <i>penjelasan:</b> untuk stalk tiktok menggunakan username</i></blockquote>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> untuk stalk tiktok menggunakan username</i></blockquote>
 """
 
 @PY.UBOT("stalktt")
@@ -54,10 +54,10 @@ async def stalktt(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
+        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")

@@ -5,13 +5,13 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴛᴏᴏʟs ʀᴇᴋᴀᴘ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Rekap & Win Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʀᴇᴋᴀᴘ & ᴡɪɴ ᴄᴇꜱꜱ 』</b>
 
 ᴘᴇʀɪɴᴛᴀʜ:
-<code>{0}rekap</code> → Rekap Saldo Dari Pesan Yang Direply.  
-<code>{0}win 5</code> → Hitung Kemenangan Dengan Fee 5% (Ganti Angka Sesuai Kebutuhan).  
+<code>{0}ʀᴇᴋᴀᴘ</code> → ʀᴇᴋᴀᴘ ꜱᴀʟᴅᴏ ᴅᴀʀɪ ᴘᴇꜱᴀɴ ʏᴀɴɢ ᴅɪʀᴇᴘʟʏ.  
+<code>{0}ᴡɪɴ 5</code> → ʜɪᴛᴜɴɢ ᴋᴇᴍᴇɴᴀɴɢᴀɴ ᴅᴇɴɢᴀɴ ꜰᴇᴇ 5% (ɢᴀɴᴛɪ ᴀɴɢᴋᴀ ꜱᴇꜱᴜᴀɪ ᴋᴇʙᴜᴛᴜʜᴀɴ).  
 
-Fitur Ini Berguna Untuk Mencatat Perbandingan Saldo Di Grup Atau Chat Pribadi.</blockquote></b>
+ꜰɪᴛᴜʀ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀᴛᴀᴛ ᴘᴇʀʙᴀɴᴅɪɴɢᴀɴ ꜱᴀʟᴅᴏ ᴅɪ ɢʀᴜᴘ ᴀᴛᴀᴜ ᴄʜᴀᴛ ᴘʀɪʙᴀᴅɪ.</blockquote></b>
 """
 
 def rekap_data(text):

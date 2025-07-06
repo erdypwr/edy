@@ -34,7 +34,7 @@ async def _(c, m):
     if not m.reply_to_message:
         await m.reply_text(f"<emoji id=5911461474315802019>⭐</emoji> **Mohon Balas Ke Pesan Cess** !", quote=True)
         return
-    blacklist = await get_chat(c.me.id)
+    blacklist = await c.get_chat(c.me.id)
     try:
         if m.command[1] == "gc":
             Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **Prossess Cess...**")

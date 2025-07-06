@@ -1,14 +1,13 @@
 __MODULE__ = "ǫᴜᴏᴛᴇꜱᴍᴀᴋᴇʀ"
 __HELP__ = """
-<blockquote>
-<b>「 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴠɪᴅᴇᴏ ǫᴜᴏᴛᴇꜱ ɢᴇɴᴇʀᴀᴛᴏʀ ᴄᴇꜱꜱ 」</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴠɪᴅᴇᴏ ǫᴜᴏᴛᴇꜱ ɢᴇɴᴇʀᴀᴛᴏʀ ᴄᴇꜱꜱ 』</b>
 
-<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}quotes</code> [ᴜʀʟ_ᴠɪᴅᴇᴏ] [ᴋᴀᴛᴀ_ᴋᴀᴛᴀ]
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ǫᴜᴏᴛᴇꜱ</code> [ᴜʀʟ_ᴠɪᴅᴇᴏ] [ᴋᴀᴛᴀ_ᴋᴀᴛᴀ]
 <b>ꜰᴜɴɢꜱɪ:</b> ᴍᴇᴍʙᴜᴀᴛ ᴠɪᴅᴇᴏ ǫᴜᴏᴛᴇꜱ ᴅᴇɴɢᴀɴ ᴛᴇᴋꜱ ᴋᴜꜱᴛᴏᴍ.
 
 <b>ᴄᴏɴᴛᴏʜ:</b> 
-• <code>{0}quotes https://example.com/video.mp4 Hidup ini indah, nikmati setiap momennya</code>
-• <code>{0}quotes Impian tidak akan terwujud tanpa tindakan</code> (ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴠɪᴅᴇᴏ ᴅᴇꜰᴀᴜʟᴛ)
+• <code>{0}ǫᴜᴏᴛᴇꜱ https://example.com/video.mp4 ʜɪᴅᴜᴘ ɪɴɪ ɪɴᴅᴀʜ, ɴɪᴋᴍᴀᴛɪ ꜱᴇᴛɪᴀᴘ ᴍᴏᴍᴇɴɴʏᴀ</code>
+• <code>{0}ǫᴜᴏᴛᴇꜱ ɪᴍᴘɪᴀɴ ᴛɪᴅᴀᴋ ᴀᴋᴀɴ ᴛᴇʀᴡᴜᴊᴜᴅ ᴛᴀɴᴘᴀ ᴛɪɴᴅᴀᴋᴀɴ</code> (ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴠɪᴅᴇᴏ ᴅᴇꜰᴀᴜʟᴛ)
 </blockquote>
 """
 

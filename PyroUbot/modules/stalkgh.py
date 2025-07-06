@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "sᴛᴀʟᴋɢʜ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Stalk GH
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʟᴋ ɢʜ 』</b>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stalkgh</code> 
-    Untuk Stalk Github Menggunakan Username</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sᴛᴀʟᴋɢʜ</code> 
+    ᴜɴᴛᴜᴋ sᴛᴀʟᴋ ɢɪᴛʜᴜʙ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴜsᴇʀɴᴀᴍᴇ</b></blockquote>
 """
 
 @PY.UBOT("stalkgh")
@@ -54,7 +54,7 @@ async def stalkgh(client, message):
             await jalan.edit(f"{ggl} Failed to retrieve data. Status code: {response.status_code}")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
+        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")

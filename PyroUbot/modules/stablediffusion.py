@@ -4,11 +4,11 @@ import requests
 
 __MODULE__ = "sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ⦫</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ᴄᴇꜱꜱ 』</b>
 <blockquote><b>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}sd</code> text
-⊶ Untuk Membuat Gambar Menggunakan Text.</b></blockquote>
+⊶ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴛᴇxᴛ.</b></blockquote>
 """
 
 def get_giraffe_image(text):
@@ -32,11 +32,11 @@ def get_giraffe_image(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("<b><i>Gunakan perintah /stablediffusion <teks> untuk membuat gambar</i></b>.")
+        await message.reply_text("<b><i>Gunakan Perintah /stablediffusion <teks> Untuk Membuat Gambar Cess</i></b>.")
         return
 
     request_text = args[1]
-    await message.reply_text("<b><i>Sedang memproses, mohon tunggu</i></b>...")
+    await message.reply_text("<b><i>Sedang Memproses, Mohon Tunggu Cess</i></b>...")
 
     image_content = get_giraffe_image(request_text)
     if image_content:
@@ -48,4 +48,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
+        await message.reply_text("Gagal Membuat Gambar Cuki. Coba Lagi Nanti Cess")

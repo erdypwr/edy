@@ -4,16 +4,16 @@ from PyroUbot import *
 
 __MODULE__ = "ᴘᴜʀɢᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Purge Cess
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘᴜʀɢᴇ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}purge</code>
-    Bersihkan (Hapus Semua Pesan) Dari Pesan Yang Di Bales
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴘᴜʀɢᴇ</code>
+    ʙᴇʀꜱɪʜᴋᴀɴ (ʜᴀᴘᴜꜱ ꜱᴇᴍᴜᴀ ᴘᴇꜱᴀɴ) ᴅᴀʀɪ ᴘᴇꜱᴀɴ ʏᴀɴɢ ᴅɪ ʙᴀʟᴇꜱ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}del</code>
-    Menghapus Pesan Yang Di Balas
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴅᴇʟ</code>
+    ᴍᴇɴɢʜᴀᴘᴜꜱ ᴘᴇꜱᴀɴ ʏᴀɴɢ ᴅɪ ʙᴀʟᴀꜱ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}purgeme</code>
-    Menghapus Pesan Elu Sendiri</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴘᴜʀɢᴇᴍᴇ</code>
+    ᴍᴇɴɢʜᴀᴘᴜꜱ ᴘᴇꜱᴀɴ ᴇʟᴜ ꜱᴇɴᴅɪʀɪ </blockquote>
 """
 
 

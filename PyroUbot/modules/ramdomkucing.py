@@ -1,16 +1,16 @@
 from PyroUbot import *
 import random
 import requests
-from pyrogram.enums import *
+from pyrogram.enums import ChatAction
 from pyrogram import *
 from pyrogram.types import *
 from io import BytesIO
 
 __MODULE__ = "ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ғᴏᴛᴏ ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ ᴄᴇꜱꜱ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜰᴏᴛᴏ ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ ᴄᴇꜱꜱ 』</b>
 
-<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}random [kucing]</code></b></blockquote>
+<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ʀᴀɴᴅᴏᴍ [ᴋᴜᴄɪɴɢ]</code></b></blockquote>
 """
 
 URLS = {

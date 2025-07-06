@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "ʟʏʀɪᴄꜱ"
 __HELP__ = """
-<b>『 ʟʏʀɪᴄꜱ ᴄᴇꜱꜱ 』</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟʏʀɪᴄꜱ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}lyrics</code> 
-   <i>Penjelasan:</b> Pencarian Lirik Musik Cess</i>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> Pencarian Lirik Musik Cess</i>
 """
 
 @PY.UBOT("lyrics")
@@ -44,7 +44,7 @@ async def lyrics(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
 
     except requests.exceptions.RequestException as e:
         await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")

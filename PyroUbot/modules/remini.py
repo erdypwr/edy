@@ -25,7 +25,7 @@ def remini(image_path, model_type="enhance"):
         return response.content
     else:
         raise Exception(
-            f"Request failed with status code {response.status_code}: {response.text}"
+            f"Permintaan Gagal Dengan Kode Status Cuki! {response.status_code}: {response.text}"
         )
 __MODULE__ = "remini"
 __HELP__ = """

@@ -15,28 +15,29 @@ from PyroUbot import *
 
 __MODULE__ = "ᴘʀᴏꜰɪʟᴇꜱ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Profiles
+<blockquote>『 ᴘʀᴏꜰɪʟᴇꜱ ᴍᴏᴅᴜʟᴇ ᴄᴇꜱꜱ 』</blockquote>
+<blockquote>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʀᴏꜰɪʟᴇꜱ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setbio</code>
-    Mengubah Bio Pada Akun Elu
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setbio</code>
+    ᴍᴇɴɢᴜʙᴀʜ ʙɪᴏ ᴘᴀᴅᴀ ᴀᴋᴜɴ ᴇʟᴜ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setname</code>
-    Mengubah Nama Pada Akun Elu
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setname</code>
+    ᴍᴇɴɢᴜʙᴀʜ ɴᴀᴍᴀ ᴘᴀᴅᴀ ᴀᴋᴜɴ ᴇʟᴜ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}block</code>
-    Memblokir Pengguna
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}block</code>
+    ᴍᴇᴍʙʟᴏᴋɪʀ ᴘᴇɴɢɢᴜɴᴀ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}unblock</code>
-    Membuka Pemblokiran Pada Pengguna
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}unblock</code>
+    ᴍᴇᴍʙᴜᴋᴀ ᴘᴇᴍʙʟᴏᴋɪʀᴀɴ ᴘᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sg</code>
-    Memeriksa Histori Name Pengguna Telegram
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sg</code>
+    ᴍᴇᴍᴇʀɪᴋꜱᴀ ʜɪꜱᴛᴏʀɪ ɴᴀᴍᴇ ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʟᴇɢʀᴀᴍ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}info</code>
-    Melihat Informasi Data Akun Telegram
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}info</code>
+    ᴍᴇʟɪʜᴀᴛ ɪɴꜰᴏʀᴍᴀꜱɪ ᴅᴀᴛᴀ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cinfo</code>
-    Melihat Informasi Data Group/Channel Telegram</blockquote>
+<blockquote>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cinfo</code>
+    ᴍᴇʟɪʜᴀᴛ ɪɴꜰᴏʀᴍᴀꜱɪ ᴅᴀᴛᴀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ</blockquote>
 """
 
 

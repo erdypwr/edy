@@ -17,7 +17,7 @@ async def support_callback(client, callback_query):
         ]
         pesan = await client.ask(
             user_id,
-            f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ: {full_name}</b>",
+            f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ ᴄᴇꜱꜱ: {full_name}</b>",
             reply_markup=InlineKeyboardMarkup(button),
             timeout=90,
         )
@@ -25,7 +25,7 @@ async def support_callback(client, callback_query):
         if get.id in SUPPORT:
             SUPPORT.remove(get.id)
             return await client.send_message(get.id, "ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ")
-    text = f"<b>ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ : {full_name}</b>"
+    text = f"<b>ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ ᴄᴇꜱꜱ: {full_name}</b>"
     buttons = [
         [
             InlineKeyboardButton("👤 ᴘʀᴏꜰɪʟ", callback_data=f"profil {user_id}"),
@@ -40,7 +40,7 @@ async def support_callback(client, callback_query):
             )
             SUPPORT.remove(get.id)
             await pesan.request.edit(
-                f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ : {full_name}</b>"
+                f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ ᴄᴇꜱꜱ: {full_name}</b>"
             )
             return await client.send_message(user_id, text)
         except Exception as error:
@@ -60,7 +60,7 @@ async def jawab_pesan_callback(client, callback_query):
         ]
         pesan = await client.ask(
             user_id,
-            f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ: {full_name}</b>",
+            f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ ᴄᴇꜱꜱ: {full_name}</b>",
             reply_markup=InlineKeyboardMarkup(button),
             timeout=300,
         )
@@ -68,7 +68,7 @@ async def jawab_pesan_callback(client, callback_query):
         if get.id in SUPPORT:
             SUPPORT.remove(get.id)
             return await client.send_message(get.id, "ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ")
-    text = f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ : {full_name}</b>"
+    text = f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ ᴄᴇꜱꜱ: {full_name}</b>"
     if not user_ids == OWNER_ID:
         buttons = [[InlineKeyboardButton("💬 ᴊᴀᴡᴀʙ 💬", f"jawab_pesan {user_id}")]]
     else:
@@ -86,7 +86,7 @@ async def jawab_pesan_callback(client, callback_query):
             )
             SUPPORT.remove(get.id)
             await pesan.request.edit(
-                f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ: {full_name}</b>",
+                f"<b>ꜱɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ʙᴀʟᴀꜱᴀɴ ᴇʟᴜ ᴄᴇꜱꜱ: {full_name}</b>",
             )
             await client.send_message(user_id, text)
         except Exception as error:
@@ -146,4 +146,4 @@ async def batal_callback(client, callback_query):
             )
         except Exception as why:
             await callback_query.message.delete()
-            await client.send_message(user_id, f"<b>ɢᴀɢᴀʟ ᴅɪ ʙᴀᴛᴀʟᴋᴀɴ! {why}</b>")
+            await client.send_message(user_id, f"<b>ɢᴀɢᴀʟ ᴅɪ ʙᴀᴛᴀʟᴋᴀɴ ᴄᴜᴋɪ! {why}</b>")
