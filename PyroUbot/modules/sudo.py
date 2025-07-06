@@ -20,55 +20,55 @@ __HELP__ = """
 
 @PY.UBOT("addsudo")
 async def _(client, message):
-    msg = await message.reply("⏰ Memproses...")
+    msg = await message.reply("⏰ Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID.")
+        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
 
     try:
         user = await client.get_users(user_id)
     except Exception as error:
-        return await msg.edit(f"❌ Error: {error}")
+        return await msg.edit(f"❌ Error Cuki: {error}")
 
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
     if user.id in sudo_users:
-        return await msg.edit(f"❌ {user.first_name} Sudah Menjadi Pengguna Sudo.")
+        return await msg.edit(f"❌ {user.first_name} Sudah Menjadi Pengguna Sudo Cess.")
 
     try:
         await add_to_vars(client.me.id, "SUDOERS", user.id)
-        return await msg.edit(f"🏓 {user.first_name} Berhasil Ditambahkan Sebagai Sudo Users.")
+        return await msg.edit(f"🏓 {user.first_name} Berhasil Ditambahkan Sebagai Sudo Users Cess.")
     except Exception as error:
-        return await msg.edit(f"❌ Error: {error}")
+        return await msg.edit(f"❌ Error Cuki: {error}")
 
 @PY.UBOT("delsudo|unsudo")
 async def _(client, message):
-    msg = await message.reply("🏓 Memproses...")
+    msg = await message.reply("🏓 Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID.")
+        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
 
     try:
         user = await client.get_users(user_id)
     except Exception as error:
-        return await msg.edit(f"❌ Error: {error}")
+        return await msg.edit(f"❌ Error Cuki: {error}")
 
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
     if user.id not in sudo_users:
-        return await msg.edit(f"❌ {user.first_name} Bukan Bagian Dari Pengguna Sudo.")
+        return await msg.edit(f"❌ {user.first_name} Bukan Bagian Dari Pengguna Sudo Cuki.")
 
     try:
         await remove_from_vars(client.me.id, "SUDOERS", user.id)
-        return await msg.edit(f"🏓 {user.first_name} Berhasil Dihapus Dari Daftar Pengguna Sudo.")
+        return await msg.edit(f"🏓 {user.first_name} Berhasil Dihapus Dari Daftar Pengguna Sudo Cuki.")
     except Exception as error:
-        return await msg.edit(f"❌ Error: {error}")
+        return await msg.edit(f"❌ Error Cuki: {error}")
 
 @PY.UBOT("sudolist|listsudo")
 async def _(client, message):
-    msg = await message.reply("🏓 Memproses...")
+    msg = await message.reply("🏓 Prosess Cess...")
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
 
     if not sudo_users:
-        return await msg.edit("❌ Tidak Ada Pengguna Sudo Ditemukan.")
+        return await msg.edit("❌ Tidak Ada Pengguna Sudo Ditemukan Cuki.")
 
     sudo_list = []
     for user_id in sudo_users:
@@ -78,5 +78,5 @@ async def _(client, message):
         except:
             continue
 
-    response = f"🏓 Daftar Pengguna Sudo:\n" + "\n".join(sudo_list)
+    response = f"🏓 Daftar Pengguna Sudo Cess:\n" + "\n".join(sudo_list)
     return await msg.edit(response)
