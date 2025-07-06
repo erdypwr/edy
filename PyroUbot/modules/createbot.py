@@ -4,10 +4,11 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄʀᴇᴀᴛᴇ ʙᴏᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Auto Create Bot Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘᴇᴍʙᴜᴀᴛᴀɴ ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪs 』</b>
 
-ᴘᴇʀɪɴᴛᴀʜ: <code>{0}createbot</code> [nama_bot username_bot]
-Penjelasan: Membuat Bot Telegram Baru Secara Otomatis Melalui @BotFather Cess</blockquote></b>
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ᴄʀᴇᴀᴛᴇʙᴏᴛ</code> [ɴᴀᴍᴀ_ʙᴏᴛ ᴜsᴇʀɴᴀᴍᴇ_ʙᴏᴛ]
+ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴍᴇᴍʙᴜᴀᴛ ʙᴏᴛ ᴛᴇʟᴇɢʀᴀᴍ ʙᴀʀᴜ ᴏᴛᴏᴍᴀᴛɪs ᴍᴇʟᴀʟᴜɪ @ʙᴏᴛꜰᴀᴛʜᴇʀ ᴄᴇss</blockquote>
+
 """
 
 @PY.UBOT("createbot")
@@ -18,8 +19,8 @@ async def create_bot_command(client, message):
 
     if len(args) < 3:
         await message.reply_text(
-            "<blockquote><b>⚠️ Gunakan format Cess: createbot [nama_bot] [username_bot]</b></blockquote>\n"
-            "Contoh Cess: <code>.createbot MyNewBot MyNew_Bot</code>"
+            "<blockquote><b>⚠️ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ ᴄᴇss: createbot [nama_bot] [username_bot]</b></blockquote>\n"
+            "ᴄᴏɴᴛᴏʜ ᴄᴇss: <code>.createbot NamaBot Nama_Bot</code>"
         )
         return
 
@@ -27,7 +28,7 @@ async def create_bot_command(client, message):
     bot_username = args[2]
 
     if not bot_username.endswith("Bot"):
-        await message.reply_text("❌ **Username Bot Harus Diakhiri Dengan 'Bot' Cess.**")
+        await message.reply_text("❌ **ᴜsᴇʀɴᴀᴍᴇ ʙᴏᴛ ʜᴀʀᴜs ᴅɪᴀᴋʜɪʀɪ ᴅᴇɴɢᴀɴ 'ʙᴏᴛ' ᴄᴇss.**")
         return
 
     try:
@@ -41,11 +42,11 @@ async def create_bot_command(client, message):
         await client.send_message(botfather, bot_username)
 
         await message.reply_text(
-            f"<blockquote><b>✅ **Permintaan Pembuatan Bot Telah Dikirim Ke @BotFather Cess!**\n"
-            f"🆕 **Nama Bot:** `{bot_name}`\n"
-            f"🔗 **Username:** @{bot_username}\n\n"
-            "Silakan Cek @BotFather Untuk Melanjutkan Proses Konfigurasi Cess.</blockquote></b>"
+            f"<blockquote><b>✅ **ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴘᴇᴍʙᴜᴀᴛᴀɴ ʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪᴋɪʀɪᴍ ᴋᴇ @BotFather ᴄᴇss!**\n"
+            f"🆕 **ɴᴀᴍᴀ ʙᴏᴛ:** `{bot_name}`\n"
+            f"🔗 **ᴜsᴇʀɴᴀᴍᴇ:** @{bot_username}\n\n"
+            "sɪʟᴀᴋᴀɴ ᴄᴇᴋ @BotFather ᴜɴᴛᴜᴋ ᴍᴇʟᴀɴᴊᴜᴛᴋᴀɴ ᴘʀᴏsᴇs ᴋᴏɴꜰɪɢᴜʀᴀsɪ ᴄᴇss.</blockquote></b>"
         )
     
     except Exception as e:
-        await message.reply_text(f"⚠️ Terjadi kesalahan Cess: {str(e)}")
+        await message.reply_text(f"⚠️ ᴛᴇʀᴊᴀᴅɪ ᴋᴇsᴀʟᴀʜᴀɴ ᴄᴇss: {str(e)}")

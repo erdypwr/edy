@@ -5,12 +5,12 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "𝙱𝙰𝚁𝙳 𝙰𝙸"
+__MODULE__ = "ʙᴀʀᴅ ᴀɪ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk bard-ai
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴀʀᴅ-ᴀɪ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bard</code>
-    dapat menulis cerita, puisi, skrip, kode komputer, musik, email, surat, dll</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ʙᴀʀᴅ</code>
+    ᴅᴀᴘᴀᴛ ᴍᴇɴᴜʟɪs ᴄᴇʀɪᴛᴀ, ᴘᴜɪsɪ, sᴋʀɪᴘ, ᴋᴏᴅᴇ ᴋᴏᴍᴘᴜᴛᴇʀ, ᴍᴜsɪᴋ, ᴇᴍᴀɪʟ, sᴜʀᴀᴛ, ᴅʟʟ</b></blockquote>
 """
 
 
@@ -22,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .bard query"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .ʙᴀʀᴅ ǫᴜᴇʀʏ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>Prosess Cess....")
+            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.betabotz.eu.org/api/search/bard-ai?text={a}&apikey=Btz-bxwol')
 
@@ -36,8 +36,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ 'ʀᴇsᴜʟᴛs' ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅɪ ʀᴇsᴘᴏɴꜱ.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴋᴇsᴀʟᴀʜᴀɴ ᴀᴋsᴇs ʀᴇsᴘᴏɴꜱ.")
     except Exception as e:
-        await message.reply_text(f"{e}")
+        await message.reply_text(f"ᴋᴇsᴀʟᴀʜᴀɴ: {e}")

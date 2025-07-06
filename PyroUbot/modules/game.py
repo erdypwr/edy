@@ -2,18 +2,19 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴀᴍᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Game Cess
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴀᴍᴇ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}catur</code>
-   untuk memunculkan game catur
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄᴀᴛᴜʀ</code>
+   ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɢᴀᴍᴇ ᴄᴀᴛᴜʀ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}game</code>
-   untuk memunculkan game random
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ɢᴀᴍᴇ</code>
+   ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɢᴀᴍᴇ ʀᴀɴᴅᴏᴍ
    
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tictactoe</code>
-   untuk memunculkan game tictactoe  
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴛɪᴄᴛᴀᴄᴛᴏᴇ</code>
+   ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɢᴀᴍᴇ ᴛɪᴄᴛᴀᴄᴛᴏᴇ  
 
-note: jumlah menu game 500+</blockquote>
+ɴᴏᴛᴇ: ᴊᴜᴍʟᴀʜ ᴍᴇɴᴜ ɢᴀᴍᴇ 500+</blockquote>
+
 """
 
 

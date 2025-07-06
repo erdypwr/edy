@@ -7,10 +7,11 @@ from pyrogram.types import Message
 
 __MODULE__ = "ᴄʟᴀᴜᴅᴇ ᴀɪ"
 __HELP__ = """
-<blockquote><b>✮ Bantuan Untuk Claude ✮
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄʟᴀᴜᴅᴇ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}claude</code>
-    buat percakapan contoh <code>{0}claude</code> haii</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄʟᴀᴜᴅᴇ</code>
+    ᴛᴜʟɪs ᴘᴇʀᴄᴀᴋᴀᴘᴀɴ ᴅᴇɴɢᴀɴ ᴄʟᴀᴜᴅᴇ. ᴄᴏɴᴛᴏʜ: <code>{0}ᴄʟᴀᴜᴅᴇ</code> ʜᴀɪ</b></blockquote>
+
 """
 
 @PY.UBOT("claude")
@@ -21,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .claude hai"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ ʏᴀɴɢ ʙᴇɴᴀʀ\nᴄᴏɴᴛᴏʜ : .ᴄʟᴀᴜᴅᴇ ʜᴀɪ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Menjawab....")
+            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>ᴍᴇɴᴊᴀᴡᴀʙ ᴄᴇꜱꜱ....")
             hai = message.text.split(' ', 1)[1]
             response = requests.get(f'https://vapis.my.id/api/claude?q={hai}')
 
@@ -35,9 +36,9 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ʜᴀsɪʟ ᴅɪ ʀᴇsᴘᴏɴs ᴄᴜᴋɪ!.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴛᴇʀᴊᴀᴅɪ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴀᴋsᴇs ʀᴇsᴘᴏɴs ᴄᴜᴋɪ!.")
     except Exception as e:
         await message.reply_text(f"{e}")
       

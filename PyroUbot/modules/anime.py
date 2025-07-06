@@ -8,23 +8,23 @@ from io import BytesIO
 
 __MODULE__ = "ᴀɴɪᴍᴇ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴀɴɪᴍᴇ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴇ 』</b>
 
-<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}anime [query]</code>
+<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ᴀɴɪᴍᴇ [ǫᴜᴇʀʏ]</code>
 
-<b>Query:</b> <b>keneki</b>,
-    <b>megumin/b>,
-    <b>yotsuba</b>,
-    <b>shinomiya</b>,
-    <b>yumeko</b>,
-    <b>tsunade</b>,
-    <b>kagura</b>,
-    <b>madara</b>,
-    <b>itachi</b>,
-    <b>akira</b>,
-    <b>toukachan</b>,
-    <b>cicho</b>,
-    <b>sasuke</b></blockquote>
+<b>ǫᴜᴇʀʏ:</b> <b>ᴋᴇɴᴇᴋɪ</b>,
+    <b>ᴍᴇɢᴜᴍɪɴ/ʙ</b>,
+    <b>ʏᴏᴛꜱᴜʙᴀ</b>,
+    <b>ꜱʜɪɴᴏᴍɪʏᴀ</b>,
+    <b>ʏᴜᴍᴇᴋᴏ</b>,
+    <b>ᴛꜱᴜɴᴀᴅᴇ</b>,
+    <b>ᴋᴀɢᴜʀᴀ</b>,
+    <b>ᴍᴀᴅᴀʀᴀ</b>,
+    <b>ɪᴛᴀᴄʜɪ</b>,
+    <b>ᴀᴋɪʀᴀ</b>,
+    <b>ᴛᴏᴜᴋᴀᴄʜᴀɴ</b>,
+    <b>ᴄɪᴄʜᴏ</b>,
+    <b>ꜱᴀꜱᴜᴋᴇ</b></blockquote>
 """
 
 URLS = {
@@ -51,10 +51,10 @@ async def _(client, message):
     
     if query not in URLS:
         valid_queries = ", ".join(URLS.keys())
-        await message.reply(f"Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
+        await message.reply(f"ǫᴜᴇʀʏ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ. ɢᴜɴᴀᴋᴀɴ ꜱᴀʟᴀʜ ꜱᴀᴛᴜ ᴅᴀʀɪ: {valid_queries}.")
         return
 
-    processing_msg = await message.reply("Prosess Cess....")
+    processing_msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....")
 
     try:
         await client.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)
@@ -67,4 +67,4 @@ async def _(client, message):
         await client.send_photo(message.chat.id, photo)
         await processing_msg.delete()
     except requests.exceptions.RequestException as e:
-        await processing_msg.edit_text(f"Gagal Mengambil Gambar Anime Cess: {e}")
+        await processing_msg.edit_text(f"ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ɢᴀᴍʙᴀʀ ᴀɴɪᴍᴇ ᴄᴇꜱꜱ: {e}")

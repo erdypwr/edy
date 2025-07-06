@@ -18,7 +18,7 @@ async def stalkff(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
 
-    jalan = await message.reply(f"{prs} Proses Cess...")
+    jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
 
     if len(message.command) != 2:
         return await jalan.edit(f"{ggl} Silakan Gunakan Perintah `stalkff` ID Akun.")

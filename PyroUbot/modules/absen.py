@@ -11,13 +11,13 @@ def get_hadir_list():
 
 __MODULE__ = "ᴀʟ ǫᴜʀ'ᴀɴ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Al Qur'an
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀʟ ǫᴜʀ'ᴀɴ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}alquran 1 2</code>
-    Untuk Mencari Ayat Al Qur'an
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴀʟǫᴜʀᴀɴ 1 2</code>
+    ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴀʏᴀᴛ ᴀʟ ǫᴜʀ'ᴀɴ
 
-Contoh: <code>{0}alquran 1 2</code>
-Maka hasilnya Surah Al-Fatihah Ayat 2</blockquote></b>
+ᴄᴏɴᴛᴏʜ: <code>{0}ᴀʟǫᴜʀᴀɴ 1 2</code>
+ᴍᴀᴋᴀ ʜᴀꜱɪʟɴʏᴀ ꜱᴜʀᴀʜ ᴀʟ-ꜰᴀᴛɪʜᴀʜ ᴀʏᴀᴛ 2</blockquote></b>
 """
 
 @PY.UBOT("absen")
@@ -37,11 +37,11 @@ async def absen_command(c, m):
         if x.results:
             await m.reply_inline_bot_result(x.query_id, x.results[0].id)
         else:
-            await m.reply(f"<blockquote><b>{ggl}tidak ada hasil inline bot</b></blockquote>")
+            await m.reply(f"<blockquote><b>{ggl}ᴛɪᴅᴀᴋ ᴀᴅᴀ ʜᴀꜱɪʟ ɪɴʟɪɴᴇ ʙᴏᴛ</b></blockquote>")
     except asyncio.TimeoutError:
-        await m.reply(f"<blockquote><b>{ggl}waktu habis dalam mendapatkan hasil inline bot</b></blockquote>")
+        await m.reply(f"<blockquote><b>{ggl}ᴡᴀᴋᴛᴜ ʜᴀʙɪꜱ ᴅᴀʟᴀᴍ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ʜᴀꜱɪʟ ɪɴʟɪɴᴇ ʙᴏᴛ</b></blockquote>")
     except Exception as e:
-        await m.reply(f"<blockquote><b>{ggl}terjadi kesalahan: {e}</b></blockquote>")
+        await m.reply(f"<blockquote><b>{ggl}ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ: {str(e).translate(str.maketrans('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ'))}</b></blockquote>")
 
 @PY.UBOT("delabsen")
 @PY.TOP_CMD
@@ -50,7 +50,7 @@ async def clear_absen_command(c, m):
     ggl = await EMO.GAGAL(c)
     sks = await EMO.BERHASIL(c)
     prs = await EMO.PROSES(c)
-    await m.reply(f"<blockquote><b>{sks}semua absen berhasil dihapus</b></blockquote>")
+    await m.reply(f"<blockquote><b>{sks}ꜱᴇᴍᴜᴀ ᴀʙꜱᴇɴ ʙᴇʀʜᴀꜱɪʟ ᴅɪʜᴀᴘᴜꜱ</b></blockquote>")
 
 
 @PY.INLINE("^absen_in")
@@ -62,7 +62,7 @@ async def absen_query(c, iq):
     hadir_list.append({"user_id": user_id, "mention": mention, "jam": jam})
     hadir_text = get_hadir_list()
 
-    text = f"<blockquote><b>**absen tanggal:**\n{timestamp}\n\n**list absen:**\n{hadir_text}\n\n</b></blockquote>"
+    text = f"<blockquote><b>**ᴀʙꜱᴇɴ ᴛᴀɴɢɢᴀʟ:**\n{timestamp}\n\n**ʟɪꜱᴛ ᴀʙꜱᴇɴ:**\n{hadir_text}\n\n</b></blockquote>"
     buttons = [[InlineKeyboardButton("hadir", callback_data="absen_hadir")]]
     keyboard = InlineKeyboardMarkup(buttons)
     await c.answer_inline_query(
@@ -86,11 +86,11 @@ async def hadir_callback(c, cq):
     timestamp = datetime.now(pytz.timezone('asia/Jakarta')).strftime("%d-%m-%Y")
     jam = datetime.now(pytz.timezone('asia/Jakarta')).strftime("%H:%M:%S")
     if any(user['user_id'] == user_id for user in hadir_list):
-        await cq.answer("anda sudah melakukan absen sebelumnya", show_alert=True)
+        await cq.answer("ᴇʟᴜ ꜱᴜᴅᴀʜ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴀʙꜱᴇɴ ꜱᴇʙᴇʟᴜᴍɴʏᴀ", show_alert=True)
     else:
         hadir_list.append({"user_id": user_id, "mention": mention, "jam": jam})
         hadir_text = get_hadir_list()
-        text = f"absen tanggal:\n{timestamp}\n\nlist absen:\n{hadir_text}\n\n"
+        text = f"ᴀʙꜱᴇɴ ᴛᴀɴɢɢᴀʟ:\n{timestamp}\n\nʟɪꜱᴛ ᴀʙꜱᴇɴ:\n{hadir_text}\n\n"
         buttons = [[InlineKeyboardButton("hadir", callback_data="absen_hadir")]]
         keyboard = InlineKeyboardMarkup(buttons)
         await cq.edit_message_text(text, reply_markup=keyboard)

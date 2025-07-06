@@ -9,26 +9,26 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴇᴋ ɪᴘ ᴀᴅʀᴇss"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Cek IP Adress Cess</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴇᴋ ɪᴘ ᴀᴅʀᴇss ᴄᴇss</b>
 
-ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ipaddress</code> [IP ADDRESS]
-Penjelasan: Untuk Mendapatkan Alamat IP Dari IP Address Yang Diberikan Cess</blockquote></b>
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ipaddress</code> [ɪᴘ ᴀᴅᴅʀᴇss]
+ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴀʟᴀᴍᴀᴛ ɪᴘ ᴅᴀʀɪ ɪᴘ ᴀᴅᴅʀᴇss ʏᴀɴɢ ᴅɪʙᴇʀɪᴋᴀɴ ᴄᴇss</blockquote></b>
 """
 
 @PY.UBOT("ipaddress")
 @PY.TOP_CMD
 async def hacker_lacak_target(client, message):
     apikey = kc("M0QwN0UyRUFBRjU1OTQwQUY0NDczNEMzRjJBQzdDMUE=").decode("utf-8")
-    ran = await message.reply_text("<code>Prosess Cess</code>")
+    ran = await message.reply_text("<code>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ</code>")
     ipddres = message.text.split(None, 1)[1] if len(message.command) != 1 else None
     if not ipddres:
         await ran.edit_text(
-            "Example: <code>+ipaddress your ip address here : 1592.401.xxx</code>"
+            "ᴇxᴀᴍᴘʟᴇ: <code>+ipaddress ʏᴏᴜʀ ɪᴘ ᴀᴅᴅʀᴇss ʜᴇʀᴇ : 1592.401.xxx</code>"
         )
         return
 
     if not apikey:
-        await ran.edit_text("Lokasi IP Apikey Hilang Cess")
+        await ran.edit_text("ʟᴏᴋᴀsɪ ɪᴘ ᴀᴘɪᴋᴇʏ ʜɪʟᴀɴɢ ᴄᴇss")
         return
 
     location_link = "https"
@@ -51,7 +51,7 @@ async def hacker_lacak_target(client, message):
             location_zone = data_location["time_zone"]
             location_card = data_location["as"]
         except Exception as e:
-            await ran.edit_text(f"Error Request Cess {e}")
+            await ran.edit_text(f"ᴇʀʀᴏʀ ʀᴇQᴜᴇsᴛ ᴄᴇss {e}")
             return
         if (
             location_ip
@@ -74,8 +74,8 @@ async def hacker_lacak_target(client, message):
             location_target += f"<b>Data card:</b> {location_card}\n"
             await ran.edit_text(location_target)
         else:
-            await ran.edit_text("Not data ip address")
+            await ran.edit_text("ɴᴏᴛ ᴅᴀᴛᴀ ɪᴘ ᴀᴅᴅʀᴇss")
     else:
         await ran.edit_text(
-            "Maaf, Terjadi Kesalahan Saat Memproses Permintaan Elu. Silakan Coba Lagi Nanti Cess"
+            "ᴍᴀᴀꜰ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇᴍᴘʀᴏsᴇs ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴇʟᴜ. sɪʟᴀᴋᴀɴ ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇss"
         )

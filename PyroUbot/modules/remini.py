@@ -42,7 +42,7 @@ async def process_image(client, message):
         await message.reply("<blockquote><b>Reply Gambar Yang Mau Di HD In Dong Cess</b></blockquote>")
         return
 
-    await message.reply("<blockquote><b>Proses Cess...</b></blockquote>")
+    await message.reply("<blockquote><b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b></blockquote>")
 
     try:
         file_path = await message.reply_to_message.download()

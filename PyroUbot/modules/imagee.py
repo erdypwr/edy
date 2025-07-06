@@ -11,7 +11,7 @@ from PyroUbot import *
 
 __MODULE__ = "ɪᴍᴀɢᴇ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk image Cess</b>
+<blockquote><b>『 Bantuan Untuk image Cess 』</b>
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}mirror</code>
     Untuk Mirror gambar Cess
@@ -23,7 +23,7 @@ __HELP__ = """
 @PY.UBOT("negative")
 async def negative_cmd(client, message):
     ureply = message.reply_to_message
-    ayiin = await message.reply("Prosess Cess...")
+    ayiin = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not ureply:
         return await ayiin.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ")
     ayiinxd = await client.download_media(ureply, "./downloads/")
@@ -60,7 +60,7 @@ async def negative_cmd(client, message):
 @PY.UBOT("mirror")
 async def miror_cmd(client, message):
     ureply = message.reply_to_message
-    kentu = await message.reply("<i>Prosess Cess ᴄᴇꜱꜱ</i>")
+    kentu = await message.reply("<i>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ ᴄᴇꜱꜱ</i>")
     if not ureply:
         return await kentu.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ ᴄᴇꜱꜱ")
     xnxx = await client.download_media(ureply, "./downloads/")

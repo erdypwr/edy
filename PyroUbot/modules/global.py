@@ -6,23 +6,26 @@ from pyrogram.errors import *
 from pyrogram.types import *
 from pyrogram.types import ChatPermissions
 from PyroUbot import *
+from PyroUbot.core.helpers.emoji import EMO
+from PyroUbot.core.helpers.font_help import gens_font
 
 
 __MODULE__ = "ɢʟᴏʙᴀʟ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Global Cess
+<blockquote>『ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢʟᴏʙᴀʟ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gban</code>
-    Banned User Dari Semua Group Chat Cess 
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ɢʙᴀɴ</code>
+ʙᴀɴɴᴇᴅ ᴜꜱᴇʀ ᴅᴀʀɪ ꜱᴇᴍᴜᴀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴄᴇꜱꜱ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ungban</code>
-    Unbanned User Dari Semua Group Chat Cess
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴜɴɢʙᴀɴ</code>
+ᴜɴʙᴀɴɴᴇᴅ ᴜꜱᴇʀ ᴅᴀʀɪ ꜱᴇᴍᴜᴀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴄᴇꜱꜱ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gmute</code>
-    Untuk Mengemute User Dari Semua GC Yang Lu Admin Cess
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ɢᴍᴜᴛᴇ</code>
+ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴍᴜᴛᴇ ᴜꜱᴇʀ ᴅᴀʀɪ ꜱᴇᴍᴜᴀ ɢᴄ ʏᴀɴɢ ʟᴜ ᴀᴅᴍɪɴ ᴄᴇꜱꜱ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ungmute</code>
-    Untuk Mengungmute User Dari Semua GC Yang Lu Admin Cess</blockquote> 
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴜɴɢᴍᴜᴛᴇ</code>
+ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜɴɢᴍᴜᴛᴇ ᴜꜱᴇʀ ᴅᴀʀɪ ꜱᴇᴍᴜᴀ ɢᴄ ʏᴀɴɢ ʟᴜ ᴀᴅᴍɪɴ ᴄᴇꜱꜱ</blockquote>
+
 """
 
       
@@ -34,22 +37,22 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
+        return await Tm.edit(f"{ggl}ᴜsᴇʀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
+    text = gens_font("tiny", "ɢʟᴏʙᴀʟ {}\n\nʙᴇʀʜᴀsɪʟ: {} ᴄʜᴀᴛ\nɢᴀɢᴀʟ: {} ᴄʜᴀᴛ\nᴜsᴇʀ: <a href='tg://user?id={}'>{} {}</a>")
     global_id = await get_data_id(client, "global")
     for dialog in global_id:
         if user.id == OWNER_ID:
-            return await Tm.edit(f"{ggl}Anda Tidak Bisa Gban Dia Karena Dia Pembuat Gua Cess")
+            return await Tm.edit(f"{ggl}ᴇʟᴜ ᴛɪᴅᴀᴋ ʙɪsᴀ ɢʙᴀɴ ᴅɪᴀ ᴋᴀʀᴇɴᴀ ᴅɪᴀ ᴘᴇᴍʙᴜᴀᴛ ɢᴜᴀ ᴄᴇss")
         try:
             await client.ban_chat_member(dialog, user.id)
             done += 1
@@ -72,18 +75,18 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = gens_font("tiny", f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
+        return await Tm.edit(gens_font("tiny", f"{ggl}ᴜsᴇʀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss"))
     try:
         user = await client.get_users(user_id)
     except Exception as error:
         return await Tm.edit(error)
     done = 0
     failed = 0
-    text = "Global {}\n\nBerhasil: {} Chat\nGagal: {} Chat\nUser: <a href='tg://user?id={}'>{} {}</a>"
+    text = "ɢʟᴏʙᴀʟ {}\n\nʙᴇʀʜᴀsɪʟ: {} ᴄʜᴀᴛ\nɢᴀɢᴀʟ: {} ᴄʜᴀᴛ\nᴜsᴇʀ: <a href='tg://user?id={}'>{} {}</a>"
     global_id = await get_data_id(client, "global")
     for dialog in global_id:
         try:
@@ -112,11 +115,11 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
+        return await Tm.edit(f"{ggl}ᴜsᴇʀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss")
     try:
         user = await client.get_users(user_id)
     except Exception as error:
@@ -127,7 +130,7 @@ async def _(client, message):
     global_id = await get_data_id(client, "group")
     for dialog in global_id:
         if user.id == OWNER_ID:
-            return await Tm.edit(f"{ggl}Anda Tidak Bisa Gmute Dia Karena Dia Pembuat Gua Cess")
+            return await Tm.edit(f"{ggl}ᴇʟᴜ ᴛɪᴅᴀᴋ ʙɪsᴀ ɢᴍᴜᴛᴇ ᴅɪᴀ ᴋᴀʀᴇɴᴀ ᴅɪᴀ ᴘᴇᴍʙᴜᴀᴛ ɢᴜᴀ ᴄᴇss")
         try:
             await client.restrict_chat_member(dialog, user.id, ChatPermissions(can_send_messages=False))
             done += 1
@@ -149,10 +152,10 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
     Tm = await message.reply(_msg)
     if not user_id:
-        return await Tm.edit(f"{ggl}User Tidak Ditemukan Cess")
+        return await Tm.edit(f"{ggl}ᴜsᴇʀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss")
     try:
         user = await client.get_users(user_id)
     except Exception as error:

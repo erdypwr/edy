@@ -10,25 +10,25 @@ time_limit = 300  # Batas waktu maksimum (dalam detik)
 
 __MODULE__ = "ᴅᴅᴏs"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk DDOS Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴅᴅᴏꜱ 』</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosfloods</code> <b>[Target] [Time]</b>
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddoshttp</code> <b>[Target] [Time]</b>
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddostls</code> <b>[Target] [Time]</b>
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosbypass</code> <b>[Target] [Time]</b>
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosttr</code> <b>[Target] [Time]</b>
-• <b>Penjelasan : Gunakan ᴘᴇʀɪɴᴛᴀʜ <code>{0}DDOS Untuk Menyerang Website</code></b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴅᴏꜱꜰʟᴏᴏᴅꜱ</code> <b>[ᴛᴀʀɢᴇᴛ] [ᴡᴀᴋᴛᴜ]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴅᴏꜱʜᴛᴛᴘ</code> <b>[ᴛᴀʀɢᴇᴛ] [ᴡᴀᴋᴛᴜ]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴅᴏꜱᴛʟꜱ</code> <b>[ᴛᴀʀɢᴇᴛ] [ᴡᴀᴋᴛᴜ]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴅᴏꜱʙʏᴘᴀꜱꜱ</code> <b>[ᴛᴀʀɢᴇᴛ] [ᴡᴀᴋᴛᴜ]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴅᴏꜱᴛᴛʀ</code> <b>[ᴛᴀʀɢᴇᴛ] [ᴡᴀᴋᴛᴜ]</b>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ <code>{0}ᴅᴅᴏꜱ</code> ᴜɴᴛᴜᴋ ᴍᴇɴʏᴇʀᴀɴɢ sɪᴛᴜs ᴡᴇʙ</b>
 
-Total Methods: 5
-Time Limit: 300
-My Owner: @alfsefyy
+ᴊᴜᴍʟᴀʜ ᴍᴇᴛᴏᴅᴇ: 5
+ʙᴀᴛᴀs ᴡᴀᴋᴛᴜ: 300 ᴅᴇᴛɪᴋ
+ᴏᴡɴᴇʀ: @ydhiak
 
-List Methods
--floods
--http
--tls
--bypass
--ttr</b></blockquote>
+ᴅᴀғᴛᴀʀ ᴍᴇᴛᴏᴅᴇ:
+-ғʟᴏᴏᴅꜱ
+-ʜᴛᴛᴘ
+-ᴛʟꜱ
+-ʙʏᴘᴀꜱꜱ
+-ᴛᴛʀ</b></blockquote>
 
 """
 
@@ -68,9 +68,9 @@ async def ddos_command(client, message):
 
     # Kirim pesan sukses
     await message.reply_text(
-        f"<blockquote><b>Attack Successfully Sent By Erdy Cess🔥🔥\nTarget: {target}\nTime: {time}\nRate: 110\nThread: 15\nDDoS By Erdy Cess🔥🔥</b></blockquote>",
+        f"<blockquote><b>ᴀᴛᴛᴀᴄᴋ ʙᴇʀʜᴀsɪʟ ᴅɪᴋɪʀɪᴍ ᴏʟᴇʜ ᴇʀᴅʏ ᴄᴇss🔥🔥\nᴛᴀʀɢᴇᴛ: {target}\nᴡᴀᴋᴛᴜ: {time}\nʀᴀᴛᴇ: 110\nᴛʜʀᴇᴀᴅ: 15\nᴅᴅᴏs ᴏʟᴇʜ ᴇʀᴅʏ ᴄᴇss🔥🔥</b></blockquote>",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Stop", callback_data=f"stop_{chat_id}")]]
+            [[InlineKeyboardButton("ʜᴇɴᴛɪᴋᴀɴ", callback_data=f"stop_{chat_id}")]]
         )
     )
     
@@ -251,6 +251,6 @@ async def stop_attack(client, message):
         for process in processes[chat_id]:
             process.terminate()
         processes[chat_id] = []
-        await message.reply_text("Attack Berhasil Dihentikan Cess!")
+        await message.reply_text("ᴀᴛᴛᴀᴄᴋ ʙᴇʀʜᴀsɪʟ ᴅɪʜᴇɴᴛɪᴋᴀɴ ᴄᴇss!")
     else:
-        await message.reply_text("Tidak Ada Proses Yang Berjalan Untuk Dihentikan Cess.")
+        await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘʀᴏsᴇs ʏᴀɴɢ ʙᴇʀᴊᴀʟᴀɴ ᴜɴᴛᴜᴋ ᴅɪʜᴇɴᴛɪᴋᴀɴ ᴄᴇss.")

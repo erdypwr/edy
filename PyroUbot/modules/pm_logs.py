@@ -19,7 +19,7 @@ PM_TEXT = """
 
 perkenalkan Gua adalah pm-security disini
 silahkan tunggu majikan Gua membalas pesan mu ini ya
-jangan spam ya atau anda akan di blokir secara otomatis
+jangan spam ya atau ᴇʟᴜ akan di blokir secara otomatis
 
 ⚠peringatan: {warn} hati-hati</blockquote>
 """

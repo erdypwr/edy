@@ -7,10 +7,10 @@ from PyroUbot import *
 
 __MODULE__ = "ᴘɪɴsᴇᴀʀᴄʜ"
 __HELP__ = """
-<blockquote><b>『 Bantuan Untuk Pinterest Cess 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘɪɴᴛᴇʀᴇꜱᴛ ᴄᴇꜱꜱ 』</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}pinsearch</code> 
-   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> mendowload media dari pencarian.</i></blockquote>
+  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ᴘɪɴsᴇᴀʀᴄʜ</code> 
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</i> ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇᴅɪᴀ ᴅᴀʀɪ ᴘᴇɴᴄᴀʀɪᴀɴ.</blockquote>
 """
 
 @PY.UBOT("pinsearch")
@@ -19,10 +19,10 @@ async def pin(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     
-    jalan = await message.reply(f"{prs} Prosess Cess...")
+    jalan = await message.reply(f"{prs} ᴘʀᴏsᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Example .pinsearch asuna")
+        return await jalan.edit(f"{ggl} ᴇxᴀᴍᴘʟᴇ .ᴘɪɴsᴇᴀʀᴄʜ ᴀꜱᴜɴᴀ")
     
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
@@ -35,9 +35,9 @@ async def pin(client, message):
             hasil = data['result']
             random_result = random.choice(hasil)
             caption = f"""
-<emoji id=5841235769728962577>⭐</emoji>Berikut Foto Yang Elu Minta.
+<emoji id=5841235769728962577>⭐</emoji>ʙᴇʀɪᴋᴜᴛ ꜰᴏᴛᴏ ʏᴀɴɢ ᴇʟᴜ ᴍɪɴᴛᴀ.
 
-<blockquote><b>-- USERBOT BY @ydhiak --</blockquote></b>
+<blockquote><b>-- ᴜꜱᴇʀʙᴏᴛ ʙʏ @ʏᴅʜɪᴀᴋ --</blockquote></b>
 """
             photo_path = wget.download(random_result)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -46,10 +46,10 @@ async def pin(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ ᴄᴇꜱꜱ.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴇꜱꜱ: {e}")
 
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴇꜱꜱ: {e}")

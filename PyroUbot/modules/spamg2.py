@@ -106,7 +106,7 @@ async def _(c, m):
 async def _(c, m):
     user_id = c.me.id
     chat_id = m.command[1] if len(m.command) > 1 else m.chat.id
-    mmk = await m.reply("<b>Processing...</b>")
+    mmk = await m.reply("<b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>")
     if m.command[0] == "addspm":
         monggo.tambah_spdb(user_id, chat_id)
         return await mmk.edit(

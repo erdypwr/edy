@@ -5,12 +5,13 @@ from PyroUbot import *
 
 __MODULE__ = "𝙲𝙻𝙾𝙽𝙴"
 __HELP__ = """
-📚 Folder Untuk Clone Cess
+『 📚 ꜰᴏʟᴅᴇʀ ᴜɴᴛᴜᴋ ᴄʟᴏɴᴇ ᴄᴇꜱꜱ 』
 
-🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}clone @username
-🦠 Penjelasan : Untuk MenClone Seseorang User Cess.
-🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}clone kembali
-🦠 Penjelasan : Untuk Mengembalikan Kamu Ke Identitas Sebelumnya Cess.
+🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}ᴄʟᴏɴᴇ @ᴜꜱᴇʀɴᴀᴍᴇ
+🦠 ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴᴄʟᴏɴᴇ ꜱᴇꜱᴇᴏʀᴀɴɢ ᴜꜱᴇʀ ᴄᴇꜱꜱ.
+🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}ᴄʟᴏɴᴇ ᴋᴇᴍʙᴀʟɪ
+🦠 ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴍʙᴀʟɪᴋᴀɴ ᴋᴀᴍᴜ ᴋᴇ ɪᴅᴇɴᴛɪᴛᴀꜱ ꜱᴇʙᴇʟᴜᴍɴʏᴀ ᴄᴇꜱꜱ.</b></blockquote>
+
 """
 
 STORAGE = {}
@@ -26,39 +27,39 @@ async def impostor(client: Client, message: Message):
         await client.send_message("@wannofsupport", "Maaf Telah MengClone Wann 🥺")
         return
 
-    xx = await message.edit("⏰ Prosess Cess...")
+    xx = await message.edit("⏰ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
 
     if "kembali" in inputArgs:
         if user_id not in STORAGE:
-            return await xx.edit("📑 Anda Harus Meng-Clone Seseorang Dulu Sebelum Mengembalikan Identitas Cess!")
+            return await xx.edit("📑 ᴇʟᴜ Harus Meng-Clone Seseorang Dulu Sebelum Mengembalikan Identitas Cess!")
 
-        await message.edit("⏰ Mengembalikan Identitas Asli...")
+        await message.edit("⏰ ᴍᴇɴɢᴇᴍʙᴀʟɪᴋᴀɴ ɪᴅᴇɴᴛɪᴛᴀs ᴀsʟɪ...")
         await update_profile(client, STORAGE[user_id], restore=True)
         del STORAGE[user_id]
-        return await xx.edit("📑 Berhasil mengembalikan akun Anda!")
+        return await xx.edit("📑 ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢᴇᴍʙᴀʟɪᴋᴀɴ ᴀᴋᴜɴ ᴀɴᴅᴀ!")
 
     if inputArgs:
         try:
             user = await client.get_users(inputArgs)
         except:
-            return await xx.edit("❌ Nama Pengguna/ID Tidak Valid Cess")
+            return await xx.edit("❌ ɴᴀᴍᴀ ᴘᴇɴɢɢᴜɴᴀ/ɪᴅ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴇss")
         userObj = await client.get_chat(user.id)
     elif message.reply_to_message:
         reply_user = message.reply_to_message.from_user
         if not reply_user:
-            return await xx.edit("❌ Tidak Dapat Menyamar Sebagai Admin Anonim Cess 🥺")
+            return await xx.edit("❌ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴʏᴀᴍᴀʀ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ ᴀɴᴏɴɪᴍ ᴄᴇss 🥺")
         userObj = await client.get_chat(reply_user.id)
     else:
-        return await xx.edit("❌ Gunakan .clone @username atau reply pesan pengguna.")
+        return await xx.edit("❌ ɢᴜɴᴀᴋᴀɴ .ᴄʟᴏɴᴇ @ᴜsᴇʀɴᴀᴍᴇ ᴀᴛᴀᴜ ʀᴇᴘʟʏ ᴘᴇsᴀɴ ᴘᴇɴɢɢᴜɴᴀ.")
 
     if user_id not in STORAGE:
         my_profile = await client.get_chat("me")
         my_photos = [p async for p in client.get_chat_photos("me")]
         STORAGE[user_id] = {"profile": my_profile, "photos": my_photos}
 
-    await xx.edit("Mencuri Identitas Si Cuki...")
+    await xx.edit("ᴍᴇɴᴄᴜʀɪ ɪᴅᴇɴᴛɪᴛᴀs sɪ ᴄᴜᴋɪ...")
     await update_profile(client, userObj)
-    await xx.edit("Aowkaowkw Gw Jadi Lu Ni, Cuki🥴")
+    await xx.edit("ᴀᴏᴡᴋᴀᴏᴡᴋᴡ ɢᴡ ᴊᴀᴅɪ ʟᴜ ɴɪ, ᴄᴜᴋɪ🥴")
 
 
 async def update_profile(client: Client, userObj, restore=False):
@@ -67,7 +68,7 @@ async def update_profile(client: Client, userObj, restore=False):
         photos = userObj["photos"]
 
         await client.update_profile(
-            first_name=profile_data.first_name or "Deleted Account",
+            first_name=profile_data.first_name or "ᴀᴋᴜɴ ᴅɪʜᴀᴘᴜs",
             last_name=profile_data.last_name or "",
             bio=profile_data.bio or ""
         )
@@ -80,7 +81,7 @@ async def update_profile(client: Client, userObj, restore=False):
                 pass
         return
 
-    first_name = userObj.first_name or "Deleted Account"
+    first_name = userObj.first_name or "ᴀᴋᴜɴ ᴅɪʜᴀᴘᴜs"
     last_name = userObj.last_name or ""
     
     user_info = await client.get_users(userObj.id)

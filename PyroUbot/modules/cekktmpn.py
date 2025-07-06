@@ -5,12 +5,12 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴄᴇᴋ ᴋᴇᴛᴀᴍᴘᴀɴᴀɴ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Cek Ketampanan</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴇᴋ ᴋᴇᴛᴀᴍᴘᴀɴᴀɴ</b>
 
 ᴘᴇʀɪɴᴛᴀʜ:
-<code>{0}cektmpn [nama]</code> → Ratting berapa persen ketampanan nama  
+<code>{0}cektmpn [nama]</code> → ʀᴀᴛᴛɪɴɢ ʙᴇʀᴀᴘᴀ ᴘᴇʀsᴇɴ ᴋᴇᴛᴀᴍᴘᴀɴᴀɴ ɴᴀᴍᴀ  
 
-Sumber: Random generator berdasarkan nama.</blockquote></b>
+sᴜᴍʙᴇʀ: ʀᴀɴᴅᴏᴍ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴇʀᴅᴀsᴀʀᴋᴀɴ ɴᴀᴍᴀ.</blockquote></b>
 """
 
 KHODAM_LIST = [
@@ -23,9 +23,9 @@ KHODAM_LIST = [
 async def cek_khodam(client, message):
     args = message.text.split(maxsplit=1)
     if len(args) < 2:
-        return await message.reply_text("⚠️ Gunakan format: cektmpn [nama]")
+        return await message.reply_text("⚠️ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ: ᴄᴇᴋᴛᴍᴘɴ [ɴᴀᴍᴀ]")
 
     nama = args[1]
     khodam = random.choice(KHODAM_LIST)
-    hasil = f"<blockquote><b>🤭HASIL KETAMPANAN🤭\n\n🧑 Nama: `{nama}`\n Persen: `{khodam}`</blockquote></b>"
+    hasil = f"<blockquote><b>🤭ʜᴀsɪʟ ᴋᴇᴛᴀᴍᴘᴀɴᴀɴ🤭\n\n🧑 ɴᴀᴍᴀ: `{nama}`\n ᴘᴇʀsᴇɴ: `{khodam}`</blockquote></b>"
     await message.reply_text(hasil)

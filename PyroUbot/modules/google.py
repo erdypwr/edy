@@ -3,15 +3,15 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴏᴏɢʟᴇ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Google Cess</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴏᴏɢʟᴇ ᴄᴇss</b>
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}google [query]</code>
-    search google</b></blockquote>
+    sᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ</b></blockquote>
 """
 
 @PY.UBOT("gg|google|googlesearch")
 async def google_search(client, message):
-    webevent = await message.reply("ᴍᴇɴᴇʟᴜsᴜʀɪ ɢᴏᴏɢʟᴇ ᴄᴇꜱꜱ...")
+    webevent = await message.reply("ᴍᴇɴᴇʟᴜsᴜʀɪ ɢᴏᴏɢʟᴇ ᴄᴇss...")
     match = get_arg(message)
     if not match:
         return await webevent.edit(f"{message.text} ǫᴜᴇʀʏ")
@@ -31,7 +31,7 @@ async def google_search(client, message):
                         desc = result.get("description")
                         msg += f"<b>- {title}</b>\n[𝗟𝗶𝗻𝗸 𝗦𝗼𝘂𝗿𝗰𝗲]({link})\n<blockquote><b>{desc}</b></blockquote>"
                     except Exception as e:
-                        print(f"Hasil Pemrosesan Kesalahan Cess: {e}")
+                        print(f"ʜᴀꜱɪʟ ᴘᴇᴍʀᴏꜱᴇꜱᴀɴ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴇꜱꜱ: {e}")
                 
                 return await webevent.edit(
                     "\n\nʀᴇsᴜʟᴛs:\n"

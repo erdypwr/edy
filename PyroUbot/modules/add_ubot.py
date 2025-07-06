@@ -278,7 +278,7 @@ async def _(client, callback_query):
     new_client.in_memory = False
     bot_msg = await bot.send_message(
         user_id,
-        "sᴇᴅᴀɴɢ Prosess Cess....\n\nsɪʟᴀʜᴋᴀɴ ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ",
+        "sᴇᴅᴀɴɢ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....\n\nsɪʟᴀʜᴋᴀɴ ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ",
         disable_web_page_preview=True,
     )
     await new_client.start()

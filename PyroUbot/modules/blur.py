@@ -26,18 +26,18 @@ async def ReTrieveFile(input_file_name):
 
 __MODULE__ = "ʙʟᴜʀ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Blur
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴜʀ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}blur</code>
-    Untuk Blur Gambar</b></blockquote>
+    ᴜɴᴛᴜᴋ ʙʟᴜʀ ɢᴀᴍʙᴀʀ</b></blockquote>
 """
 
 @PY.UBOT("blur")
 async def blur_cmd(client, message):
     ureply = message.reply_to_message
-    xd = await message.reply("<i>Prosess Cess...</i>")
+    xd = await message.reply("<i>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</i>")
     if not ureply:
-        return await xd.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ")
+        return await xd.edit("ʙᴀʟᴀꜱ ᴋᴇ ɢᴀᴍʙᴀʀ")
     yinsxd = await client.download_media(ureply, "./downloads/")
     if yinsxd.endswith(".tgs"):
         cmd = ["lottie_convert.py", yinsxd, "yin.png"]

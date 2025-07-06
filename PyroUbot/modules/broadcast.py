@@ -11,28 +11,29 @@ from PyroUbot import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴄᴀꜱᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Broadcast
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gikes</code>
 
-type : all , users , group
+ᴛʏᴘᴇ : ᴀʟʟ , ᴜsᴇʀs , ɢʀᴏᴜᴘ
 
-all untuk semua , users untuk user, group untuk group
+ᴀʟʟ ᴜɴᴛᴜᴋ sᴇᴍᴜᴀ , ᴜsᴇʀs ᴜɴᴛᴜᴋ ᴜsᴇʀ, ɢʀᴏᴜᴘ ᴜɴᴛᴜᴋ ɢʀᴏᴜᴘ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stopg</code>
-    untuk menghentikan proses gikes yang sedang berlangsung
+    ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘʀᴏsᴇs ɢɪᴋᴇs ʏᴀɴɢ sᴇᴅᴀɴɢ ʙᴇʀʟᴀɴɢsᴜɴɢ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bcfd</code> or <code>{0}cfd</code>
-    mengirim pesan siaran secara forward
+    ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ sɪᴀʀᴀɴ sᴇᴄᴀʀᴀ ꜰᴏʀᴡᴀʀᴅ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}send</code>
-    mengirim pesan ke user/group/channel
+    ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ ᴜsᴇʀ/ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}autobc</code>
-    mengirim pesan siaran secara otomatis
+    ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ sɪᴀʀᴀɴ sᴇᴄᴀʀᴀ ᴀᴜᴛᴏᴍᴀᴛɪs
 
-query:
-    |on/off |text |delay |remove |limit</b></blockquote>
+ǫᴜᴇʀʏ:
+    |ᴏɴ/ᴏꜰꜰ |ᴛᴇxᴛ |ᴅᴇʟᴀʏ |ʀᴇᴍᴏᴠᴇ |ʟɪᴍɪᴛ</b></blockquote>
+
 """
 
 
@@ -45,7 +46,7 @@ async def limit_cmd(client, message):
     yubot = await EMO.UBOT(client)
     await client.unblock_user("SpamBot")
     bot_info = await client.resolve_peer("SpamBot")
-    msg = await message.reply(f"{prs}Prosess Cess . . .")
+    msg = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     response = await client.invoke(
         StartBot(
             bot=bot_info,
@@ -106,7 +107,7 @@ async def gcast_handler(client, message):
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
     ktrng = await EMO.BL_KETERANGAN(client)    
-    _msg = f"<b>{prs}Prosess Cess...</b>"
+    _msg = f"<b>{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>"
     gcs = await message.reply(_msg)    
     command, text = extract_type_and_msg(message)
 
@@ -175,7 +176,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
     
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
     gcs = await message.reply(_msg)
 
     command, text = extract_type_and_msg(message)
@@ -260,7 +261,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
     ktrn = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     try:
@@ -294,7 +295,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
     ktrn = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     try:
@@ -328,7 +329,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
     mzg = await message.reply(_msg)
 
     blacklist = await get_list_from_vars(client.me.id, "BL_ID")
@@ -353,13 +354,13 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     brhsl = await EMO.BERHASIL(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     blacklists = await get_list_from_vars(client.me.id, "BL_ID")
 
     if not blacklists:
-        return await msg.edit(f"{ggl}blackliꜱt broadcaꜱt anda koꜱong")
+        return await msg.edit(f"{ggl}blackliꜱt broadcaꜱt ᴇʟᴜ koꜱong")
 
     for chat_id in blacklists:
         await remove_from_vars(client.me.id, "BL_ID", chat_id)

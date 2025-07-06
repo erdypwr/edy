@@ -5,17 +5,18 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Cek Khodam</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ 』
 
 ᴘᴇʀɪɴᴛᴀʜ:
-<code>{0}cekkhodam [nama]</code> → Melihat jenis khodam berdasarkan nama  
+<code>{0}ᴄᴇᴋᴋʜᴏᴅᴀᴍ [ɴᴀᴍᴀ]</code> → ᴍᴇʟɪʜᴀᴛ ᴊᴇɴɪꜱ ᴋʜᴏᴅᴀᴍ ʙᴇʀᴅᴀꜱᴀʀᴋᴀɴ ɴᴀᴍᴀ  
 
-Sumber: Random generator berdasarkan nama.</blockquote></b>
+ꜱᴜᴍʙᴇʀ: ʀᴀɴᴅᴏᴍ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴇʀᴅᴀꜱᴀʀᴋᴀɴ ɴᴀᴍᴀ.</b></blockquote>
+
 """
 
 KHODAM_LIST = [
-    "🐉 Naga Emas", "🔥 Macan Putih", "🌊 Siluman Air", "🦅 Garuda Sakti",
-    "⚡ Harimau Petir", "🌓 Jin Penjaga", "🌿 Roh Alam", "🪨 Batu Bertuah", "🖕 Kontol Pukinak", "👽 Alien Ngocok", " Sandal Jepit", " Jin coklat batangan", " Batu Bata", "kancing baju", " es krim", " ketoprak ", " soto madura", "Remot Tv", "Knalpot Racing", "Bihun", "Kuyang", "Nyi Blorong", "satpam komplek", "tusuk sate", "Tutup Odol", "Bebek sumbing", "Sapi Sumbing", "ultraman pink", "sabun bolong", "tai ayam", "Burung Puyuh", "Roti aoka"
+    "🐉 ɴᴀɢᴀ ᴇᴍᴀꜱ", "🔥 ᴍᴀᴄᴀɴ ᴘᴜᴛɪʜ", "🌊 ꜱɪʟᴜᴍᴀɴ ᴀɪʀ", "🦅 ɢᴀʀᴜᴅᴀ ꜱᴀᴋᴛɪ",
+    "⚡ ʜᴀʀɪᴍᴀᴜ ᴘᴇᴛɪʀ", "🌓 ᴊɪɴ ᴘᴇɴᴊᴀɢᴀ", "🌿 ʀᴏʜ ᴀʟᴀᴍ", "🪨 ʙᴀᴛᴜ ʙᴇʀᴛᴜᴀʜ", "🖕 ᴋᴏɴᴛᴏʟ ᴘᴜᴋɪɴᴀᴋ", "👽 ᴀʟɪᴇɴ ɴɢᴏᴄᴏᴋ", " ꜱᴀɴᴅᴀʟ ᴊᴇᴘɪᴛ", " ᴊɪɴ ᴄᴏᴋʟᴀᴛ ʙᴀᴛᴀɴɢᴀɴ", " ʙᴀᴛᴜ ʙᴀᴛᴀ", "ᴋᴀɴᴄɪɴɢ ʙᴀᴊᴜ", " ᴇꜱ ᴋʀɪᴍ", " ᴋᴇᴛᴏᴘʀᴀᴋ ", " ꜱᴏᴛᴏ ᴍᴀᴅᴜʀᴀ", "ʀᴇᴍᴏᴛ ᴛᴠ", "ᴋɴᴀʟᴘᴏᴛ ʀᴀᴄɪɴɢ", "ʙɪʜᴜɴ", "ᴋᴜʏᴀɴɢ", "ɴʏɪ ʙʟᴏʀᴏɴɢ", "ꜱᴀᴛᴘᴀᴍ ᴋᴏᴍᴘʟᴇᴋ", "ᴛᴜꜱᴜᴋ ꜱᴀᴛᴇ", "ᴛᴜᴛᴜᴘ ᴏᴅᴏʟ", "ʙᴇʙᴇᴋ ꜱᴜᴍʙɪɴɢ", "ꜱᴀᴘɪ ꜱᴜᴍʙɪɴɢ", "ᴜʟᴛʀᴀᴍᴀɴ ᴘɪɴᴋ", "ꜱᴀʙᴜɴ ʙᴏʟᴏɴɢ", "ᴛᴀɪ ᴀʏᴀᴍ", "ʙᴜʀᴜɴɢ ᴘᴜʏᴜʜ", "ʀᴏᴛɪ ᴀᴏᴋᴀ"
 ]
 
 @PY.UBOT("cekkhodam")
@@ -23,9 +24,9 @@ KHODAM_LIST = [
 async def cek_khodam(client, message):
     args = message.text.split(maxsplit=1)
     if len(args) < 2:
-        return await message.reply_text("⚠️ Gunakan format: cekkhodam [nama]")
+        return await message.reply_text("⚠️ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ: ᴄᴇᴋᴋʜᴏᴅᴀᴍ [ɴᴀᴍᴀ]")
 
     nama = args[1]
     khodam = random.choice(KHODAM_LIST)
-    hasil = f"<blockquote><b>🔮 **Hasil Cek Khodam** 🔮\n\n🧑 Nama: `{nama}`\n🪄 Khodam: `{khodam}`</blockquote></b>"
+    hasil = f"<blockquote><b>🔮 **ʜᴀꜱɪʟ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ** 🔮\n\n🧑 ɴᴀᴍᴀ: `{nama}`\n🪄 ᴋʜᴏᴅᴀᴍ: `{khodam}`</blockquote></b>"
     await message.reply_text(hasil)

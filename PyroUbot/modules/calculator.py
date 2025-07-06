@@ -4,13 +4,13 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴄᴀʟᴄᴜʟᴀᴛᴏʀ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Kalkulator</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴋᴀʟᴋᴜʟᴀᴛᴏʀ</b>
 
 ᴘᴇʀɪɴᴛᴀʜ:
-<code>{0}calc [ekspresi]</code> → Menghitung ekspresi matematika  
-Contoh: <code>.calc 5 + 10 * 2</code>
+<code>{0}ᴄᴀʟᴄ [ᴇᴋꜱᴘʀᴇꜱɪ]</code> → ᴍᴇɴɢʜɪᴛᴜɴɢ ᴇᴋꜱᴘʀᴇꜱɪ ᴍᴀᴛᴇᴍᴀᴛɪᴋᴀ  
+ᴄᴏɴᴛᴏʜ: <code>.ᴄᴀʟᴄ 5 + 10 * 2</code>
 
-Fitur ini bisa digunakan oleh siapa saja.</blockquote></b>
+ꜰɪᴛᴜʀ ɪɴɪ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ꜱɪᴀᴘᴀ ꜱᴀᴊᴀ.</blockquote></b>
 """
 
 @PY.UBOT("calc")
@@ -18,13 +18,13 @@ Fitur ini bisa digunakan oleh siapa saja.</blockquote></b>
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        return await message.reply("❌ Format salah! Gunakan: <code>.calc [ekspresi]</code>")
+        return await message.reply("❌ ꜰᴏʀᴍᴀᴛ ꜱᴀʟᴀʜ! ɢᴜɴᴀᴋᴀɴ: <code>.ᴄᴀʟᴄ [ᴇᴋꜱᴘʀᴇꜱɪ]</code>")
 
     expression = args[1]
 
     try:
         # Parsing ekspresi dengan AST (Agar lebih aman)
         result = eval(compile(ast.parse(expression, mode="eval"), "<string>", "eval"))
-        await message.reply(f"✅ Hasil: <code>{result}</code>")
+        await message.reply(f"✅ ʜᴀꜱɪʟ: <code>{result}</code>")
     except Exception as e:
-        await message.reply(f"❌ Error: {str(e)}")
+        await message.reply(f"❌ ᴇʀʀᴏʀ: {str(e)}")

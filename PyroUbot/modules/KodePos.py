@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 __MODULE__ = "ᴋᴏᴅᴇ ᴘᴏs"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Kode Pos Desa Cess</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴋᴏᴅᴇ ᴘᴏs ᴅᴇsᴀ ᴄᴇss</b>
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kdps</code>
-    dapat Membantu Melihat Kode Pos Suatu Desa Cess</b></blockquote>
+    ᴅᴀᴘᴀᴛ ᴍᴇᴍʙᴀɴᴛᴜ ᴍᴇʟɪʜᴀᴛ ᴋᴏᴅᴇ ᴘᴏs sᴜᴀᴛᴜ ᴅᴇsᴀ ᴄᴇss</b></blockquote>
 """
 
 
@@ -22,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>Mohon Gunakan Format\nContoh : .kdps nama desa"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .ᴋᴅᴘs ɴᴀᴍᴀ ᴅᴇsᴀ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>Mencari Cess....")
+            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>ᴍᴇɴᴄᴀʀɪ ᴄᴇss....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/kodepos?query={a}&apikey=045705b1')
 
@@ -36,8 +36,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀsɪʟ' ᴅᴀʟᴀᴍ ʀᴇsᴘᴏɴs ᴄᴜᴋɪ ᴄᴇss.")
             except KeyError:
-                await message.reply_text("Error Mengakses Respons Cess.")
+                await message.reply_text("ᴇʀʀᴏʀ ᴍᴇɴɢᴀᴋsᴇs ʀᴇsᴘᴏɴs ᴄᴇss.")
     except Exception as e:
         await message.reply_text(f"{e}")

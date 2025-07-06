@@ -5,16 +5,16 @@ from PyroUbot import *
 
 __MODULE__ = "ʙɪɴɢ ɪᴍɢ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Bing-image
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙɪɴɢ-ɪᴍᴀɢᴇ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}pic</code> [ǫᴜᴇʀʏ]
-    Untuk Mencari Photo Random Dari Google</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴘɪᴄ</code> [ǫᴜᴇʀʏ]
+    ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴘʜᴏᴛᴏ ʀᴀɴᴅᴏᴍ ᴅᴀʀɪ ɢᴏᴏɢʟᴇ</b></blockquote>
 """
 
 
 @PY.UBOT("pic")
 async def pic_bing_cmd(client, message):
-    TM = await message.reply("<b>Prosess Cess...</b>")
+    TM = await message.reply("<b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>")
     if len(message.command) < 2:
         return await TM.edit(f"<code>{message.text}</code> [ǫᴜᴇʀʏ]")
     x = await client.get_inline_bot_results(

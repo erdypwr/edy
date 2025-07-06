@@ -10,10 +10,10 @@ from PyroUbot import *
 
 __MODULE__ = "ɪɴsᴛᴀɢʀᴀᴍ"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk Instagram Cess</b>
+ <blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪɴsᴛᴀɢʀᴀᴍ ᴄᴇss</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ig</code> <b>[link]</b>
-• <b>Penjelasan : Downloader Vid Instagram</b></blockquote>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ig</code> <b>[ʟɪɴᴋ]</b>
+• <b>ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴠɪᴅ ɪɴsᴛᴀɢʀᴀᴍ</b></blockquote>
 
 """
 
@@ -37,8 +37,8 @@ class TikTokDownloaderAPI:
 
     def downloader(self, url, output_name):
         """
-        url: tiktok video url
-        output_name: output video (.mp4). Example : video.mp4
+        ᴜʀʟ: ᴛɪᴋᴛᴏᴋ ᴠɪᴅᴇᴏ ᴜʀʟ
+        ᴏᴜᴛᴘᴜᴛ_ɴᴀᴍᴇ: ᴏᴜᴛᴘᴜᴛ ᴠɪᴅᴇᴏ (.mp4). ᴇxᴀᴍᴘʟᴇ : ᴠɪᴅᴇᴏ.mp4
         """
         ses = requests.Session()
         server_url = "https://musicaldown.com/"
@@ -71,14 +71,14 @@ class TikTokDownloaderAPI:
         req_post = ses.post(post_url, data=data, allow_redirects=True)
         if (
             req_post.status_code == 302
-            or "Video Ini Saat Ini Tidak Tersedia Cess" in req_post.text
-            or "Video Ini Bersifat Pribadi Atau Dihapus Cess!" in req_post.text
+            or "ᴠɪᴅᴇᴏ ɪɴɪ sᴀᴀᴛ ɪɴɪ ᴛɪᴅᴀᴋ ᴛᴇʀsᴇᴅɪᴀ ᴄᴇss" in req_post.text
+            or "ᴠɪᴅᴇᴏ ɪɴɪ ʙᴇʀsɪꜰᴀᴛ ᴘʀɪʙᴀᴅɪ ᴀᴛᴀᴜ ᴅɪʜᴀᴘᴜs ᴄᴇss!" in req_post.text
         ):
-            print("- Video Pribadi Atau Dihapus Cess")
-            return "Pribadi/Hapus"
-        elif "Url Yang Dikirim Tidak Valid, Coba Lagi Cess" in req_post.text:
-            print("- url is invalid")
-            return "url-invalid"
+            print("- ᴠɪᴅᴇᴏ ᴘʀɪʙᴀᴅɪ ᴀᴛᴀᴜ ᴅɪʜᴀᴘᴜs ᴄᴇss")
+            return "ᴘʀɪʙᴀᴅɪ/ʜᴀᴘᴜs"
+        elif "ᴜʀʟ ʏᴀɴɢ ᴅɪᴋɪʀɪᴍ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ, ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴇss" in req_post.text:
+            print("- ᴜʀʟ ɪs ɪɴᴠᴀʟɪᴅ")
+            return "ᴜʀʟ-ɪɴᴠᴀʟɪᴅ"
         get_all_blank = bs4.BeautifulSoup(req_post.text, "html.parser").findAll(
             "a", attrs={"target": "_blank"}
         )
@@ -146,9 +146,9 @@ class PinterestMediaDownloader:
 
 @PY.UBOT("ig")
 async def instacrot(client: Client, message):
-    print("processing")
+    print("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇss")
     if len(message.text.split()) < 2:
-        await message.reply_text("<blockquote>Pengunaan : .ig url</blockquote>")
+        await message.reply_text("<blockquote>ᴘᴇɴɢᴜɴᴀᴀɴ : .ɪɢ ᴜʀʟ</blockquote>")
         return
 
     link = message.text.split()[1]
@@ -185,7 +185,7 @@ async def instacrot(client: Client, message):
             tracemsg = traceback.format_exc()
             await message.reply_text(tracemsg)
             await message.reply_text(
-                "<blockquote>400: Maaf, Tidak Dapat Menemukannya Coba Yang Lain Atau Laporkan Ke @ydhiak🤖</blockquote>"
+                "<blockquote>400: ᴍᴀᴀꜰ, ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴɴʏᴀ ᴄᴏʙᴀ ʏᴀɴɢ ʟᴀɪɴ ᴀᴛᴀᴜ ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ @ydhiak🤖</blockquote>"
             )
         finally:
             await m.delete()

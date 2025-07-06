@@ -11,15 +11,15 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀɴɪᴍᴀsɪ 3"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴀsɪ 4<b>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴀꜱɪ 3 ⦫<b>
 
-<blockqoute><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}hypo</code> 
-ᚗ <code>{0}bulan</code> 
-ᚗ <code>{0}music</code> 
-ᚗ <code>{0}sinyal</code> 
-ᚗ <code>{0}dot</code> 
-ᚗ <code>{0}car</code></b></blockqoute>
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
+ᚗ <code>{0}ʜʏᴘᴏ</code> 
+ᚗ <code>{0}ʙᴜʟᴀɴ</code> 
+ᚗ <code>{0}ᴍᴜꜱɪᴄ</code> 
+ᚗ <code>{0}ꜱɪɴʏᴀʟ</code> 
+ᚗ <code>{0}ᴅᴏᴛ</code> 
+ᚗ <code>{0}ᴄᴀʀ</code></b></blockquote>
 """
 
 
@@ -32,7 +32,7 @@ async def _(client, message):
         return
     animation_interval = 0.3
     animation_ttl = range(0, 15)
-    await message.edit("hypo....")
+    await message.edit("ʜʏᴘᴏ....")
     animation_chars = [
         "⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜",
         "⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬛⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜",
@@ -61,7 +61,7 @@ async def _(client, message):
         return
     animation_interval = 0.2
     animation_ttl = range(96)
-    await message.edit("bulan....")
+    await message.edit("ʙᴜʟᴀɴ....")
     animation_chars = [
         "🌗",
         "🌘",
@@ -108,7 +108,7 @@ async def _(client, message):
         return
     animation_interval = 1.5
     animation_ttl = range(11)
-    await message.edit("music....")
+    await message.edit("ᴍᴜꜱɪᴄ....")
     animation_chars = [
             "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](https://t.me/alfsefy)\n\n⠀⠀⠀⠀**Now Playing:Aku Titipkan Dia**\n\n**00:00** ▱▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `▶️` `⏩️` `⏭️`\n\n**⠀Next Song:** __I Am Sexy And I Know It.__\n\n⠀⠀⠀⠀**⠀Device: @alfsefyy**",
             "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](https://t.me/alfsefy)\n\n⠀⠀⠀⠀**Now Playing:Aku Titipkan Dia**\n\n**00:01** ▰▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __I Am Sexy And I Know It.__\n\n⠀⠀⠀⠀**⠀Device: @alfsefyy**",
@@ -133,7 +133,7 @@ async def gahah(client: Client, message: Message):
         return
     animation_interval = 1
     animation_ttl = range(0, 24)
-    await message.edit("search sinyal.....")
+    await message.edit("ꜱᴇᴀʀᴄʜ ꜱɪɴʏᴀʟ.....")
     animation_chars = [
 "⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛",
             "⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛\n🚀⬛⬛⬛⬛⬛",
@@ -175,9 +175,9 @@ async def edit_or_reply(message: Message, text: str):
 @PY.UBOT("dot")
 @PY.TOP_CMD
 async def adadino(client: Client, message: Message):
-    typew = await edit_or_reply(message, "`Dot.....`")
+    typew = await edit_or_reply(message, "`ᴅᴏᴛ.....`")
     await asyncio.sleep(1)
-    await typew.edit("`dot....dot....!!`")
+    await typew.edit("`ᴅᴏᴛ....ᴅᴏᴛ....!!`")
     await asyncio.sleep(1)
 
     dino_chase_frames = [
@@ -202,7 +202,7 @@ async def adadino(client: Client, message: Message):
 @PY.UBOT("car")
 @PY.TOP_CMD
 async def menggabut(client: Client, message: Message):
-    e = await edit_or_reply(message, "`car`")
+    e = await edit_or_reply(message, "`ᴄᴀʀ`")
     await asyncio.sleep(1)
     
     gabut_frames = [

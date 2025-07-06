@@ -28,7 +28,7 @@ async def _(client, message):
         )
         await message.reply_inline_bot_result(x.query_id, x.results[0].id, quote=True)
     except Exception as error:
-        await message.reply(error)
+        message.reply(error)
     
 
 
@@ -101,20 +101,20 @@ async def _(client, callback_query):
 @PY.ADMIN
 async def _(client, message):
     buttons = BTN.BOT_HELP(message)
-    sh = await message.reply("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
+    sh = await message.reply("ʜᴇʟᴘ ᴍᴇɴᴜ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ", reply_markup=InlineKeyboardMarkup(buttons))
     
 
 @PY.CALLBACK("balik")
 async def _(client, callback_query):
     buttons = BTN.BOT_HELP(callback_query)
-    sh = await callback_query.message.edit("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
+    sh = await callback_query.message.edit("ʜᴇʟᴘ ᴍᴇɴᴜ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ", reply_markup=InlineKeyboardMarkup(buttons))
 
 @PY.CALLBACK("reboot")
 async def _(client, callback_query):
     user_id = callback_query.from_user.id
     if user_id not in await get_list_from_vars(client.me.id, "ADMIN_USERS"):
-        return await callback_query.answer("tombol ini bukan untuk lu", True)
-    await callback_query.answer("system berhasil di restart", True)
+        return await callback_query.answer("ᴛᴏᴍʙᴏʟ ɪɴɪ ʙᴜᴋᴀɴ ᴜɴᴛᴜᴋ ʟᴜ", True)
+    await callback_query.answer("ꜱʏꜱᴛᴇᴍ ʙᴇʀʜᴀꜱɪʟ ᴅɪ ʀᴇꜱᴛᴀʀᴛ", True)
     subprocess.call(["bash", "start.sh"])
 
 @PY.CALLBACK("update")
@@ -122,11 +122,11 @@ async def _(client, callback_query):
     out = subprocess.check_output(["git", "pull"]).decode("UTF-8")
     user_id = callback_query.from_user.id
     if not user_id == OWNER_ID:
-        return await callback_query.answer("tombol ini bukan untuk lu", True)
+        return await callback_query.answer("ᴛᴏᴍʙᴏʟ ɪɴɪ ʙᴜᴋᴀɴ ᴜɴᴛᴜᴋ ʟᴜ", True)
     if "Already up to date." in str(out):
-        return await callback_query.answer("ꜱudah terupdate", True)
+        return await callback_query.answer("ꜱᴜᴅᴀʜ ᴛᴇʀᴜᴘᴅᴀᴛᴇ", True)
     else:
-        await callback_query.answer("Sedang Memproꜱeꜱ Update Cess.....", True)
+        await callback_query.answer("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴜᴘᴅᴀᴛᴇ ᴄᴇꜱꜱ.....", True)
     os.execl(sys.executable, sys.executable, "-m", "ErrCessBot")
 
 
@@ -150,7 +150,7 @@ async def user_help(client, message):
             )
         else:
             await message.reply(
-                f"<b>❌ No module found <code>{module}</code></b>"
+                f"<b>❌ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴍᴏᴅᴜʟᴇ <code>{module}</code></b>"
             )
 
 @PY.INLINE("^user_help")

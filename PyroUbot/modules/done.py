@@ -5,17 +5,17 @@ from PyroUbot import *
 
 __MODULE__ = "ᴅᴏɴᴇ"
 __HELP__ = """
-<blockquote> <b>Bantuan Untuk Done Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴅᴏɴᴇ ᴄᴇꜱꜱ 』</b>
 
-• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}done</code> <b>[name item],[harga] [pembayaran]</b>
-• <b>Penjelasan : konfirmasi pembayaran.</b></blockquote>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ᴅᴏɴᴇ</code> <b>[ɴᴀᴍᴇ ɪᴛᴇᴍ],[ʜᴀʀɢᴀ] [ᴘᴇᴍʙᴀʏᴀʀᴀɴ]</b>
+• <b>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴋᴏɴꜰɪʀᴍᴀꜱɪ ᴘᴇᴍʙᴀʏᴀʀᴀɴ.</blockquote></b>
 
 """
 
 
 @PY.UBOT("done")
 async def done_command(client, message):
-    izzy_ganteng = await message.reply("<blockquote>Prosess Cess...</blockquote>")
+    izzy_ganteng = await message.reply("<blockquote>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</blockquote>")
     await asyncio.sleep(5)
     try:
         args = message.text.split(" ", 1)
@@ -36,9 +36,9 @@ async def done_command(client, message):
         response = (
             f"<blockquote>「 𝗧𝗥𝗔𝗡𝗦𝗔𝗞𝗦𝗜 𝗕𝗘𝗥𝗛𝗔𝗦𝗜𝗟 」\n</blockquote>"
             f"<blockquote>📦 <b>ʙᴀʀᴀɴɢ : {name_item}</b>\n"
-            f"💸 <b>ɴᴏᴍɪɴᴀʟ : {price}</b>\n"
+            f"💸 <b>ʜᴀʀɢᴀ : {price}</b>\n"
             f"🕰️ <b>ᴡᴀᴋᴛᴜ : {time}</b>\n"
-            f"💳 <b>ᴘᴀʏᴍᴇɴᴛ : {payment}</b>\n</blockquote>"
+            f"💳 <b>ᴘᴇᴍʙᴀʏᴀʀᴀɴ : {payment}</b>\n</blockquote>"
             f"<blockquote>ᴛᴇʀɪᴍᴀᴋᴀsɪʜ ᴛᴇʟᴀʜ ᴏʀᴅᴇʀ</blockquote>"
         )
         await izzy_ganteng.edit(response)

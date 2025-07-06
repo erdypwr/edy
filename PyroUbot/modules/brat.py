@@ -6,10 +6,11 @@ import requests
 
 __MODULE__ = "ʙʀᴀᴛ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ brat 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴀᴛ 』</b>
 
   <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}brat [text]</code>
-  <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> Untuk Membuat Gambar Text Seperti Tren Tiktok</b></blockquote>
+  <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴛᴇxᴛ sᴇᴘᴇʀᴛɪ ᴛʀᴇɴ ᴛɪᴋᴛᴏᴋ</b></blockquote>
+
 """
 
 def get_brat_image(text):

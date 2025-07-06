@@ -52,7 +52,7 @@ async def _(client, message):
         await message.reply(f"<emoji id=5215204871422093648>❌</emoji> Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
         return
 
-    processing_msg = await message.reply("<emoji id=4943239162758169437>🤩</emoji> Processing...")
+    processing_msg = await message.reply("<emoji id=4943239162758169437>🤩</emoji> ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     try:
         await client.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)

@@ -16,22 +16,22 @@ from PyroUbot import *
 
 __MODULE__ = "ᴍɪꜱᴄ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Misc Cess
+<blockquote>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍɪꜱᴄ ᴄᴇss
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}limit</code>
-    Mengecek Status Akun Apakah Terkena Limit atau Tidak Cess
+    ᴍᴇɴɢᴇᴄᴇᴋ sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴀᴘᴀᴋᴀʜ ᴛᴇʀᴋᴇɴᴀ ʟɪᴍɪᴛ ᴀᴛᴀᴜ ᴛɪᴅᴀᴋ ᴄᴇss
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}carbon</code>
-    Membuat Text Carbonara Cess
+    ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴄᴀʀʙᴏɴᴀʀᴀ ᴄᴇss
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}qrGen</code>
-    Merubah QRCode Text Menjadi Gambar Cess
+    ᴍᴇʀᴜʙᴀʜ Qʀᴄᴏᴅᴇ ᴛᴇxᴛ ᴍᴇɴᴊᴀᴅɪ ɢᴀᴍʙᴀʀ ᴄᴇss
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}qrRead</code>
-    Merubah QRCode Media Menjadi Text Cess
+    ᴍᴇʀᴜʙᴀʜ Qʀᴄᴏᴅᴇ ᴍᴇᴅɪᴀ ᴍᴇɴᴊᴀᴅɪ ᴛᴇxᴛ ᴄᴇss
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}font</code>
-    Merubah Text Menjadi Berbeda Cess</blockquote>
+    ᴍᴇʀᴜʙᴀʜ ᴛᴇxᴛ ᴍᴇɴᴊᴀᴅɪ ʙᴇʀʙᴇᴅᴀ ᴄᴇss</blockquote>
 """
 
 @PY.UBOT("limit")
@@ -45,7 +45,7 @@ async def _(client, message):
     yubot = await EMO.UBOT(client)
     await client.unblock_user("SpamBot")
     bot_info = await client.resolve_peer("SpamBot")
-    msg = await message.reply(f"{prs}Prosess Cess . . .")
+    msg = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     response = await client.invoke(
         StartBot(
             bot=bot_info,
@@ -124,9 +124,9 @@ async def carbon_func(client, message):
         text = message.reply_to_message.text or message.reply_to_message.caption
     if not text:
         return await message.delete()
-    ex = await message.reply("Prosess Cess...")
+    ex = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇss...")
     carbon = await make_carbon(text)
-    await ex.edit("Uploading Cess...")
+    await ex.edit("ᴜᴘʟᴏᴀᴅɪɴɢ ᴄᴇss...")
     await asyncio.gather(
         ex.delete(),
         client.send_photo(
@@ -183,7 +183,7 @@ async def _(client, message):
             return await message.delete()
         else:
             data = qr_gen(message.text.split(None, 1)[1])
-    Tm = await message.reply("sedang memproses buat qrcode....")
+    Tm = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs ʙᴜᴀᴛ Qʀᴄᴏᴅᴇ....")
     try:
         QRcode = (
             requests.post(
@@ -205,13 +205,13 @@ async def _(client, message):
 async def _(client, message):
     replied = message.reply_to_message
     if not (replied and replied.media and (replied.photo or replied.sticker)):
-        await message.reply("Balas Kode QR Untuk Mendapatkan Data Cess...")
+        await message.reply("ʙᴀʟᴀs ᴋᴏᴅᴇ Qʀ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴅᴀᴛᴀ ᴄᴇss...")
         return
     if not os.path.isdir("premiumQR/"):
         os.makedirs("premiumQR/")
-    AM = await message.reply("Mengunduh Media Cess...")
+    AM = await message.reply("ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴇᴅɪᴀ ᴄᴇss...")
     down_load = await client.download_media(message=replied, file_name="premiumQR/")
-    await AM.edit("Memproses Kode QR Elu...")
+    await AM.edit("ᴍᴇᴍᴘʀᴏsᴇs ᴋᴏᴅᴇ Qʀ ᴇʟᴜ...")
     cmd = [
         "curl",
         "-X",
@@ -230,15 +230,15 @@ async def _(client, message):
     err_response = stderr.decode().strip()
     os.remove(down_load)
     if not (out_response or err_response):
-        await AM.edit("Tidak Bisa Mendapatkan Data Kode QR Ini Cess...")
+        await AM.edit("ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴅᴀᴛᴀ ᴋᴏᴅᴇ Qʀ ɪɴɪ ᴄᴇss...")
         return
     try:
         soup = BeautifulSoup(out_response, "html.parser")
         qr_contents = soup.find_all("pre")[0].text
     except IndexError:
-        await AM.edit("Indeks Daftar Di Luar Jangkauan Cess")
+        await AM.edit("ɪɴᴅᴇᴋs ᴅᴀꜰᴛᴀʀ ᴅɪ ʟᴜᴀʀ ᴊᴀɴɢᴋᴀᴜᴀɴ ᴄᴇss")
         return
-    await AM.edit(f"data qrcode:\n{qr_contents}")
+    await AM.edit(f"ᴅᴀᴛᴀ Qʀᴄᴏᴅᴇ:\n{qr_contents}")
   
 
 @PY.UBOT("font")
@@ -248,10 +248,10 @@ async def _(client, message):
         if message.reply_to_message.text:
             query = id(message)
         else:
-            return await message.reply("Harap Reply Ke Text Cess")
+            return await message.reply("ʜᴀʀᴀᴘ ʀᴇᴘʟʏ ᴋᴇ ᴛᴇxᴛ ᴄᴇss")
     else:
         if len(message.command) < 2:
-            return await message.reply(f"{message.text} [reply/text]")
+            return await message.reply(f"{message.text} [ʀᴇᴘʟʏ/ᴛᴇxᴛ]")
         else:
             query = id(message)
     try:
@@ -281,7 +281,7 @@ async def _(client, inline_query):
                     title="get font!",
                     reply_markup=buttons,
                     input_message_content=InputTextMessageContent(
-                        "Silahkan Pilih Salah Satu Font Dibawah Cess"
+                        "sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ sᴀʟᴀʜ sᴀᴛᴜ ꜰᴏɴᴛ ᴅɪʙᴀᴡᴀʜ ᴄᴇss"
                     ),
                 )
             )
@@ -302,7 +302,7 @@ async def _(client, callback_query):
         get_new_font = gens_font(new, text)
         return await callback_query.edit_message_text(get_new_font)
     except Exception as error:
-        return await callback_query.answer(f"Error: {error}", True)
+        return await callback_query.answer(f"ᴇʀʀᴏʀ: {error}", True)
 
 
 @PY.CALLBACK("^next")
@@ -321,7 +321,7 @@ async def _(client, callback_query):
         buttons.row(InlineKeyboardButton("◄", callback_data=f"prev {get_id}"))
         return await callback_query.edit_message_reply_markup(reply_markup=buttons)
     except Exception as error:
-        return await callback_query.answer(f"Error Cess: {error}", True)
+        return await callback_query.answer(f"ᴇʀʀᴏʀ ᴄᴇss: {error}", True)
 
 
 @PY.CALLBACK("^prev")
@@ -340,4 +340,4 @@ async def _(client, callback_query):
         buttons.row(InlineKeyboardButton("►", callback_data=f"next {get_id}"))
         return await callback_query.edit_message_reply_markup(reply_markup=buttons)
     except Exception as error:
-        return await callback_query.answer(f"❌ Error Cess: {error}", True)
+        return await callback_query.answer(f"❌ ᴇʀʀᴏʀ ᴄᴇss: {error}", True)

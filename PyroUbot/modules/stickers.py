@@ -123,7 +123,7 @@ async def _(client, message):
     reply = message.reply_to_message
     if not (reply and (reply.media)):
         return await message.reply("silahkan balas ke pesan sticker!")
-    Tm = await message.reply("processing...")
+    Tm = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     ik = await client.download_media(reply)
     im1 = Image.open("storage/TM_BLACK.png")
     if ik.endswith(".tgs"):
@@ -374,7 +374,7 @@ async def _(client, message):
                 == "Sorry, the file type is invalid."
             ):
                 await Tm.edit(
-                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker anda."
+                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker ᴇʟᴜ."
                 )
                 return
             await client.send_message("Stickers", emoji_)
@@ -397,7 +397,7 @@ async def _(client, message):
                 == "Sorry, the file type is invalid."
             ):
                 await Tm.edit(
-                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker anda."
+                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker ᴇʟᴜ."
                 )
                 return
             await client.send_message("Stickers", emoji_)

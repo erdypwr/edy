@@ -4,16 +4,16 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀʀᴛɪ ɴᴀᴍᴀ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Arti Nama</b>
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀʀᴛɪ ɴᴀᴍᴀ</b>
 
 ᴘᴇʀɪɴᴛᴀʜ:
-<code>{0}artinama [nama]</code> → Mengartikan dengan nama</blockquote></b>
+<code>{0}ᴀʀᴛɪɴᴀᴍᴀ [ɴᴀᴍᴀ]</code> → ᴍᴇɴɢᴀʀᴛɪᴋᴀɴ ᴅᴇɴɢᴀɴ ɴᴀᴍᴀ</blockquote></b>
 """
 
 @PY.UBOT("artinama")
 async def _(client, message):
     if len(message.command) < 2:
-        await message.reply_text("<blockquote><b>**Gunakan ᴘᴇʀɪɴᴛᴀʜ:** `/artinama nama`\n\nContoh: `/artinama putu`</blockquote></b>")
+        await message.reply_text("<blockquote><b>**ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ:** `/ᴀʀᴛɪɴᴀᴍᴀ ɴᴀᴍᴀ`\n\nᴄᴏɴᴛᴏʜ: `/ᴀʀᴛɪɴᴀᴍᴀ ᴘᴜᴛᴜ`</blockquote></b>")
         return
 
     nama = " ".join(message.command[1:])
@@ -28,7 +28,7 @@ async def _(client, message):
             catatan_res = response["data"].get("catatan", "")
 
             reply_text = (
-                f"<blockquote><b>**🔍 Arti Nama: {nama_res}**\n\n</blockquote></b>"
+                f"<blockquote><b>**🔍 ᴀʀᴛɪ ɴᴀᴍᴀ: {nama_res}**\n\n</blockquote></b>"
                 f"<blockquote><b>📖 {arti_res}\n</blockquote></b>"
             )
 
@@ -37,6 +37,6 @@ async def _(client, message):
 
             await message.reply_text(reply_text)
         else:
-            await message.reply_text(f"<blockquote><b>❌ Maaf, arti nama **{nama}** tidak ditemukan.</blockquote></b>")
+            await message.reply_text(f"<blockquote><b>❌ ᴍᴀᴀꜰ, ᴀʀᴛɪ ɴᴀᴍᴀ **{nama}** ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ.</blockquote></b>")
     except Exception as e:
-        await message.reply_text(f"<blockquote><b>⚠️ Terjadi kesalahan saat mengambil data:\n`{str(e)}`</blockquote></b>")
+        await message.reply_text(f"<blockquote><b>⚠️ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀᴛᴀ:\n`{str(e)}`</blockquote></b>")

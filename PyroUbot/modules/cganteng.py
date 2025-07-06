@@ -4,7 +4,7 @@ import random
 from PyroUbot import *
 
 __MODULE__ = "ᴄᴇᴋɢᴀɴᴛᴇɴɢ"
-__HELP__ = """**「 BANTUAN UNTUK MODULE CEK GANTENG 」**
+__HELP__ = """**『 BANTUAN UNTUK MODULE CEK GANTENG 』**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .cekganteng**
 𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ɢᴀɴᴛᴇɴɢ ɴᴀᴍᴀ ᴏʀᴀɴɢ**"""

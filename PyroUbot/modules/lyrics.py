@@ -3,13 +3,14 @@ import wget
 import os
 from pyrogram import Client
 from PyroUbot import *
+from PyroUbot.core.helpers.emoji import EMO
 
 __MODULE__ = "ʟʏʀɪᴄꜱ"
 __HELP__ = """
 <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟʏʀɪᴄꜱ ᴄᴇꜱꜱ 』</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}lyrics</code> 
-   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> Pencarian Lirik Musik Cess</i>
+  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ʟʏʀɪᴄꜱ</code> 
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> ᴘᴇɴᴄᴀʀɪᴀɴ ʟɪʀɪᴋ ᴍᴜꜱɪᴋ ᴄᴇꜱꜱ</i>
 """
 
 @PY.UBOT("lyrics")
@@ -18,10 +19,10 @@ async def lyrics(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     
-    jalan = await message.reply(f"{prs} Prosess Cess...")
+    jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Mohon Gunakan ᴘᴇʀɪɴᴛᴀʜ `lyrics` Judul Musik Cess.")
+        return await jalan.edit(f"{ggl} ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ʟʏʀɪᴄꜱ` ᴊᴜᴅᴜʟ ᴍᴜꜱɪᴋ ᴄᴇꜱꜱ.")
 
     lyrics = message.command[1]
     chat_id = message.chat.id
@@ -44,10 +45,10 @@ async def lyrics(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'hasil' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ ᴄᴇꜱꜱ.")
 
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴇꜱꜱ: {e}")
 
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴇꜱꜱ: {e}")

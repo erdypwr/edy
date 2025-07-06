@@ -3,13 +3,14 @@ import asyncio
 from pyrogram.enums import UserStatus
 
 from PyroUbot import *
+from PyroUbot.core.helpers.emoji import EMO
 
 __MODULE__ = "ɪɴᴠɪᴛᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Invite Cess</blockquote>
+<blockquote>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪɴᴠɪᴛᴇ ᴄᴇss</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}invite</code> [username]
-    Mengundang Anggota Ke Group</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}invite</code> [ᴜsᴇʀɴᴀᴍᴇ]
+    ᴍᴇɴɢᴜɴᴅᴀɴɢ ᴀɴɢɢᴏᴛᴀ ᴋᴇ ɢʀᴏᴜᴘ</blockquote>
 """
 
 
@@ -20,13 +21,13 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    mg = await message.reply(f"{prs}Menambahkan Pengguna Cess!")
+    mg = await message.reply(f"{prs}ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴘᴇɴɢɢᴜɴᴀ ᴄᴇss!")
     if len(message.command) < 2:
         return await mg.delete()
     user_s_to_add = message.text.split(" ", 1)[1]
     if not user_s_to_add:
         await mg.edit(
-            f"{ktrng}Berikan User Untuk Ditambahkan!\nPeriksa Menu Bantuan Untuk Info Lebih Lanjut Cess!"
+            f"{ktrng}ʙᴇʀɪᴋ��ɴ ᴜsᴇʀ ᴜɴᴛᴜᴋ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ!\nᴘᴇʀɪᴋsᴀ ᴍᴇɴᴜ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪɴꜰᴏ ʟᴇʙɪʜ ʟᴀɴᴊᴜᴛ ᴄᴇss!"
         )
         return
     user_list = user_s_to_add.split(" ")
@@ -34,7 +35,7 @@ async def _(client, message):
         await client.add_chat_members(message.chat.id, user_list, forward_limit=100)
     except Exception as e:
         return await mg.edit(f"{e}")
-    await mg.edit(f"{brhsl}Berhasil Ditambahkan {len(user_list)} Ke Grup Ini Cess!")
+    await mg.edit(f"{brhsl}ʙᴇʀʜᴀsɪʟ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ {len(user_list)} ᴋᴇ ɢʀᴜᴘ ɪɴɪ ᴄᴇss!")
 
 
 
@@ -49,7 +50,7 @@ async def _(client, message):
     # brhsl = await EMO.BERHASIL(client)
     # ggl = await EMO.GAGAL(client)
     # ktrng = await EMO.BL_KETERANGAN(client)
-    # Tm = await message.reply(f"{prs}processing . . .")
+    # Tm = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     # if len(message.command) < 3:
         # await message.delete()
         # return await Tm.delete()

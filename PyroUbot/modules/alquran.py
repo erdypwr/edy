@@ -47,7 +47,7 @@ async def send_quran(client, message):
     try:
         args = message.command[1:]
         if len(args) < 2 or not args[0].isdigit() or not args[1].isdigit():
-            await message.reply_text("Contoh:\n .alquran 1 2\n\nMaka hasilnya adalah surah Al-Fatihah ayat 2")
+            await message.reply_text("ᴄᴏɴᴛᴏʜ:\n .ᴀʟǫᴜʀᴀɴ 1 2\n\nᴍᴀᴋᴀ ʜᴀꜱɪʟɴʏᴀ ᴀᴅᴀʟᴀʜ ꜱᴜʀᴀʜ ᴀʟ-ꜰᴀᴛɪʜᴀʜ ᴀʏᴀᴛ 2")
             return
         
         surah = int(args[0])
@@ -58,7 +58,7 @@ async def send_quran(client, message):
 {result['arab']}
 <b>{result['latin']}</b>
 
-<b>Artinya : {result['terjemahan']}</b>
+<b>ᴀʀᴛɪɴʏᴀ : {result['terjemahan']}</b>
 
 <b>( {result['surah']} )</b>
 """
@@ -68,9 +68,9 @@ async def send_quran(client, message):
             chat_id=message.chat.id,
             audio=result["audio"],
             caption=f"( {result['surah']} )",
-            title="Quran Audio",
-            file_name="vn.mp3"
+            title="ǫᴜʀᴀɴ ᴀᴜᴅɪᴏ",
+            file_name="ᴠɴ.ᴍᴘ3"
         )
 
     except Exception as e:
-        await message.reply_text(f"Error: {str(e)}")
+        await message.reply_text(f"ᴋᴇꜱᴀʟᴀʜᴀɴ: {str(e)}")

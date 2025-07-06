@@ -2,12 +2,13 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴀᴍᴇ ᴠ2"
 __HELP__ = """
-<blockquote>Bantuan Untuk gamev2 Cess
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴀᴍᴇᴠ2 ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gamev2</code>
-   untuk memunculkan game random 2
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ɢᴀᴍᴇᴠ2</code>
+   ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɢᴀᴍᴇ ʀᴀɴᴅᴏᴍ 2
 
-note: jumlah menu game cuma 3</blockquote>
+ɴᴏᴛᴇ: ᴊᴜᴍʟᴀʜ ᴍᴇɴᴜ ɢᴀᴍᴇ ᴄᴜᴍᴀ 3</blockquote>
+
 """
 
 

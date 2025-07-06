@@ -10,8 +10,8 @@ __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴀᴄᴋʙᴏx ᴀɪ ⦫</b>
 
 <blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}blackbox</code>
-⊷ dapat membantu Anda dengan berbagai konsep pemrograman</b></blockquote>
+ᚗ <code>{0}ʙʟᴀᴄᴋʙᴏx</code>
+⊷ ᴅᴀᴘᴀᴛ ᴍᴇᴍʙᴀɴᴛᴜ ᴇʟᴜ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ᴋᴏɴsᴇᴘ ᴘᴇᴍᴘʀᴏɢʀᴀᴍᴀɴ</b></blockquote>
 """
 
 
@@ -23,10 +23,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .blackbox query"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .ʙʟᴀᴄᴋʙᴏx ǫᴜᴇʀʏ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Prosess Cess....")
+            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/blackbox-chat?text={a}&apikey=045705b1')
 
@@ -37,8 +37,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ʀᴇsᴜʟᴛ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅᴀʟᴀᴍ ʀᴇsᴘᴏɴꜱ.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴋᴇsᴀʟᴀʜᴀɴ ᴀᴋsᴇs ʀᴇsᴘᴏɴꜱ.")
     except Exception as e:
-        await message.reply_text(f"{e}")
+        await message.reply_text(f"ᴋᴇsᴀʟᴀʜᴀɴ: {e}")

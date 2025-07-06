@@ -14,21 +14,21 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀᴅᴍɪɴ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Admin
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀᴅᴍɪɴ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kick</code> |<code>{0}ban</code> |<code>{0}mute</code> |<code>{0}etmin</code> |<code>{0}ceo</code> |<code>{0}demote</code>
-    <code>{0}unmute</code> |<code>{0}unban</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴋɪᴄᴋ</code> |<code>{0}ʙᴀɴ</code> |<code>{0}ᴍᴜᴛᴇ</code> |<code>{0}ᴇᴛᴍɪɴ</code> |<code>{0}ᴄᴇᴏ</code> |<code>{0}ᴅᴇᴍᴏᴛᴇ</code>
+    <code>{0}ᴜɴᴍᴜᴛᴇ</code> |<code>{0}ᴜɴʙᴀɴ</code>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}zombies</code> [in group]
-    mengeluarkan akun terhapus dari group
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴢᴏᴍʙɪᴇꜱ</code> [ɪɴ ɢʀᴏᴜᴘ]
+    ᴍᴇɴɢᴇʟᴜᴀʀᴋᴀɴ ᴀᴋᴜɴ ᴛᴇʀʜᴀᴘᴜꜱ ᴅᴀʀɪ ɢʀᴏᴜᴘ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}lock</code> | <code>{0}unlock</code> | <code>{0}locks</code>
-    mengunci/membuka dan list izin group
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ʟᴏᴄᴋ</code> | <code>{0}ᴜɴʟᴏᴄᴋ</code> | <code>{0}ʟᴏᴄᴋꜱ</code>
+    ᴍᴇɴɢᴜɴᴄɪ/ᴍᴇᴍʙᴜᴋᴀ ᴅᴀɴ ʟɪꜱᴛ ɪᴢɪɴ ɢʀᴏᴜᴘ
 
-example:
-    |<code>{0}lock msg</code> |<code>{0}lock media</code> |<code>{0}lock pin</code>
-    |<code>{0}lock polls</code> |<code>{0}lock info</code> |<code>{0}lock invite</code>
-    |<code>{0}lock webprev</code> |<code>{0}lock stickers</code></b></blockquote>
+ᴄᴏɴᴛᴏʜ:
+    |<code>{0}ʟᴏᴄᴋ ᴍꜱɢ</code> |<code>{0}ʟᴏᴄᴋ ᴍᴇᴅɪᴀ</code> |<code>{0}ʟᴏᴄᴋ ᴘɪɴ</code>
+    |<code>{0}ʟᴏᴄᴋ ᴘᴏʟʟꜱ</code> |<code>{0}ʟᴏᴄᴋ ɪɴꜰᴏ</code> |<code>{0}ʟᴏᴄᴋ ɪɴᴠɪᴛᴇ</code>
+    |<code>{0}ʟᴏᴄᴋ ᴡᴇʙᴘʀᴇᴠ</code> |<code>{0}ʟᴏᴄᴋ ꜱᴛɪᴄᴋᴇʀꜱ</code></b></blockquote>
 """
 
 
@@ -79,11 +79,11 @@ async def tg_lock(
 ):
     if lock:
         if perm not in permissions:
-            return await message.reply(f"`{parameter}` ꜱudah terkunci")
+            return await message.reply(f"`{parameter}` ꜱᴜᴅᴀʜ ᴛᴇʀᴋᴜɴᴄɪ")
         permissions.remove(perm)
     else:
         if perm in permissions:
-            return await message.reply(f"`{parameter}` ꜱudah terbuka")
+            return await message.reply(f"`{parameter}` ꜱᴜᴅᴀʜ ᴛᴇʀʙᴜᴋᴀ")
         permissions.append(perm)
     permissions = {perm: True for perm in set(permissions)}
     try:
@@ -92,15 +92,15 @@ async def tg_lock(
         )
     except ChatNotModified:
         return await message.reply(
-            f"{message.text.split()[0]} [type]"
+            f"{message.text.split()[0]} [ᴛʏᴘᴇ]"
         )
     except ChatAdminRequired:
-        return await message.reply("tidak mempunyai izin")
+        return await message.reply("ᴛɪᴅᴀᴋ ᴍᴇᴍᴘᴜɴʏᴀɪ ɪᴢɪɴ")
     await message.reply(
         (
-            f"terkunci untuk non-admin!\ntipe: {parameter}\ngrup: {message.chat.title}"
+            f"ᴛᴇʀᴋᴜɴᴄɪ ᴜɴᴛᴜᴋ ɴᴏɴ-ᴀᴅᴍɪɴ!\nᴛɪᴘᴇ: {parameter}\ɢʀᴜᴘ: {message.chat.title}"
             if lock
-            else f"terbuka untuk non-admin!\ntipe: {parameter}\ngrup: {message.chat.title}"
+            else f"ᴛᴇʀʙᴜᴋᴀ ᴜɴᴛᴜᴋ ɴᴏɴ-ᴀᴅᴍɪɴ!\nᴛɪᴘᴇ: {parameter}\ɢʀᴜᴘ: {message.chat.title}"
         )
     )
 
@@ -110,7 +110,7 @@ async def tg_lock(
 @PY.GROUP
 async def _(client, message):
     if len(message.command) != 2:
-        return await message.reply(f"{message.text.split()[0]} [type]")
+        return await message.reply(f"{message.text.split()[0]} [ᴛʏᴘᴇ]")
     chat_id = message.chat.id
     parameter = message.text.strip().split(None, 1)[1].lower()
     state = message.command[0].lower()
@@ -130,13 +130,13 @@ async def _(client, message):
         try:
             await client.set_chat_permissions(chat_id, ChatPermissions())
             await message.reply(
-                f"terkunci untuk non-admin!\ntipe: {parameter}\ngrup: {message.chat.title}"
+                f"ᴛᴇʀᴋᴜɴᴄɪ ᴜɴ���ᴜᴋ ɴᴏɴ-ᴀᴅᴍɪɴ!\nᴛɪᴘᴇ: {parameter}\ɢʀᴜᴘ: {message.chat.title}"
             )
         except ChatAdminRequired:
-            return await message.reply("tidak mempunyai izin")
+            return await message.reply("ᴛɪᴅᴀᴋ ᴍᴇᴍᴘᴜɴʏᴀɪ ɪᴢɪɴ")
         except ChatNotModified:
             return await message.reply(
-                f"terkunci untuk non-admin!\ntipe: {parameter}\ngrup: {message.chat.title}"
+                f"ᴛᴇʀᴋᴜɴᴄɪ ᴜɴᴛᴜᴋ ɴᴏɴ-ᴀᴅᴍɪɴ!\nᴛɪᴘᴇ: {parameter}\ɢʀᴜᴘ: {message.chat.title}"
             )
     elif parameter == "all" and state == "unlock":
         try:
@@ -154,9 +154,9 @@ async def _(client, message):
                 ),
             )
         except ChatAdminRequired:
-            return await message.reply("tidak mempunyai izin")
+            return await message.reply("ᴛɪᴅᴀᴋ ᴍᴇᴍᴘᴜɴʏᴀɪ ɪᴢɪɴ")
         await message.reply(
-            f"terbuka untuk non-admin!\ntipe: {parameter}\ngrup: {message.chat.title}"
+            f"ᴛᴇʀʙᴜᴋᴀ ᴜɴᴛᴜᴋ ɴᴏɴ-ᴀᴅᴍɪɴ!\nᴛɪᴘᴇ: {parameter}\ɢʀᴜᴘ: {message.chat.title}"
         )
 
 
@@ -166,7 +166,7 @@ async def _(client, message):
 async def _(client, message):
     permissions = await current_chat_permissions(client, message.chat.id)
     if not permissions:
-        return await message.reply("terkunci untuk ꜱemua")
+        return await message.reply("ᴛᴇʀᴋᴜɴᴄɪ ᴜɴᴛᴜᴋ ꜱᴇᴍᴜᴀ")
 
     perms = " -> __**" + "\n -> __**".join(permissions) + "**__"
     await message.reply(perms)
@@ -184,12 +184,12 @@ async def _(client, message):
     if message.command[0] == "kick":
         user_id, reason = await extract_user_and_reason(message)
         if not user_id:
-            return await message.reply_text(f"{ggl}{message.text.split()[0]} [username/user_id/reply]")
+            return await message.reply_text(f"{ggl}{message.text.split()[0]} [ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ/ʀᴇᴘʟʏ]")
         if user_id == OWNER_ID:
-            return await message.reply_text(f"{ggl}anda tidak bisa menendang anggota ini")
+            return await message.reply_text(f"{ggl}ᴇʟᴜ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇɴᴇɴᴅᴀɴɢ ᴀɴɢɢᴏᴛᴀ ɪɴɪ")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}Gua tidak bisa menendang admin"
+                f"{ggl}ɢᴜᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇɴᴇɴᴅᴀɴɢ ᴀᴅᴍɪɴ"
             )
         try:
             mention = (await client.get_users(user_id)).mention
@@ -200,7 +200,7 @@ async def _(client, message):
 <b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
 <b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</b></blockquote>
 
-<blockquote><b>USERBOT 10K/BULAN BY @glenzyubot</b></blockquote>
+<blockquote><b>USERBOT BY @ydhiak</b></blockquote>
             """
         try:
             await message.chat.ban_member(user_id)
@@ -212,12 +212,12 @@ async def _(client, message):
     elif message.command[0] == "ban":
         user_id, reason = await extract_user_and_reason(message)
         if not user_id:
-            return await message.reply_text(f"{ggl}{message.text.split()[0]} [username/user_id/reply]")
+            return await message.reply_text(f"{ggl}{message.text.split()[0]} [ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ/ʀᴇᴘʟʏ]")
         if user_id == OWNER_ID:
-            return await message.reply_text(f"{ggl}anda tidak bisa membanned anggota ini")
+            return await message.reply_text(f"{ggl}ᴀ��ᴅᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇᴍʙᴀɴɴᴇᴅ ᴀɴɢɢᴏᴛᴀ ɪɴɪ")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}Gua tidak bisa membanned admin"
+                f"{ggl}ɢᴜᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇᴍʙᴀɴɴᴇᴅ ᴀᴅᴍɪɴ"
             )
         try:
             mention = (await client.get_users(user_id)).mention
@@ -228,7 +228,7 @@ async def _(client, message):
 <b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
 <b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</b></blockquote>
 
-<blockquote><b>USERBOT 10K/BULAN BY @glenzyubot</b></blockquote>
+<blockquote><b>USERBOT BY @ydhiak</b></blockquote>
             """
         try:
             await message.chat.ban_member(user_id)
@@ -238,12 +238,12 @@ async def _(client, message):
     elif message.command[0] == "mute":
         user_id, reason = await extract_user_and_reason(message)
         if not user_id:
-            return await message.reply_text(f"{ggl}{message.text.split()[0]} [username/user_id/reply]")
+            return await message.reply_text(f"{ggl}{message.text.split()[0]} [ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ/ʀᴇᴘʟʏ]")
         if user_id == OWNER_ID:
-            return await message.reply_text(f"{ggl}anda tidak bisa membisukan anggota ini")
+            return await message.reply_text(f"{ggl}ᴇʟᴜ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇᴍʙɪꜱᴜᴋᴀɴ ᴀɴɢɢᴏᴛᴀ ɪɴɪ")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}Gua tidak bisa membisukan admin"
+                f"{ggl}ɢᴜᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇᴍʙɪꜱᴜᴋᴀɴ ᴀᴅᴍɪɴ"
             )
         try:
             mention = (await client.get_users(user_id)).mention
@@ -254,7 +254,7 @@ async def _(client, message):
 <b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
 <b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</blockquote></b>\n<blockquote><b>ᴋᴇᴛ: ᴍᴀᴍᴘᴜs ᴅɪ ᴍᴜᴛᴇ ᴇᴛᴍɪɴ</blockquote></b>
 
-<blockquote><b>USERBOT 10K/BULAN BY @glenzyubot</b></blockquote>
+<blockquote><b>USERBOT BY @ydhiak</b></blockquote>
             """
         try:
             await message.chat.restrict_member(user_id, ChatPermissions())
@@ -271,7 +271,7 @@ async def _(client, message):
             await message.reply(error)
         try:
             await message.chat.unban_member(user_id)
-            await message.reply(f"{brhsl}{mention} sudah bisa chat lagi")
+            await message.reply(f"{brhsl}{mention} ꜱᴜᴅᴀʜ ʙɪꜱᴀ ᴄʜᴀᴛ ʟᴀɢɪ")
         except Exception as error:
             await message.reply(error)
     elif message.command[0] == "unban":
@@ -284,7 +284,7 @@ async def _(client, message):
             await message.reply(error)
         try:
             await message.chat.unban_member(user_id)
-            await message.reply(f"{brhsl}{mention} sudah bisa join lagi")
+            await message.reply(f"{brhsl}{mention} ꜱᴜᴅᴀʜ ʙɪꜱᴀ ᴊᴏɪɴ ʟᴀɢɪ")
         except Exception as error:
             await message.reply(error)
 
@@ -298,7 +298,7 @@ async def _(client, message):
     chat_id = message.chat.id
     deleted_users = []
     banned_users = 0
-    Tm = await message.reply("sedang memeriksa")
+    Tm = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴇʀɪᴋꜱᴀ")
     async for i in client.get_chat_members(chat_id):
         if i.user.is_deleted:
             deleted_users.append(i.user.id)
@@ -309,6 +309,6 @@ async def _(client, message):
                 await message.chat.ban_member(deleted_user)
             except Exception:
                 pass
-        await Tm.edit(f"{brhsl}berhasil mengeluarkan {banned_users} akun terhapus")
+        await Tm.edit(f"{brhsl}ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴɢᴇʟᴜᴀʀᴋᴀɴ {banned_users} ᴀᴋᴜɴ ᴛᴇʀʜᴀᴘᴜꜱ")
     else:
-        await Tm.edit(f"{ggl}tidak ada akun terhapus di group ini")
+        await Tm.edit(f"{ggl}ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴀᴋᴜɴ ᴛᴇʀʜᴀᴘᴜꜱ ᴅɪ ɢʀᴏᴜᴘ ɪɴɪ")

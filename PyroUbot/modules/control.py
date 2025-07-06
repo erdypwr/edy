@@ -2,30 +2,30 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Control Cess
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏɴᴛʀᴏʟ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}prefix</code>
-   untuk merubah prefix/handler ᴘᴇʀɪɴᴛᴀʜ
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴘʀᴇꜰɪx</code>
+   ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴘʀᴇꜰɪx/ʜᴀɴᴅʟᴇʀ ᴘᴇʀɪɴᴛᴀʜ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}creat</code>
-   untuk membuat group atau channel
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄʀᴇᴀᴛ</code>
+   ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢʀᴜᴘ ᴀᴛᴀᴜ ᴄʜᴀɴɴᴇʟ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}emoji</code> query emojiprem
-   untuk merubah emoji pada tampilan tertentu
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴇᴍᴏᴊɪ</code> ǫᴜᴇʀʏ ᴇᴍᴏᴊɪᴘʀᴇᴍ
+   ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴇᴍᴏᴊɪ ᴘᴀᴅᴀ ᴛᴀᴍᴘɪʟᴀɴ ᴛᴇʀᴛᴇɴᴛᴜ
 
-query:
-    ><code>{0}pong</code>
-    ><code>{0}owner</code>
-    ><code>{0}ubot</code>
-    ><code>{0}gcast</code>
-    ><code>{0}sukses</code>
-    ><code>{0}gagal</code>
-    ><code>{0}proses</code>
-    ><code>{0}group</code>
-    ><code>{0}catatan</code>
-    ><code>{0}afk</code>
-    ><code>{0}waktu</code>
-    ><code>{0}alasan</code></blockquote>
+ǫᴜᴇʀʏ:
+    ><code>{0}ᴘᴏɴɢ</code>
+    ><code>{0}ᴏᴡɴᴇʀ</code>
+    ><code>{0}ᴜʙᴏᴛ</code>
+    ><code>{0}ɢᴄᴀꜱᴛ</code>
+    ><code>{0}ꜱᴜᴋꜱᴇꜱ</code>
+    ><code>{0}ɢᴀɢᴀʟ</code>
+    ><code>{0}ᴘʀᴏꜱᴇꜱ</code>
+    ><code>{0}ɢʀᴏᴜᴘ</code>
+    ><code>{0}ᴄᴀᴛᴀᴛᴀɴ</code>
+    ><code>{0}ᴀꜰᴋ</code>
+    ><code>{0}ᴡᴀᴋᴛᴜ</code>
+    ><code>{0}ᴀʟᴀꜱᴀɴ</code></b></blockquote>
 """
 
 
@@ -38,20 +38,20 @@ async def _(client, message):
     group_type = message.command[1]
     split = message.command[2:]
     group_name = " ".join(split)
-    xd = await message.reply("Prosess Cess...")
-    desc = "Welcome To My " + ("Group" if group_type == "gc" else "Channel")
+    xd = await message.reply("ᴘʀᴏsᴇs ᴄᴇss...")
+    desc = "sᴇʟᴀᴍᴀᴛ ᴅᴀᴛᴀɴɢ ᴅɪ " + ("ɢʀᴏᴜᴘ" if group_type == "gc" else "ᴄʜᴀɴɴᴇʟ")
     if group_type == "group":
         _id = await client.create_supergroup(group_name, desc)
         link = await client.get_chat(_id.id)
         await xd.edit(
-            f"berhaꜱil membuat telegram grup: [{group_name}]({link.invite_link})",
+            f"ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴜᴀᴛ ɢʀᴜᴘ ᴛᴇʟᴇɢʀᴀᴍ: [{group_name}]({link.invite_link})",
             disable_web_page_preview=True,
         )
     elif group_type == "channel":
         _id = await client.create_channel(group_name, desc)
         link = await client.get_chat(_id.id)
         await xd.edit(
-            f"berhaꜱil membuat telegram channel: [{group_name}]({link.invite_link})",
+            f"ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ: [{group_name}]({link.invite_link})",
             disable_web_page_preview=True,
         )
 
@@ -62,7 +62,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    Tm = await message.reply(f"{prs}Prosess Cess...", quote=True)
+    Tm = await message.reply(f"{prs}ᴘʀᴏsᴇs ᴄᴇss...", quote=True)
     if len(message.command) < 2:
         return await Tm.edit(f"{ggl}{message.text} [simbol]")
     else:
@@ -89,9 +89,9 @@ async def _(client, message):
     reason = get_arg(message)
     db_afk = {"time": time(), "reason": reason}
     msg_afk = (
-        f"<blockquote><b>{tion}sedang afk\n{ktrng}alasan: {reason}</blockquote></b>"
+        f"<blockquote><b>{tion}sᴇᴅᴀɴɢ ᴀꜰᴋ\n{ktrng}ᴀʟᴀsᴀɴ: {reason}</blockquote></b>"
         if reason
-        else f"{tion}sedang afk"
+        else f"{tion}sᴇᴅᴀɴɢ ᴀꜰᴋ"
       )
     await set_vars(client.me.id, "AFK", db_afk)
     return await message.reply(msg_afk)
@@ -110,12 +110,12 @@ async def _(client, message):
         afk_runtime = await get_time(time() - afk_time)
         rpk = f"[{message.from_user.first_name} {message.from_user.last_name or ''}](tg://user?id={message.from_user.id})"
         afk_text = (
-            f"<blockquote><b>{tion}sedang afk\n{mng}waktu: {afk_runtime}\n{ktrng}alasan: {afk_reason}</blockquote></b>"
+            f"<blockquote><b>{tion}sᴇᴅᴀɴɢ ᴀꜰᴋ\n{mng}ᴡᴀᴋᴛᴜ: {afk_runtime}\n{ktrng}ᴀʟᴀsᴀɴ: {afk_reason}</blockquote></b>"
             if afk_reason
             else f"""
-<blockquote><b>hello {rpk}
-tuan Gua sedang afk selama : {afk_runtime}
-mohon tunggu beberapa waktu</blockquote></b>
+<blockquote><b>ʜᴀʟᴏ {rpk}
+tᴜᴀɴ ɢᴜᴀ sᴇᴅᴀɴɢ ᴀꜰᴋ sᴇʟᴀᴍᴀ : {afk_runtime}
+ᴍᴏʜᴏɴ ᴛᴜɴɢɢᴜ ʙᴇʙᴇʀᴀᴘᴀ ᴡᴀᴋᴛᴜ</blockquote></b>
 """
         )
         return await message.reply(afk_text)
@@ -131,7 +131,7 @@ async def _(client, message):
     if vars:
         afk_time = vars.get("time")
         afk_runtime = await get_time(time() - afk_time)
-        afk_text = f"<blockquote><b>{tion}kembali online\n{mng}afk selama: {afk_runtime}</blockquote></b>"
+        afk_text = f"<blockquote><b>{tion}ᴋᴇᴍʙᴀʟɪ ᴏɴʟɪɴᴇ\n{mng}ᴀꜰᴋ sᴇʟᴀᴍᴀ: {afk_runtime}</blockquote></b>"
         await message.reply(afk_text)
         return await remove_vars(client.me.id, "AFK")
 
@@ -143,15 +143,15 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     try:
-        msg = await message.reply(f"{prs}Prosess Cess...", quote=True)
+        msg = await message.reply(f"{prs}ᴘʀᴏsᴇs ᴄᴇss...", quote=True)
 
         if not client.me.is_premium:
             return await msg.edit(
-                f"{ggl}Beli Prem Dulu Anjing, Baru Bisa Setting Emoji Premium"
+                f"{ggl}ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʙɪᴀʀ ʙɪsᴀ ᴘᴀᴋᴇ ᴇᴍᴏᴊɪ ᴘʀᴇᴍɪᴜᴍ"
             )
 
         if len(message.command) < 3:
-            return await msg.edit(f"{ggl}Tolong Masukkan Query Dan Value Nya Cess\n\n")
+            return await msg.edit(f"{ggl}ᴍᴀsᴜᴋᴋᴀɴ ǫᴜᴇʀʏ ᴅᴀɴ ᴠᴀʟᴜᴇ ɴʏᴀ ᴄᴇss\n\n")
 
         query_mapping = {
           "pong": "EMOJI_PING",
@@ -182,12 +182,12 @@ async def _(client, message):
             if emoji_id:
                 await set_vars(client.me.id, query_var, emoji_id)
                 await msg.edit(
-                    f"{brhsl}EmoJi Berhasil Di Setting Ke: <emoji id={emoji_id}>{value}</emoji>"
+                    f"{brhsl}ᴇᴍᴏᴊɪ ʙᴇʀʜᴀsɪʟ ᴅɪsᴇᴛᴇʟ ᴋᴇ: <emoji id={emoji_id}>{value}</emoji>"
                 )
             else:
-                await msg.edit(f"{ggl}Tidak Dapat Menemukan Emoji Premium Cess")
+                await msg.edit(f"{ggl}ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ᴇᴍᴏᴊɪ ᴘʀᴇᴍɪᴜᴍ ᴄᴇss")
         else:
-            await msg.edit(f"{ggl}Mapping Tidak Ditemukan Cess, Gunakan: {', '.join(query_mapping.keys())}")
+            await msg.edit(f"{ggl}ᴍᴀᴘᴘɪɴɢ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss, ɢᴜɴᴀᴋᴀɴ: {', '.join(query_mapping.keys())}")
 
     except Exception as error:
         await msg.edit(str(error))

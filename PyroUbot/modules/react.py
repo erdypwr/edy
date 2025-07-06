@@ -33,7 +33,7 @@ async def react_command(c, m):
 
     chat_id = m.command[1]
 
-    rach = await m.reply(f"<b>{prs}Prosess Cess..</b>")
+    rach = await m.reply(f"<b>{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..</b>")
     async for message in c.get_chat_history(chat_id):
         if c.me.id not in reaction_progress:
             break

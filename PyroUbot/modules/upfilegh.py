@@ -48,7 +48,7 @@ async def github_login(client, message):
 async def upload_to_github(client, message):
     chat_id = message.chat.id
     if chat_id not in user_sessions:
-        return await message.reply_text("⚠️ Anda belum login! Gunakan ᴘᴇʀɪɴᴛᴀʜ `.upgh email password` terlebih dahulu.")
+        return await message.reply_text("⚠️ ᴇʟᴜ belum login! Gunakan ᴘᴇʀɪɴᴛᴀʜ `.upgh email password` terlebih dahulu.")
     
     user_data = user_sessions[chat_id]
     email, password, username = user_data["email"], user_data["password"], user_data["username"]

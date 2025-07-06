@@ -36,7 +36,7 @@ async def _(client, message):
     global spam_progress
     spam_progress.append(client.me.id)
     sks = await EMO.BERHASIL(client)
-    _msg = "<b>Proses Cess...</b>"
+    _msg = "<b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>"
 
     r = await message.reply(_msg)
     count, msg = extract_type_and_msg(message)
@@ -63,7 +63,7 @@ async def _(client, message):
 @PY.UBOT("setdelay")
 @PY.TOP_CMD
 async def _(client, message):
-    _msg = "<b>Prosess Cess...</b>"
+    _msg = "<b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>"
 
     r = await message.reply(_msg)
     count, msg = extract_type_and_msg(message)

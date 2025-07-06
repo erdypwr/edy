@@ -6,10 +6,12 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴜᴀᴄᴀ"
 __HELP__ = """
-<blockquote><b>『 cuaca 』</b>
+<blockquote><b>『 ᴄᴜᴀᴄᴀ 』</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}cuaca</code> 
-   <i>Penjelasan Cess:</b> Cek Info Cuaca Di Kota Kota Besar Cess.</i></blockquote>
+<b>➢ ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ᴄᴜᴀᴄᴀ</code>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ ᴄᴇꜱꜱ:</b> ᴄᴇᴋ ɪɴꜰᴏ ᴄᴜᴀᴄᴀ ᴅɪ ᴋᴏᴛᴀ ᴋᴏᴛᴀ ʙᴇꜱᴀʀ ᴄᴇꜱꜱ.</i>
+』</b></blockquote>
+
 """
 
 @PY.UBOT("cuaca")
@@ -18,7 +20,7 @@ async def cuaca(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
 
-    jalan = await message.reply(f"{prs} Proses Cess...")
+    jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
     url = f"https://api.betabotz.eu.org/api/tools/cuaca?query={a}&apikey=Btz-bxwol"
@@ -39,12 +41,12 @@ async def cuaca(client, message):
             photoUrl = f"https://telegra.ph//file/9354c197366cde09650fd.jpg"
             caption = f"""
 <blockquote>╭─ •  「 <b>Info Cuaca Terkini Cess</b> 」
-│  ◦ <b>location: <code>{location}</code></b>
-│  ◦ <b>country: <code>{country}</code></b>
-│  ◦ <b>weather: <code>{weather}</code></b>
-│  ◦ <b>currentTemp: <code>{currentTemp}</code></b>
-│  ◦ <b>Temp: <code>{maxTemp}, {minTemp}</code></b>
-│  ◦ <b>windSpeed: <code>{windSpeed}</code></b></blockquote>
+│  ◦ <b>ᴋᴏᴛᴀ: <code>{location}</code></b>
+│  ◦ <b>ɴᴇɢᴀʀᴀ: <code>{country}</code></b>
+│  ◦ <b>ᴄᴜᴀᴄᴀ: <code>{weather}</code></b>
+│  ◦ <b>sᴜʜᴜ sᴀᴀᴛ ɪɴɪ: <code>{currentTemp}</code></b>
+│  ◦ <b>sᴜʜᴜ ᴍᴀᴋs/ᴍɪɴ: <code>{maxTemp}, {minTemp}</code></b>
+│  ◦ <b>ᴋᴇᴄᴇᴘᴀᴛᴀɴ ᴀɴɢɪɴ: <code>{windSpeed}</code></b></blockquote>
 ╰──── •
 """
             photo_path = wget.download(photoUrl)

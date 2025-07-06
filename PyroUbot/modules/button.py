@@ -4,7 +4,7 @@ from PyroUbot import *
 
 __MODULE__ = "ʙᴜᴛᴛᴏɴ"
 __HELP__ = """
-<b>⦪ ʙᴜᴛᴛᴏɴ ⦫</b>
+<b>『 ʙᴜᴛᴛᴏɴ 』</b>
 
 <blockquote><b>⎆  ᴘᴇʀɪɴᴛᴀʜ:
 ᚗ <code>{0}button</code> ᴛᴇxᴛ -/ ʙᴜᴛᴛᴏɴ_ᴛᴇxᴛ:ʙᴜᴛᴛᴏɴ_ʟɪɴᴋ

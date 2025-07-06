@@ -2,7 +2,7 @@ import os
 import requests
 from PyroUbot import *
 
-# Masukkan API Key Anda di sini
+# Masukkan API Key ᴇʟᴜ di sini
 API_KEY = "025a6ef0"  # Ganti dengan API key yang benar
 
 __MODULE__ = "ᴛᴇxᴛᴘʀᴏ𝟸"

@@ -2,10 +2,11 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴏᴘʏ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Copy Cess
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏᴘʏ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}copy</code> [link_konten_telegram]
-    Untuk Mengambil Pesan dan Postingan Channel Telegram Melalui Link Mereka Cess</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄᴏᴘʏ</code> [ʟɪɴᴋ_ᴋᴏɴᴛᴇɴ_ᴛᴇʟᴇɢʀᴀᴍ]
+    ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴘᴇꜱᴀɴ ᴅᴀɴ ᴘᴏꜱᴛɪɴɢᴀɴ ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇʟᴀʟᴜɪ ʟɪɴᴋ ᴍᴇʀᴇᴋᴀ ᴄᴇꜱꜱ</b></blockquote>
+
 """
 import asyncio
 import os
@@ -27,7 +28,7 @@ async def nyolongnih(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     try:
-        await message.edit(f"{prs}Prosess Cess...")
+        await message.edit(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
         link = get_arg(message)
         msg_id = int(link.split("/")[-1])
         if "t.me/c/" in link:
@@ -78,7 +79,7 @@ async def nyolongnih(client, message):
         else:
             await message.edit(f"{ggl}**Sepertinya Terjadi Kesalahan Cess**")
     except Exception as e:
-        await message.reply_text(e)
+        await message.reply_text(f"ᴛᴇʀᴊᴀᴅɪ ᴋᴇsᴀʟᴀʜᴀɴ ᴄᴇss: {e}")
 
 @PY.UBOT("copy")
 async def _(client, message):

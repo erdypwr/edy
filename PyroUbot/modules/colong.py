@@ -1,7 +1,8 @@
 __MODULE__ = "𝙲𝙾𝙻𝙾𝙽𝙶"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Colong Cess</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏʟᴏɴɢ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}colong</code>
-Untuk Mengambil Media/vidio Yang 1x Lihat Cess</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄᴏʟᴏɴɢ</code>
+ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴍᴇᴅɪᴀ/ᴠɪᴅɪᴏ ʏᴀɴɢ 1x ʟɪʜᴀᴛ ᴄᴇꜱꜱ』</b></blockquote>
+
 """

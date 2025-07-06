@@ -28,7 +28,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ Prosess Cess ᴄᴇꜱꜱ...</b>")
+    txt = await message.reply(f"{prs}<b>sᴇᴅᴀɴɢ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ ᴄᴇꜱꜱ...</b>")
     arg = get_arg(message)
 
     if not arg or arg.lower() not in ["off", "on"]:
@@ -46,7 +46,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
-    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ Prosess Cess ᴄᴇꜱꜱ...</b>")
+    txt = await message.reply(f"<b>{prs}sᴇᴅᴀɴɢ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ ᴄᴇꜱꜱ...</b>")
     type, reply = extract_type_and_msg(message)
 
     if not type and message.reply_to_message:

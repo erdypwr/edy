@@ -38,7 +38,7 @@ async def rbg_cmd(client, message):
         return
     if message.reply_to_message:
         reply_message = message.reply_to_message
-        xx = await message.reply("<i>Prosess Cess...</i>")
+        xx = await message.reply("<i>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</i>")
         try:
             if (
                 isinstance(reply_message.media, raw.types.MessageMediaPhoto)

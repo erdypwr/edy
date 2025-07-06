@@ -11,22 +11,23 @@ __MODULE__ = "ᴅʙ ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk DB Control Cess</blockquote></b>
 
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}time</code>
-    Untuk Menambah - Mengurangi Masa Aktif User</blockquote></b>
+<b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴛɪᴍᴇ</code>
+    ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜ - ᴍᴇɴɢᴜʀᴀɴɢɪ ᴍᴀꜱᴀ ᴀᴋᴛɪꜰ ᴜꜱᴇʀ</b>
 
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cek</code>
-    Untuk Melihat Masa Aktif User</blockquote></b>
+<b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴄᴇᴋ</code>
+    ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴀꜱᴀ ᴀᴋᴛɪꜰ ᴜꜱᴇʀ</b>
 
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addadmin</code> - <code>{0}unadmin</code> - <code>{0}getadmin</code></blockquote></b>
+<b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴀᴅᴅᴀᴅᴍɪɴ</code> - <code>{0}ᴜɴᴀᴅᴍɪɴ</code> - <code>{0}ɢᴇᴛᴀᴅᴍɪɴ</code></b>
 
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}seles</code> - <code>{0}unseles</code> - <code>{0}getseles</code></blockquote></b>
+<b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱᴇʟᴇꜱ</code> - <code>{0}ᴜɴꜱᴇʟᴇꜱ</code> - <code>{0}ɢᴇᴛꜱᴇʟᴇꜱ</code></b></blockquote>
+
 """
 
 @PY.BOT("prem")
 @PY.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏsᴇs ᴄᴇss...")
     if not user_id:
         return await msg.edit(f"<b>{message.text} ᴜsᴇʀ_ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ - ʙᴜʟᴀɴ</b>")
 
@@ -41,10 +42,10 @@ async def _(client, message):
 
     if user.id in prem_users:
         return await msg.edit(f"""
-<blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
+<blockquote><b>ɴᴀᴍᴀ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: {user.id}</b>
-<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ꜱᴜᴅᴀʜ ᴘʀᴇᴍɪᴜᴍ</ci></b>
-<b>ᴇxᴘɪʀᴇᴅ: {get_bulan} ʙᴜʟᴀɴ</b></blockquote>
+<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: sᴜᴅᴀʜ ᴘʀᴇᴍɪᴜᴍ</b>
+<bᴋᴀᴅᴀʟᴜᴡᴀʀsᴀ: {get_bulan} ʙᴜʟᴀɴ</b></blockquote>
 """
         )
 
@@ -54,16 +55,16 @@ async def _(client, message):
         await set_expired_date(user_id, expired)
         await add_to_vars(client.me.id, "PREM_USERS", user.id)
         await msg.edit(f"""
-<blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
+<blockquote><b>ɴᴀᴍᴀ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: {user.id}</b>
-<b>ᴇxᴘɪʀᴇᴅ: {get_bulan} ʙᴜʟᴀɴ</b>
-<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{client.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ Cess</blockquote></b>
+<b>ᴋᴀᴅᴀʟᴜᴡᴀʀsᴀ: {get_bulan} ʙᴜʟᴀɴ</b>
+<b>sɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{client.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ᴄᴇss</b></blockquote>
 
 <blockquote>ᴄᴀʀᴀ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ :
 - sɪʟᴀʜᴋᴀɴ /start ᴅᴜʟᴜ ʙᴏᴛ @ubotjella_bot
 - ᴋᴀʟᴀᴜ sᴜᴅᴀʜ sᴛᴀʀᴛ ʙᴏᴛ ᴀʙɪsᴛᴜ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 
 - ɴᴀʜ ɴᴀɴᴛɪ ᴀᴅᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ ɪᴛᴜ ɪᴋᴜᴛɪɴ</blockquote>
-<blockquote><b>ɴᴏᴛᴇ : ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ʙᴀᴄᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ</b></blockquote>
+<blockquote><b>ᴄᴀᴛᴀᴛᴀɴ : ɢᴜɴᴀᴋᴀɴ ʟᴜᴘᴀ ʙᴀᴄᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ</b></blockquote>
 """
         )
         return await bot.send_message(
@@ -90,7 +91,7 @@ async def _(client, message):
 @PY.BOT("unprem")
 @PY.SELLER
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -151,7 +152,7 @@ async def _(client, message):
 @PY.BOT("seles")
 @PY.ADMIN
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -190,7 +191,7 @@ async def _(client, message):
 @PY.BOT("unseles")
 @PY.ADMIN
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -229,7 +230,7 @@ async def _(client, message):
 @PY.BOT("getseles")
 @PY.ADMIN
 async def _(client, message):
-    Sh = await message.reply("Prosess Cess...")
+    Sh = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     seles_users = await get_list_from_vars(client.me.id, "SELER_USERS")
 
     if not seles_users:
@@ -259,7 +260,7 @@ async def _(client, message):
 @PY.BOT("time")
 @PY.SELLER
 async def _(client, message):
-    Tm = await message.reply("Prosess Cess . . .")
+    Tm = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     bajingan = message.command
     if len(bajingan) != 3:
         return await Tm.edit(f"Woi Cuki ! \n🗿Mohon Gunakan /set_time user_id hari")
@@ -288,7 +289,7 @@ async def _(client, message):
 @PY.BOT("cek")
 @PY.SELLER
 async def _(client, message):
-    Sh = await message.reply("Prosess Cess . . .")
+    Sh = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     user_id = await extract_user(message)
     if not user_id:
         return await Sh.edit("Pengguna Tidak Ditemukan Cess\n\nGunakan ᴘᴇʀɪɴᴛᴀʜ: /cek [user_id/username]")
@@ -327,7 +328,7 @@ expired : {exp}
 @PY.BOT("addadmin")
 @PY.OWNER
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -366,7 +367,7 @@ keterangan: Admin
 @PY.BOT("unadmin")
 @PY.OWNER
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -405,7 +406,7 @@ keterangan: Unadmin
 @PY.BOT("getadmin")
 @PY.OWNER
 async def _(client, message):
-    Sh = await message.reply("Prosess Cess...")
+    Sh = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     admin_users = await get_list_from_vars(client.me.id, "ADMIN_USERS")
 
     if not admin_users:
@@ -435,7 +436,7 @@ async def _(client, message):
 @PY.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not user_id:
         return await msg.edit(f"{message.text} user_id/username")
 
@@ -493,7 +494,7 @@ async def _(client, message):
 @PY.BOT("rmultra")
 @PY.SELLER
 async def _(client, message):
-    msg = await message.reply("Prosess Cess...")
+    msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(

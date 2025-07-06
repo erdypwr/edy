@@ -4,11 +4,12 @@ from PyroUbot import *
 
 __MODULE__ = "ʙʀᴀᴛᴠɪᴅɪᴏ"
 __HELP__ =  """
-<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴀᴛ ✮</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴀᴛ ᴄᴇꜱꜱ 』</b>
 
 <blockquote><b>ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}bratvideo [text]</code>
-Untuk Membuat Gambar Text video Seperti Tren Tiktok Cess</b></blockquote>
+ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴛᴇxᴛ ᴠɪᴅᴇᴏ sᴇᴘᴇʀᴛɪ ᴛʀᴇɴ ᴛɪᴋᴛᴏᴋ ᴄᴇss</b></blockquote>
+
 
 """
 

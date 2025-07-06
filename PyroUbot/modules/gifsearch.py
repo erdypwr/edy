@@ -4,17 +4,18 @@ from pyrogram.types import InputMediaPhoto
 
 __MODULE__ = "ɢɪғsᴇᴀʀᴄʜ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk GifSearch Cess</b>
+<blockquote>『<b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢɪꜰꜱᴇᴀʀᴄʜ ᴄᴇꜱꜱ 』</b>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gif</code> [ǫᴜᴇʀʏ]
-  Untuk Mencari gift/animation Random Dari Google Cess</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ɢɪꜰ</code> [ǫᴜᴇʀʏ]
+  ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ɢɪꜰᴛ/ᴀɴɪᴍᴀᴛɪᴏɴ ʀᴀɴᴅᴏᴍ ᴅᴀʀɪ ɢᴏᴏɢʟᴇ ᴄᴇꜱꜱ</b></blockquote>
+
 """
 
 @PY.UBOT("gif")
 async def gif_cmd(client, message):
     if len(message.command) < 2:
         return await message.reply(f"<code>{message.text}</code> [ǫᴜᴇʀʏ]")
-    TM = await message.reply("<b>Proses Cess...</b>")
+    TM = await message.reply("<b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b>")
     try:
         x = await client.get_inline_bot_results(
             message.command[0], message.text.split(None, 1)[1]

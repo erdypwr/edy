@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 __MODULE__ = "ʙɪɴɢ ᴄʜᴀᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Bing Chat
+<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙɪɴɢ ᴄʜᴀᴛ
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bing</code>
-    dapat mencari informasi terbaru dari web, Membantu dengan tugas produktivitas, Membantu dengan tugas produktivitas Seperti membuat daftar ,mengatur jadwal bisa merekomendasikan: wisata,buku,film dll</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ʙɪɴɢ</code>
+    ᴅᴀᴘᴀᴛ ᴍᴇɴᴄᴀʀɪ ɪɴꜰᴏʀᴍᴀꜱɪ ᴛᴇʀʙᴀʀᴜ ᴅᴀʀɪ ᴡᴇʙ, ᴍᴇᴍʙᴀɴᴛᴜ ᴅᴇɴɢᴀɴ ᴛᴜɢᴀs ᴘʀᴏᴅᴜᴋᴛɪᴠɪᴛᴀs, ꜱᴇᴘᴇʀᴛɪ ᴍᴇᴍʙᴜᴀᴛ ᴅᴀꜰᴛᴀʀ, ᴍᴇɴɢᴀᴛᴜʀ ᴊᴀᴅᴡᴀʟ, ʙɪꜱᴀ ᴍᴇʀᴇᴋᴏᴍᴇɴᴅᴀꜱɪᴋᴀɴ: ᴡɪꜱᴀᴛᴀ, ʙᴜᴋᴜ, ꜰɪʟᴍ ᴅʟʟ</b></blockquote>
 """
 
 
@@ -22,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .bard query"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .ʙᴀʀᴅ ǫᴜᴇʀʏ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5469745532693923461>♾</emoji>Prosess Cess....")
+            prs = await message.reply_text(f"<emoji id=5469745532693923461>♾</emoji>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/bing-chat?text={a}&apikey=045705b1')
 
@@ -36,8 +36,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ 'ʀᴇsᴜʟᴛs' ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅɪ ʀᴇsᴘᴏɴꜱ.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴋᴇsᴀʟᴀʜᴀɴ ᴀᴋsᴇs ʀᴇsᴘᴏɴꜱ.")
     except Exception as e:
-        await message.reply_text(f"{e}")
+        await message.reply_text(f"ᴋᴇsᴀʟᴀʜᴀɴ: {e}")

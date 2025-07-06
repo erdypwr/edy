@@ -5,10 +5,11 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴄᴇᴋ ɪᴘ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Cek IP Website</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴇᴋ ɪᴘ ᴡᴇʙꜱɪᴛᴇ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ: <code>{0}cekip</code> [domain]
-Penjelasan: untuk mendapatkan alamat IP dari domain yang diberikan</blockquote></b>
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ᴄᴇᴋɪᴘ</code> [ᴅᴏᴍᴀɪɴ]
+ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴀʟᴀᴍᴀᴛ ɪᴘ ᴅᴀʀɪ ᴅᴏᴍᴀɪɴ ʏᴀɴɢ ᴅɪʙᴇʀɪᴋᴀɴ</b></blockquote>
+
 """
 
 @PY.UBOT("cekip")
@@ -19,7 +20,7 @@ async def cek_ip_command(client, message):
 
     if len(args) < 2:
         await message.reply_text(
-            "<blockquote><b>⚠️ Gunakan format: cekip [domain]</b></blockquote>"
+            "<blockquote><b>⚠️ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ: ᴄᴇᴋɪᴘ [ᴅᴏᴍᴀɪɴ]</b></blockquote>"
         )
         return
 
@@ -27,8 +28,8 @@ async def cek_ip_command(client, message):
 
     try:
         ip_address = socket.gethostbyname(domain)
-        result_text = f"<blockquote><b>🔍 **Hasil Pengecekan IP untuk:** `{domain}`\n\n🌐 IP Address: `{ip_address}`</b></blockquote>"
+        result_text = f"<blockquote><b>🔍 **ʜᴀꜱɪʟ ᴘᴇɴɢᴇᴄᴇᴋᴀɴ ɪᴘ ᴜɴᴛᴜᴋ:** `{domain}`\n\n🌐 ɪᴘ ᴀᴅᴅʀᴇꜱꜱ: `{ip_address}`</b></blockquote>"
     except Exception as e:
-        result_text = f"❌ Terjadi kesalahan: {str(e)}"
+        result_text = f"❌ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ: {str(e)}"
 
     await message.reply_text(result_text)

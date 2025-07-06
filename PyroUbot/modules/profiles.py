@@ -47,7 +47,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     get_user = await extract_user(message)
-    lol = await message.reply(f"{prs}Prosess Cess...")
+    lol = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not get_user:
         return await lol.edit(f"{ggl}User Tidak Ditemukan Cess")
     try:
@@ -82,7 +82,7 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    Tm = await message.reply(f"{prs}Prosess Cess . . .")
+    Tm = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     if not user_id:
         return await Tm.edit(
             f"{ggl}Berikan userid/username/reply Untuk Mendapatkan Info Pengguna Tersebut Cess."
@@ -150,7 +150,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    Tm = await message.reply(f"{prs}Prosess Cess . . .")
+    Tm = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ . . .")
     try:
         if len(message.text.split()) > 1:
             chat_u = message.text.split()[1]
@@ -251,7 +251,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    tex = await message.reply(f"{prs}Prosess Cess...")
+    tex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if len(message.command) == 1:
         return await tex.edit(f"{ggl}{message.text.split()[0]} [text]")
     elif len(message.command) > 1:
@@ -271,7 +271,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    tex = await message.reply(f"{prs}Prosess Cess...")
+    tex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if len(message.command) == 1:
         return await tex.edit(f"{ggl}{message.text.split()[0]} [text]")
     elif len(message.command) > 1:
@@ -294,7 +294,7 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    tex = await message.reply(f"{prs}Prosess Cess...")
+    tex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not user_id:
         return await tex.edit(f"{ggl}{message.text.split()[0]} [reply to user]")
     if user_id == client.me.id:
@@ -311,7 +311,7 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     user_id = await extract_user(message)
-    tex = await message.reply(f"{prs}Prosess Cess...")
+    tex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not user_id:
         return await tex.edit(f"{ggl}{message.text.split()[0]} [reply to user]")
     if user_id == client.me.id:

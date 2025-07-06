@@ -11,22 +11,23 @@ from PyroUbot import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴅʙ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Broaddb
+<blockquote></b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴏᴀᴅᴅʙ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gikesdb</code> 
-    mengirim pesan siaran grup/pesan database
+    ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ sɪᴀʀᴀɴ ɢʀᴜᴘ/ᴘᴇsᴀɴ ᴅᴀᴛᴀʙᴀsᴇ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}adddb</code> 
-    menambahkan database broadcast 
+    ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴅᴀᴛᴀʙᴀsᴇ ʙʀᴏᴀᴅᴄᴀsᴛ 
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}undb</code> 
-    menghapus database broadcast
+    ᴍᴇɴɢʜᴀᴘᴜs ᴅᴀᴛᴀʙᴀsᴇ ʙʀᴏᴀᴅᴄᴀsᴛ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listdb</code> 
-    melihat total database broadcast
+    ᴍᴇʟɪʜᴀᴛ ᴛᴏᴛᴀʟ ᴅᴀᴛᴀʙᴀsᴇ ʙʀᴏᴀᴅᴄᴀsᴛ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ralldb</code> 
-    menghapus semua database broadcast</blockquote></b>
+    ᴍᴇɴɢʜᴀᴘᴜs sᴇᴍᴜᴀ ᴅᴀᴛᴀʙᴀsᴇ ʙʀᴏᴀᴅᴄᴀsᴛ</blockquote></b>
+
     
 """
 
@@ -37,7 +38,7 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     gcs = await message.reply(_msg)
     if not message.reply_to_message:
@@ -78,7 +79,7 @@ gagal {failed} chat database
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     try:
@@ -105,7 +106,7 @@ async def _(client, message):
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     try:
@@ -133,7 +134,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ktrng = await EMO.BL_KETERANGAN(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
     mzg = await message.reply(_msg)
 
     database = await get_list_from_vars(client.me.id, "DB_ID")
@@ -158,13 +159,13 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
     brhsl = await EMO.BERHASIL(client)
-    _msg = f"{prs}Prosess Cess..."
+    _msg = f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ..."
 
     msg = await message.reply(_msg)
     databases = await get_list_from_vars(client.me.id, "DB_ID")
 
     if not databases:
-        return await msg.edit(f"{ggl}database broadcaꜱt anda koꜱong")
+        return await msg.edit(f"{ggl}database broadcaꜱt ᴇʟᴜ koꜱong")
 
     for chat_id in databases:
         await remove_from_vars(client.me.id, "DB_ID", chat_id)

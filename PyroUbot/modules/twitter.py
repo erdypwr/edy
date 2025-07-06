@@ -38,6 +38,6 @@ async def twitter_download(client, message):
 
     if video_url:
         await msg.edit("Mengirim video...")
-        await message.reply_video(video_url, caption="Berikut video yang Anda minta.")
+        await message.reply_video(video_url, caption="Berikut video yang ᴇʟᴜ minta.")
     else:
         await msg.edit("Gagal mengambil video. Pastikan link benar atau coba lagi nanti.")

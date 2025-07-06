@@ -8,8 +8,9 @@ __MODULE__ = "ɢᴇᴍᴘᴀ"
 __HELP__ = """
 <blockquote><b>『 ɢᴇᴍᴘᴀ ᴄᴇꜱꜱ 』</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}gempa</code> 
-   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> cek info sekitar gempa bmkg</i></blockquote>
+  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ɢᴇᴍᴘᴀ</code>
+   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> ᴄᴇᴋ ɪɴꜰᴏ ꜱᴇᴋɪᴛᴀʀ ɢᴇᴍᴘᴀ ʙᴍᴋɢ</i></blockquote>
+
 """
 
 @PY.UBOT("gempa")
@@ -18,7 +19,7 @@ async def stalkig(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
 
-    jalan = await message.reply(f"{prs} Prosess Cess...")
+    jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     chat_id = message.chat.id
     url = f"https://api.botcahx.eu.org/api/search/gempa?apikey=025a6ef0"
     
@@ -37,13 +38,13 @@ async def stalkig(client, message):
             jam = hasil['jam']
             photoUrl = f"https://warning.bmkg.go.id/img/logo-bmkg.png"
             caption = f"""
-<blockquote><b>╭─ •  「 <b>Info Gempa Terkini</b> 」
-│  ◦ <b>Magnitude: <code>{magnitude}</code></b>
-│  ◦ <b>Kedalaman: <code>{kedalaman}</code></b>
-│  ◦ <b>Koordinat: <code>{bujur}, {lintang}</code></b>
-│  ◦ <b>Waktu: <code>{tanggal}, {jam}</code></b>
-│  ◦ <b>Lokasi: <code>{wilayah}</code></b>
-│  ◦ <b>Potensi: <code>{potensi}</code></b>
+<blockquote><b>╭─ •  「 <b>ɪɴꜰᴏ ɢᴇᴍᴘᴀ ᴛᴇʀᴋɪɴɪ</b> 」
+│  ◦ <b>ᴍᴀɢɴɪᴛᴜᴅᴇ: <code>{magnitude}</code></b>
+│  ◦ <b>ᴋᴇᴅᴀʟᴀᴍᴀɴ: <code>{kedalaman}</code></b>
+│  ◦ <b>ᴋᴏᴏʀᴅɪɴᴀᴛ: <code>{bujur}, {lintang}</code></b>
+│  ◦ <b>ᴡᴀᴋᴛᴜ: <code>{tanggal}, {jam}</code></b>
+│  ◦ <b>ʟᴏᴋᴀꜱɪ: <code>{wilayah}</code></b>
+│  ◦ <b>ᴘᴏᴛᴇɴꜱɪ: <code>{potensi}</code></b>
 ╰──── • 
 </blockquote></b>
 """
@@ -54,10 +55,10 @@ async def stalkig(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇsᴘᴏɴs ᴄᴜᴋɪ ᴄᴇss.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴇss: {e}")
 
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇsᴀʟᴀʜᴀɴ ᴄᴇss: {e}")

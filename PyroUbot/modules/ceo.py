@@ -12,9 +12,9 @@ async def promotte(client: Client, message: Message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     user_id = await extract_user(message)
-    anu = await eor(message, f"{prs}Prosess Cess...")
+    anu = await eor(message, f"{prs}ᴘʀᴏsᴇs ᴄᴇss...")
     if not user_id:
-        return await anu.edit(f"{ggl}pengguna tidak ditemukan.")
+        return await anu.edit(f"{ggl}ᴘᴇɴɢɢᴜɴᴀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ.")
     (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     try:
         await message.chat.promote_member(
@@ -32,9 +32,9 @@ async def promotte(client: Client, message: Message):
         )
         await asyncio.sleep(1)
         umention = (await client.get_users(user_id)).mention
-        return await anu.edit(f"{sks}berhasil mempromosikan : {umention} menjadi admin")
+        return await anu.edit(f"{sks}ʙᴇʀʜᴀsɪʟ ᴍᴇᴍᴘʀᴏᴍᴏsɪᴋᴀɴ : {umention} ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ")
     except ChatAdminRequired:
-        await anu.edit(f"{ggl}**anda bukan admin di group ini !**")
+        await anu.edit(f"{ggl}**ᴇʟᴜ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴏᴜᴘ ɪɴɪ !**")
 
 @PY.UBOT("ceo")
 @PY.TOP_CMD
@@ -43,9 +43,9 @@ async def promotte(client: Client, message: Message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     user_id = await extract_user(message)
-    anu = await eor(message, f"{prs}Prosess Cess...")
+    anu = await eor(message, f"{prs}ᴘʀᴏsᴇs ᴄᴇss...")
     if not user_id:
-        return await anu.edit(f"{ggl}pengguna tidak ditemukan.")
+        return await anu.edit(f"{ggl}ᴘᴇɴɢɢᴜɴᴀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ.")
     (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     try:
         await message.chat.promote_member(
@@ -63,9 +63,9 @@ async def promotte(client: Client, message: Message):
         )
         await asyncio.sleep(1)
         umention = (await client.get_users(user_id)).mention
-        return await anu.edit(f"{sks}berhasil mempromosikan : {umention} menjadi ceo")
+        return await anu.edit(f"{sks}ʙᴇʀʜᴀsɪʟ ᴍᴇᴍᴘʀᴏᴍᴏsɪᴋᴀɴ : {umention} ᴍᴇɴᴊᴀᴅɪ ᴄᴇᴏ")
     except ChatAdminRequired:
-        await anu.edit(f"{ggl}**anda bukan admin di group ini !**")
+        await anu.edit(f"{ggl}**ᴇʟᴜ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴏᴜᴘ ɪɴɪ !**")
 
  
 @PY.UBOT("demote")
@@ -75,11 +75,11 @@ async def demote(client: Client, message: Message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     user_id = await extract_user(message)
-    sempak = await eor(message, f"{prs}processing...")
+    sempak = await eor(message, f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     if not user_id:
-        return await sempak.edit(f"{ggl}pengguna tidak ditemukan")
+        return await sempak.edit(f"{ggl}ᴘᴇɴɢɢᴜɴᴀ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ")
     if user_id == client.me.id:
-        return await sempak.edit(f"{ggl}tidak bisa demote diri sendiri.")
+        return await sempak.edit(f"{ggl}ᴛɪᴅᴀᴋ ʙɪsᴀ ᴅᴇᴍᴏᴛᴇ ᴅɪʀɪ sᴇɴᴅɪʀɪ.")
     await message.chat.promote_member(
         user_id,
         privileges=ChatPrivileges(
@@ -95,7 +95,7 @@ async def demote(client: Client, message: Message):
     )
     await asyncio.sleep(1)
     umention = (await client.get_users(user_id)).mention
-    await sempak.edit(f"{sks}demoted : {umention}")
+    await sempak.edit(f"{sks}ᴅᴇᴍᴏᴛᴇᴅ : {umention}")
     await sempak.edit(sempak)
     await sempak.delete()
 
@@ -107,6 +107,6 @@ async def get_link(client, message):
     prs = await EMO.PROSES(client)
     try:
         link = await client.export_chat_invite_link(message.chat.id)
-        await message.reply_text(f"{sks}ini hasilnya tuan : {link}", disable_web_page_preview=True)
+        await message.reply_text(f"{sks}ɪɴɪ ʜᴀsɪʟɴʏᴀ ᴄᴇꜱꜱ : {link}", disable_web_page_preview=True)
     except Exception as r:
-        await message.reply_text(f"{ggl}terjadi error : \n {r}")
+        await message.reply_text(f"{ggl}ᴛᴇʀᴊᴀᴅɪ ᴇʀʀᴏʀ : \n {r}")

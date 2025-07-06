@@ -3,25 +3,25 @@ from PyroUbot import *
 import requests
 
 __MODULE__ = "ᴇᴘʜᴏᴛᴏ"
-__HELP__ = """**「 BANTUAN UNTUK MODULE EPFOTO CESS 」**
+__HELP__ = """**「 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴏᴅᴜʟᴇ ᴇᴘꜰᴏᴛᴏ ᴄᴇꜱꜱ 」**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .television (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴛᴇʟᴇᴠɪsɪᴏɴ**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴛᴇʟᴇᴠɪꜱɪᴏɴ**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .glasse (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ɢʟᴀssᴇ**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ɢʟᴀꜱꜱᴇ**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink2 (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .coverpubg (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .hororr (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʜᴏʀᴏʀʀʀ**"""
+𖠇➛ **ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʜᴏʀᴏʀʀʀ**"""
 
 def tweet(text):
     url = "https://api.botcahx.eu.org/api/ephoto/televisi"
@@ -74,12 +74,63 @@ def robottt(text):
     except requests.exceptions.RequestException:
         return None
 
+def fb(text):
+    url = "https://api.botcahx.eu.org/api/ephoto/blackpink"
+    params = {
+        "text": text,
+        "apikey": "045705b1"
+    }   
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        
+        if response.headers.get("Content-Type", "").startswith("image/"):
+            return response.content
+        else:
+            return None
+    except requests.exceptions.RequestException:
+        return None
+
+def fbs(text):
+    url = "https://api.botcahx.eu.org/api/ephoto/blackpink2"
+    params = {
+        "text": text,
+        "apikey": "045705b1"
+    }   
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        
+        if response.headers.get("Content-Type", "").startswith("image/"):
+            return response.content
+        else:
+            return None
+    except requests.exceptions.RequestException:
+        return None
+
+def tweets(text):
+    url = "https://api.botcahx.eu.org/api/ephoto/glasse"
+    params = {
+        "text": text,
+        "apikey": "045705b1"
+    }   
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        
+        if response.headers.get("Content-Type", "").startswith("image/"):
+            return response.content
+        else:
+            return None
+    except requests.exceptions.RequestException:
+        return None
+
           
 @PY.UBOT("hororr")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .hororrr peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ʜᴏʀᴏʀʀʀ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -107,13 +158,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")
 
 @PY.UBOT("coverpubg")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .coverpubg peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ᴄᴏᴠᴇʀᴘᴜʙɢ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -141,13 +192,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")
 
 @PY.UBOT("blackpink")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .blackpink peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ʙʟᴀᴄᴋᴘɪɴᴋ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -175,12 +226,12 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")
 @PY.UBOT("blackpink2")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .blackpink peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ʙʟᴀᴄᴋᴘɪɴᴋ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -208,12 +259,12 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")
 @PY.UBOT("television")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .television peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ᴛᴇʟᴇᴠɪsɪᴏɴ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -241,13 +292,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")
 
 @PY.UBOT("glasse")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Contoh : .glasse peno")
+        await message.reply_text("ᴄᴏɴᴛᴏʜ : .ɢʟᴀssᴇ ᴘᴇɴᴏ")
         return
 
     request_text = args[1]
@@ -275,4 +326,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Apikey Sedang Bermasalah Cess")
+        await message.reply_text("ᴀᴘɪᴋᴇʏ sᴇᴅᴀɴɢ ʙᴇʀᴍᴀsᴀʟᴀʜ ᴄᴇss")

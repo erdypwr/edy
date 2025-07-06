@@ -20,7 +20,7 @@ __HELP__ = """
 
 @PY.UBOT("addsudo")
 async def _(client, message):
-    msg = await message.reply("⏰ Prosess Cess...")
+    msg = await message.reply("⏰ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
@@ -42,7 +42,7 @@ async def _(client, message):
 
 @PY.UBOT("delsudo|unsudo")
 async def _(client, message):
-    msg = await message.reply("🏓 Prosess Cess...")
+    msg = await message.reply("🏓 ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
@@ -64,7 +64,7 @@ async def _(client, message):
 
 @PY.UBOT("sudolist|listsudo")
 async def _(client, message):
-    msg = await message.reply("🏓 Prosess Cess...")
+    msg = await message.reply("🏓 ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
 
     if not sudo_users:

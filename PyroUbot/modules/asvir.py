@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 __MODULE__ = "ᴀsᴠɪʀ ᴀɪ"
 __HELP__ = """
-<blockquote><b>✮ Bantuan Untuk Asisten Virtual ✮
+<blockquote><b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀsɪsᴛᴇɴ ᴠɪʀᴛᴜᴀʟ ✮
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}asvir</code>
-    ai bisa digunakan untuk:translate,memberikan saran,membuat text , contoh <code>{0}asvir</code> bahasa ingris nya 'siapa kamu' itu apa?</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴀsᴠɪʀ</code>
+    ᴀɪ ʙɪsᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ: ᴛʀᴀɴsʟᴀᴛᴇ, ᴍᴇᴍʙᴇʀɪᴋᴀɴ sᴀʀᴀɴ, ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ , ᴄᴏɴᴛᴏʜ <code>{0}ᴀsᴠɪʀ</code> ʙᴀʜᴀsᴀ ɪɴɢɢʀɪs ɴʏᴀ 'sɪᴀᴘᴀ ᴋᴀᴍᴜ' ɪᴛᴜ ᴀᴘᴀ?</b></blockquote>
 """
 
 @PY.UBOT("asvir")
@@ -21,10 +21,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .asvir bahasa ingris nya 'siapa kamu' itu apa?"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .ᴀsᴠɪʀ ʙᴀʜᴀsᴀ ɪɴɢɢʀɪs ɴʏᴀ 'sɪᴀᴘᴀ ᴋᴀᴍᴜ' ɪᴛᴜ ᴀᴘᴀ?"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=4943239162758169437>🤩</emoji>Menjawab....")
+            prs = await message.reply_text(f"<emoji id=4943239162758169437>🤩</emoji>ᴍᴇɴᴊᴀᴡᴀʙ....")
             hai = message.text.split(' ', 1)[1]
             response = requests.get(f'https://vapis.my.id/api/llamav1?q={hai}')
 
@@ -35,9 +35,9 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ 'ʀᴇsᴜʟᴛs' ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅɪ ʀᴇsᴘᴏɴꜱ.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴋᴇsᴀʟᴀʜᴀɴ ᴀᴋsᴇs ʀᴇsᴘᴏɴꜱ.")
     except Exception as e:
-        await message.reply_text(f"{e}")
+        await message.reply_text(f"ᴋᴇsᴀʟᴀʜᴀɴ: {e}")
       

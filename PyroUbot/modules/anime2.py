@@ -11,23 +11,23 @@ __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴇ 2 ⦫</b>
 <blockquote>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}anime</code> Query
-⊶ buat pertanyaan contoh <code>{0}ask</code> dimana letak Antartika
+ᚗ <code>{0}ᴀɴɪᴍᴇ</code> ǫᴜᴇʀʏ
+⊶ ʙᴜᴀᴛ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴄᴏɴᴛᴏʜ <code>{0}ᴀꜱᴋ</code> ᴅɪᴍᴀɴᴀ ʟᴇᴛᴀᴋ ᴀɴᴛᴀʀᴛɪᴋᴀ
 
-<b>ᚗ Query:</b>
-    <i>⊶ keneki</i>,
-    <i>⊶ megumin/i>,
-    <i>⊶ yotsuba</i>,
-    <i>⊶ shinomiya</i>,
-    <i>⊶ yumeko</i>,
-    <i>⊶ tsunade</i>,
-    <i>⊶ kagura</i>,
-    <i>⊶ madara</i>,
-    <i>⊶ itachi</i>,
-    <i>⊶ akira</i>,
-    <i>⊶ toukachan</i>,
-    <i>⊶ cicho</i>,
-    <i>⊶ sasuke</i></blockquote>
+<b>ᚗ ǫᴜᴇʀʏ:</b>
+    <i>⊶ ᴋᴇɴᴇᴋɪ</i>,
+    <i>⊶ ᴍᴇɢᴜᴍɪɴ/ɪ</i>,
+    <i>⊶ ʏᴏᴛꜱᴜʙᴀ</i>,
+    <i>⊶ ꜱʜɪɴᴏᴍɪʏᴀ</i>,
+    <i>⊶ ʏᴜᴍᴇᴋᴏ</i>,
+    <i>⊶ ᴛꜱᴜɴᴀᴅᴇ</i>,
+    <i>⊶ ᴋᴀɢᴜʀᴀ</i>,
+    <i>⊶ ᴍᴀᴅᴀʀᴀ</i>,
+    <i>⊶ ɪᴛᴀᴄʜɪ</i>,
+    <i>⊶ ᴀᴋɪʀᴀ</i>,
+    <i>⊶ ᴛᴏᴜᴋᴀᴄʜᴀɴ</i>,
+    <i>⊶ ᴄɪᴄʜᴏ</i>,
+    <i>⊶ ꜱᴀꜱᴜᴋᴇ</i></blockquote>
 """
 
 URLS = {
@@ -54,10 +54,10 @@ async def _(client, message):
     
     if query not in URLS:
         valid_queries = ", ".join(URLS.keys())
-        await message.reply(f"Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
+        await message.reply(f"ǫᴜᴇʀʏ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ. ɢᴜɴᴀᴋᴀɴ ꜱᴀʟᴀʜ ꜱᴀᴛᴜ ᴅᴀʀɪ: {valid_queries}.")
         return
 
-    processing_msg = await message.reply("Prosess Cess....")
+    processing_msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ....")
     
     try:
         await client.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)
@@ -70,4 +70,4 @@ async def _(client, message):
         await client.send_photo(message.chat.id, photo)
         await processing_msg.delete()
     except requests.exceptions.RequestException as e:
-        await processing_msg.edit_text(f"Gagal Mengambil Gambar Anime Cess: {e}")
+        await processing_msg.edit_text(f"ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ɢᴀᴍʙᴀʀ ᴀɴɪᴍᴇ ᴄᴇꜱꜱ: {e}")

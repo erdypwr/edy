@@ -1,7 +1,7 @@
 __MODULE__ = "ʟᴏɢ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Logs Cess
+<blockquote>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟᴏɢs ᴄᴇss
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}logs</code> query > On or Off
-    Mengaktifkan atau Menonaktifkan Logs Cess</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}logs</code> ǫᴜᴇʀʏ > ᴏɴ ᴏʀ ᴏꜰꜰ
+    ᴍᴇɴɢᴀᴋᴛɪꜰᴋᴀɴ ᴀᴛᴀᴜ ᴍᴇɴᴏɴᴀᴋᴛɪꜰᴋᴀɴ ʟᴏɢs ᴄᴇss</blockquote>
 """
