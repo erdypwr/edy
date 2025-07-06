@@ -23,8 +23,6 @@ __HELP__ = """
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}togif</code>
     Untuk Merubah Sticker Menjadi Gif Cess
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}toaudio</code>
-    Untuk Merubah Video Menjadi Audio MP3 Cess</blockquote>
 """
 
 

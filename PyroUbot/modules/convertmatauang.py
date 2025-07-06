@@ -10,7 +10,6 @@ __HELP__ = """
 ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}Convert 10000 IDR USD</code> → Mengubah 10.000 IDR Ke USD Cess.
 
-Sumber: Menggunakan API Exchange Rate Cess.</blockquote></b>
 """
 
 API_URL = "https://api.exchangerate-api.com/v4/latest/"
