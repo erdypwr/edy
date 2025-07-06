@@ -18,7 +18,9 @@ from pyrogram import enums
 from PIL import Image, ImageDraw, ImageFont
 from pymediainfo import MediaInfo
 from pyrogram.enums import ChatType
+
 from pyrogram.errors import *
+from pyrogram.errors import ChannelPrivate
 
 
 

@@ -2463,7 +2463,7 @@ def gens_font(font, text):
     if font == "sim":
         get_font = Fonts.sim(text)
     if font == "circles":
-        get_font = Fomts.circles(text)
+        get_font = Fonts.circles(text)
     if font == "dark_circle":
         get_font = Fonts.dark_circle(text)
     if font == "gothic":
@@ -2471,7 +2471,7 @@ def gens_font(font, text):
     if font == "upside_down":
         get_font = Fonts.upside_down(text)
     if font == "bold_gothic":
-        get_font = Fonts.bold_gothic(test)
+        get_font = Fonts.bold_gothic(text)
     if font == "cloud":
         get_font = Fonts.cloud(text)
     if font == "happy":

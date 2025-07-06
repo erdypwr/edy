@@ -1,6 +1,7 @@
 import asyncio
 from pyrogram.enums import ChatType
 from PyroUbot import *
+from PyroUbot import ubot
 
 chat_type = {
     "group": [ChatType.GROUP, ChatType.SUPERGROUP],
