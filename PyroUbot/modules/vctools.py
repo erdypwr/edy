@@ -2,10 +2,10 @@ __MODULE__ = "ᴠᴄᴛᴏᴏʟꜱ"
 __HELP__ = """
 <blockquote>Bantuan Untuk VcTools
 
-perintah : <code>{0}jvc</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}jvc</code>
     untuk bergabung ke voice chat group
 
-perintah : <code>{0}lvc</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}lvc</code>
     untuk meninggalkan dari voice chat group
 """
 

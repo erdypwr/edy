@@ -61,9 +61,9 @@ __MODULE__ = "ᴏɴɢɴᴇʀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Ongner</blockquote></b>
 
-<blockquote><b>perintah : <code>{0}cping</code> - <code>{0}caddbl</code> - <code>{0}climit</code> - <code>calive</code></blockquote></b>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cping</code> - <code>{0}caddbl</code> - <code>{0}climit</code> - <code>calive</code></blockquote></b>
 
-<blockquote><b>perintah : <code>{0}erdy gantenk ga</code> - <code>{0}tes on</code></blockquote></b>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}erdy gantenk ga</code> - <code>{0}tes on</code></blockquote></b>
 
 <blockquote><b>- <code>{0}p</code>\n- <code>{0}ok</code>\n- <code>{0}sip</code>\n- <code>{0}love</code>\n- <code>{0}haha</code>\n- <code>{0}kuda</code></blockquote></b>
 """
@@ -85,15 +85,15 @@ async def padaonga(client, message):
         "▓▓▓▓▓▓█████‡‡‡‡‡‡‡‡‡‡‡‡██\n"
         "█████‡‡‡‡‡‡‡██████████\n")
     
-@PY.INDRI("boysz gantenk ga")
+@PY.INDRI("erdy gantenk ga")
 async def didingantenkga(client, message):
     await message.reply(
-       "<blockquote><b>ya benar dia sangat gantenk sekali\n\n- dia baik\n- dia manis\n- dia lucu\n- dia imut\n- dia konbrut awsjshsjhsjs\n\nidaman banget lah pokonya boysz nih</blockquote></b>")
+       "<blockquote><b>Ya Benar Dia Sangat Gantenk Sekali\n\n- Dia baik\n- Dia Manis\n- Dia Lucu\n- Dia Imut\n- Dia Konbrut awsjshsjhsjs\n\nIdaman Banget Lah Pokonya Erdy Nih</blockquote></b>")
 
 @PY.INDRI("tes on")
 async def teson(client, message):
     await message.reply(
-       "<blockquote><b>on selalu Dev Kingz👑</blockquote></b>")
+       "<blockquote><b>On Selalu ErdyCess👑</blockquote></b>")
         
 @PY.INDRI("kuda")
 async def _(client, message):

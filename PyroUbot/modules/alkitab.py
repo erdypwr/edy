@@ -7,7 +7,7 @@ __MODULE__ = "ᴀʟᴋɪᴛᴀʙ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Alkitab
 
-perintah : <code>{0}alkitab</code> kejadian
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}alkitab</code> kejadian
     Untuk Search Ayat Alkitab.</b></blockquote>
 """
 

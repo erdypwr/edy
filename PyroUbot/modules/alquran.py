@@ -35,10 +35,10 @@ __MODULE__ = "ᴀʙꜱᴇɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Absen
 
-perintah : <code>{0}absen</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}absen</code>
     untuk membuat liꜱt abꜱen kamu
 
-perintah : <code>{0}delabsen</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delabsen</code>
     untuk menghapuꜱ liꜱt abꜱen kamu</b></blockquote>
 """
 

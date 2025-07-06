@@ -8,16 +8,16 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴘᴀᴍ"
 __HELP__ = """
-<blockquote><b>『 bantuan spam 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴘᴀᴍ ᴄᴇꜱꜱ 』</b>
 
-<b>perintah:</b> <code>{0}spam</code>
-   <code>melakukan spam pesan</code>
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}spam</code>
+   <code>ᴍᴇʟᴀᴋᴜᴋᴀɴ ꜱᴘᴀᴍ ᴘᴇꜱᴀɴ</code>
 
-<b>perintah:</b> <code>{0}setdelay</code>
-   <code>mengatur delay setiap pesan yang di kirim</code>
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}setdelay</code>
+   <code>ᴍᴇɴɢᴀᴛᴜʀ ᴅᴇʟᴀʏ sᴇᴛɪᴀᴘ ᴘᴇsᴀɴ ʏᴀɴɢ ᴅɪ ᴋɪʀɪᴍ</code>
 
-<b>perintah:</b> <code>{0}stopspam</code>
-   <code>memberhentikan spam pesan yang sedang berjalan</code></blockquote>
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}stopspam</code>
+   <code>ᴍᴇᴍʙᴇʀʜᴇɴᴛɪᴋᴀɴ ꜱᴘᴀᴍ ᴘᴇꜱᴀɴ ʏᴀɴɢ sᴇᴅᴀɴɢ ʙᴇʀᴊᴀʟᴀɴ</code></blockquote>
 """
 
 spam_progress = []
@@ -36,7 +36,7 @@ async def _(client, message):
     global spam_progress
     spam_progress.append(client.me.id)
     sks = await EMO.BERHASIL(client)
-    _msg = "<b>memproses...</b>"
+    _msg = "<b>Proses Cess...</b>"
 
     r = await message.reply(_msg)
     count, msg = extract_type_and_msg(message)
@@ -53,17 +53,17 @@ async def _(client, message):
     
     for _ in range(count):
         if client.me.id not in spam_progress:
-            await r.edit(f"<blockquote><b>proses spam berhasil di batalkan !</b> {sks}</blockquote>")
+            await r.edit(f"<blockquote><b>Proses Spam Berhasil Di Batalkan Cess !</b> {sks}</blockquote>")
             return
         await SpamMsg(client, message, msg)
 
     spam_progress.remove(client.me.id)    
-    await r.edit("<b>spam telah selesai</b>")
+    await r.edit("<b>Spam Telah Selesai Cess</b>")
 
 @PY.UBOT("setdelay")
 @PY.TOP_CMD
 async def _(client, message):
-    _msg = "<b>memproses...</b>"
+    _msg = "<b>Prosess Cess...</b>"
 
     r = await message.reply(_msg)
     count, msg = extract_type_and_msg(message)
@@ -77,7 +77,7 @@ async def _(client, message):
         return await r.edit(f"<b><code>{message.text.split()[0]}</code> [count]</b>")
 
     await set_vars(client.me.id, "SPAM", count)
-    return await r.edit("<b>spam delay berhasil di setting</b>")
+    return await r.edit("<b>Spam Delay Berhasil Di Setting Cess</b>")
 
 @PY.UBOT("stopspam")
 @PY.TOP_CMD
@@ -85,6 +85,6 @@ async def _(client, message):
     global spam_progress
     if client.me.id in spam_progress:
         spam_progress.remove(client.me.id)
-        await message.reply("<b>spam telah berhenti</b>")
+        await message.reply("<b>Spam Telah Berhenti Cess</b>")
     else:
-        await message.reply("<b>tidak ada spam yang ditemukan</b>")
+        await message.reply("<b>Tidak Ada Spam Yang Ditemukan Cess</b>")

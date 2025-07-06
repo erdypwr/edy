@@ -10,7 +10,7 @@ __MODULE__ = "ᴡᴀʟʟᴘᴀᴘᴇʀ 2"
 __HELP__ = """
 <b>♛ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡᴀʟʟᴘᴀᴘᴇʀ ♛</b>
 
-<blockquote><b>perintah :
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}wallpp2</code> [Query]
 ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴡᴀʟʟᴘᴀᴘᴇʀ/ɢᴀᴍʙᴀʀ
 

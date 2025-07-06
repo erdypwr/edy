@@ -4,31 +4,32 @@ import requests
 
 __MODULE__ = "ᴘʟᴀʏʙᴜᴛᴛᴏɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ⦫</b>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʟᴀʏʙᴜᴛᴛᴏɴ ᴄᴇꜱꜱ ⦫</b>
 <blockquote><b>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}ytgold</code>
-⊷ untuk membuat gold playbutton youtube
+⊷ Untuk Membuat Gold Playbutton Youtube
 
 ᚗ <code>{0}ytsilver</code>
-⊷ untuk membuat silver playbutton youtube
+⊷ Untuk Membuat Silver Playbutton Youtube
 
 ᚗ <code>{0}iggold</code>
-⊷ untuk membuat gold playbutton youtube
+⊷ Untuk Membuat Gold Playbutton Instagram
 
 ᚗ <code>{0}igsilver</code>
-⊷ untuk membuat silver playbutton youtube
+⊷ Untuk Membuat Silver Playbutton Instagram
 
 ᚗ <code>{0}fbgold</code>
-⊷ untuk membuat gold playbutton youtube
+⊷ Untuk Membuat Gold Playbutton Facebook
 
 ᚗ <code>{0}fbsilver</code>
-⊷ untuk membuat silver playbutton youtube
+⊷ Untuk Membuat Silver Playbutton Facebook
 
 ᚗ <code>{0}twgold</code>
-⊷ untuk membuat gold playbutton youtube
+⊷ Untuk Membuat Gold Playbutton Twitter
 
 ᚗ <code>{0}twsilver</code>
+⊷ Untuk Membuat Silver Playbutton Twitter
 ⊷ untuk membuat silver playbutton youtube
 
 """
@@ -187,13 +188,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
                               
 @PY.UBOT("ytsilver")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .ytsilver moire")
+        await message.reply_text("Contoh : .ytsilver moire")
         return
 
     request_text = args[1]
@@ -210,8 +211,8 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
-  
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
+
 # INSTAGRAM                                
 @PY.UBOT("iggold")
 async def _(client, message):
@@ -234,13 +235,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
-                                  
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
+
 @PY.UBOT("igsilver")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .igsilver moire")
+        await message.reply_text("Contoh : .igsilver moire")
         return
 
     request_text = args[1]
@@ -257,14 +258,14 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 
 # FACEBOOK                                   
 @PY.UBOT("fbsilver")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .fbsilver moire")
+        await message.reply_text("Contoh : .fbsilver moire")
         return
 
     request_text = args[1]
@@ -281,7 +282,7 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 
 @PY.UBOT("fbgold")
 async def _(client, message):
@@ -304,14 +305,14 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 
 # TWITTER
 @PY.UBOT("twtsilver")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .twtsilver moire")
+        await message.reply_text("Contoh : .twtsilver moire")
         return
 
     request_text = args[1]
@@ -328,13 +329,13 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
+        await message.reply_text("Apikey Sedang Bermasalah Cess")
 
 @PY.UBOT("twtgold")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .twtgold moire")
+        await message.reply_text("Contoh : .twtgold moire")
         return
 
     request_text = args[1]
@@ -351,5 +352,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("apikey sedang bermasalah")
- 
+        await message.reply_text("Apikey Sedang Bermasalah Cess")

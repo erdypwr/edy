@@ -2,10 +2,10 @@ from PyroUbot import *
 
 __MODULE__ = "qrcode"
 __HELP__ = """
-perintah : <code>{0}qrGen</code>
-    merubah qrcode text menjadi gambar
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}qrGen</code>
+    Merubah Qrcode Text Menjadi Gambar
 
-perintah : <code>{0}qrRead</code>
-    merubah qrcode media menjadi text
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}qrRead</code>
+    Merubah Qrcode Media Menjadi Text
 """
 

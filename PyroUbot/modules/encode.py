@@ -9,7 +9,7 @@ __MODULE__ = "ᴇɴᴄʀʏᴘᴛ ʜᴀʀᴅ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Encrypt JS Cess</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}enc</code> → Balas file .js untuk dienkripsi.
 
 Sumber: Menggunakan UglifyJS untuk enkripsi JavaScript.</blockquote></b>

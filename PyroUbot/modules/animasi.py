@@ -33,7 +33,7 @@ __MODULE__ = "ᴀɴɪᴍᴀꜱɪ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Animasi
 
-perintah :
+ᴘᴇʀɪɴᴛᴀʜ :
     <code>{0}dino</code>
     <code>{0}awk</code>
     <code>{0}loveyou</code>

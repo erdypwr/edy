@@ -4,7 +4,7 @@ __MODULE__ = "ꜱᴛᴀꜰꜰ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Staff
 
-perintah : <code>{0}staff</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}staff</code>
     untuk mendapatkan informaꜱi ꜱeluruh ꜱtaff grup</blockquote>
 """
 import os

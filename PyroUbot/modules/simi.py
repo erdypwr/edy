@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 __MODULE__ = "sɪᴍɪ ᴀɪ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk simi ai
+<blockquote><b>Bantuan Untuk Simi AI Cess
 
-perintah : <code>{0}simi</code>
-    dapat mengobrol, tapi agak toxic</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}simi</code>
+    Dapat Mengobrol, Tapi Agak Toxic Cuki</b></blockquote>
 """
 
 
@@ -22,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .simi query"
+                "<emoji id=5019523782004441717>❌</emoji>Mohon Gunakan Format Cuki\nContoh : .simi query"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>menjawab....")
+            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>Menjawab Cess....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/simsimi?query={a}&apikey=Boyy')
 
@@ -36,8 +36,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("Kesalahan Saat Mengakses Respons Cess.")
     except Exception as e:
         await message.reply_text(f"{e}")

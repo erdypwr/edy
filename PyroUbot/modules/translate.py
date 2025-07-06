@@ -12,13 +12,13 @@ __MODULE__ = "ᴛʀᴀɴꜱʟᴀᴛᴇ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Translate
 
-perintah : <code>{0}tr</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tr</code>
     menerjemahkan pesan/text
 
-perintah : <code>{0}tts</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tts</code>
      merubah text menjadi pesan suara sesui bahasa
 
-perintah : <code>{0}setlang</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setlang</code>
     merubah bahasa translate</blockquote>
 """
 

@@ -4,9 +4,9 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 
 __MODULE__ = " 𝙶𝙲𝙰𝚂𝚃 𝙽𝙴𝚆"
 __HELP__ = f"""
-<b>『 bantuan untuk gcastnew 』</b>
+<b>『 Bantuan Untuk Gcastnew Cess 』</b>
 
-  <b>• perintah:</b> <code>.bc</code> gc balas ke pesan
+  <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>.bc</code> gc balas ke pesan
   <b>• penjelasan:</b> gc[grup], adm[khusus admin], pv [private chat]
 
 """
@@ -25,19 +25,19 @@ def get_message(message):
 async def _(c, m):
     done = 0
     if len(m.command) != 2:
-        await m.reply(f"**<emoji id =5929358014627713883>❌</emoji> mohon gunakan format: bc [gc adm pv] **")
+        await m.reply(f"**<emoji id =5929358014627713883>❌</emoji> Mohon Gunakan Format Cess: bc [gc adm pv] **")
         return
     send = get_message(m)
     if not send:
-        await m.reply_text(f"<emoji id=5911461474315802019>⭐</emoji> **mohon balas ke pesan** !", quote=True)
+        await m.reply_text(f"<emoji id=5911461474315802019>⭐</emoji> **Mohon Balas Ke Pesan Cess** !", quote=True)
         return
     if not m.reply_to_message:
-        await m.reply_text(f"<emoji id=5911461474315802019>⭐</emoji> **mohon balas ke pesan** !", quote=True)
+        await m.reply_text(f"<emoji id=5911461474315802019>⭐</emoji> **Mohon Balas Ke Pesan Cess** !", quote=True)
         return
     blacklist = await get_chat(c.me.id)
     try:
         if m.command[1] == "gc":
-            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **sedang memproses**...")
+            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **Prossess Cess...**")
             async for dialog in c.get_dialogs():
                 if dialog.chat.type in (ChatType.SUPERGROUP, ChatType.GROUP):
                     chat_id = dialog.chat.id
@@ -51,10 +51,10 @@ async def _(c, m):
 
             await Haku.edit(
                 f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} grup** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©akbarbotz1** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **powered by @ydhiak** <emoji id =5895583431194054511>🌟</emoji>\n")
 
         elif m.command[1] == "pv":
-            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **sedang memproses**...")
+            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **Prossess Cess...**")
             async for dialog in c.get_dialogs():
                 if dialog.chat.type == ChatType.PRIVATE:
                     chat_id = dialog.chat.id
@@ -67,11 +67,11 @@ async def _(c, m):
                             pass
 
             await Haku.edit(
-                f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} chat pribadi** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©akbarbotz1** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **Berhasil Mengirim Ke {done} Chat Pribadi Cess** <emoji id=5798623990436074786>✅</emoji>\n\n"
+                f"<emoji id =5888974760720732797>💥</emoji> **Powered By @ydhiak** <emoji id =5895583431194054511>🌟</emoji>\n")
 
         elif m.command[1] == "adm":
-            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **sedang memproses**...")
+            Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **Prossess Cess...**")
             async for dialog in c.get_dialogs():
                 if dialog.chat.type in (ChatType.SUPERGROUP, ChatType.GROUP):
                     chat_id = dialog.chat.id
@@ -84,9 +84,9 @@ async def _(c, m):
                     except Exception:
                         pass
             await Haku.edit(
-                f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} khusus admin** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©akbarbotz1** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **Berhasil Mengirim Ke {done} Khusus Admin Cess** <emoji id=5798623990436074786>✅</emoji>\n\n"
+                f"<emoji id =5888974760720732797>💥</emoji> **powered by @ydhiak** <emoji id =5895583431194054511>🌟</emoji>\n")
 
 
     except IndexError:
-        await m.reply(f"<emoji id =5929358014627713883>❌</emoji>**mohon gunakan bc gc/adm/pv balas ke pesan**")
+        await m.reply(f"<emoji id =5929358014627713883>❌</emoji>**Mohon Gunakan BC gc/adm/pv Balas Ke Pesan Cess**")

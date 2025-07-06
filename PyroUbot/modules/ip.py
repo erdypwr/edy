@@ -11,7 +11,7 @@ __MODULE__ = "ᴄᴇᴋ ɪᴘ ᴀᴅʀᴇss"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek IP Adress Cess</b>
 
-Perintah: <code>{0}ipaddress</code> [IP ADDRESS]
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}ipaddress</code> [IP ADDRESS]
 Penjelasan: Untuk Mendapatkan Alamat IP Dari IP Address Yang Diberikan Cess</blockquote></b>
 """
 

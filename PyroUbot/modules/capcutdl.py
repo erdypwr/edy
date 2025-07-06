@@ -6,7 +6,7 @@ __MODULE__ = "ᴄᴀᴘᴄᴜᴛ ᴅʟ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴀᴘᴄᴜᴛ ᴅʟ ⦫</b>
 <blockquote>
-⎆ perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}capdl</code> Link
 
 ⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:

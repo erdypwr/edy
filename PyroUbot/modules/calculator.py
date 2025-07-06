@@ -6,7 +6,7 @@ __MODULE__ = "ᴄᴀʟᴄᴜʟᴀᴛᴏʀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Kalkulator</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}calc [ekspresi]</code> → Menghitung ekspresi matematika  
 Contoh: <code>.calc 5 + 10 * 2</code>
 

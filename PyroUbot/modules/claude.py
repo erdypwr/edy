@@ -9,7 +9,7 @@ __MODULE__ = "ᴄʟᴀᴜᴅᴇ ᴀɪ"
 __HELP__ = """
 <blockquote><b>✮ Bantuan Untuk Claude ✮
 
-perintah : <code>{0}claude</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}claude</code>
     buat percakapan contoh <code>{0}claude</code> haii</b></blockquote>
 """
 

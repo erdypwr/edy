@@ -7,7 +7,7 @@ __MODULE__ = "ᴛᴏᴜʀʟ"
 __HELP__ = """
 <blockquote><b>Bantuan untuk tourl
 
-perintah : <code>{0}tourl</code> [reply media/text]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tourl</code> [reply media/text]
     mengapload media/text ke Link</b></blockquote>
 """
 

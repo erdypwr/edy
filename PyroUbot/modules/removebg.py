@@ -25,9 +25,9 @@ async def ReTrieveFile(input_file_name):
 
 __MODULE__ = "ʀᴇᴍᴏᴠᴇʙɢ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Remove BG
+<blockquote><b>Bantuan Untuk Remove BG Cess
 
-perintah : <code>{0}rmbg</code> [replay gambarnya]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}rmbg</code> [replay gambarnya]
     Untuk Menghapus Latar Belakang Gambar</blockquote></b>
 
 """
@@ -38,7 +38,7 @@ async def rbg_cmd(client, message):
         return
     if message.reply_to_message:
         reply_message = message.reply_to_message
-        xx = await message.reply("<i>ᴍᴇᴍᴘʀᴏsᴇs...</i>")
+        xx = await message.reply("<i>Prosess Cess...</i>")
         try:
             if (
                 isinstance(reply_message.media, raw.types.MessageMediaPhoto)
@@ -47,11 +47,11 @@ async def rbg_cmd(client, message):
                 downloaded_file_name = await client.download_media(
                     reply_message, "./downloads/"
                 )
-                await xx.edit("<i>ᴍᴇɴɢʜᴀᴘᴜs ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ᴅᴀʀɪ ɢᴀᴍʙᴀʀ ɪɴɪ...</i>")
+                await xx.edit("<i>ᴍᴇɴɢʜᴀᴘᴜs ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ᴅᴀʀɪ ɢᴀᴍʙᴀʀ ɪɴɪ ᴄᴇꜱꜱ...</i>")
                 output_file_name = await ReTrieveFile(downloaded_file_name)
                 os.remove(downloaded_file_name)
             else:
-                await xx.edit("<i>ʙᴀɢᴀɪᴍᴀɴᴀ ᴄᴀʀᴀ ᴍᴇɴɢʜᴀᴘᴜs ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ɪɴɪ ?</i>")
+                await xx.edit("<i>ʙᴀɢᴀɪᴍᴀɴᴀ ᴄᴀʀᴀ ᴍᴇɴɢʜᴀᴘᴜs ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ɪɴɪ ᴄᴇꜱꜱ ?</i>")
         except Exception as e:
             await xx.edit(f"{(str(e))}")
             return
@@ -68,9 +68,9 @@ async def rbg_cmd(client, message):
                 await xx.delete()
         else:
             await xx.edit(
-                "<b>ᴋᴇsᴀʟᴀʜᴀɴ (ᴋᴜɴᴄɪ ᴀᴘɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ, sᴀʏᴀ ᴋɪʀᴀ ?)</b>\n<i>{}</i>".format(
+                "<b>ᴋᴇsᴀʟᴀʜᴀɴ (ᴋᴜɴᴄɪ ᴀᴘɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ, ɢᴜᴀ ᴋɪʀᴀ ?)</b>\n<i>{}</i>".format(
                     output_file_name.content.decode("UTF-8")
                 ),
             )
     else:
-        return await message.reply("sɪʟᴀʜᴋᴀɴ ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ")
+        return await message.reply("sɪʟᴀʜᴋᴀɴ ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ ᴄᴇꜱꜱ")

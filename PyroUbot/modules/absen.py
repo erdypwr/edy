@@ -13,7 +13,7 @@ __MODULE__ = "ᴀʟ ǫᴜʀ'ᴀɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Al Qur'an
 
-perintah : <code>{0}alquran 1 2</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}alquran 1 2</code>
     Untuk Mencari Ayat Al Qur'an
 
 Contoh: <code>{0}alquran 1 2</code>

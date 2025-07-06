@@ -9,7 +9,7 @@ __MODULE__ = "ᴛᴜʀʙᴏ ɢᴘᴛ"
 __HELP__ = """
 <blockquote><b>✮ Bantuan Untuk Turbo Gpt ✮
 
-perintah : <code>{0}turbo</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}turbo</code>
     buat menjawab pertanyaan <code>{0}claude</code> haii</b></blockquote>
 """
 

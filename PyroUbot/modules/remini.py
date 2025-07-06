@@ -29,9 +29,9 @@ def remini(image_path, model_type="enhance"):
         )
 __MODULE__ = "remini"
 __HELP__ = """
-<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ hd ✮<b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ hd ᴄᴇꜱꜱ ✮<b>
 
-<blockquote><b>perintah :
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}remini</code></b></blockquote>
 """
 
@@ -39,10 +39,10 @@ __HELP__ = """
 @PY.TOP_CMD
 async def process_image(client, message):
     if not message.reply_to_message or not message.reply_to_message.photo:
-        await message.reply("<blockquote><b>Reply gambar yang mau di hd in dong Glenzypremubot</b></blockquote>")
+        await message.reply("<blockquote><b>Reply Gambar Yang Mau Di HD In Dong Cess</b></blockquote>")
         return
 
-    await message.reply("<blockquote><b>Proses Kingz...</b></blockquote>")
+    await message.reply("<blockquote><b>Proses Cess...</b></blockquote>")
 
     try:
         file_path = await message.reply_to_message.download()
@@ -56,10 +56,10 @@ async def process_image(client, message):
         await client.send_photo(
             chat_id=message.chat.id,
             photo=temp_output_path,
-            caption="<blockquote><b>SUDAH DI HD IN KINGZ</b></blockquote>",
+            caption="<blockquote><b>SUDAH DI HD IN CESS</b></blockquote>",
             reply_to_message_id=message.id,
         )
 
         os.remove(temp_output_path)
     except Exception as e:
-        await message.reply(f"<blockquote><b>YAAH EROR NIH KINGPRIA:(</b></blockquote>{e}")
+        await message.reply(f"<blockquote><b>YAAH EROR NIH CESS:(</b></blockquote>{e}")

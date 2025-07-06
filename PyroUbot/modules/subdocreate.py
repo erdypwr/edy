@@ -8,7 +8,7 @@ __MODULE__ = "𝙲𝚁𝙴𝙰𝚃𝙴 𝙳𝙾𝙼𝙰𝙸𝙽"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Subdomain Creator</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}subdocreate [domain] [subdomain] [IP]</code> → Menambahkan subdomain ke domain yang tersedia di Cloudflare.
 <code>{0}listdomain </code> → Untuk melihat list domain.
 

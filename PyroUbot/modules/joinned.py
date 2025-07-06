@@ -10,19 +10,19 @@ __MODULE__ = "ᴊᴏɪɴʟᴇᴀᴠᴇ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Joinleave Cess</blockquote>
 
-perintah : <code>{0}kickme</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kickme</code>
     Keluar Dari Group Telegram
 
-perintah : <code>{0}join</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}join</code>
     Join Ke Group Melalui Tautan Atau Username Group
 
-perintah : <code>{0}leaveallgc</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}leaveallgc</code>
     Keluar Semua Dari Group Telegram Kecuali Admin/Owner
 
-perintah : <code>{0}leaveallmute</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}leaveallmute</code>
     Keluar Dari Grup Yang Membatasi Anda
 
-perintah : <code>{0}leaveallch</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}leaveallch</code>
     Keluar Semua Dari Channel Kecuali Admin/Owner</blockquote>
 """
 
@@ -37,7 +37,7 @@ async def _(client, message):
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await message.reply(f"{prs}Prosess Cess...")
     if message.chat.id in BLACKLIST_CHAT:
-        return await xxnx.edit(f"{ggl}Perintah Ini Dilarang Digunakan Di Group Ini Cess!")
+        return await xxnx.edit(f"{ggl}ᴘᴇʀɪɴᴛᴀʜ Ini Dilarang Digunakan Di Group Ini Cess!")
     try:
         await xxnx.edit_text(f"{client.me.first_name} Telah Meninggalkan Grup Ini, Bye Cuki!!{sks}")
         await client.leave_chat(Man)

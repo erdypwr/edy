@@ -8,7 +8,7 @@ __HELP__ = """
 - Kirim laporan otomatis ke **Channel, Grup Privat, dan @NoToScam Telegram**.
 - Contoh: <code>.autoreport target_username atau https://t.me/channel_link</code>
 
-<b>📌 Perintah:</b>
+<b>📌 ᴘᴇʀɪɴᴛᴀʜ:</b>
 - <code>{0}report target_username</code> → Report user/akun.
 - <code>{0}report https://t.me/channel_link</code> → Report channel atau grup</b></blockquote>.
 """

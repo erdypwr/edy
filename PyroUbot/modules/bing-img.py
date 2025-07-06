@@ -7,14 +7,14 @@ __MODULE__ = "ʙɪɴɢ ɪᴍɢ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Bing-image
 
-Perintah : <code>{0}pic</code> [ǫᴜᴇʀʏ]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}pic</code> [ǫᴜᴇʀʏ]
     Untuk Mencari Photo Random Dari Google</b></blockquote>
 """
 
 
 @PY.UBOT("pic")
 async def pic_bing_cmd(client, message):
-    TM = await message.reply("<b>ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    TM = await message.reply("<b>Prosess Cess...</b>")
     if len(message.command) < 2:
         return await TM.edit(f"<code>{message.text}</code> [ǫᴜᴇʀʏ]")
     x = await client.get_inline_bot_results(

@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴇᴋ ᴀɢᴀᴍᴀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek Agama</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}cekagama [nama]</code> → DETEKSI AGAMA DARI NAMA  
 
 Sumber: Random generator berdasarkan nama.</blockquote></b>
@@ -33,7 +33,7 @@ async def cek_agama(client, message):
     ├ ᴀɢᴀᴍᴀ: `{agama}`
     ├ sᴇʟᴀᴍᴀᴛ ʏᴀ ᴀɢᴀᴍᴀ ɴʏᴀ ᴄᴏᴄᴏᴋ ᴋᴏᴋ
     ╰────────────────────────
-    ɴᴏᴛᴇ ᴍᴀᴀғ ʏᴀ {nama} ᴄᴜᴍᴀ ʙᴇᴄᴀɴᴅᴀ ᴋᴏᴋ 😁
+    ɴᴏᴛᴇ ᴍᴀᴀғ ʏᴀ {nama} ᴄᴜᴍᴀ ʙᴇᴄᴇʟᴜ ᴋᴏᴋ 😁
     
     </blockquote></b>'''
     await message.reply_text(hasil)

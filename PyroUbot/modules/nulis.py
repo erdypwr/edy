@@ -5,10 +5,10 @@ from PyroUbot import *
 
 __MODULE__ = "ɴᴜʟɪs"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɴᴜʟɪs 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɴᴜʟɪs ᴄᴇꜱꜱ 』</b>
 
   <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}nulis</code> [ʀᴇᴘʟʏ/ᴛᴇxᴛ]
-  <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> ᴜɴᴛᴜᴋ ɴᴜʟɪs sᴇsᴜᴀᴛᴜ ᴋᴀʟɪᴍᴀᴛ/ᴋᴀᴛᴀ ᴅɪ ʙᴜᴋᴜ</blockquote>
+  <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> ᴜɴᴛᴜᴋ ɴᴜʟɪs sᴇsᴜᴀᴛᴜ ᴋᴀʟɪᴍᴀᴛ/ᴋᴀᴛᴀ ᴅɪ ʙᴜᴋᴜ ᴄᴇꜱꜱ</blockquote>
 """
 
 def text_set(text):
@@ -33,7 +33,7 @@ async def _(client, message):
         if reply.text or reply.caption:
             text = reply.text or reply.caption
         else:
-            return await message.reply("ʀᴇᴘʟʏ ᴋᴇ ᴛᴇxᴛ ᴀᴛᴀᴜ ᴄᴀᴘᴛɪᴏɴ ᴍᴇᴅɪᴀ")
+            return await message.reply("ʀᴇᴘʟʏ ᴋᴇ ᴛᴇxᴛ ᴀᴛᴀᴜ ᴄᴀᴘᴛɪᴏɴ ᴍᴇᴅɪᴀ ᴅᴀʜʟᴜᴜᴜ ᴄᴇꜱꜱ")
     else:
         if len(message.command) < 2:
             return await message.reply(f"<code>{message.text}</code> [ʀᴇᴘʟʏ/ᴛᴇxᴛ]")

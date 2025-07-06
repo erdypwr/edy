@@ -10,7 +10,7 @@ from PyroUbot import *
 async def apakah(client, message):
     split_text = message.text.split(None, 1)
     if len(split_text) < 2:
-        return await message.reply("Berikan saya pertanyaan 😐")
+        return await message.reply("Berikan Gua pertanyaan 😐")
     cot = split_text[1]
     await message.reply(f"{random.choice(tod.AP)}")
 
@@ -19,7 +19,7 @@ async def apakah(client, message):
 async def kenapa(client, message):
     split_text = message.text.split(None, 1)
     if len(split_text) < 2:
-        return await message.reply("Berikan saya pertanyaan 😐")
+        return await message.reply("Berikan Gua pertanyaan 😐")
     cot = split_text[1]
     await message.reply(f"{random.choice(tod.KN)}")
 
@@ -28,7 +28,7 @@ async def kenapa(client, message):
 async def bagaimana(client, message):
     split_text = message.text.split(None, 1)
     if len(split_text) < 2:
-        return await message.reply("Berikan saya pertanyaan 😐")
+        return await message.reply("Berikan Gua pertanyaan 😐")
     cot = split_text[1]
     await message.reply(f"{random.choice(tod.BG)}")
 
@@ -52,7 +52,7 @@ __MODULE__ = "ᴛʀᴜᴛʜ & ᴅᴀʀᴇ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛʀᴜᴛʜ & ᴅᴀʀᴇ ⦫</b>
 
-<blockquote><b>⎆ perintah :
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}dare</code>
 ⊷ coba aja
 

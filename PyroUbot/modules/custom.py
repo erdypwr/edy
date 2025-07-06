@@ -4,9 +4,9 @@ __MODULE__ = "ᴄᴜꜱᴛᴏᴍ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Custom Cess
 
-perintah : <code>{0}lihatemoji</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}lihatemoji</code>
 
-perintah : <code>{0}text</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}text</code>
    Untuk Merubah Text Pada Tampilan Tertentu Cess
 
 query:

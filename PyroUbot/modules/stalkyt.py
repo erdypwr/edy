@@ -8,7 +8,7 @@ __MODULE__ = "sᴛᴀʟᴋʏᴛ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Stalk YT
 
-Perintah : <code>{0}stalkyt</code> 
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stalkyt</code> 
     Untuk Stalk yt Menggunakan Username</b></blockquote>
 """
 

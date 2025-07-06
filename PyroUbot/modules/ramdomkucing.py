@@ -8,7 +8,7 @@ from io import BytesIO
 
 __MODULE__ = "ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ"
 __HELP__ = """
-<blockquote><b>『 ғᴏᴛᴏ ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ғᴏᴛᴏ ʀᴀɴᴅᴏᴍ ᴋᴜᴄɪɴɢ ᴄᴇꜱꜱ 』</b>
 
 <b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}random [kucing]</code></b></blockquote>
 """
@@ -25,7 +25,7 @@ async def _(client, message):
     
     if query not in URLS:
         valid_queries = ", ".join(URLS.keys())
-        await message.reply(f"Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
+        await message.reply(f"Query Tidak Valid Cess. Gunakan Salah Satu Dari: {valid_queries}.")
         return
 
     processing_msg = await message.reply("Prosess Cess...")
@@ -41,4 +41,4 @@ async def _(client, message):
         await client.send_photo(message.chat.id, photo)
         await processing_msg.delete()
     except requests.exceptions.RequestException as e:
-        await processing_msg.edit_text(f"Gagal mengambil gambar cecan Error: {e}")
+        await processing_msg.edit_text(f"Gagal Mengambil Gambar Cecan Error Cess: {e}")

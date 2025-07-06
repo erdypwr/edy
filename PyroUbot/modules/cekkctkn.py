@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴇᴋ ᴋᴇᴄᴀɴᴛɪᴋᴀɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek Kecantikan</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}cekkctkn [nama]</code> → Ratting berapa persen kecantikan nama  
 
 Sumber: Random generator berdasarkan nama.</blockquote></b>

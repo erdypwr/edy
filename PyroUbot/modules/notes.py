@@ -4,34 +4,34 @@ from PyroUbot import *
 
 __MODULE__ = "ɴᴏᴛᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Notes
+<blockquote>Bantuan Untuk Notes Cess
 
-perintah : <code>{0}addnote</code> [name]
-    menyimpan sebuah catatan
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addnote</code> [name]
+    Menyimpan Sebuah Catatan Cess
 
-perintah : <code>{0}addcb</code> [name]
-    menyimpan sebuah callback
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addcb</code> [name]
+    Menyimpan Sebuah Callback Cess
 
-perintah : <code>{0}get</code> [name]
-    mendapatkan catatan yang di simpan
- 
-perintah : <code>{0}delnote</code> [name]
-    menghapus catatan yang di simpan
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}get</code> [name]
+    Mendapatkan Catatan Yang Di Simpan Cess
 
-perintah : <code>{0}delcb</code> [name]
-    menghapus callback yang di simpan
- 
-perintah : <code>{0}listnote</code>
-   melihat daftar catatan yang di simpan
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delnote</code> [name]
+    Menghapus Catatan Yang Di Simpan Cess
 
-perintah : <code>{0}listcb</code>
-   melihat daftar callback yang di simpan
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delcb</code> [name]
+    Menghapus Callback Yang Di Simpan Cess
+
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listnote</code>
+   Melihat Daftar Catatan Yang Di Simpan Cess
+
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listcb</code>
+   Melihat Daftar Callback Yang Di Simpan Cess
 
 for button:
     format | nama tombol - url/callback |
 
 payment | dana - dana | | bank - bank # | 
-catatan : untuk membuat button menyamping adalah #
+catatan : untuk Membuat Button Menyamping Adalah #
 
 contoh menggunakan callback/tombol : <a href='https://t.me/TESTIPRIBADIBOYSZ/1605'>tutorial</a></blockquote>
 """
@@ -43,7 +43,7 @@ async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
     if len(message.command) != 2:
-        return await message.reply(f"{ggl}woi asu mohon gunakan {message.text.split()[0]} namacatatan/namacb")
+        return await message.reply(f"{ggl}Woi Cuki Mohon Gunakan {message.text.split()[0]} namacatatan/namacb")
     args = get_arg(message)
     reply = message.reply_to_message
     query = "notes_cb" if message.command[0] == "addcb" else "notes"
@@ -56,7 +56,7 @@ async def _(client, message):
     vars = await get_vars(client.me.id, args, query)
 
     if vars:
-        return await message.reply(f"{ggl}catatan {args} ꜱudah ada</n>")
+        return await message.reply(f"{ggl}Catatan {args} Sudah Ada Cess</n>")
 
     value = None
     type_mapping = {
@@ -81,7 +81,7 @@ async def _(client, message):
     if value:
         await set_vars(client.me.id, args, value, query)
         return await message.reply(
-            f"{brhsl}catatan {args} berhasil tersimpan"
+            f"{brhsl}Catatan {args} Berhasil Tersimpan Cess"
         )
     else:
         return await message.reply(
@@ -105,11 +105,11 @@ async def _(client, message):
     vars = await get_vars(client.me.id, args, query)
 
     if not vars:
-        return await message.reply(f"{ggl}catatan {args} tidak ditemukan")
+        return await message.reply(f"{ggl}Catatan {args} Tidak Ditemukan Cess")
 
     await remove_vars(client.me.id, args, query)
     await client.delete_messages(client.me.id, int(vars["message_id"]))
-    return await message.reply(f"<brhsl>{brhsl}catan {args} berhasil dihapus")
+    return await message.reply(f"<brhsl>{brhsl}Catatan {args} Berhasil Dihapus Cess</brhsl>")
 
 
 @PY.UBOT("get")
@@ -128,7 +128,7 @@ async def _(client, message):
 
     if not data:
         return await message.reply(
-            f"{ggl}catatan {args} tidak ditemukan"
+            f"{ggl}Catatan {args} Tidak Ditemukan Cess"
         )
 
     m = await client.get_messages(client.me.id, int(data["message_id"]))
@@ -162,12 +162,12 @@ async def _(client, message):
     query = "notes_cb" if message.command[0] == "listcb" else "notes"
     vars = await all_vars(client.me.id, query)
     if vars:
-        msg = f"{brhsl}daftar catatan\n\n"
+        msg = f"{brhsl}Daftar Catatan\n\n"
         for x, data in vars.items():
             msg += f" {x} |({data['type']})\n"
-        msg += f"\n{ktrng}total catatan: {len(vars)}"
+        msg += f"\n{ktrng}Total Catatan: {len(vars)}"
     else:
-        msg = f"{ggl}tidak ada catatan"
+        msg = f"{ggl}Tidak Ada Catatan Tersimpan Cess"
 
     return await message.reply(msg, quote=True)
 
@@ -211,4 +211,4 @@ async def _(client, callback_query):
             return await callback_query.edit_message_text(text, reply_markup=buttons)
 
         except TypeError:
-            return await callback_query.answer("maaf pengguna ubot sangat tolol saat mengisi callback", show_alert=True)
+            return await callback_query.answer("Maaf User ErrCessBot Sangat Tolol Saat Mengisi Callback", show_alert=True)

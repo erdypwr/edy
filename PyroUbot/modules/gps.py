@@ -5,7 +5,7 @@ __MODULE__ = "ɢᴍᴀᴘs"
 __HELP__ = """
 <b>✮Folder Untuk Maps Cess✮</b>
 
-<blockquote><b>♛Perintah : <code>{0}gps</code>
+<blockquote><b>♛ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gps</code>
 Penjelasan : Buat Mencari Lokasi Menggunakan Maps Cess/Gps</b></blockquote>
 """
 

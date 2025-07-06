@@ -12,7 +12,7 @@ __MODULE__ = "ɪɴsᴛᴀɢʀᴀᴍ"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk Instagram Cess</b>
 
-• <b>Perintah</b> : <code>{0}ig</code> <b>[link]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ig</code> <b>[link]</b>
 • <b>Penjelasan : Downloader Vid Instagram</b></blockquote>
 
 """

@@ -13,7 +13,7 @@ __MODULE__ = "ᴀɴɪᴍᴀsɪ 3"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴀsɪ 4<b>
 
-<blockqoute><b>⎆ perintah :
+<blockqoute><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}hypo</code> 
 ᚗ <code>{0}bulan</code> 
 ᚗ <code>{0}music</code> 

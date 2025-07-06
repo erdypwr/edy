@@ -5,7 +5,7 @@ __MODULE__ = "ɢᴏᴏɢʟᴇ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Google Cess</b>
 
-perintah : <code>{0}google [query]</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}google [query]</code>
     search google</b></blockquote>
 """
 

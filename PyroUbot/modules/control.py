@@ -4,13 +4,13 @@ __MODULE__ = "ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Control Cess
 
-perintah : <code>{0}prefix</code>
-   untuk merubah prefix/handler perintah
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}prefix</code>
+   untuk merubah prefix/handler ᴘᴇʀɪɴᴛᴀʜ
 
-perintah : <code>{0}creat</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}creat</code>
    untuk membuat group atau channel
 
-perintah : <code>{0}emoji</code> query emojiprem
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}emoji</code> query emojiprem
    untuk merubah emoji pada tampilan tertentu
 
 query:
@@ -114,7 +114,7 @@ async def _(client, message):
             if afk_reason
             else f"""
 <blockquote><b>hello {rpk}
-tuan saya sedang afk selama : {afk_runtime}
+tuan Gua sedang afk selama : {afk_runtime}
 mohon tunggu beberapa waktu</blockquote></b>
 """
         )

@@ -7,7 +7,7 @@ __MODULE__ = "ss ᴡᴇʙ ᴛᴀʙʟᴇᴛ"
 __HELP__ = """
 <b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ ᴛᴀʙʟᴇᴛ✮</b>
 
-<blockquote><b>perintah :
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}sswebtablet</code> link
 untuk screenshot website tablet</b></blockquote>
 """

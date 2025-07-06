@@ -1,7 +1,7 @@
 __MODULE__ = "ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ"
 __HELP__ = """
 <blockquote>
-<b>「 ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 」</b>
+<b>「 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴇꜱꜱ 」</b>
 
 • <b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}sc</code> <b>[ʟɪɴᴋ]</b>
 • <b>ꜰᴜɴɢꜱɪ:</b> ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴜꜱɪᴋ ᴅᴀʀɪ ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ
@@ -32,7 +32,7 @@ async def download_file(url, path):
             return False
 
 async def extract_data_from_response(data):
-    """Extract music URL and metadata from the BetaBotz API response"""
+    """Ekstrak URL Musik Dan Metadata dari Respons API BetaBotz Cess"""
     try:
         # Akses data dari struktur respons BetaBotz API
         if not data.get("status"):
@@ -53,9 +53,9 @@ async def extract_data_from_response(data):
         return "", "ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴛʀᴀᴄᴋ", ""
 
 async def downloader_soundcloud(client, message, url):
-    """SoundCloud downloader function with BetaBotz API"""
+    """Fungsi pengunduh SoundCloud dengan API BetaBotz Cess"""
     process_msg = await message.reply(
-        "<blockquote><b>⏳ ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴘᴇʀᴍɪɴᴛᴀᴀɴ...</b></blockquote>"
+        "<blockquote><b>⏳ ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴄᴇꜱꜱ...</b></blockquote>"
     )
     
     # Gunakan BetaBotz API
@@ -66,7 +66,7 @@ async def downloader_soundcloud(client, message, url):
         
         if res.status_code != 200:
             await process_msg.edit(
-                f"<blockquote><b>❌ ɢᴀɢᴀʟ ᴛᴇʀʜᴜʙᴜɴɢ ᴋᴇ ꜱᴇʀᴠᴇʀ! ᴋᴏᴅᴇ ᴇʀʀᴏʀ: {res.status_code}</b></blockquote>"
+                f"<blockquote><b>❌ ɢᴀɢᴀʟ ᴛᴇʀʜᴜʙᴜɴɢ ᴋᴇ ꜱᴇʀᴠᴇʀ ᴄᴜᴋɪ! ᴋᴏᴅᴇ ᴇʀʀᴏʀ: {res.status_code}</b></blockquote>"
             )
             return
         
@@ -74,31 +74,31 @@ async def downloader_soundcloud(client, message, url):
             data = res.json()
         except json.JSONDecodeError:
             await process_msg.edit(
-                "<blockquote><b>❌ ʀᴇꜱᴘᴏɴꜱ ᴀᴘɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ! ʙᴜᴋᴀɴ ᴊꜱᴏɴ.</b></blockquote>"
+                "<blockquote><b>❌ ʀᴇꜱᴘᴏɴꜱ ᴀᴘɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴜᴋɪ! ʙᴜᴋᴀɴ ᴊꜱᴏɴ.</b></blockquote>"
             )
             return
         
         await process_msg.edit(
-            "<blockquote><b>🔍 ꜱᴇᴅᴀɴɢ ᴍᴇɴɢᴀɴᴀʟɪꜱɪꜱ ʀᴇꜱᴘᴏɴ ᴀᴘɪ...</b></blockquote>"
+            "<blockquote><b>🔍 ꜱᴇᴅᴀɴɢ ᴍᴇɴɢᴀɴᴀʟɪꜱɪꜱ ʀᴇꜱᴘᴏɴ ᴀᴘɪ ᴄᴇꜱꜱ...</b></blockquote>"
         )
         
         music_url, title, thumbnail = await extract_data_from_response(data)
         
         if not music_url:
             await process_msg.edit(
-                "<blockquote><b>❌ ᴜʀʟ ᴍᴜꜱɪᴋ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ!</b></blockquote>"
+                "<blockquote><b>❌ ᴜʀʟ ᴍᴜꜱɪᴋ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ!</b></blockquote>"
             )
             return
         
         await process_msg.edit(
-            "<blockquote><b>📥 ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴜꜱɪᴋ...</b></blockquote>"
+            "<blockquote><b>📥 ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴜꜱɪᴋ ᴄᴇꜱꜱ...</b></blockquote>"
         )
         
         music_path = f"soundcloud_music_{int(time_module.time())}.mp3"
         
         if await download_file(music_url, music_path):
             await process_msg.edit(
-                "<blockquote><b>📤 ꜱᴇᴅᴀɴɢ ᴍᴇɴɢɪʀɪᴍ ᴀᴜᴅɪᴏ...</b></blockquote>"
+                "<blockquote><b>📤 ꜱᴇᴅᴀɴɢ ᴍᴇɴɢɪʀɪᴍ ᴀᴜᴅɪᴏ ᴄᴇꜱꜱ...</b></blockquote>"
             )
             
             title_short = title[:40] + "..." if len(title) > 40 else title
@@ -138,25 +138,25 @@ async def downloader_soundcloud(client, message, url):
                 await process_msg.delete()
         else:
             await process_msg.edit(
-                "<blockquote><b>❌ ɢᴀɢᴀʟ ᴍᴇɴɢᴜɴᴅᴜʜ ᴀᴜᴅɪᴏ! ᴜʀʟ ᴍᴜɴɢᴋɪɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ.</b></blockquote>"
+                "<blockquote><b>❌ ɢᴀɢᴀʟ ᴍᴇɴɢᴜɴᴅᴜʜ ᴀᴜᴅɪᴏ ᴄᴜᴋɪ! ᴜʀʟ ᴍᴜɴɢᴋɪɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ.</b></blockquote>"
             )
     
     except requests.exceptions.Timeout:
         await process_msg.edit(
-            "<blockquote><b>⏱️ ᴡᴀᴋᴛᴜ ᴘᴇʀᴍɪɴᴛᴀᴀɴ ʜᴀʙɪꜱ! ꜱᴇʀᴠᴇʀ ꜱᴇᴅᴀɴɢ ꜱɪʙᴜᴋ, ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ.</b></blockquote>"
+            "<blockquote><b>⏱️ ᴡᴀᴋᴛᴜ ᴘᴇʀᴍɪɴᴛᴀᴀɴ ʜᴀʙɪꜱ! ꜱᴇʀᴠᴇʀ ꜱᴇᴅᴀɴɢ ꜱɪʙᴜᴋ, ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴜᴋɪ.</b></blockquote>"
         )
     except requests.exceptions.RequestException as e:
         await process_msg.edit(
-            f"<blockquote><b>❌ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴊᴀʀɪɴɢᴀɴ! ᴇʀʀᴏʀ: {str(e)}</b></blockquote>"
+            f"<blockquote><b>❌ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴊᴀʀɪɴɢᴀɴ ᴄᴜᴋɪ! ᴇʀʀᴏʀ: {str(e)}</b></blockquote>"
         )
     except Exception as e:
         await process_msg.edit(
-            f"<blockquote><b>⚠️ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ! ᴇʀʀᴏʀ: {str(e)}</b></blockquote>"
+            f"<blockquote><b>⚠️ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ! ᴇʀʀᴏʀ: {str(e)}</b></blockquote>"
         )
 
 @PY.UBOT("sc")
 async def soundcloud_downloader(client, message):
-    """Command handler for SoundCloud downloads"""
+    """Penanganan Perintah Untuk Unduhan SoundCloud Cess"""
     # Hapus pesan perintah pengguna
     try:
         await message.delete()
@@ -168,10 +168,10 @@ async def soundcloud_downloader(client, message):
             message.chat.id,
             f"""
 <blockquote>
-<b>❌ ꜰᴏʀᴍᴀᴛ ᴘᴇʀɪɴᴛᴀʜ ᴛɪᴅᴀᴋ ʟᴇɴɢᴋᴀᴘ!</b>
+<b>❌ ꜰᴏʀᴍᴀᴛ ᴘᴇʀɪɴᴛᴀʜ ᴛɪᴅᴀᴋ ʟᴇɴɢᴋᴀᴘ ᴄᴜᴋɪ!</b>
 
 <b>ᴄᴀʀᴀ ᴘᴇɴɢɢᴜɴᴀᴀɴ:</b>
-<code>{message.text.split()[0]}</code> <i>[ʟɪɴᴋ ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ]</i> → ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴜꜱɪᴋ
+<code>{message.text.split()[0]}</code> <i>[ʟɪɴᴋ ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ]</i> → ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴜꜱɪᴋ ᴄᴇꜱꜱ
 </blockquote>
 """
         )

@@ -20,16 +20,16 @@ __MODULE__ = "ꜱᴛɪᴄᴋᴇʀ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Sticker
 
-perintah : <code>{0}q</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}q</code>
     merubah text menjadi sticker
 
-perintah : <code>{0}kang</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kang</code>
     menambahkan sticker ke dalam pack
 
-perintah : <code>{0}tiny</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tiny</code>
     merubah sticker menjadi kecil
 
-perintah : <code>{0}mmf</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}mmf</code>
     sticker atau foto akan di ubah menjad sticker text</blockquote>
 """
 

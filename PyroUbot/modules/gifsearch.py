@@ -6,7 +6,7 @@ __MODULE__ = "ɢɪғsᴇᴀʀᴄʜ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk GifSearch Cess</b>
 
-Perintah : <code>{0}gif</code> [ǫᴜᴇʀʏ]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gif</code> [ǫᴜᴇʀʏ]
   Untuk Mencari gift/animation Random Dari Google Cess</b></blockquote>
 """
 

@@ -12,19 +12,19 @@ __MODULE__ = "𝚂𝙿𝙰𝙼 𝟸"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk Spam 2<b>
 
-• Perintah : <code>{0}sdspm</code> [Waktu] [Balas ke pesan]
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sdspm</code> [Waktu] [Balas ke pesan]
 • Penjelasan : Memulai spam ke database.
 
-• Perintah : <code>{0}stdspm</code>
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stdspm</code>
 • Penjelasan : Menghentikan proses spam didatabase.
 
-• Perintah : <code>{0}listspm</code> 
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listspm</code> 
 • Penjelasan : Melihat daftar grup didalam database.
 
-• Perintah : <code>{0}addspm</code> 
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addspm</code> 
 • Penjelasan : Menambahkan grup ke dalam database spam.
 
-• Perintah : <code>{0}delspm</code> 
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delspm</code> 
 • Penjelasan : Menghapus grup dari database spam.</b></blockquote><b>
 """
 

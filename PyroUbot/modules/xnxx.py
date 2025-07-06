@@ -6,7 +6,7 @@ __MODULE__ = "xɴxx"
 __HELP__ = """
 <b>♛ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ xɴxx ♛</b>
 <blockquote><b>
-Perintah :
+ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}xnxx</code> kata pencarian
 Mendownload Video Yang Di Inginkan.</b></blockquote>
 """

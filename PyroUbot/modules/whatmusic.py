@@ -10,7 +10,7 @@ __MODULE__ = "ᴡʜᴀᴛ ᴍᴜsɪᴄ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡʜᴀᴛ ᴍᴜsɪᴄ ⦫</b>
 <blockquote>
-⎆ perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}whatmusic</code> Reply video atau music
 
 ⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:

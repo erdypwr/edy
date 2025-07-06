@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴇᴋ ɪᴘ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek IP Website</b>
 
-Perintah: <code>{0}cekip</code> [domain]
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}cekip</code> [domain]
 Penjelasan: untuk mendapatkan alamat IP dari domain yang diberikan</blockquote></b>
 """
 

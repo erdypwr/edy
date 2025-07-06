@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴏɴᴠᴇʀᴛ ᴄᴜʀʀᴇɴᴄʏ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Convert Currency Cess</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}Convert 10000 IDR USD</code> → Mengubah 10.000 IDR Ke USD Cess.
 
 Sumber: Menggunakan API Exchange Rate Cess.</blockquote></b>

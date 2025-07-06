@@ -9,7 +9,7 @@ __MODULE__ = "𝙱𝙰𝚁𝙳 𝙰𝙸"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk bard-ai
 
-perintah : <code>{0}bard</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bard</code>
     dapat menulis cerita, puisi, skrip, kode komputer, musik, email, surat, dll</b></blockquote>
 """
 

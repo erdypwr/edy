@@ -46,9 +46,9 @@ async def _(client, message):
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: `{user.id}`</b>
 <b>ᴇxᴘɪʀᴇᴅ: {get_bulan} ʙᴜʟᴀɴ</b>
-<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{bot.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ</b></blockquote>
+<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{bot.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ ᴄᴇꜱꜱ</ci></b></blockquote>
 
-<blockquote>ᴄᴀʀᴀ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ :
+<blockquote>ᴄᴀʀᴀ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ɢɪɴɪ ᴄᴇꜱꜱ :
 - sɪʟᴀʜᴋᴀɴ /start ᴅᴜʟᴜ ʙᴏᴛ @ErrCessBot
 - ᴋᴀʟᴀᴜ sᴜᴅᴀʜ sᴛᴀʀᴛ ʙᴏᴛ ᴀʙɪsᴛᴜ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 
 - ɴᴀʜ ɴᴀɴᴛɪ ᴀᴅᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ ɪᴛᴜ ɪᴋᴜᴛɪɴ</blockquote>
@@ -78,7 +78,7 @@ async def _(client, message):
 
 @PY.UBOT("unprem")
 async def _(client, message):
-    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ...")
+    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -96,7 +96,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: `{user.id}`</b>
-<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴀꜰᴛᴀʀ</ci></b></blockquote>
+<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴀꜰᴛᴀʀ ᴄᴇꜱꜱ</ci></b></blockquote>
 """
         )
     try:
@@ -105,7 +105,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: `{user.id}`</b>
-<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ</ci></b></blockquote>
+<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ ᴄᴇꜱꜱ</ci></b></blockquote>
 """
         )
     except Exception as error:
@@ -132,7 +132,7 @@ async def _(client, message):
             continue
         text += f"<blockquote><b>{userlist}\n</blockquote></b>"
     if not text:
-        await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴅɪᴛᴇᴍᴜᴋᴀɴ")
+        await message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇꜱꜱ")
     else:
         await message.reply_text(text)
 
@@ -142,7 +142,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ...")
+    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -182,7 +182,7 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ...")
+    msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -200,7 +200,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: `{user.id}`</b>
-<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴀꜰᴛᴀʀ</ci></b></blockquote>
+<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴀꜰᴛᴀʀ Cess</ci></b></blockquote>
 """
         )
 
@@ -209,7 +209,7 @@ async def _(client, message):
         return await msg.edit(f"""
 <blockquote><b>ɴᴀᴍᴇ: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})</b>
 <b>ɪᴅ: `{user.id}`</b>
-<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ</ci></b></blockquote>
+<b>ᴋᴇᴛᴇʀᴀɴɢᴀɴ: ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ ᴄᴇꜱꜱ</ci></b></blockquote>
 """
         )
     except Exception as error:
@@ -221,11 +221,11 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    Sh = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ...")
+    Sh = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     seles_users = await get_list_from_vars(bot.me.id, "SELER_USERS")
 
     if not seles_users:
-        return await Sh.edit("ᴅᴀꜰᴛᴀʀ ꜱᴇʟʟᴇʀ ᴋᴏꜱᴏɴɢ")
+        return await Sh.edit("ᴅᴀꜰᴛᴀʀ ꜱᴇʟʟᴇʀ ᴋᴏꜱᴏɴɢ ᴄᴇꜱꜱ")
 
     seles_list = []
     for user_id in seles_users:
@@ -239,13 +239,13 @@ async def _(client, message):
 
     if seles_list:
         response = (
-            "📋 ᴅᴀꜰᴛᴀʀ ʀᴇꜱᴇʟʟᴇʀ:\n\n"
+            "📋 ᴅᴀꜰᴛᴀʀ ʀᴇꜱᴇʟʟᴇʀ ᴄᴇꜱꜱ:\n\n"
             + "\n".join(seles_list)
             + f"\n\n• ᴛᴏᴛᴀʟ ʀᴇꜱᴇʟʟᴇʀ: {len(seles_list)}"
         )
         return await Sh.edit(response)
     else:
-        return await Sh.edit("ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀꜰᴛᴀʀ ꜱᴇʟʟᴇʀ")
+        return await Sh.edit("ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀꜰᴛᴀʀ ꜱᴇʟʟᴇʀ ᴄᴇꜱꜱ")
 
 
 @PY.UBOT("time")
@@ -271,7 +271,7 @@ async def _(client, message):
     expire_date = now + timedelta(days=int(get_day))
     await set_expired_date(user_id, expire_date)
     await Tm.edit(f"""
-💬 INFORMATION
+💬 INFORMATION 
  name: {user.mention}
  id: {get_id}
  aktifkan_selama: {get_day} hari
@@ -284,10 +284,10 @@ async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
         return
-    Sh = await message.reply("ᴘʀᴏᴄᴇꜱꜱɪɴɢ . . .")
+    Sh = await message.reply("ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴄᴇꜱꜱ . . .")
     user_id = await extract_user(message)
     if not user_id:
-        return await Sh.edit("ᴘᴇɴɢɢᴜɴᴀ ᴛɪᴅᴀᴋ ᴛᴇᴍᴜᴋᴀɴ")
+        return await Sh.edit("ᴘᴇɴɢɢᴜɴᴀ ᴛɪᴅᴀᴋ ᴛᴇᴍᴜᴋᴀɴ ᴄᴇꜱꜱ")
     try:
         get_exp = await get_expired_date(user_id)
         sh = await client.get_users(user_id)
@@ -342,7 +342,7 @@ async def _(client, message):
 💬 INFORMATION
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: sudah dalam daftar
+keterangan: Sudah Dalam Daftar Cess
 """
         )
 
@@ -383,7 +383,7 @@ async def _(client, message):
 💬 INFORMATION
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: tidak daam daftar
+keterangan: Tidak Dalam Daftar Cess
 """
         )
 
@@ -393,7 +393,7 @@ keterangan: tidak daam daftar
 💬 INFORMATION
 name: [{user.first_name} {user.last_name or ''}](tg://user?id={user.id})
 id: {user.id}
-keterangan: unadmin
+keterangan: Unadmin Cess
 """
         )
     except Exception as error:
@@ -409,7 +409,7 @@ async def _(client, message):
     admin_users = await get_list_from_vars(bot.me.id, "ADMIN_USERS")
 
     if not admin_users:
-        return await Sh.edit("<s>daftar admin kosong</s>")
+        return await Sh.edit("<s>Daftar Admin Kosong</s>")
 
     admin_list = []
     for user_id in admin_users:
@@ -423,13 +423,13 @@ async def _(client, message):
 
     if admin_list:
         response = (
-            "📋 daftar admin:\n\n"
+            "📋 Daftar Admin:\n\n"
             + "\n".join(admin_list)
-            + f"\n\n⚜️ total admin: {len(admin_list)}"
+            + f"\n\n⚜️ Total Admin: {len(admin_list)}"
         )
         return await Sh.edit(response)
     else:
-        return await Sh.edit("tidak dapat mengambil daftar admin")
+        return await Sh.edit("Tidak Dapat Mengambil Daftar Admin Cess")
 
 @PY.UBOT("addultra")
 async def _(client, message):
@@ -438,7 +438,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     user = message.from_user
     if user.id != OWNER_ID:
-        return await message.reply_text(f"{ggl}mau ngapain kamu ?")
+        return await message.reply_text(f"{ggl}Mau Ngapain Elu Cuki ?")
     msg = await message.reply(f"{prs}Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
@@ -454,11 +454,11 @@ async def _(client, message):
     ultra_users = await get_list_from_vars(bot.me.id, "ULTRA_PREM")
 
     if user.id in ultra_users:
-        return await msg.edit(f"{ggl}sudah menjadi superultra!")
+        return await msg.edit(f"{ggl}Sudah Menjadi Superultra Cess!")
 
     try:
         await add_to_vars(bot.me.id, "ULTRA_PREM", user.id)
-        return await msg.edit(f"{brhsl}berhasil menjadi superultra")
+        return await msg.edit(f"{brhsl}Berhasil Menjadi Superultra Cess")
     except Exception as error:
         return await msg.edit(error)
 
@@ -469,7 +469,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     user = message.from_user
     if user.id != OWNER_ID:
-        return await message.reply_text(f"{ggl}mau ngapain kamu ?")
+        return await message.reply_text(f"{ggl}Mau Ngapain Elu Cuki ?")
     msg = await message.reply(f"{prs}Prosess Cess...")
     user_id = await extract_user(message)
     if not user_id:
@@ -485,10 +485,10 @@ async def _(client, message):
     ultra_users = await get_list_from_vars(bot.me.id, "ULTRA_PREM")
 
     if user.id not in ultra_users:
-        return await msg.edit(f"{ggl}tidak ada di dalam database superultra")
+        return await msg.edit(f"{ggl}Tidak Ada di Dalam Database Superultra Cess")
 
     try:
         await remove_from_vars(bot.me.id, "ULTRA_PREM", user.id)
-        return await msg.edit(f"{brhsl}berhasil di hapus dari daftar superultra")
+        return await msg.edit(f"{brhsl}Berhasil di Hapus dari Daftar Superultra Cess")
     except Exception as error:
         return await msg.edit(error)

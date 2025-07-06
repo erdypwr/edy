@@ -9,9 +9,9 @@ __MODULE__ = "ᴛᴇxᴛᴘʀᴏ 3"
 __HELP__ = """
 <b>TextPro 3 Commands</b>
 
-<blockquote><b>Perintah : <code>cloud</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>cloud</code>
 Penjelasan : Membuat gambar dengan efek cloud.</b></blockquote>
-<blockquote><b>Perintah : <code>blueneon</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>blueneon</code>
 Penjelasan : Membuat gambar dengan efek blue neon.</b></blockquote>
 """
 

@@ -33,7 +33,7 @@ def get_brat_image(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Gunakan perintah /brat <teks> untuk membuat gambar.")
+        await message.reply_text("Gunakan ᴘᴇʀɪɴᴛᴀʜ /brat <teks> untuk membuat gambar.")
         return
 
     request_text = args[1]
@@ -57,7 +57,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Gunakan perintah /brat <teks> untuk membuat gambar.")
+        await message.reply_text("Gunakan ᴘᴇʀɪɴᴛᴀʜ /brat <teks> untuk membuat gambar.")
         return
 
     request_text = args[1]

@@ -11,19 +11,19 @@ __MODULE__ = "ᴄᴏɴᴠᴇʀᴛ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Convert Cess
 
-perintah : <code>{0}toanime</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}toanime</code>
     Untuk Merubah Photo/Sticker/Gif Menjadi Gambar Anime Cess
 
-perintah : <code>{0}toimg</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}toimg</code>
     Untuk Merubah Sticker/Gif Menjadi Photo Cess
 
-perintah : <code>{0}tosticker</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tosticker</code>
     Untuk Merubah Foto Menjadi Sticker Cess
 
-perintah : <code>{0}togif</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}togif</code>
     Untuk Merubah Sticker Menjadi Gif Cess
 
-perintah : <code>{0}toaudio</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}toaudio</code>
     Untuk Merubah Video Menjadi Audio MP3 Cess</blockquote>
 """
 
@@ -50,7 +50,7 @@ async def _(client, message):
                 get_photo = await dl_pic(client, message.reply_to_message)
             else:
                 return await Tm.edit(
-                    f"{ggl}Mohon Balas Ke Foto/Sticker/Gif Cess...\n\nAtau Gunakan Perintah: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
+                    f"{ggl}Mohon Balas Ke Foto/Sticker/Gif Cess...\n\nAtau Gunakan ᴘᴇʀɪɴᴛᴀʜ: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
                 )
         else:
             if message.command[1] in ["foto", "profil", "photo"]:
@@ -65,7 +65,7 @@ async def _(client, message):
     else:
         if len(message.command) < 2:
             return await Tm.edit(
-                f"{ggl}Balas Ke Foto Dan Gua Akan Merubah Foto Anda Menjadi Anime Cess...\n\nAtau Gunakan Perintah: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
+                f"{ggl}Balas Ke Foto Dan Gua Akan Merubah Foto Anda Menjadi Anime Cess...\n\nAtau Gunakan ᴘᴇʀɪɴᴛᴀʜ: {message.text} [Username Atau Id Pengguna Cess]\n\nContoh: {message.text} @username"
             )
         else:
             try:

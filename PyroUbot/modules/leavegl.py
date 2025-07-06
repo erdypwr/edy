@@ -1,8 +1,8 @@
 __MODULE__ = "ʟᴇᴀᴠᴇ ɢʟɪᴍɪᴛ"
 __HELP__ = """
-<b>✭ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟᴇᴀᴠᴇ ɢʟɪᴍɪᴛ ✭</b>
+<b>✭ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟᴇᴀᴠᴇ ɢʟɪᴍɪᴛ ᴄᴇꜱꜱ ✭</b>
 
-<blockquote><b>✭ perintah : 
+<blockquote><b>✭ ᴘᴇʀɪɴᴛᴀʜ : 
 <code>{0}leaveallmute</code>
-Untuk keluar dari grub yang membatasi anda</b></blockquote>
+Untuk Keluar Dari Grup Yang Membatasi Elu Cess</b></blockquote>
 """

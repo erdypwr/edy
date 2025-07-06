@@ -9,9 +9,9 @@ __MODULE__ = "ᴛᴇxᴛᴘʀᴏ 1"
 __HELP__ = """
 <b>TextPro 1 Commands</b>
 
-<blockquote><b>Perintah : <code>sunlight</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>sunlight</code>
 Penjelasan : Membuat gambar dengan efek sunlight.</b></blockquote>
-<blockquote><b>Perintah : <code>nightstars</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>nightstars</code>
 Penjelasan : Membuat gambar dengan efek nightstars.</b></blockquote>
 """
 

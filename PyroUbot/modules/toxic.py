@@ -6,25 +6,25 @@ __MODULE__ = "𝚃𝙾𝚇𝙸𝙲"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk toxic</b>
 
-• <b>Perintah</b> : <code>{0}jamet</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}jamet</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}vir</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}vir</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}ppx</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ppx</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}kiss</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}kiss</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}pc</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}pc</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}hah</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}hah</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}gembel</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}gembel</code>
 • <b>Penjelasan : gatau gabut doang.</b></blockquote>
 
 """

@@ -4,13 +4,13 @@ __MODULE__ = "ɢᴀᴍᴇ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Game Cess
 
-perintah : <code>{0}catur</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}catur</code>
    untuk memunculkan game catur
 
-perintah : <code>{0}game</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}game</code>
    untuk memunculkan game random
    
-perintah : <code>{0}tictactoe</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tictactoe</code>
    untuk memunculkan game tictactoe  
 
 note: jumlah menu game 500+</blockquote>

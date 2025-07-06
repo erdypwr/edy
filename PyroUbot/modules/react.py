@@ -1,12 +1,12 @@
 __MODULE__ = "ʀᴇᴀᴄᴛɪᴏɴ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Reaction
+<blockquote>Bantuan Untuk Reaction Cess
 
-perintah : <code>{0}react</code> [username]
-    memberikan reaction emoji
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}react</code> [username]
+    Memberikan Reaction Emoji
    
-perintah : <code>{0}stopreact</code>
-    membatalkan proses reaction</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stopreact</code>
+    Membatalkan Proses Reaction</blockquote>
 """
 
 from PyroUbot import *
@@ -32,7 +32,7 @@ async def react_command(c, m):
 
     chat_id = m.command[1]
 
-    rach = await m.reply(f"<b>{prs}proceꜱꜱing..</b>")
+    rach = await m.reply(f"<b>{prs}Prosess Cess..</b>")
     async for message in c.get_chat_history(chat_id):
         if c.me.id not in reaction_progress:
             break
@@ -43,8 +43,8 @@ async def react_command(c, m):
             await c.send_reaction(chat_id=chat_id, message_id=message_id, emoji=m.command[2])
         except Exception:
             pass
-    
-    await rach.edit(f"<blockquote><b>reaction telah berhaꜱil</b></blockquote>")
+
+    await rach.edit(f"<blockquote><b>Reaction Telah Berhaꜱil Cess</b></blockquote>")
     if c.me.id in reaction_progress:
         reaction_progress.remove(c.me.id)
 
@@ -58,6 +58,6 @@ async def stopreact_command(client, message):
     global reaction_progress
     if client.me.id in reaction_progress:
         reaction_progress.remove(client.me.id)
-        await message.reply(f"<blockquote><b>{sks}berhaꜱil membatalkan reaction</b></blockquote>")
+        await message.reply(f"<blockquote><b>{sks}Berhaꜱil Membatalkan Reaction Cess</b></blockquote>")
     else:
-        await message.reply(f"<blockquote><b>{ggl}tidak ada proses reaction yang sedang berjalan</b></blockquote>")
+        await message.reply(f"<blockquote><b>{ggl}Tidak Ada Proses Reaction Yang Sedang Berjalan Cess</b></blockquote>")

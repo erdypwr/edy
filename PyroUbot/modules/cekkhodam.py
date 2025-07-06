@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek Khodam</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}cekkhodam [nama]</code> → Melihat jenis khodam berdasarkan nama  
 
 Sumber: Random generator berdasarkan nama.</blockquote></b>

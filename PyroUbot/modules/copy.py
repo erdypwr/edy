@@ -4,7 +4,7 @@ __MODULE__ = "ᴄᴏᴘʏ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Copy Cess
 
-perintah : <code>{0}copy</code> [link_konten_telegram]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}copy</code> [link_konten_telegram]
     Untuk Mengambil Pesan dan Postingan Channel Telegram Melalui Link Mereka Cess</blockquote>
 """
 import asyncio

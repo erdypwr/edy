@@ -5,10 +5,10 @@ __MODULE__ = "ʙʟᴏᴄᴋᴇᴅ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Blocked
 
-perintah : <code>{0}unblockall</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}unblockall</code>
     meng unblock semua user di daftar contact
 
-perintah : <code>{0}getblock</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}getblock</code>
     melihat jumlah yang di blockir di contact</b></blockquote>
 """
 

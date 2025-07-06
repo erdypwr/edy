@@ -7,7 +7,7 @@ __MODULE__ = "ᴅᴏɴᴇ"
 __HELP__ = """
 <blockquote> <b>Bantuan Untuk Done Cess</b>
 
-• <b>Perintah</b> : <code>{0}done</code> <b>[name item],[harga] [pembayaran]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}done</code> <b>[name item],[harga] [pembayaran]</b>
 • <b>Penjelasan : konfirmasi pembayaran.</b></blockquote>
 
 """

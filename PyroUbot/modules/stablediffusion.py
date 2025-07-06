@@ -6,7 +6,7 @@ __MODULE__ = "sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ⦫</b>
 <blockquote><b>
-⎆ Perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}sd</code> text
 ⊶ Untuk Membuat Gambar Menggunakan Text.</b></blockquote>
 """

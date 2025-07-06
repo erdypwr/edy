@@ -4,16 +4,16 @@ from PyroUbot import *
 
 __MODULE__ = "ᴘᴜʀɢᴇ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Purge
+<blockquote>Bantuan Untuk Purge Cess
 
-perintah : <code>{0}purge</code>
-    bersihkan (hapus semua pesan) dari pesan yang di bales
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}purge</code>
+    Bersihkan (Hapus Semua Pesan) Dari Pesan Yang Di Bales
 
-perintah : <code>{0}del</code>
-    menghapus pesan yang di balas
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}del</code>
+    Menghapus Pesan Yang Di Balas
 
-perintah : <code>{0}purgeme</code>
-    menghapus pesan anda sediri</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}purgeme</code>
+    Menghapus Pesan Elu Sendiri</blockquote>
 """
 
 
@@ -38,10 +38,10 @@ async def _(client, message):
         else message.text.split(None, 1)[1].strip()
     )
     if not n.isnumeric():
-        return await message.reply(f"{ggl}argumen tidak valid")
+        return await message.reply(f"{ggl}Argumen Tidak Valid")
     n = int(n)
     if n < 1:
-        return await message.reply(f"{ggl}butuh nomer 1-999")
+        return await message.reply(f"{ggl}Butuh Nomer 1-999")
     chat_id = message.chat.id
     message_ids = [
         m.id
@@ -52,7 +52,7 @@ async def _(client, message):
         )
     ]
     if not message_ids:
-        return await message.reply_text(f"{ggl}tidak ada pesan yang ditemukan")
+        return await message.reply_text(f"{ggl}Tidak Ada Pesan Yang Ditemukan Cess")
     to_delete = [message_ids[i : i + 999] for i in range(0, len(message_ids), 999)]
     for hundred_messages_or_less in to_delete:
         await client.delete_messages(
@@ -60,7 +60,7 @@ async def _(client, message):
             message_ids=hundred_messages_or_less,
             revoke=True,
         )
-        mmk = await message.reply(f"{brhsl} {n} pesan telah di hapus")
+        mmk = await message.reply(f"{brhsl} {n} Pesan Telah Dihapus Cess")
         await asyncio.sleep(1)
         await mmk.delete()
 
@@ -71,7 +71,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     await message.delete()
     if not message.reply_to_message:
-        return await message.reply_text(f"{ggl}membalas pesan untuk dibersihka")
+        return await message.reply_text(f"{ggl}Membalas Pesan Untuk Dibersihkan Cess")
     chat_id = message.chat.id
     message_ids = []
     for message_id in range(

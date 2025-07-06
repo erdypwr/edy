@@ -9,7 +9,7 @@ __MODULE__ = "ʙɪɴɢ ᴄʜᴀᴛ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Bing Chat
 
-perintah : <code>{0}bing</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bing</code>
     dapat mencari informasi terbaru dari web, Membantu dengan tugas produktivitas, Membantu dengan tugas produktivitas Seperti membuat daftar ,mengatur jadwal bisa merekomendasikan: wisata,buku,film dll</b></blockquote>
 """
 

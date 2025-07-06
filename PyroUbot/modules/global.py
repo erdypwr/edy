@@ -12,16 +12,16 @@ __MODULE__ = "ɢʟᴏʙᴀʟ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Global Cess
 
-perintah : <code>{0}gban</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gban</code>
     Banned User Dari Semua Group Chat Cess 
 
-perintah : <code>{0}ungban</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ungban</code>
     Unbanned User Dari Semua Group Chat Cess
 
-perintah : <code>{0}gmute</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gmute</code>
     Untuk Mengemute User Dari Semua GC Yang Lu Admin Cess
 
-perintah : <code>{0}ungmute</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ungmute</code>
     Untuk Mengungmute User Dari Semua GC Yang Lu Admin Cess</blockquote> 
 """
 

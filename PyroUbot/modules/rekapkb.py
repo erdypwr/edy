@@ -5,13 +5,13 @@ from PyroUbot import PY
 
 __MODULE__ = "ᴛᴏᴏʟs ʀᴇᴋᴀᴘ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Rekap & Win</b>
+<blockquote><b>Bantuan Untuk Rekap & Win Cess</b>
 
-Perintah:
-<code>{0}rekap</code> → Rekap saldo dari pesan yang direply.  
-<code>{0}win 5</code> → Hitung kemenangan dengan fee 5% (ganti angka sesuai kebutuhan).  
+ᴘᴇʀɪɴᴛᴀʜ:
+<code>{0}rekap</code> → Rekap Saldo Dari Pesan Yang Direply.  
+<code>{0}win 5</code> → Hitung Kemenangan Dengan Fee 5% (Ganti Angka Sesuai Kebutuhan).  
 
-Fitur ini berguna untuk mencatat perbandingan saldo di grup atau chat pribadi.</blockquote></b>
+Fitur Ini Berguna Untuk Mencatat Perbandingan Saldo Di Grup Atau Chat Pribadi.</blockquote></b>
 """
 
 def rekap_data(text):
@@ -40,7 +40,7 @@ def format_number(num):
 @PY.TOP_CMD
 async def rekap_command(client, message):
     if not message.reply_to_message or not message.reply_to_message.text:
-        return await message.reply("❌ Reply pesan yang berisi data untuk merekap.")
+        return await message.reply("❌ Reply Pesan Yang Berisi Data Untuk Merekap Cuki.")
 
     text = message.reply_to_message.text
     data = rekap_data(text)
@@ -50,9 +50,9 @@ async def rekap_command(client, message):
     selisih = kecil_total - besar_total
 
     if selisih > 0:
-        analisis_selisih = f"⚖️ SALDO: BESAR ketinggalan {format_number(selisih)} nih!"
+        analisis_selisih = f"⚖️ SALDO: BESAR Ketinggalan Cuki {format_number(selisih)} nih!"
     elif selisih < 0:
-        analisis_selisih = f"⚖️ SALDO: KECIL ketinggalan {format_number(abs(selisih))} nih!"
+        analisis_selisih = f"⚖️ SALDO: KECIL Ketinggalan Cuki {format_number(abs(selisih))} nih!"
     else:
         analisis_selisih = "⚖️ SALDO: KECIL dan BESAR seimbang nih! 🎉"
 
@@ -75,14 +75,14 @@ def hitung_win(data, fee_percent):
 async def win_command(client, message):
     args = message.text.split()
     if len(args) < 2 or not args[1].isdigit():
-        return await message.reply("Format: <code>.win 5</code>\nFee harus angka antara 1-10%.")
+        return await message.reply("Format: <code>.win 5</code>\nFee Harus Angka Antara 1-10% Cess.")
 
     fee_percent = int(args[1])
     if fee_percent < 1 or fee_percent > 10:
-        return await message.reply("❌ Fee harus di antara 1-10%.")
+        return await message.reply("❌ Fee Harus Di Antara 1-10% Cess.")
 
     if not message.reply_to_message or not message.reply_to_message.text:
-        return await message.reply("❌ Reply pesan yang berisi data untuk menghitung hasil akhir.")
+        return await message.reply("❌ Reply Pesan Yang Berisi Data Untuk Menghitung Hasil Akhir Cess.")
 
     text = message.reply_to_message.text
     data = rekap_data(text)

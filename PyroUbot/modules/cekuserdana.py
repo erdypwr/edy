@@ -9,7 +9,7 @@ __MODULE__ = "ᴜsᴇʀ ᴅᴀɴᴀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Check Username Dana
 
-perintah : <code>{0}checkdana</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}checkdana</code>
 cek username dana dari nomor contoh <code>{0}checkdana</code> 085xxxx</b></blockquote>
 """
 

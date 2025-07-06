@@ -13,22 +13,22 @@ __MODULE__ = "ʙʀᴏᴀᴅᴄᴀꜱᴛ"
 __HELP__ = """
 <blockquote><b>Bantuan Broadcast
 
-perintah : <code>{0}gikes</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}gikes</code>
 
 type : all , users , group
 
 all untuk semua , users untuk user, group untuk group
 
-perintah : <code>{0}stopg</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stopg</code>
     untuk menghentikan proses gikes yang sedang berlangsung
 
-perintah : <code>{0}bcfd</code> or <code>{0}cfd</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}bcfd</code> or <code>{0}cfd</code>
     mengirim pesan siaran secara forward
 
-perintah : <code>{0}send</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}send</code>
     mengirim pesan ke user/group/channel
 
-perintah : <code>{0}autobc</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}autobc</code>
     mengirim pesan siaran secara otomatis
 
 query:
@@ -64,13 +64,13 @@ async def limit_cmd(client, message):
             if client.me.is_premium:
                 text = f"""
 <blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
+{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴇʟᴜ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
 {yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
 <blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
+ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴇʟᴜ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
 ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
@@ -79,13 +79,13 @@ async def limit_cmd(client, message):
             if client.me.is_premium:
                 text = f"""
 <blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
+{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴇʟᴜ ʙᴇʀᴍᴀsᴀʟᴀʜ
 {yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
 <blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
+ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴇʟᴜ ʙᴇʀᴍᴀsᴀʟᴀʜ
 ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
@@ -106,7 +106,7 @@ async def gcast_handler(client, message):
     ggl = await EMO.GAGAL(client)
     bcs = await EMO.BROADCAST(client)
     ktrng = await EMO.BL_KETERANGAN(client)    
-    _msg = f"<b>{prs}ᴍᴇᴍᴘʀᴏsᴇs...</b>"
+    _msg = f"<b>{prs}Prosess Cess...</b>"
     gcs = await message.reply(_msg)    
     command, text = extract_type_and_msg(message)
 

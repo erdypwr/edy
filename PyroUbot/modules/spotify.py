@@ -5,11 +5,11 @@ from PyroUbot import *
 
 __MODULE__ = "sᴘᴏᴛɪғʏ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴏᴛɪғʏ ⦫</b>
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴏᴛɪғʏ ᴄᴇꜱꜱ ⦫</b>
 <blockquote><b>
-⎆ Perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}spotify</code> judul lagu
-⊶ Mendownload Music Yang Di Inginkan.</b></blockquote>
+⊶ Mᴀɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴜsɪᴋ ʏᴀɴɢ ᴅɪ ɪɴɢɪɴᴋᴀɴ.</b></blockquote>
 """
 
 @PY.UBOT("spotify")

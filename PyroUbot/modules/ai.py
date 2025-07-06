@@ -9,7 +9,7 @@ __MODULE__ = "ᴀɪ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk AI
 
-perintah : <code>{0}ai</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ai</code>
 buat pertanyaan contoh <code>{0}ai</code> halo</b></blockquote>
 """
 

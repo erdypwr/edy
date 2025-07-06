@@ -4,22 +4,22 @@ from PyroUbot import *
 
 __MODULE__ = "salam"
 __HELP__ = """
- <blockquote><b>Bantuan Untuk salam</b>
+ <blockquote><b>Bantuan Untuk salam Cess</b>
 
-• <b>Perintah</b> : <code>{0}p</code>
-• <b>Penjelasan : assalamu'alaikum.</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}p</code>
+• <b>Penjelasan : Assalamu'alaikum.</b>
 
-• <b>Perintah</b> : <code>{0}pe</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}pe</code>
 • <b>Penjelasan : Assalamualaikum Warahmatullahi Wabarakatuh.</b>
 
-• <b>Perintah</b> : <code>{0}l</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}l</code>
 • <b>Penjelasan : Wa'alaikumsalam.</b>
 
-• <b>Perintah</b> : <code>{0}wl</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}wl</code>
 • <b>Penjelasan : Wa'alaikumsalam Warahmatullahi Wabarakatuh.</b>
 
-• <b>Perintah</b> : <code>{0}as</code>
-• <b>Penjelasan : coba aja.</b></blockquote>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}as</code>
+• <b>Penjelasan : Coba Aja Cess.</b></blockquote>
 
 """
 
@@ -41,7 +41,7 @@ async def biarpanjangajayangpentingizzyganteng(client, message):
 @PY.UBOT("l")
 async def biarmampuslusemuakontol(client, message):
     await message.edit(
-        "waalaikumsalam",
+        "Waalaikumsalam",
     )
 
 

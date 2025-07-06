@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "ʟʏʀɪᴄꜱ"
 __HELP__ = """
-<b>『 ʟʏʀɪᴄꜱ 』</b>
+<b>『 ʟʏʀɪᴄꜱ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}lyrics</code> 
-   <i>penjelasan:</b> search lyrics music</i>
+   <i>Penjelasan:</b> Pencarian Lirik Musik Cess</i>
 """
 
 @PY.UBOT("lyrics")
@@ -18,11 +18,11 @@ async def lyrics(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     
-    jalan = await message.reply(f"{prs} Processing...")
+    jalan = await message.reply(f"{prs} Prosess Cess...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `lyrics` judul music.")
-    
+        return await jalan.edit(f"{ggl} Mohon Gunakan ᴘᴇʀɪɴᴛᴀʜ `lyrics` Judul Musik Cess.")
+
     lyrics = message.command[1]
     chat_id = message.chat.id
     url = f"https://widipe.com/lirik?text={lyrics}"
@@ -44,10 +44,10 @@ async def lyrics(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
-    
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
+
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
-    
+        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")

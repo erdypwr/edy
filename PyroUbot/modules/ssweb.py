@@ -7,7 +7,7 @@ __MODULE__ = "ss ᴡᴇʙ ᴘᴄ"
 __HELP__ = """
 <b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ss ᴡᴇʙ pc ✮</b>
 
-<blockquote><b>perintah :
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}ssweb</code> link
 untuk screenshot website pc</b></blockquote>
 """

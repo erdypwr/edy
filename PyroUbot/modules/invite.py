@@ -8,7 +8,7 @@ __MODULE__ = "ɪɴᴠɪᴛᴇ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Invite Cess</blockquote>
 
-perintah : <code>{0}invite</code> [username]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}invite</code> [username]
     Mengundang Anggota Ke Group</blockquote>
 """
 
@@ -59,7 +59,7 @@ async def _(client, message):
         # return await Tm.edit(error)
     # if message.chat.id in invite_id:
         # return await Tm.edit_text(
-            # f"{ktrng}sedang menginvite member silahkan coba lagi nanti atau gunakan perintah : cancel"
+            # f"{ktrng}sedang menginvite member silahkan coba lagi nanti atau gunakan ᴘᴇʀɪɴᴛᴀʜ : cancel"
         # )
     # else:
         # done = 0
@@ -98,10 +98,10 @@ async def _(client, message):
     # brhsl = await EMO.BERHASIL(client)
     # if message.chat.id not in invite_id:
         # return await message.reply_text(
-            # f"sedang tidak ada perintah : inviteall"
+            # f"sedang tidak ada ᴘᴇʀɪɴᴛᴀʜ : inviteall"
         # )
     # try:
         # invite_id.remove(message.chat.id)
-        # await message.reply_text("perintah : inviteall berhasil dibatalkan")
+        # await message.reply_text("ᴘᴇʀɪɴᴛᴀʜ : inviteall berhasil dibatalkan")
     # except Exception as e:
         # await message.reply_text(e)

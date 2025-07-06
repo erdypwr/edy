@@ -6,14 +6,14 @@ __MODULE__ = "ᴀʀᴛɪ ɴᴀᴍᴀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Arti Nama</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}artinama [nama]</code> → Mengartikan dengan nama</blockquote></b>
 """
 
 @PY.UBOT("artinama")
 async def _(client, message):
     if len(message.command) < 2:
-        await message.reply_text("<blockquote><b>**Gunakan perintah:** `/artinama nama`\n\nContoh: `/artinama putu`</blockquote></b>")
+        await message.reply_text("<blockquote><b>**Gunakan ᴘᴇʀɪɴᴛᴀʜ:** `/artinama nama`\n\nContoh: `/artinama putu`</blockquote></b>")
         return
 
     nama = " ".join(message.command[1:])

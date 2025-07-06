@@ -8,7 +8,7 @@ __MODULE__ = "ᴀᴅᴢᴀɴ"
 __HELP__ = f"""
 <blockquote><b>『 bantuan untuk ᴀᴅᴢᴀɴ 』</b>
 
-  <b>• perintah:</b> <code>.adzan</code> [nama kota]
+  <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>.adzan</code> [nama kota]
   <b>• penjelasan:</b> Untuk mengetahui waktu adzan.</blockquote>
 """
 

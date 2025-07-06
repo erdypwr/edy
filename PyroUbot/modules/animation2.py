@@ -6,25 +6,25 @@ __MODULE__ = "𝙰𝙽𝙸𝙼𝙰𝚂𝙸 𝟸"
 __HELP__ = """
  <blockquote><b>Bantuan Untuk Animasi 2</b>
 
-• <b>Perintah</b> : <code>{0}gombal</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}gombal</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}helicopter</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}helicopter</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}tembak</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}tembak</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}bundir</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}bundir</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}awk</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}awk</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}ular</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ular</code>
 • <b>Penjelasan : gatau gabut doang.</b>
 
-• <b>Perintah</b> : <code>{0}y</code>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}y</code>
 • <b>Penjelasan : gatau gabut doang.</b></blockquote>
 
 """

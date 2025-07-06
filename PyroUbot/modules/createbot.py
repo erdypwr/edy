@@ -6,7 +6,7 @@ __MODULE__ = "ᴄʀᴇᴀᴛᴇ ʙᴏᴛ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Auto Create Bot Cess</b>
 
-Perintah: <code>{0}createbot</code> [nama_bot username_bot]
+ᴘᴇʀɪɴᴛᴀʜ: <code>{0}createbot</code> [nama_bot username_bot]
 Penjelasan: Membuat Bot Telegram Baru Secara Otomatis Melalui @BotFather Cess</blockquote></b>
 """
 
@@ -33,7 +33,7 @@ async def create_bot_command(client, message):
     try:
         botfather = "@BotFather"
         
-        # Kirim perintah ke BotFather
+        # Kirim ᴘᴇʀɪɴᴛᴀʜ ke BotFather
         await client.send_message(botfather, "/newbot")
         await asyncio.sleep(2)
         await client.send_message(botfather, bot_name)

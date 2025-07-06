@@ -7,7 +7,7 @@ __MODULE__ = "ᴛᴡɪᴛᴛᴇʀ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴡɪᴛᴛᴇʀ ⦫</b>
 <blockquote><b>
-⎆ Perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}twit</code> link video twitter
 ⊶ Mendownload Music Yang Di Inginkan.</b></blockquote>
 """

@@ -12,12 +12,12 @@ __MODULE__ = "ᴅᴅᴏs"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk DDOS Cess</b>
 
-• <b>Perintah</b> : <code>{0}ddosfloods</code> <b>[Target] [Time]</b>
-• <b>Perintah</b> : <code>{0}ddoshttp</code> <b>[Target] [Time]</b>
-• <b>Perintah</b> : <code>{0}ddostls</code> <b>[Target] [Time]</b>
-• <b>Perintah</b> : <code>{0}ddosbypass</code> <b>[Target] [Time]</b>
-• <b>Perintah</b> : <code>{0}ddosttr</code> <b>[Target] [Time]</b>
-• <b>Penjelasan : Gunakan Perintah <code>{0}DDOS Untuk Menyerang Website</code></b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosfloods</code> <b>[Target] [Time]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddoshttp</code> <b>[Target] [Time]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddostls</code> <b>[Target] [Time]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosbypass</code> <b>[Target] [Time]</b>
+• <b>ᴘᴇʀɪɴᴛᴀʜ</b> : <code>{0}ddosttr</code> <b>[Target] [Time]</b>
+• <b>Penjelasan : Gunakan ᴘᴇʀɪɴᴛᴀʜ <code>{0}DDOS Untuk Menyerang Website</code></b>
 
 Total Methods: 5
 Time Limit: 300

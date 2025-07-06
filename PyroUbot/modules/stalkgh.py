@@ -8,7 +8,7 @@ __MODULE__ = "sᴛᴀʟᴋɢʜ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Stalk GH
 
-Perintah : <code>{0}stalkgh</code> 
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stalkgh</code> 
     Untuk Stalk Github Menggunakan Username</b></blockquote>
 """
 

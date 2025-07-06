@@ -7,7 +7,7 @@ __MODULE__ = "ʙᴏᴋᴇx ʙɪᴀsᴇ"
 __HELP__ = """
 <b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴏᴋᴇx ʙɪᴀsᴇ ✮</b>
 
-<blockquote><b>perintah :
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
 <code>{0}bokep</code>
 fitur bokep ya</b></blockquote>
 """

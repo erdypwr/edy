@@ -7,7 +7,7 @@ __MODULE__ = "ᴄᴇᴋ ᴋᴇᴛᴀᴍᴘᴀɴᴀɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Cek Ketampanan</b>
 
-Perintah:
+ᴘᴇʀɪɴᴛᴀʜ:
 <code>{0}cektmpn [nama]</code> → Ratting berapa persen ketampanan nama  
 
 Sumber: Random generator berdasarkan nama.</blockquote></b>

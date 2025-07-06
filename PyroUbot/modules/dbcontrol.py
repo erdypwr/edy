@@ -11,15 +11,15 @@ __MODULE__ = "ᴅʙ ᴄᴏɴᴛʀᴏʟ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk DB Control Cess</blockquote></b>
 
-<blockquote><b>Perintah : <code>{0}time</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}time</code>
     Untuk Menambah - Mengurangi Masa Aktif User</blockquote></b>
 
-<blockquote><b>Perintah : <code>{0}cek</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cek</code>
     Untuk Melihat Masa Aktif User</blockquote></b>
 
-<blockquote><b>Perintah : <code>{0}addadmin</code> - <code>{0}unadmin</code> - <code>{0}getadmin</code></blockquote></b>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addadmin</code> - <code>{0}unadmin</code> - <code>{0}getadmin</code></blockquote></b>
 
-<blockquote><b>Perintah : <code>{0}seles</code> - <code>{0}unseles</code> - <code>{0}getseles</code></blockquote></b>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>{0}seles</code> - <code>{0}unseles</code> - <code>{0}getseles</code></blockquote></b>
 """
 
 @PY.BOT("prem")
@@ -291,7 +291,7 @@ async def _(client, message):
     Sh = await message.reply("Prosess Cess . . .")
     user_id = await extract_user(message)
     if not user_id:
-        return await Sh.edit("Pengguna Tidak Ditemukan Cess\n\nGunakan Perintah: /cek [user_id/username]")
+        return await Sh.edit("Pengguna Tidak Ditemukan Cess\n\nGunakan ᴘᴇʀɪɴᴛᴀʜ: /cek [user_id/username]")
     try:
         get_exp = await get_expired_date(user_id)
         sh = await client.get_users(user_id)

@@ -9,7 +9,7 @@ __MODULE__ = "ʙʟᴀᴄᴋʙᴏx ᴀɪ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴀᴄᴋʙᴏx ᴀɪ ⦫</b>
 
-<blockquote><b>⎆ perintah :
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}blackbox</code>
 ⊷ dapat membantu Anda dengan berbagai konsep pemrograman</b></blockquote>
 """

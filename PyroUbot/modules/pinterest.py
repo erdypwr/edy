@@ -7,7 +7,7 @@ from PyroUbot import *
 
 __MODULE__ = "ᴘɪɴsᴇᴀʀᴄʜ"
 __HELP__ = """
-<blockquote><b>『 pinterest 』</b>
+<blockquote><b>『 Bantuan Untuk Pinterest Cess 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}pinsearch</code> 
    <i>penjelasan:</b> mendowload media dari pencarian.</i></blockquote>
@@ -19,7 +19,7 @@ async def pin(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
     
-    jalan = await message.reply(f"{prs} Processing...")
+    jalan = await message.reply(f"{prs} Prosess Cess...")
     
     if len(message.command) != 2:
         return await jalan.edit(f"{ggl} Example .pinsearch asuna")
@@ -35,9 +35,9 @@ async def pin(client, message):
             hasil = data['result']
             random_result = random.choice(hasil)
             caption = f"""
-<emoji id=5841235769728962577>⭐</emoji>Berikut Foto Yang Kamu Minta.
+<emoji id=5841235769728962577>⭐</emoji>Berikut Foto Yang Elu Minta.
 
-<blockquote><b>-- USERBOT 10K/BULAN BY @Glenzypremubot --</blockquote></b>
+<blockquote><b>-- USERBOT BY @ydhiak --</blockquote></b>
 """
             photo_path = wget.download(random_result)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -46,10 +46,10 @@ async def pin(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} No 'result' key found in the response.")
+            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cess.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Request failed: {e}")
-    
+        await jalan.edit(f"{ggl} Permintaan Gagal Cess: {e}")
+
     except Exception as e:
-        await jalan.edit(f"{ggl} An error occurred: {e}")
+        await jalan.edit(f"{ggl} Terjadi Kesalahan Cess: {e}")

@@ -21,28 +21,28 @@ async def _(client, callback_query):
         pesan = await bot.ask(
             user_id,
             f"""
-<blockquote><b>ꜱɪʟᴀʜᴋᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴛᴇʀʟᴇʙɪʜ ᴛᴀʜᴜʟᴜ ᴋᴇ ᴅᴀɴᴀ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ</b>           
+<blockquote><b>sɪʟᴀʜᴋᴀɴ ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ</b>           
 
-ᴅᴀɴᴀ : || `089517627977` ||
+ᴏᴡɴᴇʀ : || `@ydhiak` ||
 
-<b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ: {full_name}</b></blockquote>
+<b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak: {full_name}</b></blockquote>
 """,
             timeout=300,
         )
     except asyncio.TimeoutError as out:
-        return await bot.send_message(get.id, "ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪs")
+        return await bot.send_message(get.id, "ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪs ᴄᴇꜱꜱ")
     if get.id in CONFIRM_PAYMENT:
         if not pesan.photo:
             CONFIRM_PAYMENT.remove(get.id)
-            buttons = [[InlineKeyboardButton("✅ ᴋᴏɴꜰɪʀᴍᴀsɪ", callback_data="confirm")]]
+            buttons = [[InlineKeyboardButton("✅ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴄᴇꜱꜱ", callback_data="confirm")]]
             return await bot.send_message(
                 user_id,
                 """
-<blockquote><b>❌ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘʀᴏsᴇs</b>
+<blockquote><b>❌ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘʀᴏsᴇs ᴄᴇꜱꜱ</b>
 
-<b>💬 ʜᴀʀᴀᴘ ᴋɪʀɪᴍᴋᴀɴ sᴄʀᴇᴇɴsʜᴏᴛ ʙᴜᴋᴛɪ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ ʏᴀɴɢ ᴠᴀʟɪᴅ</b>
+<b>💬 ʜᴀʀᴀᴘ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak</b>
 
-<b>✅ sɪʟᴀʜᴋᴀɴ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜʟᴀɴɢ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ</b></blockquote>
+<b>✅ sɪʟᴀʜᴋᴀɴ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜʟᴀɴɢ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak</b></blockquote>
 """,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -59,9 +59,9 @@ async def _(client, callback_query):
             return await bot.send_message(
                 user_id,
                 f"""
-<blockquote><b>💬 ʙᴀɪᴋ {full_name} sɪʟᴀʜᴋᴀɴ ᴅɪᴛᴜɴɢɢᴜ ᴅᴀɴ ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʏᴀ</b>
+<blockquote><b>💬 ʙᴀɪᴋ {full_name} sɪʟᴀʜᴋᴀɴ ᴅɪᴛᴜɴɢɢᴜ ᴅᴀɴ ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴄᴜᴋɪ</b>
 
-<b>🏦 ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ ᴀᴋᴀɴ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ sᴇᴛᴇʟᴀʜ 1-2 ᴊᴀᴍ ᴋᴇʀᴊᴀ</b></blockquote>
+<b>🏦 ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴇʟᴜ ᴀᴋᴀɴ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ sᴇᴛᴇʟᴀʜ 1-24</b></blockquote>
 """,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -97,21 +97,21 @@ async def _(client, callback_query):
     get_user = await bot.get_users(query[1])
     if query[0] == "success":
         buttons = [
-            [InlineKeyboardButton("🔥 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 🔥", callback_data="buat_ubot")],
+            [InlineKeyboardButton("🔥 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ᴄᴇꜱꜱ 🔥", callback_data="buat_ubot")],
         ]
         await bot.send_message(
             get_user.id,
             f"""
-<blockquote><b>✅ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ ʙᴇʀʜᴀsɪʟ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ</b>
+<blockquote><b>✅ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴇʟᴜ ʙᴇʀʜᴀsɪʟ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ ᴄᴇꜱꜱ</b>
 
-<b>💬 sᴇᴋᴀʀᴀɴɢ ᴀɴᴅᴀ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b></blockquote>
+<b>💬 sᴇᴋᴀʀᴀɴɢ ᴇʟᴜ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ᴄᴇꜱꜱ</b></blockquote>
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
         buttons_success = [
             [
                 InlineKeyboardButton(
-                    "👤 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏꜰɪʟ 👤", callback_data=f"profil {get_user.id}"
+                    "👤 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏꜰɪʟ ᴄᴇꜱꜱ 👤", callback_data=f"profil {get_user.id}"
                 )
             ],
         ]
@@ -121,21 +121,21 @@ async def _(client, callback_query):
         await set_expired_date(get_user.id, expired)
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b>✅ {get_user.first_name} {get_user.last_name or ''} ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴɢɢᴏᴛᴀ ᴘʀᴇᴍɪᴜᴍ</b></blockquote>
+<blockquote><b>✅ {get_user.first_name} {get_user.last_name or ''} ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴɢɢᴏᴛᴀ ᴘʀᴇᴍɪᴜᴍ ᴄᴇꜱꜱ</b></blockquote>
 """,
         )
     if query[0] == "failed":
         buttons = [
             [
                 InlineKeyboardButton(
-                    "💳 ʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ 💳", callback_data="bayar_dulu"
+                    "💳 ʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴄᴜᴋɪ 💳", callback_data="bayar_dulu"
                 )
             ],
         ]
         await bot.send_message(
             get_user.id,
             """
-<b>❌ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ</b>
+<b>❌ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴇʟᴜ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴅɪᴋᴏɴꜰɪʀᴍᴀsɪ ᴄᴜᴋɪ</b>
 
 <b>💬 sɪʟᴀʜᴋᴀɴ ʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴅᴇɴɢᴀɴ ʙᴇɴᴀʀ</b>
 """,
@@ -144,13 +144,13 @@ async def _(client, callback_query):
         buttons_failed = [
             [
                 InlineKeyboardButton(
-                    "👤 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏꜰɪʟ 👤", callback_data=f"profil {get_user.id}"
+                    "👤 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏꜰɪʟ ᴄᴇꜱꜱ 👤", callback_data=f"profil {get_user.id}"
                 )
             ],
         ]
         return await callback_query.edit_message_text(
             f"""
-<b>❌ {get_user.first_name} {get_user.last_name or ''} ᴛɪᴅᴀᴋ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴɢɢᴏᴛᴀ ᴘʀᴇᴍɪᴜᴍ</b>
+<b>❌ {get_user.first_name} {get_user.last_name or ''} ᴛɪᴅᴀᴋ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴɢɢᴏᴛᴀ ᴘʀᴇᴍɪᴜᴍ ᴄᴇꜱꜱ</b>
 """,
         )
     if query[0] == "home":

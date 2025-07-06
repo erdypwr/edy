@@ -16,13 +16,13 @@ __MODULE__ = "ᴀᴅᴍɪɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Admin
 
-perintah : <code>{0}kick</code> |<code>{0}ban</code> |<code>{0}mute</code> |<code>{0}etmin</code> |<code>{0}ceo</code> |<code>{0}demote</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kick</code> |<code>{0}ban</code> |<code>{0}mute</code> |<code>{0}etmin</code> |<code>{0}ceo</code> |<code>{0}demote</code>
     <code>{0}unmute</code> |<code>{0}unban</code>
 
-perintah : <code>{0}zombies</code> [in group]
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}zombies</code> [in group]
     mengeluarkan akun terhapus dari group
 
-perintah : <code>{0}lock</code> | <code>{0}unlock</code> | <code>{0}locks</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}lock</code> | <code>{0}unlock</code> | <code>{0}locks</code>
     mengunci/membuka dan list izin group
 
 example:
@@ -189,7 +189,7 @@ async def _(client, message):
             return await message.reply_text(f"{ggl}anda tidak bisa menendang anggota ini")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}saya tidak bisa menendang admin"
+                f"{ggl}Gua tidak bisa menendang admin"
             )
         try:
             mention = (await client.get_users(user_id)).mention
@@ -217,7 +217,7 @@ async def _(client, message):
             return await message.reply_text(f"{ggl}anda tidak bisa membanned anggota ini")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}saya tidak bisa membanned admin"
+                f"{ggl}Gua tidak bisa membanned admin"
             )
         try:
             mention = (await client.get_users(user_id)).mention
@@ -243,7 +243,7 @@ async def _(client, message):
             return await message.reply_text(f"{ggl}anda tidak bisa membisukan anggota ini")
         if user_id in (await list_admins(message)):
             return await message.reply_text(
-                f"{ggl}saya tidak bisa membisukan admin"
+                f"{ggl}Gua tidak bisa membisukan admin"
             )
         try:
             mention = (await client.get_users(user_id)).mention

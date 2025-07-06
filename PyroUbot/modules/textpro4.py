@@ -9,9 +9,9 @@ __MODULE__ = "ᴛᴇxᴛᴘʀᴏ 4"
 __HELP__ = """
 <b>TextPro 4 Commands</b>
 
-<blockquote><b>Perintah : <code>letters</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>letters</code>
 Penjelasan : Membuat gambar dengan efek letters.</b></blockquote>
-<blockquote><b>Perintah : <code>dragonfire</code>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>dragonfire</code>
 Penjelasan : Membuat gambar dengan efek Paper Cut.</b></blockquote>
 """
 

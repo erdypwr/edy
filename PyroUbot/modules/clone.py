@@ -7,9 +7,9 @@ __MODULE__ = "𝙲𝙻𝙾𝙽𝙴"
 __HELP__ = """
 📚 Folder Untuk Clone Cess
 
-🚦 Perintah : {0}clone @username
+🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}clone @username
 🦠 Penjelasan : Untuk MenClone Seseorang User Cess.
-🚦 Perintah : {0}clone kembali
+🚦 ᴘᴇʀɪɴᴛᴀʜ : {0}clone kembali
 🦠 Penjelasan : Untuk Mengembalikan Kamu Ke Identitas Sebelumnya Cess.
 """
 

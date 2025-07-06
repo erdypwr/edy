@@ -13,9 +13,9 @@ __MODULE__ = "ʏᴏᴜᴛᴜʙᴇ"
 __HELP__ = """
 📚 <b>--Folder Untuk Youtube--</b>
 
-<blockquote><b>🚦 Perintah : <code>{0}play</code>
+<blockquote><b>🚦 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}play</code>
 🦠 Penjelasan : Mendownload Music Yang Di Inginkan.</b></blockquote>
-<blockquote><b>🚦 Perintah : <code>{0}playvid</code>
+<blockquote><b>🚦 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}playvid</code>
 🦠 Penjelasan : Mendownload VideoYang Di Inginkan.</b></blockquote>
 """
 

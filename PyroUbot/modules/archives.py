@@ -4,7 +4,7 @@ __MODULE__ = "ᴀʀᴄʜɪᴠᴇ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀʀᴄʜɪᴠᴇ ⦫<b>
 
-<blockquote><b>⎆ perintah :
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}arch</code>
 ⊷ mengarchivekan group chat pribadi maupun channel
 

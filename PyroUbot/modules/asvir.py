@@ -9,7 +9,7 @@ __MODULE__ = "ᴀsᴠɪʀ ᴀɪ"
 __HELP__ = """
 <blockquote><b>✮ Bantuan Untuk Asisten Virtual ✮
 
-perintah : <code>{0}asvir</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}asvir</code>
     ai bisa digunakan untuk:translate,memberikan saran,membuat text , contoh <code>{0}asvir</code> bahasa ingris nya 'siapa kamu' itu apa?</b></blockquote>
 """
 

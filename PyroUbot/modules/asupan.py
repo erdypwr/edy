@@ -6,13 +6,13 @@ __MODULE__ = "ᴀꜱᴜᴘᴀɴ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Asupan
 
-perintah : <code>{0}asupan</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}asupan</code>
     mengirim video asupan random 
 
-perintah : <code>{0}cewek</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cewek</code>
     mengirim photo cewe random
 
-perintah : <code>{0}cowok</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}cowok</code>
     mengirim photo cowo random</b></blockquote>
     
 """

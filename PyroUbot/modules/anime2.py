@@ -10,7 +10,7 @@ __MODULE__ = "ᴀɴɪᴍᴇ 2"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴇ 2 ⦫</b>
 <blockquote>
-⎆ perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}anime</code> Query
 ⊶ buat pertanyaan contoh <code>{0}ask</code> dimana letak Antartika
 

@@ -12,7 +12,7 @@ __MODULE__ = "sʏsᴛᴇᴍ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sʏsᴛᴇᴍ ⦫</b>
 <blockquote>
-⎆ perintah :
+⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}spc</code>
 
 ⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:

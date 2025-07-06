@@ -8,7 +8,7 @@ from PyroUbot import *
 __MODULE__ = "ʜᴇʀᴏ ᴍʟ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʜᴇʀᴏ ᴍʟ ᴄᴇꜱꜱ ⦫</b>
-<blockquote><b>⎆ Perintah :
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}heroml</code> namahero
 ⊶ Mengambil informasi Hero Mobile Legend.</b></blockquote>
 """

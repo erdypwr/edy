@@ -6,7 +6,7 @@ __MODULE__ = "ʜᴀᴘᴘʏᴍᴏᴅ"
 __HELP__ = """
 <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʜᴀᴘᴘʏᴍᴏᴅ ᴄᴇꜱꜱ ⦫</b>
 
-<blockquote><b>⎆ perintah :
+<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
 ᚗ <code>{0}hmod</code> nama apk
 ⊷ search apk mod android</b></blockquote>
 """

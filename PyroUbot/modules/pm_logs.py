@@ -14,10 +14,10 @@ from PyroUbot import *
 FLOOD = {}
 MSG_ID = {}
 PM_TEXT = """
-<blockquote>🙋🏻‍♂halo {mention} ada yang bisa saya bantu?
+<blockquote>🙋🏻‍♂halo {mention} ada yang bisa Gua bantu?
 
-perkenalkan saya adalah pm-security disini
-silahkan tunggu majikan saya membalas pesan mu ini ya
+perkenalkan Gua adalah pm-security disini
+silahkan tunggu majikan Gua membalas pesan mu ini ya
 jangan spam ya atau anda akan di blokir secara otomatis
 
 ⚠peringatan: {warn} hati-hati</blockquote>
@@ -28,25 +28,25 @@ __MODULE__ = "ᴘᴍᴘᴇʀᴍɪᴛ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Pmpermit
 
-perintah : <code>{0}pmpermit</code> query > on or off
-    mengaktifkan atau menonaktifkan pm permit
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}pmpermit</code> query > on or off
+    Mengaktifkan Atau Menonaktifkan PM Permit
 
-perintah : <code>{0}ok</code>
-    mengizinkan seseoranh untuk pm anda
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ok</code>
+    Mengizinkan Seseorang Untuk PM Elu
 
-perintah : <code>{0}no</code>
-    menolak seseorang untuk pm anda
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}no</code>
+    Menolak Seseorang Untuk PM Elu
 
-perintah : <code>{0}setpm</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}setpm</code>
 query: |pic |text |limit
-    mengatur configuration pada pm_permit
+    Mengatur Configuration Pada pm_permit
 
-contoh menggunakan button  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1558'>tutorial</a>
+Contoh Menggunakan Button  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1558'>tutorial</a>
 
-contoh menggunakan gambar yang benar  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1559'>tutorial</a>
+Contoh Menggunakan Gambar Yang Benar  : <a href='https://t.me/TESTIPRIBADIBOYSZ/1559'>tutorial</a>
 
-contoh menggunakan warning 
-    command : setpm limit 5</blockquote>
+Contoh Menggunakan Warning
+    Command : setpm limit 5</blockquote>
 """
 
 
@@ -71,7 +71,7 @@ async def _(client, message):
                 if FLOOD[user.id] > int(pm_limit):
                     del FLOOD[user.id]
                     await message.reply(
-                        "sudah diingatkan jangan spam, sekarang Anda diblokir."
+                        "Sudah Diingatkan Jangan Spam, Sekarang Elu Diblokir Cuki."
                     )
                     return await client.block_user(user.id)
             except ValueError:
@@ -120,7 +120,7 @@ async def _(client, message):
         )
     query = {"limit": "PM_LIMIT", "text": "PM_TEXT", "pic": "PM_PIC"}
     if message.command[1].lower() not in query:
-        return await message.reply(f"{ggl}query yang di masukkan tidak valid")
+        return await message.reply(f"{ggl}Query Yang Di Masukkan Tidak Valid Cuki")
     query_str, value_str = (
         message.text.split(None, 2)[1],
         message.text.split(None, 2)[2],
@@ -130,7 +130,7 @@ async def _(client, message):
         value_str = False
     await set_vars(client.me.id, value, value_str)
     return await message.reply(
-        f"{brhsl}pmpermit berhasil disetting"
+        f"{brhsl}pmpermit Berhasil Disetting Cess"
     )
 
 
@@ -148,13 +148,13 @@ async def _(client, message):
     toggle_option = message.command[1].lower()
 
     if toggle_option not in toggle_options:
-        return await message.reply(f"{ggl}opsi tidak valid. Harap gunakan 'on' atau 'off'.")
+        return await message.reply(f"{ggl}Opsi Tidak Valid. Harap Gunakan 'on' Atau 'off' Cess.")
 
     value = toggle_options[toggle_option]
-    text = "diaktifkan" if value else "dinonaktifkan"
+    text = "diaktifkan" if value else "Dinonaktifkan Cess"
 
     await set_vars(client.me.id, "PMPERMIT", value)
-    await message.reply(f"{brhsl}pmpermit berhasil {text}")
+    await message.reply(f"{brhsl}pmpermit Berhasil Cess {text}")
 
 
 @PY.INLINE("pm_pr")
@@ -173,7 +173,7 @@ async def _(client, inline_query):
         hasil = [
             photo_video(
                 **photo_video_url,
-                title="Dapatkan tombol!",
+                title="Dapatkan tombol Cess!",
                 caption=text.format(mention=rpk, warn=peringatan),
                 reply_markup=buttons,
             )
@@ -182,7 +182,7 @@ async def _(client, inline_query):
         hasil = [
             (
                 InlineQueryResultArticle(
-                    title="Dapatkan tombol!",
+                    title="Dapatkan tombol Cess!",
                     reply_markup=buttons,
                     input_message_content=InputTextMessageContent(text.format(mention=rpk, warn=peringatan)),
                 )
@@ -206,9 +206,9 @@ async def _(client, message):
     vars = await get_pm_id(client.me.id)
     if user.id not in vars:
         await add_pm_id(client.me.id, user.id)
-        return await message.reply(f"{brhsl}ʙᴀɪᴋʟᴀʜ, {rpk} ᴛᴇʟᴀʜ ᴅɪᴛᴇʀɪᴍᴀ")
+        return await message.reply(f"{brhsl}ʙᴀɪᴋʟᴀʜ, {rpk} ᴛᴇʟᴀʜ ᴅɪᴛᴇʀɪᴍᴀ ᴄᴇꜱꜱ")
     else:
-        return await message.reply(f"{brhsl}{rpk} sᴜᴅᴀʜ ᴅɪᴛᴇʀɪᴍᴀ")
+        return await message.reply(f"{brhsl}{rpk} sᴜᴅᴀʜ ᴅɪᴛᴇʀɪᴍᴀ ᴄᴇꜱꜱ")
 
 
 @PY.UBOT("no|tolak")
@@ -220,12 +220,12 @@ async def _(client, message):
     rpk = f"[{user.first_name} {user.last_name or ''}](tg://user?id={user.id})"
     vars = await get_pm_id(client.me.id)
     if user.id not in vars:
-        await message.reply(f"<blockquote><b>{ggl}🙏🏻 ᴍᴀᴀғ ⁣{rpk} ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴅɪʙʟᴏᴋɪʀ</blockquote></b>\n||mampus kontol gw blok||")
+        await message.reply(f"<blockquote><b>{ggl}🙏🏻 ᴍᴀᴀғ ⁣{rpk} ᴇʟᴜ ᴛᴇʟᴀʜ ᴅɪʙʟᴏᴋɪʀ</blockquote></b>\n||mampus cuki gw blok||")
         return await client.block_user(user.id)
     else:
         await remove_pm_id(client.me.id, user.id)
         return await message.reply(
-            f"<blockquote><b>{ggl}🙏🏻 ᴍᴀᴀғ {rpk} ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴅɪᴛᴏʟᴀᴋ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴜʙᴜɴɢɪ ᴀᴋᴜɴ ɪɴɪ ʟᴀɢɪ</blockquote></b>"
+            f"<blockquote><b>{ggl}🙏🏻 ᴍᴀᴀғ {rpk} ᴇʟᴜ ᴛᴇʟᴀʜ ᴅɪᴛᴏʟᴀᴋ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴜʙᴜɴɢɪ ᴀᴋᴜɴ ɪɴɪ ʟᴀɢɪ ᴄᴜᴋɪ</blockquote></b>"
         )
 
 async def pmpermit_button(m):
@@ -252,7 +252,7 @@ async def send_log(client, chat_id, message, message_text, msg):
         await client.send_message(chat_id, message_text, disable_web_page_preview=True)
         await message.forward(chat_id)
     except Exception as error:
-        print(f"{msg} ERROR: GAGAL MENERUSKAN PESAN")
+        print(f"{msg} ERROR: GAGAL MENERUSKAN PESAN CESS")
 
 @PY.UBOT("logs")
 @PY.TOP_CMD
@@ -268,13 +268,13 @@ async def _(client, message):
     command = message.command[1].lower()
 
     if command not in query:
-        return await message.reply(f"{ggl}opsi tidak valid!!")
+        return await message.reply(f"{ggl}Opsi Tidak Valid Cess!!")
 
     value = query[command]
 
     await set_vars(client.me.id, "ON_LOGS", value)
     return await message.reply(
-        f"{brhsl}LOGS berhasil disetting ke: {value}"
+        f"{brhsl}LOGS Berhasil Disetting Cess Ke: {value}"
     )
 
 
@@ -285,9 +285,9 @@ async def _(client, message):
         user_link = f"{message.from_user.first_name} {message.from_user.last_name or ''}"
         message_link = message.link
         message_text = f"""
-🤖 ada pesan masuk dari {message.chat.title} 
-👤 pengguna : {message.from_user.first_name} 
-🗯 pesan : {message.text}
+🤖 Ada Pesan Masuk Dari {message.chat.title} 
+👤 Pengguna : {message.from_user.first_name} 
+🗯 Pesan : {message.text}
 """
         await bot.send_message(
             client.me.id,

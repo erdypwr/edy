@@ -28,14 +28,14 @@ __MODULE__ = "ʙʟᴜʀ"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Blur
 
-perintah : <code>{0}blur</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}blur</code>
     Untuk Blur Gambar</b></blockquote>
 """
 
 @PY.UBOT("blur")
 async def blur_cmd(client, message):
     ureply = message.reply_to_message
-    xd = await message.reply("<i>ᴍᴇᴍᴘʀᴏsᴇs...</i>")
+    xd = await message.reply("<i>Prosess Cess...</i>")
     if not ureply:
         return await xd.edit("ʙᴀʟᴀs ᴋᴇ ɢᴀᴍʙᴀʀ")
     yinsxd = await client.download_media(ureply, "./downloads/")

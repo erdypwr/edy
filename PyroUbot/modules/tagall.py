@@ -11,7 +11,7 @@ __MODULE__ = "ᴛᴀɢᴀʟʟ"
 __HELP__ = """
 <blockquote>Bantuan Untuk Tagall
 
-perintah : <code>{0}tagall</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tagall</code>
     melakukan tag ke seluruh anggota group
 
 perintah : <code>{0}batal</code>
