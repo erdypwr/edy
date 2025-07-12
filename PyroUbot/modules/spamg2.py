@@ -3,7 +3,7 @@ import asyncio
 from pyrogram.errors import FloodWait
 
 from PyroUbot import *
-import monggo
+from . import monggo
 
 spam_taksdb = {}
 
