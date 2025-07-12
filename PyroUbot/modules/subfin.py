@@ -3,12 +3,12 @@ import aiohttp
 from PyroUbot import *
 from pyrogram.types import Message
 
-__MODULE__ = "sᴜʙғɪɴᴅᴇʀ"
+__MODULE__ = "ꜱᴜʙғɪɴᴅᴇʀ"
 __HELP__ = """
-<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴜʙғɪɴᴅᴇʀ
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴜʙғɪɴᴅᴇʀ ᴄᴇꜱꜱ 』
 
- ᴘᴇʀɪɴᴛᴀʜ : <code>{0}subfin</code>
- ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴜɴᴛᴜᴋ ᴄᴇᴋ sᴜʙᴅᴏᴍᴀɪɴ ᴅᴀʀɪ ᴅᴏᴍᴀɪɴ ᴜᴛᴀᴍᴀ</b></blockquote>
+ ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱᴜʙꜰɪɴ</code>
+ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴄᴇᴋ ꜱᴜʙᴅᴏᴍᴀɪɴ ᴅᴀʀɪ ᴅᴏᴍᴀɪɴ ᴜᴛᴀᴍᴀ</b></blockquote>
 """
 
 async def get_subdomains(domain):
@@ -28,27 +28,27 @@ async def subfinder(client, message):
     command_parts = message.text.split(maxsplit=1)
 
     if len(command_parts) < 2:
-        await message.reply("contoh: .subfin contoh.com")
+        await message.reply("ᴄᴏɴᴛᴏʜ: .ꜱᴜʙꜰɪɴ ᴄᴏɴᴛᴏʜ.ᴄᴏᴍ")
         return
 
     domain = command_parts[1].strip()
 
     if not re.match(r"^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", domain):
-        await message.reply("domain tidak valid.")
+        await message.reply("ᴅᴏᴍᴀɪɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ.")
         return
 
-    processing_msg = await message.reply(f"`proses mencari subdomain dari {domain}...`")
+    processing_msg = await message.reply(f"`ᴘʀᴏꜱᴇꜱ ᴍᴇɴᴄᴀʀɪ ꜱᴜʙᴅᴏᴍᴀɪɴ ᴅᴀʀɪ {domain}...`")
 
     subdomains = await get_subdomains(domain)
 
     await processing_msg.delete()  
 
     if subdomains:
-        result_text = f"**subdomain {domain}:**\n\n"
+        result_text = f"**ꜱᴜʙᴅᴏᴍᴀɪɴ {domain}:**\n\n"
         result_text += "\n".join(f"- `{sub}`" for sub in subdomains)
         await message.reply(result_text)
     else:
-        await message.reply("gagal mencari subdomain.")
+        await message.reply("ɢᴀɢᴀʟ ᴍᴇɴᴄᴀʀɪ ꜱᴜʙᴅᴏᴍᴀɪɴ ᴅᴀʀɪ {domain}.")  # noqa: E501
 
 API_KEY = "025a6ef0" 
 API_URL = "https://api.botcahx.eu.org/api/tools/subdomain-finder"

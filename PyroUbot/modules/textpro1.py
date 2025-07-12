@@ -7,17 +7,17 @@ API_KEY = "Btz-bxwol"  # Ganti dengan API key yang benar
 
 __MODULE__ = "ᴛᴇxᴛᴘʀᴏ 1"
 __HELP__ = """
-<b>TextPro 1 Commands</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴇxᴛᴘʀᴏ 1 ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴇꜱꜱ 』</b>
 
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>sunlight</code>
-Penjelasan : Membuat gambar dengan efek sunlight.</b></blockquote>
-<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>nightstars</code>
-Penjelasan : Membuat gambar dengan efek nightstars.</b></blockquote>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>ꜱᴜɴʟɪɢʜᴛ</code>
+ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴅᴇɴɢᴀɴ ᴇꜰᴇᴋ ꜱᴜɴʟɪɢʜᴛ.</b></blockquote>
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ : <code>ɴɪɢʜᴛꜱᴛᴀʀꜱ</code>
+ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴅᴇɴɢᴀɴ ᴇꜰᴇᴋ ɴɪɢʜᴛꜱᴛᴀʀꜱ.</b></blockquote>
 """
 
 def fetch_image(api_url, text):
     """
-    Fungsi untuk mengambil gambar dari API
+    ꜰᴜɴɢꜱɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ɢᴀᴍʙᴀʀ ᴅᴀʀɪ ᴀᴘɪ
     """
     params = {"text": text, "apikey": API_KEY}
     try:
@@ -27,23 +27,23 @@ def fetch_image(api_url, text):
         if response.headers.get("Content-Type", "").startswith("image/"):
             return response.content
         else:
-            print("Response bukan gambar:", response.text)  # Debugging
+            print("ʀᴇꜱᴘᴏɴꜱ ʙᴜᴋᴀɴ ɢᴀᴍʙᴀʀ:", response.text)  # Debugging
             return None
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching image: {e}")  # Debugging jika ada kesalahan
+        print(f"ᴇʀʀᴏʀ ꜰᴇᴛᴄʜɪɴɢ ɪᴍᴀɢᴇ: {e}")  # Debugging jika ada kesalahan
         return None
 
 async def process_image_command(client, message, api_url, command_name):
     """
-    Fungsi umum untuk menangani perintah pembuatan gambar
+    ꜰᴜɴɢꜱɪ ᴜᴍᴜᴍ ᴜɴᴛᴜᴋ ᴍᴇɴᴀɴɢᴀɴɪ ᴘᴇʀɪɴᴛᴀʜ ᴘᴇᴍʙᴜᴀᴛᴀɴ ɢᴀᴍʙᴀʀ
     """
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text(f"<b><i>Gunakan perintah /{command_name} <teks> untuk membuat gambar.</i></b>")
+        await message.reply_text(f"<b><i>ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ /{command_name} <ᴛᴇᴋꜱ> ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ.</i></b>")
         return
 
     request_text = args[1]
-    await message.reply_text("<b><i>Sedang memproses, mohon tunggu...</i></b>")
+    await message.reply_text("<b><i>ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...</i></b>")
 
     image_content = fetch_image(api_url, request_text)
     if image_content:
@@ -53,7 +53,7 @@ async def process_image_command(client, message, api_url, command_name):
         await message.reply_photo(photo=temp_file)
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
+        await message.reply_text("ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴄᴜᴋɪ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇꜱꜱ")
 
 # Handler untuk setiap perintah
 @PY.UBOT("sunlight")

@@ -7,10 +7,10 @@ from PyroUbot import *
 
 __MODULE__ = "ᴛɪᴋᴛᴏᴋ"
 __HELP__ = """
-<blockquote> <b>Bantuan Untuk Tiktok
+<blockquote> <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛɪᴋᴛᴏᴋ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tiktok</code> tiktok <b>[link nya]</b>
-  Download Vt No Wm.</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴛɪᴋᴛᴏᴋ</code> ᴛɪᴋᴛᴏᴋ <b>[ʟɪɴᴋ ɴʏᴀ]</b>
+  ᴅᴏᴡɴʟᴏᴀᴅ ᴠᴛ ɴᴏ ᴡᴍ.</b></blockquote>
 
 """
 
@@ -36,26 +36,26 @@ async def downloader_tiktok(client, message, perintah, tujuan):
                         video_url = data['result']['video']
                         video_path = "video.mp4"
                         await download_file(video_url, video_path)
-                        await client.send_video(message.chat.id, video_path, caption=f"Download by: {client.me.mention}")
+                        await client.send_video(message.chat.id, video_path, caption=f"ᴅɪᴜɴᴅᴜʜ ᴏʟᴇʜ: {client.me.mention}")
                         os.remove(video_path)
                     elif perintah == "music":
                         music_url = data['result']['music']
                         music_path = "music.mp3"
                         await download_file(music_url, music_path)
-                        await client.send_audio(message.chat.id, music_path, caption=f"<b>Download by: {client.me.mention}</b>")
+                        await client.send_audio(message.chat.id, music_path, caption=f"<b>ᴅɪᴜɴᴅᴜʜ ᴏʟᴇʜ: {client.me.mention}</b>")
                         os.remove(music_path)
                     else:
-                        return await message.reply("Gunakan format vidio atau music.")
+                        return await message.reply("ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ ᴠɪᴅɪᴏ ᴀᴛᴀᴜ ᴍᴜꜱɪᴄ.")
                 else:
-                    print("Failed to fetch download URLs.")
+                    print("ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ᴜʀʟ ᴅᴏᴡɴʟᴏᴀᴅ.")
             else:
-                print(f"Permintaan Gagal Dengan Kode Status Cuki! {res.status}")
+                print(f"ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴅᴇɴɢᴀɴ ᴋᴏᴅᴇ ꜱᴛᴀᴛᴜꜱ ᴄᴜᴋɪ! {res.status}")
 
 @PY.UBOT("tt")
 async def _(client, message):
     if len(message.command) < 3:
         return await message.reply(
-            f"<code>{message.text.split()[0]}</code> use vidio for video or use music for audio"
+            f"<code>{message.text.split()[0]}</code> ɢᴜɴᴀᴋᴀɴ ᴠɪᴅɪᴏ ᴜɴᴛᴜᴋ ᴠɪᴅᴇᴏ ᴀᴛᴀᴜ ᴍᴜꜱɪᴄ ᴜɴᴛᴜᴋ ᴀᴜᴅɪᴏ"
         )
     command, isi = message.command[:2]
     link = " ".join(message.command[2:])

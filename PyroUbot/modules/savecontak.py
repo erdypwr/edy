@@ -31,12 +31,12 @@ async def save_contact(client, message):
     else:
         args = message.text.split(maxsplit=1)
         if len(args) < 2:
-            return await message.reply_text("❎ Mohon reply ke Pengguna Atau Masukkan Nama Custom Untuk Menyimpan Kontak Cess.")
+            return await message.reply_text("❎ ᴍᴏʜᴏɴ ʀᴇᴘʟʏ ᴋᴇ ᴘᴇɴɢɢᴜɴᴀ ᴀᴛᴀᴜ ᴍᴀꜱᴜᴋᴋᴀɴ ɴᴀᴍᴀ ᴄᴜꜱᴛᴏᴍ ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴄᴇꜱꜱ.")
 
         custom_name = args[1]
         args = message.command
         if len(args) < 3:
-            return await message.reply_text("❎ Mohon reply ke Pengguna Atau Masukkan ID Pengguna/Username Dan Nama Custom Untuk Menyimpan Kontak Cess.")
+            return await message.reply_text("❎ ᴍᴏʜᴏɴ ʀᴇᴘʟʏ ᴋᴇ ᴘᴇɴɢɢᴜɴᴀ ᴀᴛᴀᴜ ᴍᴀꜱᴜᴋᴋᴀɴ ɪᴅ ᴘᴇɴɢɢᴜɴᴀ/ᴜꜱᴇʀɴᴀᴍᴇ ᴅᴀɴ ɴᴀᴍᴀ ᴄᴜꜱᴛᴏᴍ ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴄᴇꜱꜱ.")
 
         user_id_or_username = args[1]
 
@@ -44,10 +44,10 @@ async def save_contact(client, message):
             user = await client.get_users(user_id_or_username)
             user_id = user.id
         except Exception as e:
-            return await message.reply_text(f"❎ Terjadi kesalahan Cuki: {e}")
+            return await message.reply_text(f"❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ: {e}")
 
     if not custom_name.strip():
-        return await message.reply_text("❎ Nama Custom Tidak Boleh Kosong Cuki.")
+        return await message.reply_text("❎ ɴᴀᴍᴀ ᴄᴜꜱᴛᴏᴍ ᴛɪᴅᴀᴋ ʙᴏʟᴇʜ ᴋᴏꜱᴏɴɢ ᴄᴜᴋɪ.")
 
     first_name = custom_name.strip()
     chat_id = await client.resolve_peer(user_id)
@@ -62,11 +62,11 @@ async def save_contact(client, message):
             )
         )
         if response.users and response.users[0].contact:
-            await message.reply_text(f"✅ Berhasil Menyimpan Kontak Dengan Nama Cess <code>{first_name}</code>")
+            await message.reply_text(f"✅ ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴅᴇɴɢᴀɴ ɴᴀᴍᴀ ᴄᴇꜱꜱ <code>{first_name}</code>")
         else:
-            await message.reply_text("❎ Terjadi Kesalahan Saat Menyimpan Kontak Cess.")
+            await message.reply_text("❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴʏɪᴍᴘᴀɴ ᴋᴏɴᴛᴀᴋ ᴄᴇꜱꜱ.")
     except RPCError as e:
-        await message.reply_text(f"❎ Terjadi Kesalahan Cuki: {e}")
+        await message.reply_text(f"❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ: {e}")
 
 @PY.UBOT("delkon")
 @PY.TOP_CMD
@@ -79,7 +79,7 @@ async def delete_contact(client, message):
     else:
         args = message.text.split(maxsplit=1)
         if len(args) < 2:
-            return await message.reply_text("❎ Mohon reply ke Pengguna Atau Masukkan ID Pengguna/Username Untuk Menghapus Kontak Cess.")
+            return await message.reply_text("❎ ᴍᴏʜᴏɴ ʀᴇᴘʟʏ ᴋᴇ ᴘᴇɴɢɢᴜɴᴀ ᴀᴛᴀᴜ ᴍᴀꜱᴜᴋᴋᴀɴ ɪᴅ ᴘᴇɴɢɢᴜɴᴀ/ᴜꜱᴇʀɴᴀᴍᴇ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ᴄᴇꜱꜱ.")
 
         user_id_or_username = args[1]
 
@@ -87,13 +87,13 @@ async def delete_contact(client, message):
             user = await client.get_users(user_id_or_username)
             user_id = user.id
         except Exception as e:
-            return await message.reply_text(f"❎ Terjadi Kesalahan Cuki: {e}")
+            return await message.reply_text(f"❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ: {e}")
 
     try:
         response = await client.delete_contacts([user_id])
         if response:
-            await message.reply_text(f"✅ Berhasil Menghapus Kontak Dengan ID Cess {user_id}")
+            await message.reply_text(f"✅ ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ᴅᴇɴɢᴀɴ ɪᴅ ᴄᴇꜱꜱ {user_id}")
         else:
-            await message.reply_text("❎ Terjadi Kesalahan Saat Menghapus Kontak Cess.")
+            await message.reply_text("❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴋᴏɴᴛᴀᴋ ᴄᴇꜱꜱ.")
     except RPCError as e:
-        await message.reply_text(f"❎ Terjadi Kesalahan Cuki: {e}")
+        await message.reply_text(f"❎ ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ: {e}")

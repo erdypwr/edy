@@ -18,19 +18,19 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛɪᴄᴋᴇʀ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Sticker
+<blockquote>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛɪᴄᴋᴇʀ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}q</code>
-    merubah text menjadi sticker
+    ᴍᴇʀᴜʙᴀʜ ᴛᴇxᴛ ᴍᴇɴᴊᴀᴅɪ ꜱᴛɪᴄᴋᴇʀ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}kang</code>
-    menambahkan sticker ke dalam pack
+    ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ꜱᴛɪᴄᴋᴇʀ ᴋᴇ ᴅᴀʟᴀᴍ ᴘᴀᴄᴋ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tiny</code>
-    merubah sticker menjadi kecil
+    ᴍᴇʀᴜʙᴀʜ ꜱᴛɪᴄᴋᴇʀ ᴍᴇɴᴊᴀᴅɪ ᴋᴇᴄɪʟ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}mmf</code>
-    sticker atau foto akan di ubah menjad sticker text</blockquote>
+    ꜱᴛɪᴄᴋᴇʀ ᴀᴛᴀᴜ ꜰᴏᴛᴏ ᴀᴋᴀɴ ᴅɪ ᴜʙᴀʜ ᴍᴇɴᴊᴀᴅɪ ꜱᴛɪᴄᴋᴇʀ ᴛᴇxᴛ</blockquote>
 """
 
 
@@ -38,15 +38,15 @@ __HELP__ = """
 @PY.TOP_CMD
 async def _(client, message):
     if not message.reply_to_message:
-        return await message.reply("balas ke pesan foto atau sticker!")
+        return await message.reply("ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ ꜰᴏᴛᴏ ᴀᴛᴀᴜ ꜱᴛɪᴄᴋᴇʀ!")
     reply_message = message.reply_to_message
     if not reply_message.media:
-        return await message.reply("balas ke pesan foto atau sticker")
+        return await message.reply("ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ ꜰᴏᴛᴏ ᴀᴛᴀᴜ ꜱᴛɪᴄᴋᴇʀ")
     file = await client.download_media(reply_message)
-    Tm = await message.reply("processing...")
+    Tm = await message.reply("ᴘʀᴏᴄᴇꜱꜱɪɴɢ...")
     text = get_arg(message)
     if len(text) < 1:
-        return await Tm.edit(f"harap ketik: mmf - [text]")
+        return await Tm.edit(f"ʜᴀʀᴀᴘ ᴋᴇᴛɪᴋ: mmf - [ᴛᴇxᴛ]")
     meme = await add_text_img(file, text)
     await asyncio.gather(
         Tm.delete(),
@@ -65,7 +65,7 @@ async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
-    info = await message.reply(f"{prs}proceꜱꜱing...", quote=True)
+    info = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...", quote=True)
     await client.unblock_user("@QuotLyBot")
     if message.reply_to_message:
         if len(message.command) < 2:
@@ -95,7 +95,7 @@ async def _(client, message):
         async for quotly in client.get_chat_history("@QuotLyBot", limit=1):
             if not quotly.sticker:
                 await message.reply(
-                    f"@QuotLyBot {ggl}tidak dapat merespon permintaan", quote=True
+                    f"@QuotLyBot {ggl}ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇʀᴇꜱᴘᴏɴ ᴘᴇʀᴍɪɴᴛᴀᴀɴ", quote=True
                 )
             else:
                 sticker = await client.download_media(quotly)
@@ -103,7 +103,7 @@ async def _(client, message):
                 os.remove(sticker)
     else:
         if len(message.command) < 2:
-            return await info.edit(f"{ggl}reply to text/media")
+            return await info.edit(f"{ggl}ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ/ᴍᴇᴅɪᴀ")
         else:
             msg = await client.send_message(
                 "@QuotLyBot", f"/qcolor {message.command[1]}"
@@ -111,7 +111,7 @@ async def _(client, message):
             await asyncio.sleep(1)
             get = await client.get_messages("@QuotLyBot", msg.id + 1)
             await info.edit(
-                f"{brhsl}warna latar belakang kutipan disetel ke: {get.text.split(':')[1]}"
+                f"{brhsl}ᴡᴀʀɴᴀ ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ᴋᴜᴛɪᴘᴀɴ ᴅɪꜱᴇᴛᴇʟ ᴋᴇ: {get.text.split(':')[1]}"
             )
     user_info = await client.resolve_peer("@QuotLyBot")
     return await client.invoke(DeleteHistory(peer=user_info, max_id=0, revoke=True))
@@ -122,7 +122,7 @@ async def _(client, message):
 async def _(client, message):
     reply = message.reply_to_message
     if not (reply and (reply.media)):
-        return await message.reply("silahkan balas ke pesan sticker!")
+        return await message.reply("ꜱɪʟᴀʜᴋᴀɴ ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ ꜱᴛɪᴄᴋᴇʀ!")
     Tm = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     ik = await client.download_media(reply)
     im1 = Image.open("storage/TM_BLACK.png")
@@ -205,7 +205,7 @@ async def _(client, message):
     await client.unblock_user("stickers")
     user = message.from_user
     replied = message.reply_to_message
-    Tm = await message.reply(f"{prs}procceꜱ ꜱtickerꜱ...")
+    Tm = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ꜱᴛɪᴄᴋᴇʀꜱ...")
     media_ = None
     emoji_ = None
     is_anim = False
@@ -235,7 +235,7 @@ async def _(client, message):
             ff_vid = True
         elif replied.sticker:
             if not replied.sticker.file_name:
-                await Tm.edit(f"{ggl}ꜱtiker tidak memiliki nama!")
+                await Tm.edit(f"{ggl}ꜱᴛɪᴄᴋᴇʀ ᴛɪᴅᴀᴋ ᴍᴇᴍɪʟɪᴋɪ ɴᴀᴍᴀ!")
                 return
             emoji_ = replied.sticker.emoji
             is_anim = replied.sticker.is_animated
@@ -247,11 +247,11 @@ async def _(client, message):
                 resize = True
                 ff_vid = True
         else:
-            await Tm.edit(f"{ggl}file tidak didukung")
+            await Tm.edit(f"{ggl}ꜰɪʟᴇ ᴛɪᴅᴀᴋ ᴅɪᴅᴜᴋᴜɴɢ")
             return
         media_ = await client.download_media(replied, file_name="PyroUbot/plugins/")
     else:
-        await Tm.edit(f"{ggl}ꜱilahkan reply ke media foto/gif/ꜱticker!")
+        await Tm.edit(f"{ggl}ꜱɪʟᴀʜᴋᴀɴ ʀᴇᴘʟʏ ᴋᴇ ᴍᴇᴅɪᴀ ꜰᴏᴛᴏ/ɢɪꜰ/ꜱᴛɪᴄᴋᴇʀ!")
         return
     if media_:
         args = get_arg(message)
@@ -264,10 +264,6 @@ async def _(client, message):
             else:
                 emoji_ = args[0]
 
-        if emoji_ and emoji_ not in (
-            getattr(emoji, _) for _ in dir(emoji) if not _.startswith("_")
-        ):
-            emoji_ = None
         if not emoji_:
             emoji_ = "✨"
 
@@ -310,7 +306,7 @@ async def _(client, message):
                     packname += f"_video{pack}"
                     packnick += f" (Video){pack}"
                 await Tm.edit(
-                    f"{brhsl}membuat ꜱticker pack baru {pack} karena ꜱticker pack ꜱudah penuh"
+                    f"{brhsl}ᴍᴇᴍʙᴜᴀᴛ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ʙᴀʀᴜ {pack} ᴋᴀʀᴇɴᴀ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ꜱᴜᴅᴀʜ ᴘᴇɴᴜʜ"
                 )
                 continue
             break
@@ -337,9 +333,9 @@ async def _(client, message):
                     packname += "_video"
                     packnick += " (Video)"
                 await Tm.edit(
-                    f"{brhsl}membuat ꜱticker pack baru"
+                    f"{brhsl}ᴍᴇᴍʙᴜᴀᴛ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ʙᴀʀᴜ"
                     + str(pack)
-                    + "karena ꜱticker pack ꜱudah penuh"
+                    + "ᴋᴀʀᴇɴᴀ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ꜱᴜᴅᴀʜ ᴘᴇɴᴜʜ"
                 )
                 await client.send_message("stickers", packname)
                 await asyncio.sleep(2)
@@ -374,14 +370,14 @@ async def _(client, message):
                 == "Sorry, the file type is invalid."
             ):
                 await Tm.edit(
-                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker ᴇʟᴜ."
+                    f"{ggl}ɢᴀɢᴀʟ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ꜱᴛɪᴄᴋᴇʀ, ɢᴜɴᴀᴋᴀɴ @ꜱᴛɪᴄᴋᴇʀꜱ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ꜱᴛɪᴄᴋᴇʀ ᴇʟᴜ."
                 )
                 return
             await client.send_message("Stickers", emoji_)
             await asyncio.sleep(2)
             await client.send_message("Stickers", "/done")
         else:
-            await Tm.edit(f"{prs}membuat ꜱticker pack baru")
+            await Tm.edit(f"{prs}ᴍᴇᴍʙᴜᴀᴛ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ʙᴀʀᴜ")
             try:
                 await client.send_message("Stickers", cmd)
             except YouBlockedUser:
@@ -397,7 +393,7 @@ async def _(client, message):
                 == "Sorry, the file type is invalid."
             ):
                 await Tm.edit(
-                    f"{ggl}gagal menambahkan ꜱticker, gunakan @ꜱtickerꜱ bot untuk menambahkan ꜱticker ᴇʟᴜ."
+                    f"{ggl}ɢᴀɢᴀʟ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ꜱᴛɪᴄᴋᴇʀ, ɢᴜɴᴀᴋᴀɴ @ꜱᴛɪᴄᴋᴇʀꜱ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ꜱᴛɪᴄᴋᴇʀ ᴇʟᴜ."
                 )
                 return
             await client.send_message("Stickers", emoji_)
@@ -412,7 +408,7 @@ async def _(client, message):
             await client.send_message("Stickers", packname)
             await asyncio.sleep(2)
         await Tm.edit(
-            f"{brhsl}ꜱticker berhaꜱil ditambahkan!\n         <a href=https://t.me/addstickers/{packname}>KLIK DISINI</a>\nuntuk menggunakan ꜱtickerꜱ"
+            f"{brhsl}ꜱᴛɪᴄᴋᴇʀ ʙᴇʀʜᴀꜱɪʟ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ!\n         <a href=https://t.me/addstickers/{packname}>ᴋʟɪᴋ ᴅɪꜱɪɴɪ</a>\nᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ꜱᴛɪᴄᴋᴇʀꜱ"
         )
         if os.path.exists(str(media_)):
             os.remove(media_)

@@ -1,12 +1,12 @@
 __MODULE__ = "ᴠᴄᴛᴏᴏʟꜱ"
 __HELP__ = """
-<blockquote>Bantuan Untuk VcTools
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴠᴄᴛᴏᴏʟꜱ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}jvc</code>
-    untuk bergabung ke voice chat group
+    ᴜɴᴛᴜᴋ ʙᴇʀɢᴀʙᴜɴɢ ᴋᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}lvc</code>
-    untuk meninggalkan dari voice chat group
+    ᴜɴᴛᴜᴋ ᴍᴇɴɪɴɢɢᴀʟᴋᴀɴ ᴅᴀʀɪ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ
 """
 
 from pyrogram import Client, filters
@@ -38,11 +38,11 @@ async def leave_vc(client, message):
     ggl = await EMO.GAGAL(client)
     prs = await EMO.PROSES(client)
     try:
-        mex = await message.reply(f"{prs}proccesing...")
+        mex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
         await client.call_py.leave_call(message.chat.id)
-        await mex.edit(f"{brhsl}berhasil turun dari obrolan suara")
+        await mex.edit(f"{brhsl}ʙᴇʀʜᴀꜱɪʟ ᴛᴜʀᴜɴ ᴅᴀʀɪ ᴏʙʀᴏʟᴀɴ ꜱᴜᴀʀᴀ ᴄᴇꜱꜱ")
     except NotInCallError:
-        await mex.edit(f"{ggl}belum bergabung ke voice chat")
+        await mex.edit(f"{ggl}ʙᴇʟᴜᴍ ʙᴇʀɢᴀʙᴜɴɢ ᴋᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄᴇꜱꜱ")
     except UserBannedInChannel:
         pass
     except Exception as e:
@@ -56,12 +56,12 @@ async def join_vc(client, message):
     ggl = await EMO.GAGAL(client)
     prs = await EMO.PROSES(client)
     try:
-        mex = await message.reply(f"{prs}proccesing...")
+        mex = await message.reply(f"{prs}ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
         await client.call_py.play(message.chat.id)
         await client.call_py.mute_stream(message.chat.id)
-        await mex.edit(f"{brhsl}**berhasil join ke voice chat**")        
+        await mex.edit(f"{brhsl}**ʙᴇʀʜᴀꜱɪʟ ᴊᴏɪɴ ᴋᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄᴇꜱꜱ**")        
     except ChatAdminRequired:
-        await mex.edit(f"{ggl}**maaf tidak bisa join vc**")
+        await mex.edit(f"{ggl}**ᴍᴀᴀꜰ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴊᴏɪɴ ᴠᴄ ᴄᴜᴋɪ**")
     except UserBannedInChannel:
         pass
     except Exception as e:

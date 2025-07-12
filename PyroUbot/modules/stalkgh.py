@@ -6,7 +6,7 @@ from PyroUbot import *
 
 __MODULE__ = "sᴛᴀʟᴋɢʜ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʟᴋ ɢʜ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʟᴋ ɢʜ ᴄᴇꜱꜱ 』</b>
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sᴛᴀʟᴋɢʜ</code> 
     ᴜɴᴛᴜᴋ sᴛᴀʟᴋ ɢɪᴛʜᴜʙ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴜsᴇʀɴᴀᴍᴇ</b></blockquote>
@@ -21,7 +21,7 @@ async def stalkgh(client, message):
     jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `stalkgh` followed by the github username.")
+        return await jalan.edit(f"{ggl} ꜱɪʟᴀᴋᴀɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ꜱᴛᴀʟᴋɢʜ` ᴅɪɪᴋᴜᴛɪ ᴜꜱᴇʀɴᴀᴍᴇ ɢɪᴛʜᴜʙ.")
     
     username = message.command[1]
     chat_id = message.chat.id
@@ -35,12 +35,12 @@ async def stalkgh(client, message):
                 result = data['result']['user']
                 photoUrl = f"https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                 caption = f"""
-<blockquote><b>Name:</b> <code>{result['name']}</code>
-<b>Username:</b> <code>{result['username']}</code>
-<b>Followers:</b> <code>{result['followers']}</code>
-<b>Following:</b> <code>{result['following']}</code>
-<b>Bio:</b> <code>{result['bio']}</code>
-<b>ID:</b> <code>{result['idUser']}</code></blockquote>
+<blockquote><b>ɴᴀᴍᴇ:</b> <code>{result['name']}</code>
+<b>ᴜꜱᴇʀɴᴀᴍᴇ:</b> <code>{result['username']}</code>
+<b>ꜰᴏʟʟᴏᴡᴇʀꜱ:</b> <code>{result['followers']}</code>
+<b>ꜰᴏʟʟᴏᴡɪɴɢ:</b> <code>{result['following']}</code>
+<b>ʙɪᴏ:</b> <code>{result['bio']}</code>
+<b>ɪᴅ:</b> <code>{result['idUser']}</code></blockquote>
 """
                 photo_path = wget.download(photoUrl)
                 await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -49,12 +49,12 @@ async def stalkgh(client, message):
                 
                 await jalan.delete()
             else:
-                await jalan.edit(f"{ggl} No channel data found.")
+                await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀᴛᴀ ᴄʜᴀɴɴᴇʟ ᴅɪᴛᴇᴍᴜᴋᴀɴ.")
         else:
-            await jalan.edit(f"{ggl} Failed to retrieve data. Status code: {response.status_code}")
+            await jalan.edit(f"{ggl} ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀᴛᴀ. ꜱᴛᴀᴛᴜꜱ ᴄᴏᴅᴇ: {response.status_code}")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴜᴋɪ!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ!: {e}")

@@ -6,7 +6,7 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛᴀʟᴋᴛᴛ"
 __HELP__ = """
-<blockquote><b>『 ꜱᴛᴀʟᴋᴛᴛ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀʟᴋᴛᴛ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}stalktt</code> 
    <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> untuk stalk tiktok menggunakan username</i></blockquote>
@@ -21,7 +21,7 @@ async def stalktt(client, message):
     jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `stalktt` followed by the tiktok username.")
+        return await jalan.edit(f"{ggl} ꜱɪʟᴀᴋᴀɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ꜱᴛᴀʟᴋᴛᴛ` ᴅɪɪᴋᴜᴛɪ ᴜꜱᴇʀɴᴀᴍᴇ ᴛɪᴋᴛᴏᴋ.")
     
     username = message.command[1]
     chat_id = message.chat.id
@@ -40,12 +40,12 @@ async def stalktt(client, message):
             totalPosts = hasil['totalPosts']
             photoUrl = hasil['profile']
             caption = f"""
-<b><emoji id=5841235769728962577>⭐</emoji>Username: <code>{username}</code></b>
-<b><emoji id=5843952899184398024>⭐</emoji>Description: <code>{description}</code></b>
-<b><emoji id=5841243255856960314>⭐</emoji>Likes: <code>{likes}</code></b>
-<b><emoji id=5352566966454330504>⭐</emoji>Followers: <code>{followers}</code></b>
-<b><emoji id=5353036831581544549>⭐</emoji>Following: <code>{following}</code></b>
-<b><emoji id=5841243255856960314>⭐</emoji>TotalPosts: <code>{totalPosts}</code></b>
+<b><emoji id=5841235769728962577>⭐</emoji>ᴜꜱᴇʀɴᴀᴍᴇ: <code>{username}</code></b>
+<b><emoji id=5843952899184398024>⭐</emoji>ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: <code>{description}</code></b>
+<b><emoji id=5841243255856960314>⭐</emoji>ʟɪᴋᴇꜱ: <code>{likes}</code></b>
+<b><emoji id=5352566966454330504>⭐</emoji>ꜰᴏʟʟᴏᴡᴇʀꜱ: <code>{followers}</code></b>
+<b><emoji id=5353036831581544549>⭐</emoji>ꜰᴏʟʟᴏᴡɪɴɢ: <code>{following}</code></b>
+<b><emoji id=5841243255856960314>⭐</emoji>ᴛᴏᴛᴀʟᴘᴏꜱᴛꜱ: <code>{totalPosts}</code></b>
 """
             photo_path = wget.download(photoUrl)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -54,10 +54,10 @@ async def stalktt(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴜᴋɪ!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ!: {e}")

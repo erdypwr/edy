@@ -185,7 +185,7 @@ async def instacrot(client: Client, message):
             tracemsg = traceback.format_exc()
             await message.reply_text(tracemsg)
             await message.reply_text(
-                "<blockquote>400: ᴍᴀᴀꜰ, ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴɴʏᴀ ᴄᴏʙᴀ ʏᴀɴɢ ʟᴀɪɴ ᴀᴛᴀᴜ ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ @ydhiak🤖</blockquote>"
+                "<blockquote>400: ᴍᴀᴀꜰ, ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴɴʏᴀ ᴄᴏʙᴀ ʏᴀɴɢ ʟᴀɪɴ ᴀᴛᴀᴜ ʟᴀᴘᴏʀᴋᴀɴ ᴋᴇ @ʏᴅʜɪᴀᴋ🤖</blockquote>"
             )
         finally:
             await m.delete()

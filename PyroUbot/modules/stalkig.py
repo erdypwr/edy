@@ -6,7 +6,7 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛᴀʟᴋɪɢ"
 __HELP__ = """
-<blockquote><b>『 ꜱᴛᴀʟᴋɪɢ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀʟᴋɪɢ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}stalkig</code> 
    <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b> untuk stalking instagram menggunakan username</i></blockquote>
@@ -21,7 +21,7 @@ async def stalkig(client, message):
     jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `stalkig` followed by the Instagram username.")
+        return await jalan.edit(f"{ggl} ꜱɪʟᴀᴋᴀɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ꜱᴛᴀʟᴋɪɢ` ᴅɪɪᴋᴜᴛɪ ᴜꜱᴇʀɴᴀᴍᴇ ɪɴꜱᴛᴀɢʀᴀᴍ.")
     
     username = message.command[1]
     chat_id = message.chat.id
@@ -40,14 +40,14 @@ async def stalkig(client, message):
             photoUrl = hasil['photoUrl']
             bio = hasil['bio']
             caption = f"""
-<b><emoji id=5841235769728962577>⭐</emoji>Username: <code>{username}</code></b>
-<b><emoji id=5843952899184398024>⭐</emoji>Full Name: <code>{fullName}</code></b>
-<b><emoji id=5841243255856960314>⭐</emoji>Followers: <code>{followers}</code></b>
-<b><emoji id=5352566966454330504>⭐</emoji>Following: <code>{following}</code></b>
-<b><emoji id=5841243255856960314>⭐</emoji>Posts: <code>{postsCount}</code></b>
-<b><emoji id=5353036831581544549>⭐</emoji>Bio: <code>{bio}</code></b>
+<b><emoji id=5841235769728962577>⭐</emoji>ᴜꜱᴇʀɴᴀᴍᴇ: <code>{username}</code></b>
+<b><emoji id=5843952899184398024>⭐</emoji>ꜰᴜʟʟ ɴᴀᴍᴇ: <code>{fullName}</code></b>
+<b><emoji id=5841243255856960314>⭐</emoji>ꜰᴏʟʟᴏᴡᴇʀꜱ: <code>{followers}</code></b>
+<b><emoji id=5352566966454330504>⭐</emoji>ꜰᴏʟʟᴏᴡɪɴɢ: <code>{following}</code></b>
+<b><emoji id=5841243255856960314>⭐</emoji>ᴘᴏꜱᴛꜱ: <code>{postsCount}</code></b>
+<b><emoji id=5353036831581544549>⭐</emoji>ʙɪᴏ: <code>{bio}</code></b>
 
-<blockquote><b>-- USERBOT 15K/BULAN BY @ndyzoffc --</blockquote></b>
+<blockquote><b>-- ᴜꜱᴇʀʙᴏᴛ ʙʏ @ʏᴅʜɪᴀᴋ --</blockquote></b>
 """
             photo_path = wget.download(photoUrl)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -56,10 +56,10 @@ async def stalkig(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴜᴋɪ!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ!: {e}")

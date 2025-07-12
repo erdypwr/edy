@@ -8,15 +8,15 @@ from pyrogram import __version__
 from pyrogram.types import Message
 from PyroUbot import *
 
-__MODULE__ = "sʏsᴛᴇᴍ"
+__MODULE__ = "ꜱʏꜱᴛᴇᴍ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sʏsᴛᴇᴍ ⦫</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱʏꜱᴛᴇᴍ ᴄᴇꜱꜱ 』</b>
 <blockquote>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}spc</code>
+ᚗ <code>{0}ꜱᴘᴄ</code>
 
-⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-⊶ Melihat statistik sistem.
+⎆ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:
+⊶ ᴍᴇʟɪʜᴀᴛ ꜱᴛᴀᴛɪꜱᴛɪᴋ ꜱɪꜱᴛᴇᴍ.
 </blockquote>
 """
 
@@ -57,48 +57,48 @@ def get_size(bytes, suffix="B"):
 @PY.TOP_CMD
 async def psu(client: Client, message: Message):
     uname = platform.uname()
-    softw = f"""<blockquote><b>Informasi Sistem</b></blockquote>\n"""
-    softw += f"ᚗ Sistem   : {uname.system}\n"
-    softw += f"ᚗ Rilis    : {uname.release}\n"
-    softw += f"ᚗ Versi    : {uname.version}\n"
-    softw += f"ᚗ Mesin    : {uname.machine}\n"
+    softw = f"""<blockquote><b>ɪɴꜰᴏʀᴍᴀꜱɪ ꜱɪꜱᴛᴇᴍ</b></blockquote>\n"""
+    softw += f"ᚗ ꜱɪꜱᴛᴇᴍ   : {uname.system}\n"
+    softw += f"ᚗ ʀɪʟɪꜱ    : {uname.release}\n"
+    softw += f"ᚗ ᴠᴇʀꜱɪ    : {uname.version}\n"
+    softw += f"ᚗ ᴍᴇꜱɪɴ    : {uname.machine}\n"
     # Boot Time
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
-    softw += f"ᚗ Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}\n"
+    softw += f"ᚗ ᴡᴀᴋᴛᴜ ʜɪᴅᴜᴘ: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}\n"
     # CPU Cores
-    cpuu = f"""<blockquote><b>Informasi CPU</b></blockquote>\n"""
-    cpuu += "ᚗ Physical cores   : " + \
+    cpuu = f"""<blockquote><b>ɪɴꜰᴏʀᴍᴀꜱɪ ᴄᴘᴜ</b></blockquote>\n"""
+    cpuu += "ᚗ ᴘʜʏꜱɪᴄᴀʟ ᴄᴏʀᴇꜱ   : " + \
         str(psutil.cpu_count(logical=False)) + "\n"
-    cpuu += "ᚗ Total cores      : " + \
+    cpuu += "ᚗ ᴛᴏᴛᴀʟ ᴄᴏʀᴇꜱ      : " + \
         str(psutil.cpu_count(logical=True)) + "\n"
     # CPU frequencies
     cpufreq = psutil.cpu_freq()
-    cpuu += f"ᚗ Max Frequency    : {cpufreq.max:.2f}Mhz\n"
-    cpuu += f"ᚗ Min Frequency    : {cpufreq.min:.2f}Mhz\n"
-    cpuu += f"ᚗ Current Frequency: {cpufreq.current:.2f}Mhz\n\n"
+    cpuu += f"ᚗ ᴍᴀx ꜰʀᴇǫᴜᴇɴᴄʏ    : {cpufreq.max:.2f}ᴍʜᴢ\n"
+    cpuu += f"ᚗ ᴍɪɴ ꜰʀᴇǫᴜᴇɴᴄʏ    : {cpufreq.min:.2f}ᴍʜᴢ\n"
+    cpuu += f"ᚗ ᴄᴜʀʀᴇɴᴛ ꜰʀᴇǫᴜᴇɴᴄʏ: {cpufreq.current:.2f}ᴍʜᴢ\n\n"
     # CPU usage
-    cpuu += f"""<blockquote><b>CPU Usage Per Core</b></blockquote>\n"""
+    cpuu += f"""<blockquote><b>ᴄᴘᴜ ᴜꜱᴀɢᴇ ᴘᴇʀ ᴄᴏʀᴇ</b></blockquote>\n"""
     for i, percentage in enumerate(psutil.cpu_percent(percpu=True)):
-        cpuu += f"ᚗ Core {i}  : {percentage}%\n"
-    cpuu += f"ᚗ Semua Core: {psutil.cpu_percent()}%\n"
+        cpuu += f"ᚗ ᴄᴏʀᴇ {i}  : {percentage}%\n"
+    cpuu += f"ᚗ ꜱᴇᴍᴜᴀ ᴄᴏʀᴇ: {psutil.cpu_percent()}%\n"
     # RAM Usage
     svmem = psutil.virtual_memory()
-    memm = f"""<blockquote><b>Memori Digunakan</b></blockquote>\n"""
-    memm += f"ᚗ Total     : {get_size(svmem.total)}\n"
-    memm += f"ᚗ Available : {get_size(svmem.available)}\n"
-    memm += f"ᚗ Used      : {get_size(svmem.used)}\n"
-    memm += f"ᚗ Percentage: {svmem.percent}%\n"
+    memm = f"""<blockquote><b>ᴍᴇᴍᴏʀɪ ᴅɪɢᴜɴᴀᴋᴀɴ</b></blockquote>\n"""
+    memm += f"ᚗ ᴛᴏᴛᴀʟ     : {get_size(svmem.total)}\n"
+    memm += f"ᚗ ᴀᴠᴀɪʟᴀʙʟᴇ : {get_size(svmem.available)}\n"
+    memm += f"ᚗ ᴜꜱᴇᴅ      : {get_size(svmem.used)}\n"
+    memm += f"ᚗ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ: {svmem.percent}%\n"
     # Bandwidth Usage
-    bw = f"""<blockquote><b>Bandwith Digunakan**</b></blockquote>\n"""
-    bw += f"ᚗ Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}\n"
-    bw += f"ᚗ Download: {get_size(psutil.net_io_counters().bytes_recv)}\n"
+    bw = f"""<blockquote><b>ʙᴀɴᴅᴡɪᴛʜ ᴅɪɢᴜɴᴀᴋᴀɴ**</b></blockquote>\n"""
+    bw += f"ᚗ ᴜɴɢɢᴀʜ  : {get_size(psutil.net_io_counters().bytes_sent)}\n"
+    bw += f"ᚗ ᴅᴏᴡɴʟᴏᴀᴅ: {get_size(psutil.net_io_counters().bytes_recv)}\n"
     help_string = f"{str(softw)}\n"
     help_string += f"{str(cpuu)}\n"
     help_string += f"{str(memm)}\n"
     help_string += f"{str(bw)}\n"
-    help_string += f"""<blockquote><b>Informasi Mesin</b></blockquote>\n"""
-    help_string += f"ᚗ Python {sys.version}\n"
-    help_string += f"ᚗ Pyrogram {__version__}\n\n"
-    help_string += f"**Powered by {client.me.mention}**\n"
+    help_string += f"""<blockquote><b>ɪɴꜰᴏʀᴍᴀꜱɪ ᴍᴇꜱɪɴ</b></blockquote>\n"""
+    help_string += f"ᚗ ᴘʏᴛʜᴏɴ {sys.version}\n"
+    help_string += f"ᚗ ᴘʏʀᴏɢʀᴀᴍ {__version__}\n\n"
+    help_string += f"**ᴘᴏᴡᴇʀᴇᴅ ʙʏ {client.me.mention}**\n"
     await message.reply(help_string)

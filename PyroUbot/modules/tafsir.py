@@ -19,25 +19,25 @@ def get_random_tafsir(query):
                 return (
                     f"<blockquote><b>📖 **{tafsir['surah']}**\n\n</b></blockquote>"
                     f"<blockquote><b>{tafsir['tafsir']}\n\n</b></blockquote>"
-                    f"<blockquote><b>🔗 [Sumber]({tafsir['source']})</b></blockquote>"
+                    f"<blockquote><b>🔗 [ꜱᴜᴍʙᴇʀ]({tafsir['source']})</b></blockquote>"
                 )
-        return "<blockquote><b><emoji id=5215204871422093648>❌</emoji> Tidak ditemukan tafsir yang sesuai.</b></blockquote>"
+        return "<blockquote><b><emoji id=5215204871422093648>❌</emoji> ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴛᴀꜰꜱɪʀ ʏᴀɴɢ ꜱᴇꜱᴜᴀɪ.</b></blockquote>"
 
     except requests.exceptions.Timeout:
-        return "<blockquote><b><emoji id=5454415424319931791>⌛️</emoji> Permintaan waktu habis. Coba lagi nanti.</b></blockquote>"
+        return "<blockquote><b><emoji id=5454415424319931791>⌛️</emoji> ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴡᴀᴋᴛᴜ ʜᴀʙɪꜱ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ.</b></blockquote>"
     except requests.exceptions.RequestException as e:
-        return f"<blockquote><b><emoji id=5213205860498549992>⚠️</emoji> Terjadi kesalahan saat mengambil tafsir: {e}</b></blockquote>"
+        return f"<blockquote><b><emoji id=5213205860498549992>⚠️</emoji> ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴛᴀꜰꜱɪʀ: {e}</b></blockquote>"
 
 @PY.UBOT("tafsir")
 async def tafsir_handler(client, message):
     if len(message.command) < 2:
         return await message.reply(
-            "<blockquote><b>**__<emoji id=5213205860498549992>⚠️</emoji> Gunakan perintah: `>tafsir <kata_kunci>`\n</b></blockquote>"
-            "<blockquote><b>Contoh: `>tafsir Muhammad`__**</b></blockquote>"
+            "<blockquote><b>**__<emoji id=5213205860498549992>⚠️</emoji> ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ: `>ᴛᴀꜰꜱɪʀ <ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ>`\n</b></blockquote>"
+            "<blockquote><b>ᴄᴏɴᴛᴏʜ: `>ᴛᴀꜰꜱɪʀ ᴍᴜʜᴀᴍᴍᴀᴅ`__**</b></blockquote>"
         )
 
     query = " ".join(message.command[1:])
-    await message.reply("<blockquote><b><i><emoji id=4967797089971995307>🔍</emoji> Sedang mencari tafsir...</i></b></blockquote>")
+    await message.reply("<blockquote><b><i><emoji id=4967797089971995307>🔍</emoji> ꜱᴇᴅᴀɴɢ ᴍᴇɴᴄᴀʀɪ ᴛᴀꜰꜱɪʀ...</i></b></blockquote>")
 
     tafsir_text = get_random_tafsir(query)
 

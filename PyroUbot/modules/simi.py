@@ -5,12 +5,12 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "sɪᴍɪ ᴀɪ"
+__MODULE__ = "ꜱɪᴍɪ ᴀɪ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Simi AI Cess
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱɪᴍɪ ᴀɪ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}simi</code>
-    Dapat Mengobrol, Tapi Agak Toxic Cuki</b></blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱɪᴍɪ</code>
+    ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴏʙʀᴏʟ, ᴛᴀᴘɪ ᴀɢᴀᴋ ᴛᴏxɪᴄ ᴄᴜᴋɪ</b></blockquote>
 """
 
 
@@ -22,10 +22,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>Mohon Gunakan Format Cuki\nContoh : .simi query"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ ᴄᴜᴋɪ\nᴄᴏɴᴛᴏʜ : .ꜱɪᴍɪ ǫᴜᴇʀʏ"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>Menjawab Cess....")
+            prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>ᴍᴇɴᴊᴀᴡᴀʙ ᴄᴇꜱꜱ....")
             a = message.text.split(' ', 1)[1]
             response = requests.get(f'https://api.botcahx.eu.org/api/search/simsimi?query={a}&apikey=Boyy')
 
@@ -36,8 +36,8 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki Cess.")
+                    await message.reply_text("ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ ᴄᴇꜱꜱ.")
             except KeyError:
-                await message.reply_text("Kesalahan Saat Mengakses Respons Cess.")
+                await message.reply_text("ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴀᴋꜱᴇꜱ ʀᴇꜱᴘᴏɴꜱ ᴄᴇꜱꜱ.")
     except Exception as e:
         await message.reply_text(f"{e}")

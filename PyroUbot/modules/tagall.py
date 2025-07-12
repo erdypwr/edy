@@ -9,13 +9,13 @@ from PyroUbot import *
 
 __MODULE__ = "ᴛᴀɢᴀʟʟ"
 __HELP__ = """
-<blockquote>Bantuan Untuk Tagall
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴀɢᴀʟʟ ᴄᴇꜱꜱ 』
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tagall</code>
-    melakukan tag ke seluruh anggota group
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴛᴀɢᴀʟʟ</code>
+    ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴛᴀɢ ᴋᴇ ꜱᴇʟᴜʀᴜʜ ᴀɴɢɢᴏᴛᴀ ɢʀᴏᴜᴘ
 
-perintah : <code>{0}batal</code>
-    membatalkan perintah tagall</blockquote>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ʙᴀᴛᴀʟ</code>
+    ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴛᴀɢᴀʟʟ</blockquote>
 """
 
 
@@ -195,10 +195,10 @@ async def _(client, message):
 async def _(client, message):
     if message.chat.id not in tagallgcid:
         return await message.reply_text(
-            "tidak ada perintah : tagall yang digunakan"
+            "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ : ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ"
         )
     try:
         tagallgcid.remove(message.chat.id)
     except Exception:
         pass
-    await message.reply_text("tagall berhasil dibatalkan")
+    await message.reply_text("ᴛᴀɢᴀʟʟ ʙᴇʀʜᴀꜱɪʟ ᴅɪʙᴀᴛᴀʟᴋᴀɴ")

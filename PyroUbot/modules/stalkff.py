@@ -21,7 +21,7 @@ async def stalkff(client, message):
     jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
 
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Silakan Gunakan Perintah `stalkff` ID Akun.")
+        return await jalan.edit(f"{ggl} ꜱɪʟᴀᴋᴀɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ꜱᴛᴀʟᴋꜰꜰ` ɪᴅ ᴀᴋᴜɴ.")
     
     id = message.command[1]
     chat_id = message.chat.id
@@ -36,9 +36,9 @@ async def stalkff(client, message):
             openid = data['open_id']
             photoUrl = data['img_url']
             caption = f"""
-<b><emoji id=5841235769728962577>⭐</emoji>Nicname: <code>{Nicname}</code></b>
-<b><emoji id=5843952899184398024>⭐</emoji>Region: <code>{region}</code></b>
-<b><emoji id=5841243255856960314>⭐</emoji>OpenID: <code>{openid}</code></b>
+<b><emoji id=5841235769728962577>⭐</emoji>ɴɪᴄɴᴀᴍᴇ: <code>{Nicname}</code></b>
+<b><emoji id=5843952899184398024>⭐</emoji>ʀᴇɢɪᴏɴ: <code>{region}</code></b>
+<b><emoji id=5841243255856960314>⭐</emoji>ᴏᴘᴇɴɪᴅ: <code>{openid}</code></b>
 """
             photo_path = wget.download(photoUrl)
             await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -47,10 +47,10 @@ async def stalkff(client, message):
             
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Tidak Ditemukan Kunci 'hasil' Dalam Respons Cuki.")
+            await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴋᴜɴᴄɪ 'ʜᴀꜱɪʟ' ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱ ᴄᴜᴋɪ.")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴜᴋɪ!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ!: {e}")

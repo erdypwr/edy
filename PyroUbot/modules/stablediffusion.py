@@ -2,12 +2,12 @@ import os
 from PyroUbot import *
 import requests
 
-__MODULE__ = "sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ"
+__MODULE__ = "ꜱᴛᴀʙʟᴇᴅɪғғᴜꜱɪᴏɴ"
 __HELP__ = """
-<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ᴄᴇꜱꜱ 』</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀʙʟᴇᴅɪғғᴜꜱɪᴏɴ ᴄᴇꜱꜱ 』</b>
 <blockquote><b>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}sd</code> text
+ᚗ <code>{0}ꜱᴅ</code> ᴛᴇxᴛ
 ⊶ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴛᴇxᴛ.</b></blockquote>
 """
 
@@ -32,7 +32,7 @@ def get_giraffe_image(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("<b><i>Gunakan Perintah /stablediffusion <teks> Untuk Membuat Gambar Cess</i></b>.")
+        await message.reply_text("<b><i>ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ /ꜱᴛᴀʙʟᴇᴅɪғғᴜꜱɪᴏɴ <ᴛᴇᴋꜱ> ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴄᴇꜱꜱ</i></b>.")
         return
 
     request_text = args[1]
@@ -48,4 +48,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal Membuat Gambar Cuki. Coba Lagi Nanti Cess")
+        await message.reply_text("ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴄᴜᴋɪ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇꜱꜱ")

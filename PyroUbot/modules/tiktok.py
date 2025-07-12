@@ -3,7 +3,7 @@ import requests
 
 __MODULE__ = "ᴛɪᴋᴛᴏᴋ"
 __HELP__ = """
-<blockquote> <b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛɪᴋᴛᴏᴋ
+<blockquote> <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛɪᴋᴛᴏᴋ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}tiktok</code> tiktok <b>[link nya]</b>
 ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴅᴏᴡɴʟᴏᴀᴅ ᴠᴛ ɴᴏ ᴡᴍ , ᴠɪᴅɪᴏ ᴜɴᴛᴜᴋ ᴠɪᴅᴇᴏ ᴍᴜsɪᴄ ᴜɴᴛᴜᴋ ᴍᴜsɪᴋ.</b></blockquote>
@@ -14,11 +14,11 @@ __HELP__ = """
 @PY.TOP_CMD
 async def tiktok_handler(client, message):
     if len(message.command) < 2:
-        await message.reply("linknya mana?")
+        await message.reply("ʟɪɴᴋɴʏᴀ ᴍᴀɴᴀ ᴄᴜᴋɪ?")
         return
 
     url = message.command[1]
-    proses_message = await message.reply("```\nProsess Kingz...```")
+    proses_message = await message.reply("```\nᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...```")
 
     try:
         response = requests.get(f"https://api.diioffc.web.id/api/download/tiktok?url={url}")

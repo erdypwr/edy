@@ -8,14 +8,16 @@ from PyroUbot import *
 
 __MODULE__ = "sᴜᴅᴏ"
 __HELP__ = """
-<blockquote><b>『 sᴜᴅᴏ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴜᴅᴏ ᴄᴇꜱꜱ 』</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}addsudo [@username/replay pesan]</code> 
-   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b>untuk akses user lain agar bisa menjalankan fitur userbot mu</i>
-   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}delsudo [@username/replay pesan]</code> 
-   <i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b>untuk delete akses username
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}listsudo</code>
-  penjelasan:untuk melihat list yang sudah di addsudo</i></blockquote>
+  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ᴀᴅᴅꜱᴜᴅᴏ [@ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟᴀʏ ᴘᴇꜱᴀɴ]</code>  
+<i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</i> ᴜɴᴛᴜᴋ ᴀᴋꜱᴇꜱ ᴜꜱᴇʀ ʟᴀɪɴ ᴀɢᴀʀ ʙɪꜱᴀ ᴍᴇɴᴊᴀʟᴀɴᴋᴀɴ ꜰɪᴛᴜʀ ᴇʀʀᴄᴇꜱꜱʙᴏᴛ 
+
+<b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ᴅᴇʟꜱᴜᴅᴏ [@ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟᴀʏ ᴘᴇꜱᴀɴ]</code>  
+<i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</i> ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴀᴋꜱᴇꜱ ᴜꜱᴇʀ  
+
+<b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}ʟɪꜱᴛꜱᴜᴅᴏ</code>  
+<i>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</i> ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴅᴀꜰᴛᴀʀ ᴜꜱᴇʀ ʏᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪʙᴇʀɪ ᴀᴋꜱᴇꜱ ꜱᴜᴅᴏ</i>  
 """
 
 @PY.UBOT("addsudo")
@@ -23,44 +25,44 @@ async def _(client, message):
     msg = await message.reply("⏰ ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
+        return await msg.edit("❌ ꜱɪʟᴀʜᴋᴀɴ ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ ᴘᴇɴɢɢᴜɴᴀ ᴀᴛᴀᴜ ᴍᴀꜱᴜᴋᴋᴀɴ ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ ɪᴅ ᴄᴜᴋɪ.")
 
     try:
         user = await client.get_users(user_id)
     except Exception as error:
-        return await msg.edit(f"❌ Error Cuki: {error}")
+        return await msg.edit(f"❌ ᴇʀʀᴏʀ ᴄᴜᴋɪ: {error}")
 
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
     if user.id in sudo_users:
-        return await msg.edit(f"❌ {user.first_name} Sudah Menjadi Pengguna Sudo Cess.")
+        return await msg.edit(f"❌ {user.first_name} ꜱᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ ᴄᴇꜱꜱ.")
 
     try:
         await add_to_vars(client.me.id, "SUDOERS", user.id)
-        return await msg.edit(f"🏓 {user.first_name} Berhasil Ditambahkan Sebagai Sudo Users Cess.")
+        return await msg.edit(f"🏓 {user.first_name} ʙᴇʀʜᴀꜱɪʟ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ꜱᴇʙᴀɢᴀɪ ꜱᴜᴅᴏ ɢᴀɴɢ ᴄᴇꜱꜱ.")
     except Exception as error:
-        return await msg.edit(f"❌ Error Cuki: {error}")
+        return await msg.edit(f"❌ ᴇʀʀᴏʀ ᴄᴜᴋɪ: {error}")
 
 @PY.UBOT("delsudo|unsudo")
 async def _(client, message):
     msg = await message.reply("🏓 ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("❌ Silakan Balas Pesan Pengguna Atau Masukkan Username/User ID Cuki.")
+        return await msg.edit("❌ ꜱɪʟᴀʜᴋᴀɴ ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ ᴘᴇɴɢɢᴜɴᴀ ᴀᴛᴀᴜ ᴍᴀꜱᴜᴋᴋᴀɴ ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ ɪᴅ ᴄᴜᴋɪ.")
 
     try:
         user = await client.get_users(user_id)
     except Exception as error:
-        return await msg.edit(f"❌ Error Cuki: {error}")
+        return await msg.edit(f"❌ ᴇʀʀᴏʀ ᴄᴜᴋɪ: {error}")
 
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
     if user.id not in sudo_users:
-        return await msg.edit(f"❌ {user.first_name} Bukan Bagian Dari Pengguna Sudo Cuki.")
+        return await msg.edit(f"❌ {user.first_name} ʙᴜᴋᴀɴ ʙᴀɢɪᴀɴ ᴅᴀʀɪ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ ᴄᴜᴋɪ.")
 
     try:
         await remove_from_vars(client.me.id, "SUDOERS", user.id)
-        return await msg.edit(f"🏓 {user.first_name} Berhasil Dihapus Dari Daftar Pengguna Sudo Cuki.")
+        return await msg.edit(f"🏓 {user.first_name} ʙᴇʀʜᴀꜱɪʟ ᴅɪʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀꜰᴛᴀʀ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ ᴄᴜᴋɪ.")
     except Exception as error:
-        return await msg.edit(f"❌ Error Cuki: {error}")
+        return await msg.edit(f"❌ ᴇʀʀᴏʀ ᴄᴜᴋɪ: {error}")
 
 @PY.UBOT("sudolist|listsudo")
 async def _(client, message):
@@ -68,7 +70,7 @@ async def _(client, message):
     sudo_users = await get_list_from_vars(client.me.id, "SUDOERS")
 
     if not sudo_users:
-        return await msg.edit("❌ Tidak Ada Pengguna Sudo Ditemukan Cuki.")
+        return await msg.edit("❌ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴜᴋɪ.")
 
     sudo_list = []
     for user_id in sudo_users:
@@ -78,5 +80,5 @@ async def _(client, message):
         except:
             continue
 
-    response = f"🏓 Daftar Pengguna Sudo Cess:\n" + "\n".join(sudo_list)
+    response = f"🏓 ᴅᴀꜰᴛᴀʀ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ ᴄᴇꜱꜱ:\n" + "\n".join(sudo_list)
     return await msg.edit(response)

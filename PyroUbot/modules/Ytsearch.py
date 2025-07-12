@@ -7,15 +7,15 @@ API_KEY = "045705b1"  # Ganti dengan API key yang benar
 
 __MODULE__ = "ʏᴛsᴇᴀʀᴄʜ"
 __HELP__ = """
-📚 <b>Ytsearch Commands</b>
+📚 <b> 『 ʏᴛꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴇꜱꜱ 』</b>
 
 <blockquote><b>🚦 ᴘᴇʀɪɴᴛᴀʜ : <code>ytsearch</code>
-🦠 Penjelasan : Mencari video di YouTube berdasarkan kata kunci.</b></blockquote>
+🦠 ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴄᴀʀɪ ᴠɪᴅᴇᴏ ᴅɪ ʏᴏᴜᴛᴜʙᴇ ʙᴇʀᴅᴀꜱᴀʀᴋᴀɴ ᴋᴀᴛᴀ ᴋᴜɴᴄɪ.</b></blockquote>
 """
 
 def fetch_youtube(api_url, query):
     """
-    Fungsi untuk mengambil hasil pencarian dari API YouTube
+    ꜰᴜɴɢꜱɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ʜᴀꜱɪʟ ᴘᴇɴᴄᴀʀɪᴀɴ ᴅᴀʀɪ API ʏᴏᴜᴛᴜʙᴇ
     """
     params = {"query": query, "apikey": API_KEY}
     try:
@@ -27,44 +27,44 @@ def fetch_youtube(api_url, query):
         if "result" in data:
             return data["result"]
         else:
-            print("Tidak ada hasil pencarian dalam response:", data)
+            print("ᴛɪᴅᴀᴋ ᴀᴅᴀ ʜᴀꜱɪʟ ᴘᴇɴᴄᴀʀɪᴀɴ ᴅᴀʟᴀᴍ ʀᴇꜱᴘᴏɴꜱᴇ ᴄᴜᴋɪ:", data)
             return None
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching YouTube results: {e}")
+        print(f"ᴇʀʀᴏʀ ꜰᴇᴛᴄʜɪɴɢ ʏᴏᴜᴛᴜʙᴇ ʀᴇꜱᴜʟᴛꜱ: {e}")
         return None
 
 async def process_youtube_command(client, message, api_url, command_name):
     """
-    Fungsi umum untuk menangani perintah pencarian YouTube
+    ꜰᴜɴɢꜱɪ ᴜᴍᴜᴍ ᴜɴᴛᴜᴋ ᴍᴇɴᴀɴɢᴀɴɪ ᴘᴇʀɪɴᴛᴀʜ ᴘᴇɴᴄᴀʀɪᴀɴ ʏᴏᴜᴛᴜʙᴇ
     """
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text(f"<b><i>Gunakan perintah /{command_name} <kata kunci> untuk mencari video di YouTube.</i></b>")
+        await message.reply_text(f"<b><i>ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ /{command_name} <ᴋᴀᴛᴀ ᴋᴜɴᴄɪ> ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴠɪᴅᴇᴏ ᴅɪ ʏᴏᴜᴛᴜʙᴇ ᴄᴇꜱꜱ.</i></b>")
         return
 
     query = args[1]
-    await message.reply_text("<b><i>🔍 Sedang mencari, mohon tunggu...</i></b>")
+    await message.reply_text("<b><i>🔍 ꜱᴇᴅᴀɴɢ ᴍᴇɴᴄᴀʀɪ, ᴍᴏʜᴏɴ ᴛᴜɴɢɢᴜ ᴄᴇꜱꜱ...</i></b>")
 
     results = fetch_youtube(api_url, query)
     if results:
         # Mengirimkan hasil pencarian sebagai daftar
         response_text = (
-            "<b><emoji id=5841235769728962577>📹</emoji> Hasil Pencarian Video di YouTube:</b>\n\n"
+            "<b><emoji id=5841235769728962577>📹</emoji> ʜᴀꜱɪʟ ᴘᴇɴᴄᴀʀɪᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ʏᴏᴜᴛᴜʙᴇ ᴄᴇꜱꜱ:</b>\n\n"
         )
         for idx, result in enumerate(results[:5], start=1):  # Menampilkan hingga 5 hasil saja
-            title = result.get("title", "Tidak ada judul")
-            link = result.get("url", "Tidak ada link")
-            duration = result.get("duration", "Tidak diketahui")
-            views = result.get("views", "Tidak diketahui")
+            title = result.get("title", "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴊᴜᴅᴜʟ")
+            link = result.get("url", "ᴛɪᴅᴀᴋ ᴀᴅᴀ ʟɪɴᴋ")
+            duration = result.get("duration", "ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ")
+            views = result.get("views", "ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ")
             response_text += (
                 f"<b><emoji id=5841243255856960314>{idx}.</emoji> {title}</b>\n"
-                f"<b><emoji id=5843952899184398024>⏱️</emoji> Durasi:</b> {duration}\n"
-                f"<b><emoji id=5841243255856960314>👁‍🗨</emoji> Views:</b> {views}\n"
-                f"<b><emoji id=5841235769728962577>🔗</emoji> Link:</b> <a href='{link}'>Tonton Video</a>\n\n"
+                f"<b><emoji id=5843952899184398024>⏱️</emoji> ᴅᴜʀᴀꜱɪ:</b> {duration}\n"
+                f"<b><emoji id=5841243255856960314>👁‍🗨</emoji> ᴠɪᴇᴡꜱ:</b> {views}\n"
+                f"<b><emoji id=5841235769728962577>🔗</emoji> ʟɪɴᴋ:</b> <a href='{link}'>ᴛᴏɴᴛᴏɴ ᴠɪᴅᴇᴏ</a>\n\n"
             )
         await message.reply_text(response_text, disable_web_page_preview=True)
     else:
-        await message.reply_text("Gagal mencari video. Coba lagi nanti.")
+        await message.reply_text("ɢᴀɢᴀʟ ᴍᴇɴᴄᴀʀɪ ᴠɪᴅᴇᴏ ᴄᴜᴋɪ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇꜱꜱ.")
 
 # Handler untuk perintah ytsearch
 @PY.UBOT("ytsearch")

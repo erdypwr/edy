@@ -5,11 +5,11 @@ from PyroUbot import *
 
 __MODULE__ = "ᴛᴡɪᴛᴛᴇʀ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴡɪᴛᴛᴇʀ ⦫</b>
+<b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴡɪᴛᴛᴇʀ ᴄᴇꜱꜱ 』</b>
 <blockquote><b>
 ⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}twit</code> link video twitter
-⊶ Mendownload Music Yang Di Inginkan.</b></blockquote>
+ᚗ <code>{0}twit</code> ʟɪɴᴋ ᴠɪᴅᴇᴏ ᴛᴡɪᴛᴛᴇʀ
+⊶ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴜꜱɪᴄ ʏᴀɴɢ ᴅɪ ɪɴɢɪɴᴋᴀɴ.</b></blockquote>
 """
 
 async def get_twitter_video(url):
@@ -28,16 +28,16 @@ async def get_twitter_video(url):
 @PY.UBOT("twit")
 async def twitter_download(client, message):
     if len(message.command) < 2:
-        await message.reply_text("Gunakan format: /twitter <link_twitter>")
+        await message.reply_text("ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ: /twitter <ʟɪɴᴋ_ᴛᴡɪᴛᴛᴇʀ>")
         return
 
     twitter_url = message.command[1]
-    msg = await message.reply_text("Mengambil video, harap tunggu...")
+    msg = await message.reply_text("ᴍᴇɴɢᴀᴍʙɪʟ ᴠɪᴅᴇᴏ, ʜᴀʀᴀᴘ ᴛᴜɴɢɢᴜ ᴄᴇꜱꜱ...")
 
     video_url = await get_twitter_video(twitter_url)
 
     if video_url:
-        await msg.edit("Mengirim video...")
-        await message.reply_video(video_url, caption="Berikut video yang ᴇʟᴜ minta.")
+        await msg.edit("ᴍᴇɴɢɪʀɪᴍ ᴠɪᴅᴇᴏ ᴄᴇꜱꜱ...")
+        await message.reply_video(video_url, caption="ʙᴇʀɪᴋᴜᴛ ᴠɪᴅᴇᴏ ʏᴀɴɢ ᴇʟᴜ ᴍɪɴᴛᴀ.")
     else:
-        await msg.edit("Gagal mengambil video. Pastikan link benar atau coba lagi nanti.")
+        await msg.edit("ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ᴠɪᴅᴇᴏ ᴄᴜᴋɪ. ᴘᴀꜱᴛɪᴋᴀɴ ʟɪɴᴋ ʙᴇɴᴀʀ ᴀᴛᴀᴜ ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇꜱꜱ.")

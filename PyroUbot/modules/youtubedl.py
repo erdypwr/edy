@@ -11,12 +11,12 @@ from youtubesearchpython import VideosSearch
 
 __MODULE__ = "ʏᴏᴜᴛᴜʙᴇ"
 __HELP__ = """
-📚 <b>--Folder Untuk Youtube--</b>
+📚 <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʏᴏᴜᴛᴜʙᴇ ᴄᴇꜱꜱ 』</b>
 
 <blockquote><b>🚦 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}play</code>
-🦠 Penjelasan : Mendownload Music Yang Di Inginkan.</b></blockquote>
+🦠 ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴜꜱɪᴄ ʏᴀɴɢ ᴅɪ ɪɴɢɪɴᴋᴀɴ.</b></blockquote>
 <blockquote><b>🚦 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}playvid</code>
-🦠 Penjelasan : Mendownload VideoYang Di Inginkan.</b></blockquote>
+🦠 ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʏᴀɴɢ ᴅɪ ɪɴɢɪɴᴋᴀɴ.</b></blockquote>
 """
 
 def humanbytes(size):
@@ -92,16 +92,16 @@ file_id: {file_name}
 async def vsong_cmd(client, message):
     if len(message.command) < 2:
         return await message.reply_text(
-            f"<emoji id =5929358014627713883>❌</emoji> video tidak ditemukan,\nmohon masukan judul video dengan benar.",
+            f"<emoji id =5929358014627713883>❌</emoji> ᴠɪᴅᴇᴏ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴜᴋɪ,\nᴍᴏʜᴏɴ ᴍᴀꜱᴜᴋᴀɴ ᴊᴜᴅᴜʟ ᴠɪᴅᴇᴏ ᴅᴇɴɢᴀɴ ʙᴇɴᴀʀ ᴄᴇꜱꜱ.",
         )
-    infomsg = await message.reply_text(f"<emoji id =5803403369913520877>🔍</emoji> pencarian...", quote=False)
+    infomsg = await message.reply_text(f"<emoji id =5803403369913520877>🔍</emoji> ᴘᴇɴᴄᴀʀɪᴀɴ ᴄᴇꜱꜱ...", quote=False)
     try:
         search = VideosSearch(message.text.split(None, 1)[1], limit=1).result()[
             "result"
         ][0]
         link = f"https://youtu.be/{search['id']}"
     except Exception as error:
-        return await infomsg.edit(f"<emoji id =5803403369913520877>🔍</emoji> pencarian...\n\n{error}")
+        return await infomsg.edit(f"<emoji id =5803403369913520877>🔍</emoji> ᴘᴇɴᴄᴀʀɪᴀɴ ᴄᴇꜱꜱ...\n\n{error}")
     try:
         (
             file_name,
@@ -114,7 +114,7 @@ async def vsong_cmd(client, message):
             data_ytp,
         ) = await YoutubeDownload(link, as_video=True)
     except Exception as error:
-        return await infomsg.edit(f"<emoji id =5375452661036358740>🔥</emoji> downloader...\n\n{error}")
+        return await infomsg.edit(f"<emoji id =5375452661036358740>🔥</emoji> ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴇꜱꜱ...\n\n{error}")
     thumbnail = wget.download(thumb)
     await client.send_video(
         message.chat.id,
@@ -160,16 +160,16 @@ async def song_cmd(client, message):
     prs = await EMO.PROSES(client)
     if len(message.command) < 2:
         return await message.reply_text(
-            f"{ggl}audio tidak ditemukan ! mohon masukan judul video dengan benar",
+            f"{ggl}ᴀᴜᴅɪᴏ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴜᴋɪ ! ᴍᴏʜᴏɴ ᴍᴀꜱᴜᴋᴀɴ ᴊᴜᴅᴜʟ ᴠɪᴅᴇᴏ ᴅᴇɴɢᴀɴ ʙᴇɴᴀʀ ᴄᴇꜱꜱ",
         )
-    infomsg = await message.reply_text(f"{prs}pencarian...", quote=False)
+    infomsg = await message.reply_text(f"{prs}ᴘᴇɴᴄᴀʀɪᴀɴ ᴄᴇꜱꜱ...", quote=False)
     try:
         search = VideosSearch(message.text.split(None, 1)[1], limit=1).result()[
             "result"
         ][0]
         link = f"https://youtu.be/{search['id']}"
     except Exception as error:
-        return await infomsg.edit(f"{prs}pencarian...\n\n{error}")
+        return await infomsg.edit(f"{prs}ᴘᴇɴᴄᴀʀɪᴀɴ ᴄᴇꜱꜱ...\n\n{error}")
     try:
         (
             file_name,
@@ -182,7 +182,7 @@ async def song_cmd(client, message):
             data_ytp,
         ) = await YoutubeDownload(link, as_video=False)
     except Exception as error:
-        return await infomsg.edit(f"{ggl}downloader..\n\n{error}")
+        return await infomsg.edit(f"{ggl}ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴇꜱꜱ..\n\n{error}")
     thumbnail = wget.download(thumb)
     await client.send_audio(
         message.chat.id,

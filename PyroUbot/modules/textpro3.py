@@ -43,7 +43,7 @@ async def process_image_command(client, message, api_url, command_name):
         return
 
     request_text = args[1]
-    await message.reply_text("<b><i>Sedang memproses, mohon tunggu...</i></b>")
+    await message.reply_text("<b><i>ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...</i></b>")
 
     image_content = fetch_image(api_url, request_text)
     if image_content:

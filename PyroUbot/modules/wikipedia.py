@@ -4,10 +4,10 @@ from PyroUbot import *
 
 __MODULE__ = "ᴡɪᴋɪᴘᴇᴅɪᴀ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk wikipedia
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡɪᴋɪᴘᴇᴅɪᴀ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}wiki/wikipedia</code>
-    Wikipedia menyediakan informasi tentang berbagai topik, mulai dari sejarah, sains, budaya, hingga teknologi.</b></blockquote>
+    ᴡɪᴋɪᴘᴇᴅɪᴀ ᴍᴇɴʏᴇᴅɪᴀᴋᴀɴ ɪɴꜰᴏʀᴍᴀꜱɪ ᴛᴇɴᴛᴀɴɢ ʙᴇʀʙᴀɢᴀɪ ᴛᴏᴘɪᴋ, ᴍᴜʟᴀɪ ᴅᴀʀɪ ꜱᴇᴊᴀʀᴀʜ, ꜱᴀɪɴꜱ, ʙᴜᴅᴀʏᴀ, ʜɪɴɢɢᴀ ᴛᴇᴋɴᴏʟᴏɢɪ.</b></blockquote>
 """
 
 async def wikipedia(query):
@@ -16,7 +16,7 @@ async def wikipedia(query):
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
                 if response.status != 200:
-                    return {'status': response.status, 'Pesan': 'Tidak Ditemukan'}
+                    return {'status': response.status, 'Pesan': 'ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ'}
                 page_content = await response.text()
                 soup = BeautifulSoup(page_content, 'html.parser')          
                 title = soup.find(id="firstHeading").get_text().strip()    
@@ -42,16 +42,16 @@ async def wikipedia(query):
 async def wiki_handler(client, message):
     text = message.text.split(maxsplit=1)[1] if len(message.command) > 1 else None
     if not text:
-        await message.reply_text('<b><i>contoh : .wiki israel</i></b>')
+        await message.reply_text('<b><i>ᴄᴏɴᴛᴏʜ : .wiki arab</i></b>')
         return
             
     res = await wikipedia(text)    
     if res['status'] == 200:
         result = res['result']
         caption = f"""
-<b>Judul:</b> {result['judul']}
+<b>ᴊᴜᴅᴜʟ:</b> {result['judul']}
 
-<b>Penjelasan:</b>
+<b>ᴘᴇɴᴊᴇʟᴀꜱᴀɴ:</b>
 {result['isi']}
 """
 
@@ -64,4 +64,4 @@ async def wiki_handler(client, message):
             caption=caption
         )
     else:
-        await message.reply_text('<b><i>Tidak Ditemukan</i></b>')
+        await message.reply_text('<b><i>ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴜᴋɪ</i></b>')

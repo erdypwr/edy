@@ -2,9 +2,9 @@ from PyroUbot import *
 
 __MODULE__ = "ꜱᴛᴀꜰꜰ"
 __HELP__ = """
-<blockquote>『 ʙᴀɴᴛᴜᴀɴ ꜱᴛᴀꜰꜰ ᴄᴇꜱꜱ 』</blockquote>
+<blockquote>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀꜰꜰ ᴄᴇꜱꜱ 』</blockquote>
 
-ᴘᴇʀɪɴᴛᴀʜ : <code>{0}staff</code>
+ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱᴛᴀꜰꜰ</code>
     ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴꜰᴏʀᴍᴀꜱɪ ꜱᴇʟᴜʀᴜʜ ꜱᴛᴀꜰꜰ ɢʀᴜᴘ</blockquote>
 """
 import os
@@ -42,23 +42,23 @@ async def staff_cmd(client, message):
                 creator.append(f" ┗ {mention}")
     if not co_founder and not admin:
         result = f"""
-Staff Grup
+ꜱᴛᴀꜰꜰ ɢʀᴜᴘ
 {chat_title}
 
-<emoji id=5803032306213982905>👑</emoji> Owner:
+<emoji id=5803032306213982905>👑</emoji> ᴏᴡɴᴇʀ:
 {creator[0]}"""
     elif not co_founder:
         adm = admin[-1].replace("┣", "┗")
         admin.pop(-1)
         admin.append(adm)
         result = f"""
-Staff Grup
+ꜱᴛᴀꜰꜰ ɢʀᴜᴘ
 {chat_title}
 
-<emoji id=5803032306213982905>👑</emoji> Owner:
+<emoji id=5803032306213982905>👑</emoji> ᴏᴡɴᴇʀ:
 {creator[0]}
 
-<emoji id=5800942688660360834>👮</emoji> admin:
+<emoji id=5800942688660360834>👮</emoji> ᴀᴅᴍɪɴ:
 """ + "\n".join(
             admin
         )
@@ -67,13 +67,13 @@ Staff Grup
         co_founder.pop(-1)
         co_founder.append(cof)
         result = f"""
-Staff Grup
+ꜱᴛᴀꜰꜰ ɢʀᴜᴘ
 {chat_title}
 
-<emoji id=5803032306213982905>👑</emoji> Owner:
+<emoji id=5803032306213982905>👑</emoji> ᴏᴡɴᴇʀ:
 {creator[0]}
 
-<emoji id=5800942688660360834>👮</emoji> Co-Founder:
+<emoji id=5800942688660360834>👮</emoji> ᴄᴏ-ꜰᴏᴜɴᴅᴇʀ:
 """ + "\n".join(
             co_founder
         )
@@ -87,18 +87,18 @@ Staff Grup
         result = (
             (
                 f"""
-Staff Grup
+ꜱᴛᴀꜰꜰ ɢʀᴜᴘ
 {chat_title}
 
-<emoji id=5803032306213982905>👑</emoji> Owner:
+<emoji id=5803032306213982905>👑</emoji> ᴏᴡɴᴇʀ:
 {creator[0]}
 
-<emoji id=5800942688660360834>👮</emoji> Co-Founder:
+<emoji id=5800942688660360834>👮</emoji> ᴄᴏ-ꜰᴏᴜɴᴅᴇʀ:
 """
                 + "\n".join(co_founder)
                 + """
 
-<emoji id=5800942688660360834>👮</emoji> Admin:
+<emoji id=5800942688660360834>👮</emoji> ᴀᴅᴍɪɴ:
 """
             )
             + "\n".join(admin)

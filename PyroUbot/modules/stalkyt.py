@@ -6,10 +6,10 @@ from PyroUbot import *
 
 __MODULE__ = "sᴛᴀʟᴋʏᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Untuk Stalk YT
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀʟᴋ ʏᴛ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stalkyt</code> 
-    Untuk Stalk yt Menggunakan Username</b></blockquote>
+    ᴜɴᴛᴜᴋ ꜱᴛᴀʟᴋ ʏᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴜꜱᴇʀɴᴀᴍᴇ</b></blockquote>
 """
 
 @PY.UBOT("stalkyt")
@@ -21,7 +21,7 @@ async def stalkyt(client, message):
     jalan = await message.reply(f"{prs} ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
     
     if len(message.command) != 2:
-        return await jalan.edit(f"{ggl} Please use the command `stalkyt` followed by the yt username.")
+        return await jalan.edit(f"{ggl} ꜱɪʟᴀᴋᴀɴ ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ `ꜱᴛᴀʟᴋʏᴛ` ᴅɪɪᴋᴜᴛɪ ᴜꜱᴇʀɴᴀᴍᴇ ʏᴏᴜᴛᴜʙᴇ.")
     
     username = message.command[1]
     chat_id = message.chat.id
@@ -36,10 +36,10 @@ async def stalkyt(client, message):
                 photoUrl = first_channel['avatar']
                 description = first_channel.get('description', 'no desk')
                 caption = f"""
-<blockquote><b>Channel Name:</b> <code>{first_channel['channelName']}</code>
-<b>Subscribers:</b> <code>{first_channel['subscriberH']}</code>
-<b>Description:</b> <code>{description}</code>
-<b>Url:</b> <code>{first_channel['url']}</code></blockquote>
+<blockquote><b>ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:</b> <code>{first_channel['channelName']}</code>
+<b>ꜱᴜʙꜱᴄʀɪʙᴇʀꜱ:</b> <code>{first_channel['subscriberH']}</code>
+<b>ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ:</b> <code>{description}</code>
+<b>ᴜʀʟ:</b> <code>{first_channel['url']}</code></blockquote>
 """
                 photo_path = wget.download(photoUrl)
                 await client.send_photo(chat_id, caption=caption, photo=photo_path)
@@ -48,12 +48,12 @@ async def stalkyt(client, message):
                 
                 await jalan.delete()
             else:
-                await jalan.edit(f"{ggl} No channel data found.")
+                await jalan.edit(f"{ggl} ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀᴛᴀ ᴄʜᴀɴɴᴇʟ ᴅɪᴛᴇᴍᴜᴋᴀɴ.")
         else:
-            await jalan.edit(f"{ggl} Failed to retrieve data. Status code: {response.status_code}")
+            await jalan.edit(f"{ggl} ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀᴛᴀ. ꜱᴛᴀᴛᴜꜱ ᴄᴏᴅᴇ: {response.status_code}")
     
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan Gagal Coba Lagi Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴏʙᴀ ʟᴀɢɪ ᴄᴜᴋɪ!: {e}")
     
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi Kesalahan Cuki!: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ!: {e}")

@@ -23,9 +23,9 @@ async def _(client, callback_query):
             f"""
 <blockquote><b>sɪʟᴀʜᴋᴀɴ ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ</b>           
 
-ᴏᴡɴᴇʀ : || `@ydhiak` ||
+ᴏᴡɴᴇʀ : || `@ʏᴅʜɪᴀᴋ` ||
 
-<b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak: {full_name}</b></blockquote>
+<b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ʏᴅʜɪᴀᴋ: {full_name}</b></blockquote>
 """,
             timeout=300,
         )
@@ -40,9 +40,9 @@ async def _(client, callback_query):
                 """
 <blockquote><b>❌ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘʀᴏsᴇs ᴄᴇꜱꜱ</b>
 
-<b>💬 ʜᴀʀᴀᴘ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak</b>
+<b>💬 ʜᴀʀᴀᴘ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ʏᴅʜɪᴀᴋ</b>
 
-<b>✅ sɪʟᴀʜᴋᴀɴ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜʟᴀɴɢ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ydhiak</b></blockquote>
+<b>✅ sɪʟᴀʜᴋᴀɴ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜʟᴀɴɢ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴋᴇ @ʏᴅʜɪᴀᴋ</b></blockquote>
 """,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )

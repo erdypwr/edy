@@ -9,24 +9,24 @@ spam_taksdb = {}
 
 kontol = False
 
-__MODULE__ = "𝚂𝙿𝙰𝙼 𝟸"
+__MODULE__ = "ꜱᴘᴀᴍ 2"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴀᴍ 2 』<b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴘᴀᴍ 2 ᴄᴇꜱꜱ 』<b>
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}sdspm</code> [ᴡᴀᴋᴛᴜ] [ʙᴀʟᴀs ᴋᴇ ᴘᴇsᴀɴ]
-• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇᴍᴜʟᴀɪ sᴘᴀᴍ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ.
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱᴅꜱᴘᴍ</code> [ᴡᴀᴋᴛᴜ] [ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇᴍᴜʟᴀɪ ꜱᴘᴀᴍ ᴋᴇ ᴅᴀᴛᴀʙᴀꜱᴇ.
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}stdspm</code>
-• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘʀᴏsᴇs sᴘᴀᴍ ᴅɪᴅᴀᴛᴀʙᴀsᴇ.
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ꜱᴛᴅꜱᴘᴍ</code>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘʀᴏꜱᴇꜱ ꜱᴘᴀᴍ ᴅɪᴅᴀᴛᴀʙᴀꜱᴇ.
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}listspm</code> 
-• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇʟɪʜᴀᴛ ᴅᴀғᴛᴀʀ ɢʀᴜᴘ ᴅɪᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀsᴇ.
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ʟɪꜱᴛꜱᴘᴍ</code> 
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʟɪʜᴀᴛ ᴅᴀғᴛᴀʀ ɢʀᴜᴘ ᴅɪᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀꜱᴇ.
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}addspm</code> 
-• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴜᴘ ᴋᴇ ᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀsᴇ sᴘᴀᴍ.
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴀᴅᴅꜱᴘᴍ</code> 
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴜᴘ ᴋᴇ ᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴘᴀᴍ.
 
-• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}delspm</code> 
-• ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴍᴇɴɢʜᴀᴘᴜs ɢʀᴜᴘ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ sᴘᴀᴍ.</b></blockquote><b>
+• ᴘᴇʀɪɴᴛᴀʜ : <code>{0}ᴅᴇʟꜱᴘᴍ</code> 
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ɢʀᴜᴘ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴘᴀᴍ.</b></blockquote><b>
 """
 
 
@@ -35,13 +35,13 @@ async def _(c, m):
     global kontol
 
     if not m.reply_to_message:
-        return await m.reply("<b>Silakan balas ke pesan !!</b>")
+        return await m.reply("<b>ꜱɪʟᴀᴋᴀɴ ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ !!</b>")
     if len(m.command) != 2:
-        return await m.reply("<b>Silahkan balas ke pesan dan berikan waktu delay.</b>")
+        return await m.reply("<b>ꜱɪʟᴀʜᴋᴀɴ ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ ᴅᴀɴ ʙᴇʀɪᴋᴀɴ ᴡᴀᴋᴛᴜ ᴅᴇʟᴀʏ.</b>")
     try:
         interval = int(m.command[1])
     except ValueError:
-        return await m.reply("<b>Waktu delay harus berupa angka.</b>")
+        return await m.reply("<b>ᴡᴀᴋᴛᴜ ᴅᴇʟᴀʏ ʜᴀʀᴜꜱ ʙᴇʀᴜᴘᴀ ᴀɴɢᴋᴀ.</b>")
 
     scheduled_message = m.reply_to_message
     chat_ids = monggo.ambil_spdb(c.me.id)
@@ -51,7 +51,7 @@ async def _(c, m):
             break
         if interval < 10:
             await m.reply(
-                f"<b>Minimal waktu delay 10 jangan  <code>{interval}</code></b>"
+                f"<b>ᴍɪɴɪᴍᴀʟ ᴡᴀᴋᴛᴜ ᴅᴇʟᴀʏ 10 ᴊᴀɴɢᴀɴ  <code>{interval}</code></b>"
             )
         else:
 
@@ -69,7 +69,7 @@ async def _(c, m):
             task = asyncio.create_task(send_scheduled_message(chat_id))
             spam_taksdb[chat_id] = task
     kontol = False
-    await m.reply(f"<b>Processing Spam To Database !</b>")
+    await m.reply(f"<b>ᴘʀᴏꜱᴇꜱ ꜱᴘᴀᴍ ᴋᴇ ᴅᴀᴛᴀʙᴀꜱᴇ !</b>")
 
 
 @PY.UBOT("stdspm")
@@ -77,7 +77,7 @@ async def _(c, m):
     global kontol
     if not kontol:
         return await m.reply_text(
-            "<b>Tidak ada pengiriman spam yang sedang berlangsung.</b>"
+            "<b>ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢɪʀɪᴍᴀɴ ꜱᴘᴀᴍ ʏᴀɴɢ ꜱᴇᴅᴀɴɢ ʙᴇʀʟᴀɴɢꜱᴜɴɢ.</b>"
         )
     chat_ids = monggo.ambil_spdb(c.me.id)
     for chat_id in chat_ids:
@@ -86,16 +86,16 @@ async def _(c, m):
             task.cancel()
             del spam_taksdb[chat_id]
     kontol = False
-    await m.reply("<b>Spam database dihentikan.</b>")
+    await m.reply("<b>ꜱᴘᴀᴍ ᴅᴀᴛᴀʙᴀꜱᴇ ᴅɪʜᴇɴᴛɪᴋᴀɴ.</b>")
 
 
 @PY.UBOT("listspm")
 async def _(c, m):
-    teks = "<b>Daftar Database Spam:</b>\n\n"
+    teks = "<b>ᴅᴀꜰᴛᴀʀ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴘᴀᴍ:</b>\n\n"
     user_id = c.me.id
     lists = monggo.ambil_spdb(user_id)
     if len(lists) == 0:
-        await m.reply("<b>Database kosong.</b>")
+        await m.reply("<b>ᴅᴀᴛᴀʙᴀꜱᴇ ᴋᴏꜱᴏɴɢ.</b>")
     else:
         for count, chat_id in enumerate(lists, 1):
             teks += f"{count}. <code>{chat_id}</code>\n"
@@ -110,12 +110,12 @@ async def _(c, m):
     if m.command[0] == "addspm":
         monggo.tambah_spdb(user_id, chat_id)
         return await mmk.edit(
-            f"<code>{chat_id}</code> <b>Berhasil di tambahkan ke database.</b>"
+            f"<code>{chat_id}</code> <b>ʙᴇʀʜᴀꜱɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀᴛᴀʙᴀꜱᴇ.</b>"
         )
     elif m.command[0] == "delspm":
         monggo.kureng_spdb(user_id, chat_id)
         return await mmk.edit(
-            f"<code>{chat_id}</code> <b>Berhasil di hapus dari database.</b>"
+            f"<code>{chat_id}</code> <b>ʙᴇʀʜᴀꜱɪʟ ᴅɪ ʜᴀᴘᴜꜱ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ.</b>"
         )
     else:
-        return await mmk.edit(f"<b>Silakan ketik <code>{m.text}.</code></b>")
+        return await mmk.edit(f"<b>ꜱɪʟᴀᴋᴀɴ ᴋᴇᴛɪᴋ <code>{m.text}.</code></b>")

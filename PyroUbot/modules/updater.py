@@ -10,6 +10,12 @@ import psutil
 from PyroUbot import *
 
 
+async def send_large_output(message, out):
+    # Kirim output panjang sebagai file jika melebihi batas karakter Telegram
+    with BytesIO(str(out).encode()) as file:
+        file.name = "output.txt"
+        await message.reply_document(document=file, caption="ᴏᴜᴛᴘᴜᴛ ᴛᴇʀʟᴀʟᴜ ᴘᴀɴᴊᴀɴɢ, ᴅɪᴋɪʀɪᴍ sᴇʙᴀɢᴀɪ ғɪʟᴇ.")
+
 async def ngentod(client, message):
     out = subprocess.check_output(["git", "pull"]).decode("UTF-8")
     if "Already up to date." in str(out):

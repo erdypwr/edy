@@ -7,10 +7,10 @@ from pyrogram.types import Message
 
 __MODULE__ = "ᴛᴜʀʙᴏ ɢᴘᴛ"
 __HELP__ = """
-<blockquote><b>✮ Bantuan Untuk Turbo Gpt ✮
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴜʀʙᴏ ɢᴘᴛ ᴄᴇꜱꜱ 』
 
 ᴘᴇʀɪɴᴛᴀʜ : <code>{0}turbo</code>
-    buat menjawab pertanyaan <code>{0}claude</code> haii</b></blockquote>
+    ᴋᴇᴛɪᴋ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴋᴀᴍᴜ ᴅɪꜱɪɴɪ, ᴄᴏɴᴛᴏʜ: <code>{0}turbo ʜᴀɪ ᴀᴘᴀ ᴋᴀʙᴀʀ?</code></b></blockquote>
 """
 
 @PY.UBOT("turbo")
@@ -21,10 +21,10 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .turbo hai"
+                "<emoji id=5019523782004441717>❌</emoji>ᴍᴏʜᴏɴ ᴋᴇᴛɪᴋ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴅᴇɴɢᴀɴ ꜰᴏʀᴍᴀᴛ\nᴄᴏɴᴛᴏʜ : .turbo ʜᴀɪ ᴀᴘᴀ ᴋᴀʙᴀʀ?"
             )
         else:
-            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Turbo Sedang Menjawab Pesan ᴇʟᴜ....")
+            prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>ᴛᴜʀʙᴏ ꜱᴇᴅᴀɴɢ ᴍᴇɴᴊᴀᴡᴀʙ ᴘᴇʀᴛᴀɴʏᴀᴀɴ ᴇʟᴜ....")
             hai = message.text.split(' ', 1)[1]
             response = requests.get(f'https://vapis.my.id/api/turbov1?q={hai}')
 
@@ -35,9 +35,9 @@ async def chat_gpt(client, message):
                       f"<blockquote>{x}</blockquote>"
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ᴇʀʀᴏʀ, ᴊᴀᴡᴀʙᴀɴ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴅᴀʀɪ ᴀᴘɪ.")
             except KeyError:
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴍᴇɴɢᴀᴍʙɪʟ ᴊᴀᴡᴀʙᴀɴ ᴅᴀʀɪ ᴀᴘɪ.")
     except Exception as e:
         await message.reply_text(f"{e}")
       

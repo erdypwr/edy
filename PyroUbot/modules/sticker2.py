@@ -4,11 +4,11 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀᴛᴛᴘ-ᴛᴛᴘ"
 __HELP__ = """
-<blockquote><b>『 ᴀᴛᴛᴘ & ᴛᴛᴘ 』</b>
+<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀᴛᴛᴘ & ᴛᴛᴘ ᴄᴇꜱꜱ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> 
-    ◉ <code>{0}attp</code> <i>teks</i> - Membuat stiker teks berwarna.
-    ◉ <code>{0}ttp</code> <i>teks</i> - Membuat stiker teks biasa.</blockquote>
+    ◉ <code>{0}ᴀᴛᴛᴘ</code> <i>ᴛᴇᴋꜱ</i> - ᴍᴇᴍʙᴜᴀᴛ ꜱᴛɪᴋᴇʀ ᴛᴇᴋꜱ ʙᴇʀᴡᴀʀɴᴀ.
+    ◉ <code>{0}ᴛᴛᴘ</code> <i>ᴛᴇᴋꜱ</i> - ᴍᴇᴍʙᴜᴀᴛ ꜱᴛɪᴋᴇʀ ᴛᴇᴋꜱ ʙɪᴀꜱᴀ.</blockquote>
 """
 
 API_KEY = "moire"
@@ -18,13 +18,13 @@ async def attp(client, message):
     ggl = await EMO.GAGAL(client)
     prs = await EMO.PROSES(client)
 
-    jalan = await message.reply(f"{prs} Sedang memproses...")
+    jalan = await message.reply(f"{prs} ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     
     try:
         # Ambil teks dari perintah
         args = message.text.split(' ', 1)
         if len(args) < 2:
-            await jalan.edit(f"{ggl} Harap masukkan teks! Contoh: <code>!attp Halo</code>")
+            await jalan.edit(f"{ggl} ʜᴀʀᴀᴘ ᴍᴀꜱᴜᴋᴋᴀɴ ᴛᴇᴋꜱ ᴄᴜᴋɪ! ᴄᴏɴᴛᴏʜ: <code>!ᴀᴛᴛᴘ ʜᴀʟᴏ</code>")
             return
         
         text = args[1]
@@ -46,24 +46,24 @@ async def attp(client, message):
             )
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Gagal mendapatkan stiker ATTP. Status: {response.status_code}")
+            await jalan.edit(f"{ggl} ɢᴀɢᴀʟ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ꜱᴛɪᴋᴇʀ ᴀᴛᴛᴘ. ꜱᴛᴀᴛᴜꜱ: {response.status_code}")
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan gagal: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴄᴜᴋɪ: {e}")
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi kesalahan: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ᴄᴜᴋɪ: {e}")
 
 @PY.UBOT("ttp")
 async def ttp(client, message):
     ggl = await EMO.GAGAL(client)
     prs = await EMO.PROSES(client)
 
-    jalan = await message.reply(f"{prs} Sedang memproses...")
+    jalan = await message.reply(f"{prs} ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ ᴄᴇꜱꜱ...")
     
     try:
         # Ambil teks dari perintah
         args = message.text.split(' ', 1)
         if len(args) < 2:
-            await jalan.edit(f"{ggl} Harap masukkan teks! Contoh: <code>!ttp Halo</code>")
+            await jalan.edit(f"{ggl} ʜᴀʀᴀᴘ ᴍᴀꜱᴜᴋᴋᴀɴ ᴛᴇᴋꜱ! ᴄᴏɴᴛᴏʜ: <code>!ᴛᴛᴘ ʜᴀʟᴏ</code>")
             return
         
         text = args[1]
@@ -85,8 +85,8 @@ async def ttp(client, message):
             )
             await jalan.delete()
         else:
-            await jalan.edit(f"{ggl} Gagal mendapatkan stiker TTP. Status: {response.status_code}")
+            await jalan.edit(f"{ggl} ɢᴀɢᴀʟ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ꜱᴛɪᴋᴇʀ ᴛᴛᴘ. ꜱᴛᴀᴛᴜꜱ: {response.status_code}")
     except requests.exceptions.RequestException as e:
-        await jalan.edit(f"{ggl} Permintaan gagal: {e}")
+        await jalan.edit(f"{ggl} ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ: {e}")
     except Exception as e:
-        await jalan.edit(f"{ggl} Terjadi kesalahan: {e}")
+        await jalan.edit(f"{ggl} ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ: {e}")
