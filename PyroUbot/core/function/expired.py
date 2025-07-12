@@ -6,7 +6,8 @@ from pytz import timezone
 
 from PyroUbot import *
 from PyroUbot import ubot, bot
-from PyroUbot.core.database.variabel import get_expired_date, remove_ubot, remove_all_vars, rem_expired_date
+from PyroUbot.core.database.expired import get_expired_date, remove_ubot, rem_expired_date
+from PyroUbot.core.database.variabel import remove_all_vars
 from PyroUbot.core.helpers.inline import BTN
 from PyroUbot.core.helpers.msg import MSG
 
