@@ -40,7 +40,7 @@ def format_number(num):
 @PY.TOP_CMD
 async def rekap_command(client, message):
     if not message.reply_to_message or not message.reply_to_message.text:
-        return await message.reply("❌ Reply Pesan Yang Berisi Data Untuk Merekap Cuki.")
+        return await message.reply("❌ ʀᴇᴘʟʏ ᴘᴇsᴀɴ ʏᴀɴɢ ʙᴇʀɪsɪ ᴅᴀᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇʀᴇᴋᴀᴘ ᴄᴜᴋɪ.")
 
     text = message.reply_to_message.text
     data = rekap_data(text)
@@ -50,16 +50,16 @@ async def rekap_command(client, message):
     selisih = kecil_total - besar_total
 
     if selisih > 0:
-        analisis_selisih = f"⚖️ SALDO: BESAR Ketinggalan Cuki {format_number(selisih)} nih!"
+        analisis_selisih = f"⚖️ sᴀʟᴅᴏ: ʙᴇsᴀʀ ᴋᴇᴛɪɴɢɢᴀʟᴀɴ ᴄᴜᴋɪ {format_number(selisih)} ɴɪʜ!"
     elif selisih < 0:
-        analisis_selisih = f"⚖️ SALDO: KECIL Ketinggalan Cuki {format_number(abs(selisih))} nih!"
+        analisis_selisih = f"⚖️ sᴀʟᴅᴏ: ᴋᴇᴄɪʟ ᴋᴇᴛɪɴɢɢᴀʟᴀɴ ᴄᴜᴋɪ {format_number(abs(selisih))} ɴɪʜ!"
     else:
-        analisis_selisih = "⚖️ SALDO: KECIL dan BESAR seimbang nih! 🎉"
+        analisis_selisih = "⚖️ sᴀʟᴅᴏ: ᴋᴇᴄɪʟ ᴅᴀɴ ʙᴇsᴀʀ sᴇɪᴍʙᴀɴɢ ɴɪʜ! 🎉"
 
     result = f"⚪ 𝗞 : [{', '.join(format_number(item['nominal']) for item in kecil)}] = {format_number(kecil_total)}\n\n"
     result += f"🔵 𝗕 : [{', '.join(format_number(item['nominal']) for item in besar)}] = {format_number(besar_total)}\n\n"
     result += f"{analisis_selisih}\n\n"
-    result += f"💲 TOTAL SALDO: {format_number(total_saldo)} K"
+    result += f"💲 ᴛᴏᴛᴀʟ sᴀʟᴅᴏ: {format_number(total_saldo)} ᴋ"
 
     await message.reply(result)
 
@@ -75,14 +75,14 @@ def hitung_win(data, fee_percent):
 async def win_command(client, message):
     args = message.text.split()
     if len(args) < 2 or not args[1].isdigit():
-        return await message.reply("Format: <code>.win 5</code>\nFee Harus Angka Antara 1-10% Cess.")
+        return await message.reply("ғᴏʀᴍᴀᴛ: <code>.win 5</code>\nғᴇᴇ ʜᴀʀᴜs ᴀɴɢᴋᴀ ᴀɴᴛᴀʀᴀ 1-10% ᴄᴇss.")
 
     fee_percent = int(args[1])
     if fee_percent < 1 or fee_percent > 10:
-        return await message.reply("❌ Fee Harus Di Antara 1-10% Cess.")
+        return await message.reply("❌ ғᴇᴇ ʜᴀʀᴜs ᴅɪ ᴀɴᴛᴀʀᴀ 1-10% ᴄᴇss.")
 
     if not message.reply_to_message or not message.reply_to_message.text:
-        return await message.reply("❌ Reply Pesan Yang Berisi Data Untuk Menghitung Hasil Akhir Cess.")
+        return await message.reply("❌ ʀᴇᴘʟʏ ᴘᴇsᴀɴ ʏᴀɴɢ ʙᴇʀɪsɪ ᴅᴀᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜɪᴛᴜɴɢ ʜᴀsɪʟ ᴀᴋʜɪʀ ᴄᴇss.")
 
     text = message.reply_to_message.text
     data = rekap_data(text)

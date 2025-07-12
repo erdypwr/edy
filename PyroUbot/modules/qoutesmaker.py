@@ -105,7 +105,7 @@ async def generate_quotes_video(video_url, quote_text, process_msg):
         if response.status_code != 200:
             return {
                 "status": False,
-                "error": f"Error API: {response.status_code}"
+                "error": f"ᴇʀʀᴏʀ API: {response.status_code}"
             }
         
         # Parse respons JSON
@@ -121,7 +121,7 @@ async def generate_quotes_video(video_url, quote_text, process_msg):
             if "result" not in data:
                 return {
                     "status": False,
-                    "error": "Format Respons API Tidak Valid Cess"
+                    "error": "ғᴏʀᴍᴀᴛ ʀᴇsᴘᴏɴs API ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴇss"
                 }
             
             # Dapatkan URL video hasil
@@ -137,22 +137,22 @@ async def generate_quotes_video(video_url, quote_text, process_msg):
         except ValueError:
             return {
                 "status": False,
-                "error": "Respons Bukan Format JSON Yang Valid Cess"
+                "error": "ʀᴇsᴘᴏɴs ʙᴜᴋᴀɴ ғᴏʀᴍᴀᴛ JSON ʏᴀɴɢ ᴠᴀʟɪᴅ ᴄᴇss"
             }
     except requests.exceptions.Timeout:
         return {
             "status": False,
-            "error": "Timeout Saat Menghubungi API Cess"
+            "error": "ᴛɪᴍᴇᴏᴜᴛ sᴀᴀᴛ ᴍᴇɴɢʜᴜʙᴜɴɢɪ API ᴄᴇss"
         }
     except requests.exceptions.RequestException as e:
         return {
             "status": False,
-            "error": f"Error Koneksi Cess: {str(e)}"
+            "error": f"ᴇʀʀᴏʀ ᴋᴏɴᴇᴋsɪ ᴄᴇss: {str(e)}"
         }
     except Exception as e:
         return {
             "status": False,
-            "error": f"Error Tidak Terduga Cess: {str(e)}"
+            "error": f"ᴇʀʀᴏʀ ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴜɢᴀ ᴄᴇss: {str(e)}"
         }
 
 # Format respons quotes dengan gaya menarik
@@ -192,7 +192,7 @@ async def quotes_cmd(client, message: Message):
         # Kirim pesan error dan hapus setelah 5 detik
         error_msg = await message.reply(
             "<blockquote><b>❌ ᴍᴏʜᴏɴ ᴍᴀꜱᴜᴋᴋᴀɴ ᴛᴇᴋꜱ ǫᴜᴏᴛᴇꜱ ᴄᴜᴋɪ!</b>\n\n"
-            f"<b>ᴄᴏɴᴛᴏʜ:</b> <code>{message.command[0]} Hidup Ini Indah, Nikmati Setiap Momennya Cess</code></blockquote>",
+            f"<b>ᴄᴏɴᴛᴏʜ:</b> <code>{message.command[0]} ʜɪᴅᴜᴘ ɪɴɪ ɪɴᴅᴀʜ, ɴɪᴋᴍᴀᴛɪ sᴇᴛɪᴀᴘ ᴍᴏᴍᴇɴɴʏᴀ ᴄᴇss</code></blockquote>",
             parse_mode=ParseMode.HTML
         )
         await asyncio.sleep(5)
@@ -228,7 +228,7 @@ async def quotes_cmd(client, message: Message):
     result = await generate_quotes_video(video_url, quote_text, process_msg)
     
     if not result or not result.get("status"):
-        error_msg = result.get("error", "Error tidak diketahui") if result else "Gagal Membuat Quotes Cuki"
+        error_msg = result.get("error", "ᴇʀʀᴏʀ ᴛɪᴅᴀᴋ ᴅɪᴋᴇᴛᴀʜᴜɪ ᴄᴇss") if result else "ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ǫᴜᴏᴛᴇs ᴄᴜᴋɪ"
         await process_msg.edit(
             f"<blockquote><b>❌ ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ᴠɪᴅᴇᴏ ǫᴜᴏᴛᴇꜱ ᴄᴇꜱꜱ!</b>\n<b>ᴇʀʀᴏʀ:</b> {error_msg}</blockquote>",
             parse_mode=ParseMode.HTML

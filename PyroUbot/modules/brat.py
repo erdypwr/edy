@@ -34,11 +34,11 @@ def get_brat_image(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Gunakan ᴘᴇʀɪɴᴛᴀʜ /brat <teks> untuk membuat gambar.")
+        await message.reply_text("ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ /brat <ᴛᴇᴋs> ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ.")
         return
 
     request_text = args[1]
-    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+    await message.reply_text("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs, ᴍᴏʜᴏɴ ᴛᴜɴɢɢᴜ ᴄᴇss...")
 
 
     image_content = get_brat_image(request_text)
@@ -51,18 +51,18 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
+        await message.reply_text("ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇss")
 
 
 @PY.BOT("brat")
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("Gunakan ᴘᴇʀɪɴᴛᴀʜ /brat <teks> untuk membuat gambar.")
+        await message.reply_text("ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ /brat <ᴛᴇᴋs> ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ.")
         return
 
     request_text = args[1]
-    await message.reply_text("Sedang Memproses, Mohon Tunggu Cess...")
+    await message.reply_text("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs, ᴍᴏʜᴏɴ ᴛᴜɴɢɢᴜ ᴄᴇss...")
 
 
     image_content = get_brat_image(request_text)
@@ -75,4 +75,4 @@ async def _(client, message):
         
         os.remove(temp_file)
     else:
-        await message.reply_text("Gagal Membuat Gambar. Coba Lagi Nanti Cess")
+        await message.reply_text("ɢᴀɢᴀʟ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ. ᴄᴏʙᴀ ʟᴀɢɪ ɴᴀɴᴛɪ ᴄᴇss")

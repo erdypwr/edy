@@ -38,10 +38,10 @@ async def _(client, message):
         else message.text.split(None, 1)[1].strip()
     )
     if not n.isnumeric():
-        return await message.reply(f"{ggl}Argumen Tidak Valid")
+        return await message.reply(f"{ggl}ᴀʀɢᴜᴍᴇɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ")
     n = int(n)
     if n < 1:
-        return await message.reply(f"{ggl}Butuh Nomer 1-999")
+        return await message.reply(f"{ggl}ʙᴜᴛᴜʜ ɴᴏᴍᴇʀ 1-999")
     chat_id = message.chat.id
     message_ids = [
         m.id
@@ -52,7 +52,7 @@ async def _(client, message):
         )
     ]
     if not message_ids:
-        return await message.reply_text(f"{ggl}Tidak Ada Pesan Yang Ditemukan Cess")
+        return await message.reply_text(f"{ggl}ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇsᴀɴ ʏᴀɴɢ ᴅɪᴛᴇᴍᴜᴋᴀɴ ᴄᴇss")
     to_delete = [message_ids[i : i + 999] for i in range(0, len(message_ids), 999)]
     for hundred_messages_or_less in to_delete:
         await client.delete_messages(
@@ -60,7 +60,7 @@ async def _(client, message):
             message_ids=hundred_messages_or_less,
             revoke=True,
         )
-        mmk = await message.reply(f"{brhsl} {n} Pesan Telah Dihapus Cess")
+        mmk = await message.reply(f"{brhsl} {n} ᴘᴇsᴀɴ ᴛᴇʟᴀʜ ᴅɪʜᴀᴘᴜs ᴄᴇss")
         await asyncio.sleep(1)
         await mmk.delete()
 
@@ -71,7 +71,7 @@ async def _(client, message):
     ggl = await EMO.GAGAL(client)
     await message.delete()
     if not message.reply_to_message:
-        return await message.reply_text(f"{ggl}Membalas Pesan Untuk Dibersihkan Cess")
+        return await message.reply_text(f"{ggl}ᴍᴇᴍʙᴀʟᴀs ᴘᴇsᴀɴ ᴜɴᴛᴜᴋ ᴅɪʙᴇʀsɪʜᴋᴀɴ ᴄᴇss")
     chat_id = message.chat.id
     message_ids = []
     for message_id in range(

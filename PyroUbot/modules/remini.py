@@ -25,7 +25,7 @@ def remini(image_path, model_type="enhance"):
         return response.content
     else:
         raise Exception(
-            f"Permintaan Gagal Dengan Kode Status Cuki! {response.status_code}: {response.text}"
+            f"ᴘᴇʀᴍɪɴᴛᴀᴀɴ ɢᴀɢᴀʟ ᴅᴇɴɢᴀɴ ᴋᴏᴅᴇ sᴛᴀᴛᴜs ᴄᴜᴋɪ! {response.status_code}: {response.text}"
         )
 __MODULE__ = "remini"
 __HELP__ = """
@@ -39,7 +39,7 @@ __HELP__ = """
 @PY.TOP_CMD
 async def process_image(client, message):
     if not message.reply_to_message or not message.reply_to_message.photo:
-        await message.reply("<blockquote><b>Reply Gambar Yang Mau Di HD In Dong Cess</b></blockquote>")
+        await message.reply("<blockquote><b>ʀᴇᴘʟʏ ɢᴀᴍʙᴀʀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ʜᴅ ɪɴ ᴅᴏɴɢ ᴄᴇss</b></blockquote>")
         return
 
     await message.reply("<blockquote><b>ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...</b></blockquote>")
@@ -56,10 +56,10 @@ async def process_image(client, message):
         await client.send_photo(
             chat_id=message.chat.id,
             photo=temp_output_path,
-            caption="<blockquote><b>SUDAH DI HD IN CESS</b></blockquote>",
+            caption="<blockquote><b>sᴜᴅᴀʜ ᴅɪ ʜᴅ ɪɴ ᴄᴇss</b></blockquote>",
             reply_to_message_id=message.id,
         )
 
         os.remove(temp_output_path)
     except Exception as e:
-        await message.reply(f"<blockquote><b>YAAH EROR NIH CESS:(</b></blockquote>{e}")
+        await message.reply(f"<blockquote><b>ʏᴀᴀʜ ᴇʀʀᴏʀ ɴɪʜ ᴄᴇss</b></blockquote>{e}")

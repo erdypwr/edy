@@ -15,13 +15,13 @@ from PyroUbot import *
 FLOOD = {}
 MSG_ID = {}
 PM_TEXT = """
-<blockquote>🙋🏻‍♂halo {mention} ada yang bisa Gua bantu?
+<blockquote>🙋🏻‍♂ʜᴀʟᴏ {mention} ᴀᴅᴀ ʏᴀɴɢ ʙɪsᴀ ɢᴜᴀ ʙᴀɴᴛᴜ?
 
-perkenalkan Gua adalah pm-security disini
-silahkan tunggu majikan Gua membalas pesan mu ini ya
-jangan spam ya atau ᴇʟᴜ akan di blokir secara otomatis
+ᴘᴇʀᴋᴇɴᴀʟᴋᴀɴ ɢᴜᴀ ᴀᴅᴀʟᴀʜ pm-security ᴅɪsɪɴɪ
+sɪʟᴀʜᴋᴀɴ ᴛᴜɴɢɢᴜ ᴍᴀᴊɪᴋᴀɴ ɢᴜᴀ ᴍᴇᴍʙᴀʟᴀs ᴘᴇsᴀɴ ᴍᴜ ɪɴɪ ʏᴀ
+ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʏᴀ ᴀᴛᴀᴜ ᴇʟᴜ ᴀᴋᴀɴ ᴅɪ ʙʟᴏᴋɪʀ sᴇᴄᴀʀᴀ ᴀᴜᴛᴏᴍᴀᴛɪs
 
-⚠peringatan: {warn} hati-hati</blockquote>
+⚠ᴘᴇʀɪɴɢᴀᴛᴀɴ: {warn} ʜᴀᴛɪ-ʜᴀᴛɪ</blockquote>
 """
 
 
@@ -73,7 +73,7 @@ async def _(client, message):
                 if FLOOD[user.id] > int(pm_limit):
                     del FLOOD[user.id]
                     await message.reply(
-                        "Sudah Diingatkan Jangan Spam, Sekarang Elu Diblokir Cuki."
+                        "sᴜᴅᴀʜ ᴅɪɪɴɢᴀᴛᴋᴀɴ ᴊᴀɴɢᴀɴ sᴘᴀᴍ, sᴇᴋᴀʀᴀɴɢ ᴇʟᴜ ᴅɪʙʟᴏᴋɪʀ ᴄᴜᴋɪ."
                     )
                     return await client.block_user(user.id)
             except ValueError:
@@ -122,7 +122,7 @@ async def _(client, message):
         )
     query = {"limit": "PM_LIMIT", "text": "PM_TEXT", "pic": "PM_PIC"}
     if message.command[1].lower() not in query:
-        return await message.reply(f"{ggl}Query Yang Di Masukkan Tidak Valid Cuki")
+        return await message.reply(f"{ggl}ǫᴜᴇʀʏ ʏᴀɴɢ ᴅɪ ᴍᴀsᴜᴋᴋᴀɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴜᴋɪ")
     query_str, value_str = (
         message.text.split(None, 2)[1],
         message.text.split(None, 2)[2],
@@ -132,7 +132,7 @@ async def _(client, message):
         value_str = False
     await set_vars(client.me.id, value, value_str)
     return await message.reply(
-        f"{brhsl}pmpermit Berhasil Disetting Cess"
+        f"{brhsl}ᴘᴍᴘᴇʀᴍɪᴛ ʙᴇʀʜᴀsɪʟ ᴅɪsᴇᴛᴛɪɴɢ ᴄᴇss"
     )
 
 
@@ -150,13 +150,13 @@ async def _(client, message):
     toggle_option = message.command[1].lower()
 
     if toggle_option not in toggle_options:
-        return await message.reply(f"{ggl}Opsi Tidak Valid. Harap Gunakan 'on' Atau 'off' Cess.")
+        return await message.reply(f"{ggl}ᴏᴘsɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ. ʜᴀʀᴀᴘ ɢᴜɴᴀᴋᴀɴ 'on' ᴀᴛᴀᴜ 'off' ᴄᴇss.")
 
     value = toggle_options[toggle_option]
-    text = "diaktifkan" if value else "Dinonaktifkan Cess"
+    text = "ᴅɪᴀᴋᴛɪғᴋᴀɴ" if value else "ᴅɪɴᴏɴᴀᴋᴛɪғᴋᴀɴ ᴄᴇss"
 
     await set_vars(client.me.id, "PMPERMIT", value)
-    await message.reply(f"{brhsl}pmpermit Berhasil Cess {text}")
+    await message.reply(f"{brhsl}ᴘᴍᴘᴇʀᴍɪᴛ ʙᴇʀʜᴀsɪʟ ᴄᴇss {text}")
 
 
 @PY.INLINE("pm_pr")
@@ -175,7 +175,7 @@ async def _(client, inline_query):
         hasil = [
             photo_video(
                 **photo_video_url,
-                title="Dapatkan tombol Cess!",
+                title="ᴅᴀᴘᴀᴛᴋᴀɴ ᴛᴏᴍʙᴏʟ ᴄᴇss!",
                 caption=text.format(mention=rpk, warn=peringatan),
                 reply_markup=buttons,
             )
@@ -184,7 +184,7 @@ async def _(client, inline_query):
         hasil = [
             (
                 InlineQueryResultArticle(
-                    title="Dapatkan tombol Cess!",
+                    title="ᴅᴀᴘᴀᴛᴋᴀɴ ᴛᴏᴍʙᴏʟ ᴄᴇss!",
                     reply_markup=buttons,
                     input_message_content=InputTextMessageContent(text.format(mention=rpk, warn=peringatan)),
                 )
@@ -254,7 +254,7 @@ async def send_log(client, chat_id, message, message_text, msg):
         await client.send_message(chat_id, message_text, disable_web_page_preview=True)
         await message.forward(chat_id)
     except Exception as error:
-        print(f"{msg} ERROR: GAGAL MENERUSKAN PESAN CESS")
+        print(f"{msg} ᴇʀʀᴏʀ: ɢᴀɢᴀʟ ᴍᴇɴᴇʀᴜꜱᴋᴀɴ ᴘᴇꜱᴀɴ ᴄᴇꜱꜱ")
 
 @PY.UBOT("logs")
 @PY.TOP_CMD
@@ -270,13 +270,13 @@ async def _(client, message):
     command = message.command[1].lower()
 
     if command not in query:
-        return await message.reply(f"{ggl}Opsi Tidak Valid Cess!!")
+        return await message.reply(f"{ggl}ᴏᴘsɪ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴇss!!")
 
     value = query[command]
 
     await set_vars(client.me.id, "ON_LOGS", value)
     return await message.reply(
-        f"{brhsl}LOGS Berhasil Disetting Cess Ke: {value}"
+        f"{brhsl}ʟᴏɢs ʙᴇʀʜᴀsɪʟ ᴅɪsᴇᴛᴛɪɴɢ ᴄᴇss ᴋᴇ: {value}"
     )
 
 
@@ -287,9 +287,9 @@ async def _(client, message):
         user_link = f"{message.from_user.first_name} {message.from_user.last_name or ''}"
         message_link = message.link
         message_text = f"""
-🤖 Ada Pesan Masuk Dari {message.chat.title} 
-👤 Pengguna : {message.from_user.first_name} 
-🗯 Pesan : {message.text}
+🤖 ᴀᴅᴀ ᴘᴇsᴀɴ ᴍᴀsᴜᴋ ᴅᴀʀɪ {message.chat.title} 
+👤 ᴘᴇɴɢɢᴜɴᴀ : {message.from_user.first_name} 
+🗯 ᴘᴇsᴀɴ : {message.text}
 """
         await bot.send_message(
             client.me.id,

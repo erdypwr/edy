@@ -36,7 +36,7 @@ async def _(client, message):
         return
 
     request_text = args[1]
-    await message.reply_text("<b><i>Sedang Memproses, Mohon Tunggu Cess</i></b>...")
+    await message.reply_text("<b><i>ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ, ᴍᴏʜᴏɴ ᴛᴜɴɢɢᴜ ᴄᴇꜱꜱ</i></b>...")
 
     image_content = get_giraffe_image(request_text)
     if image_content:

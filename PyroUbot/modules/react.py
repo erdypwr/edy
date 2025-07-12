@@ -28,7 +28,7 @@ async def react_command(c, m):
     reaction_progress.append(c.me.id)
     
     if len(m.command) != 3:
-        await m.reply(f"<blockquote><b>{ggl}format [emote/id_emoji]</b></blockquote>")
+        await m.reply(f"<blockquote><b>{ggl}ғᴏʀᴍᴀᴛ [ᴇᴍᴏᴛᴇ/id_emoji]</b></blockquote>")
         return
 
     chat_id = m.command[1]
@@ -45,7 +45,7 @@ async def react_command(c, m):
         except Exception:
             pass
 
-    await rach.edit(f"<blockquote><b>Reaction Telah Berhaꜱil Cess</b></blockquote>")
+    await rach.edit(f"<blockquote><b>ʀᴇᴀᴄᴛɪᴏɴ ᴛᴇʟᴀʜ ʙᴇʀʜᴀsɪʟ ᴄᴇss</b></blockquote>")
     if c.me.id in reaction_progress:
         reaction_progress.remove(c.me.id)
 
@@ -59,6 +59,6 @@ async def stopreact_command(client, message):
     global reaction_progress
     if client.me.id in reaction_progress:
         reaction_progress.remove(client.me.id)
-        await message.reply(f"<blockquote><b>{sks}Berhaꜱil Membatalkan Reaction Cess</b></blockquote>")
+        await message.reply(f"<blockquote><b>{sks}ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ʀᴇᴀᴄᴛɪᴏɴ ᴄᴇss</b></blockquote>")
     else:
-        await message.reply(f"<blockquote><b>{ggl}Tidak Ada Proses Reaction Yang Sedang Berjalan Cess</b></blockquote>")
+        await message.reply(f"<blockquote><b>{ggl}ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘʀᴏsᴇs ʀᴇᴀᴄᴛɪᴏɴ ʏᴀɴɢ sᴇᴅᴀɴɢ ʙᴇʀᴊᴀʟᴀɴ ᴄᴇss</b></blockquote>")

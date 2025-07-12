@@ -25,7 +25,7 @@ async def _(client, message):
     
     if query not in URLS:
         valid_queries = ", ".join(URLS.keys())
-        await message.reply(f"Query Tidak Valid Cess. Gunakan Salah Satu Dari: {valid_queries}.")
+        await message.reply(f"ǫᴜᴇʀʏ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ ᴄᴇss. ɢᴜɴᴀᴋᴀɴ sᴀʟᴀʜ sᴀᴛᴜ ᴅᴀʀɪ: {valid_queries}.")
         return
 
     processing_msg = await message.reply("ᴘʀᴏꜱᴇꜱꜱ ᴄᴇꜱꜱ...")
@@ -41,4 +41,4 @@ async def _(client, message):
         await client.send_photo(message.chat.id, photo)
         await processing_msg.delete()
     except requests.exceptions.RequestException as e:
-        await processing_msg.edit_text(f"Gagal Mengambil Gambar Cecan Error Cess: {e}")
+        await processing_msg.edit_text(f"ɢᴀɢᴀʟ ᴍᴇɴɢᴀᴍʙɪʟ ɢᴀᴍʙᴀʀ ᴄᴇᴄᴀɴ ᴇʀʀᴏʀ ᴄᴇss: {e}")
