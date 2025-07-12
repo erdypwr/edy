@@ -119,12 +119,12 @@ class BTN:
         buttons.add(*keyboard)
         buttons.row(
             InlineKeyboardButton(
-                "⦪ ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏfɪʟ ⦫", callback_data=f"profil {user_id}"
+                "『 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏfɪʟ 』", callback_data=f"profil {user_id}"
             )
         )
         buttons.row(
             InlineKeyboardButton(
-                "⦪ ᴛᴏʟᴀᴋ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ⦫", callback_data=f"failed {user_id}"
+                "『 ᴛᴏʟᴀᴋ ᴘᴇᴍʙᴀʏᴀʀᴀɴ 』", callback_data=f"failed {user_id}"
             )
         )
         return buttons
@@ -139,22 +139,22 @@ class BTN:
     def START(message):
         if not message.from_user.id == OWNER_ID:
             button = [
-                [InlineKeyboardButton("⦪ ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ⦫", callback_data="bahan")],
+                [InlineKeyboardButton("『 ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ 』", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("⦪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ⳼", callback_data="buat_ubot"),
-                    InlineKeyboardButton("⦪ ʜᴇʟᴘ ᴍᴇɴᴜ ⦫", callback_data="help_back")
+                    InlineKeyboardButton("『 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 』", callback_data="buat_ubot"),
+                    InlineKeyboardButton("『 ʜᴇʟᴘ ᴍᴇɴᴜ 』", callback_data="help_back")
                 ],
-                [InlineKeyboardButton("⦪ sᴜᴘᴘᴏʀᴛ ⦫", callback_data="support")]
+                [InlineKeyboardButton("『 sᴜᴘᴘᴏʀᴛ 』", callback_data="support")]
             ]
         else:
             button = [
-                [InlineKeyboardButton("⦪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ⦫", callback_data="bahan")],
+                [InlineKeyboardButton("『 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 』", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("⦪ ɢɪᴛᴘᴜʟʟ ⦫", callback_data="cb_gitpull"),
-                    InlineKeyboardButton("⦪ ʀᴇsᴛᴀʀᴛ ⦫", callback_data="cb_restart")
+                    InlineKeyboardButton("『 ɢɪᴛᴘᴜʟʟ 』", callback_data="cb_gitpull"),
+                    InlineKeyboardButton("『 ʀᴇsᴛᴀʀᴛ 』", callback_data="cb_restart")
                 ],
                 [
-                    InlineKeyboardButton("⦪ ʟɪsᴛ ᴜsᴇʀʙᴏᴛ ⦫", callback_data="cek_ubot")
+                    InlineKeyboardButton("『 ʟɪsᴛ ᴜsᴇʀʙᴏᴛ 』", callback_data="cek_ubot")
                 ]
             ]
         return button
@@ -171,8 +171,8 @@ class BTN:
                     callback_data=f"tambah {query}",
                 ),
             ],
-            [InlineKeyboardButton("⦪ ᴋᴏɴꜰɪʀᴍᴀsɪ ⦫", callback_data="confirm")],
-            [InlineKeyboardButton("⦪ ʙᴀᴛᴀʟᴋᴀɴ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("『 ᴋᴏɴꜰɪʀᴍᴀsɪ 』", callback_data="confirm")],
+            [InlineKeyboardButton("『 ʙᴀᴛᴀʟᴋᴀɴ 』", callback_data=f"home {user_id}")],
         ]
         return button
 
@@ -181,13 +181,13 @@ class BTN:
         button = [
             [
                 InlineKeyboardButton(
-                    "⦪ ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ ⦫",
+                    "『 ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ 』",
                     callback_data=f"del_ubot {int(user_id)}",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    "⦪ ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ ⦫",
+                    "『 ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ 』",
                     callback_data=f"cek_masa_aktif {int(user_id)}",
                 )
             ],
@@ -202,11 +202,11 @@ class BTN:
         button = [
             [
                 InlineKeyboardButton(
-                    "⦪ ᴋᴇᴍʙᴀʟɪ ⦫",
+                    "『 ᴋᴇᴍʙᴀʟɪ 』",
                     callback_data=f"p_ub {int(count)}"
                 ),
                 InlineKeyboardButton(
-                    "⦪ sᴇᴛᴜᴊᴜɪ ⦫", callback_data=f"deak_akun {int(count)}",
+                    "『 sᴇᴛᴜᴊᴜɪ 』", callback_data=f"deak_akun {int(count)}",
                 ),
             ],
         ]
@@ -223,8 +223,8 @@ class BTN:
                     callback_data=f"tambah {query}",
                 ),
             ],
-            [InlineKeyboardButton("⦪ ᴋᴏɴꜰɪʀᴍᴀsɪ ⦫", callback_data="confirm")],
-            [InlineKeyboardButton("⦪ ʙᴀᴛᴀʟᴋᴀɴ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("『 ᴋᴏɴꜰɪʀᴍᴀsɪ 』", callback_data="confirm")],
+            [InlineKeyboardButton("『 ʙᴀᴛᴀʟᴋᴀɴ 』", callback_data=f"home {user_id}")],
         ]
         return button
 
@@ -233,13 +233,13 @@ class BTN:
         button = [
             [
                 InlineKeyboardButton(
-                    "⦪ ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ ⦫",
+                    "『 ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ 』",
                     callback_data=f"del_ubot {int(user_id)}",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    "⦪ ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ ⦫",
+                    "『 ᴄᴇᴋ ᴍᴀꜱᴀ ᴀᴋᴛɪғ 』",
                     callback_data=f"cek_masa_aktif {int(user_id)}",
                 )
             ],
@@ -254,11 +254,11 @@ class BTN:
         button = [
             [
                 InlineKeyboardButton(
-                    "⦪ ᴋᴇᴍʙᴀʟɪ ⦫",
+                    "『 ᴋᴇᴍʙᴀʟɪ 』",
                     callback_data=f"p_ub {int(count)}"
                 ),
                 InlineKeyboardButton(
-                    "⦪ sᴇᴛᴜᴊᴜɪ ⦫", callback_data=f"deak_akun {int(count)}",
+                    "『 sᴇᴛᴜᴊᴜɪ 』", callback_data=f"deak_akun {int(count)}",
                 ),
             ],
         ]
